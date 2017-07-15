@@ -1,44 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-         <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    
-    <!-- custom css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
-    
-    <script type="text/javascript" src="assets/js/cart.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-   
-    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    
-    <title>Login</title>
+<?php include('about_header.php') ?>
 
-    </head>
     <body>
         <div id="top" class="header-panel-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <span>
-              <img src="assets/images/header_top_left_text.png" alt="8010 103 104 (10AM to 8PM)">
+              <img src="<?php echo base_url('assets/images/header_top_left_text.png') ?>" alt="8010 103 104 (10AM to 8PM)">
                <span style="margin-left:5px">8010 103 104 (10AM to 8PM)</span>
                <a href="">Where We Deliver</a>
             </span>
                 </div>
                 <div class="col-md-6">
                     <div class="pull-right">
-                    <img src="assets/images/header_top_right_text.png" alt="free delivery">
+                    <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery">
                     <span style="margin-left:5px">Free delivery for orders Rs. 500 and above</span>
                     </div>
                 </div>
@@ -50,8 +25,8 @@
                 <div class="row">
                 <div class="col-md-3" style="padding-right:0px">
                     <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;height:31px;padding-top:5px;width:100%">
-                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px"><span style="font-weight:900">SHOP</span> <img src="assets/images/shopicon.png" style="float:right;margin-top: 6px;">
-                    <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><center><img src="assets/images/mylogosmall.jpg" style="height:50px"></center></div></button>
+                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px"><span style="font-weight:900">SHOP</span> <img src="<?php echo base_url('assets/images/shopicon.png') ?>" style="float:right;margin-top: 6px;">
+                    <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><center><img src="<?php echo base_url('assets/images/mylogosmall.jpg')?>" style="height:50px"></center></div></button>
                     <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%">
                      
                      <li>
@@ -641,7 +616,7 @@
                     </div>
                     <div class="dropdown" style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
-                          <center><img src="assets/images/carticon.png" class="cart"><span class="first">Your Cart</span>
+                          <center><img src="<?php echo base_url('assets/images/carticon.png')?>" class="cart"><span class="first">Your Cart</span>
                           <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
                       </button>
                       <div class="dropdown-content" style="top:55px">
@@ -656,45 +631,46 @@
         
         <div class="container" style="padding-bottom:30px;">
             <div class="row">
-                <div class="col-md-3">
-                    <img src="assets/images/mylogo.jpg" alt="logo" style="width:250px;height:63px">
-                </div>
-                <div class="col-md-6">
-                    <form class="">
-                    <div class="search-box">
-                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+        <div class="col-md-3">
+            <img src="<?php echo base_url('assets/images/mylogo.jpg')?>" alt="logo" style="width:250px;height:63px">
+        </div>
+        <div class="col-md-6">
+            <form class="">
+            <div class="search-box">
+                <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+            </div>
+            <input type="submit" class="sbutn" value="Search">
+            </form>    
+        </div>
+        <div class="col-md-3" style="overflow-x: visible;">
+            <div class="div-welc1">
+                <div class="welc">Welcome Guest</div>
+                    <div class="customer-links">
+                        <a href="">
+                            Login
+                        <span class="or">|</span>
+                        Signup
+                    </a>    
                     </div>
-                    <input type="submit" class="sbutn" value="Search">
-                    </form>    
-                </div>
-                <div class="col-md-3" style="overflow-x: visible;">
-                    <div class="div-welc1">
-                        <div class="welc">Welcome Guest</div>
-                            <div class="customer-links">
-                                <a href="">
-                                    Login
-                                <span class="or">|</span>
-                                Signup
-                            </a>    
-                            </div>
-                    </div>
-                    <div class="dropdown" style="float:right;">
-                      <button class="dropbtn div-welc2">
-                          <center><img src="assets/images/carticon.png" class="cart"><span class="first">Your Cart</span>
-                          <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
-                      </button>
-                      <div class="dropdown-content">
-                        <p>It apears that your cart is currently empty!</p><br>
-                         <a class="cbtn">CONTINUE SHOPPING</a>
-                      </div>
-                    </div>
-                </div>    
-                </div>
-            
+            </div>
+            <div class="dropdown" style="float:right;">
+              <button class="dropbtn div-welc2">
+                  <center><img src="<?php echo base_url('assets/images/carticon.png')?>
+
+                  " class="cart"><span class="first">Your Cart</span>
+                  <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
+              </button>
+              <div class="dropdown-content">
+                <p>It apears that your cart is currently empty!</p><br>
+                 <a class="cbtn">CONTINUE SHOPPING</a>
+              </div>
+            </div>
+        </div>    
+        </div>
             <div class="row" style="padding-top:20px">
                 <div class="col-md-3 xs-hidden" style="padding-right:0px;">
                     <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;padding-top:0px;width:100%;height:40px;padding-bottom:0px">
-                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px;height:40px"><span style="font-weight:900">SHOP</span> <img src="assets/images/shopicon.png" style="float:right;margin-top: 6px;"></button>
+                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px;height:40px"><span style="font-weight:900">SHOP</span> <img src="<?php echo base_url('assets/images/shopicon.png')?>" style="float:right;margin-top: 6px;"></button>
                     <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%;top:50px">
                      
                      <li>
@@ -1265,16 +1241,16 @@
                         <div class="col-md-12">
                             <div class="midlehead  xs-hidden">
                             <a id="m1">
-                            <span class="mitem" ><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">Daily Need Store</span></span>
+                            <span class="mitem" ><img src="<?php echo base_url('assets/images/slider_top_link_1.png')?>" class="mitem1"><span class="mitem2">Daily Need Store</span></span>
                             </a>
                             <a  id="m2">
-                            <span class="mitem" style="margin-left:20px"><img src="assets/images/slider_top_link_2.png" class="mitem1"><span class="mitem2">Special Offer</span></span>
+                            <span class="mitem" style="margin-left:20px"><img src="<?php echo base_url('assets/images/slider_top_link_2.png')?>" class="mitem1"><span class="mitem2">Special Offer</span></span>
                             </a>
                             <a  id="m3">
-                            <span class="mitem"  style="margin-left:20px"><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">New Arrival</span></span>
+                            <span class="mitem"  style="margin-left:20px"><img src="<?php echo base_url('assets/images/slider_top_link_1.png')?>" class="mitem1"><span class="mitem2">New Arrival</span></span>
                             </a >
                             <a id="m4" style="float:right">
-                            <span class="mitem" ><img src="assets/images/slider_top_link_3.png" class="mitem1"><span class="mitem2">Recipie Blog</span></span>
+                            <span class="mitem" ><img src="<?php echo base_url('assets/images/slider_top_link_3.png')?>" class="mitem1"><span class="mitem2">Recipie Blog</span></span>
                             </a>
                             </div>
                         </div>
@@ -1284,226 +1260,34 @@
         </div>
         
         <div class="container">
-            <div id="tabs"> <a href=""> Home </a> <i class="fa fa-caret-right" aria-hidden="true"></i> Account</div>
+            <div class="row">
+                <div class="col-md-12" id="tabs"> <a href=""> Home </a> <i class="fa fa-caret-right" aria-hidden="true"></i> About Us</div>
+            </div>
         </div>
-       
+        
         <div class="container">
             <div class="row">
-                <div class = "col-sm-6" id="loginside">
-                    <h2>Login</h2>
-                    <form>
-                        <input type="email" placeholder="EMAIL" id="customer_login_email"><br><br>
-                        <input  type="password" placeholder="PASSWORD" id="customer_login_password">
-                        <a id="forgot-p" href="">Forgot your password?</a>
-                        <input type="submit" class="btn submit-btn" value="SIGN IN">
-                        <div id="OR">
-                            <div class= "line" id ="l1"  style="float: left"></div>
-                            <span>OR</span>
-                            <div class= "line" id ="l2" style="float: right"></div>
-                        </div>
-                        <a class="social_login facebook" href="">
-                            <span>Sign in with Facebook</span><i class="fa fa-facebook fa-fw oxi_icon oxi_icon_facebook"></i>
-                        </a>
-                        <a class="social_login google" href="">
-                            <span>Sign in with Google +</span><i class="fa fa-google fa-fw oxi_icon oxi_icon_google"></i>
-                        </a>
-                    </form>
-                </div>
-                <div class="col-sm-6" id="regside">
-                    <h2>Register</h2>
-                    <form>
-                        <input type="text" placeholder="First Name" id="customer_fn">
-                        <input type="text" placeholder="Second Name" id="customer_ln">
-                        <input type="email" placeholder="Email" id="customer_reg_email">
-                        <input type="password" placeholder="Password" id="customer_reg_password">
-                        <input type="submit" class = "btn submit-btn" id="register" value="REGISTER">
-                    </form>
+                <div class = "col-md-12">
+                    <div style="height:18px;width:100%;border:1px solid #E9E8E8; margin-bottom:1px"></div>
+                    <div style="height:auto;width:100%;border:1px solid #E9E8E8; margin-bottom:1px;text-align:center"><h3>ABOUT US</h3></div>
+                    <div style="height:auto;width:100%;border:1px solid #E9E8E8; margin-bottom:50px;padding-left:30px;padding-right:30px;color:#666666;">
+                        <h4 style=" padding-top: 15px; margin-top: 2px;">HEY THERE!</h4>
+                        <p>Want to know who we are? We are BazaarCart, a startup based in Delhi NCR. And our focus is to create an innovative channel that can deliver more for less to the Indian consumer. Being from a commerce field we always thought why all the IIT'ians are getting ahead in the E-commerce business, when the fact is we know the market better, we understand the concept of costing better than any engineer.</p>
+                        <p>We are not a bunch of Geeks sitting on PC and coding our life out ( No Offence :D) , we go out and know what people want how can we provide it to them &amp; at the same time keeping the cost low.</p>
+                        <p>We Hired a team for our website and technical work and we kept our focus on Costing and other matters.</p>
+                        <p>At BazaarCart.com you can expect the best prices in Delhi/NCR on your favourite grocery items because when we sell online, we can sell stuff cheaper. Save on each purchase, with up to 40% savings on some items and with free home delivery - anywhere in Delhi/NCR, you don't need to worry about the drive, traffic, pollution or missing your favourite TV show anymore!</p>
+                        <p>We don't only just make the process of Online Grocery ordering easy and fun but also make sure the prices are unbeatable. And while we're at it, our super efficient and professionally sound team makes sure our customers are 100% satisfied and Happy</p>
+                        <p>All you have to do is browse through our 6000+ products on offer, pick what you want, where and when it should be delivered, and voilá - you're done! We even let you pay cash /card on delivery or give you online credit/ debit / net banking payment options! Its Like the whole of your daily bazaar came live on you screen, So don't waste your money on phone calls, just log in and shop away!</p>
+                        <h4>WE PROMISE</h4>
+                        <p style="line-height: 22px;">An easy and convenient shopping experience<br> A hassle-free online experience<br> A safe and secure payment process<br> Best discounts available in the market<br> COD on every order<br> Introducing new coupons to keep the prices even low.<br> And a totally satisfied you, who'll want to come back to us again and again<br> After all, you know it's a smart thing to do!<br><br>BazaarCart.com is Owned &amp; Managed by S &amp; J Retail Services Pvt Ltd.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        
         <div id="backtotop" class="container-fluid">
         <a href="#top"><div class="backtotop"></div></a>
         </div>
-        <footer>
-        <div class = "container-fluid" id ="footer-features">
-            <div class = "container">
-                <div class = "row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_1.png">
-                        <span>SAFE & SECURED PAYMENTS</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_2.png">
-                        <span>DELIVERY WITHIN 24 HOURS FROM 7 AM TO 9 PM</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_3.png">
-                        <span>NO QUESTION ASKED RETURN POLICY</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_4.png">
-                        <span>BEST PRICES & BEST SERVICES</span>
-                    </div>
-                    <div class="col-md-2 features-box" id="last-f-box" style="border-right:none">
-                        <img src="assets/images/footfeat_5.png">
-                        <span>THE HIGHEST PRODUCT QUALITY</span>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </div>
-        </div>
         
-        <div class="container-fluid" id="footer-top">
-            <div class = "container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> ABOUT US</p>
-                        <div class ="top-links">
-                            <p> <a href="">About Us</a><br>
-                                <a href="">Why Bazaarcart</a><br>
-                                <a href="">Our-Story</a><br>
-                                <a href="">Contact Us</a><br>
-                                <a href="">FAQ</a><br>
-                                <a href="">Sell With Us</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> OUR POLICIES</p>
-                        <div class ="top-links">
-                            <p> <a href="">Terms and Conditions</a><br>
-                                <a href="">Privacy Policy</a><br>
-                                <a href="">Shipping Policy</a><br>
-                                <a href="">Return Policy</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> NEWS AND MEDIA</p>
-                        <div class ="top-links">
-                            <p> <a href="">Press</a><br>
-                                <a href="">Sitemap</a><br>
-                                <a href="">Shop by brand</a><br>
-                                <a href="">Our Coupon Partners</a><br>
-                                <a href="">Society Registerations</a><br>
-                                <a href="">Product Enquiry/Suggestion</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <p class="nletter">NEWS LETTER SIGNUP</p>
-                        <div id = "seperator"></div>
-                        <div>
-                            <input class="email-box" type ="email" placeholder="Email Address"><br>
-                            <input class="subscribe" type ="button" value="Subscribe"><br>
-                            <p class = "aval">Available On</p>
-                            <a><img class ="playstore" src ="assets/images/playstore.png"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid" id = "footer-bottom1">
-            <div class="container" id="bottom-container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4" id="payment">
-                        Payment Method
-                        <a href=""><i class="fa fa-money" id="cod" aria-hidden="true"></i><span style="color:#333;font-weight:900;margin-left:5px">Cash On Delivery</span></a>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 contact">
-                        Contact Us
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-                     <div class="col-md-4"></div>
-                    <div class="col-md-4 social-media-icons">
-                        <a href="" class ="social-media"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-                        <a href="" class ="social-media"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-                        <a href="" class ="social-media"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4"></div>
-            </div>
-        </div>
-        <div class="container-fluid" id="footer-bottom2">
-            <div class="container">
-               <p>Copyright©2016.Bazaarcart.com All rights reserved</p>
-            </div>
-        </div>   
-    </footer>
-        
-    </body>
-    <script>
-        if($(window).width()<=993){
-            $(".features-box").css("border-right","none");
-            $(".features-box").css("text-align","center");
-            $("#seperator").hide();
-        }
-        $(window).resize(function() {
-            if($(window).width()>993){
-                $(".features-box").css("border-right","1px solid #DEDEDE");
-                $("#last-f-box").css("border-right","none");
-                $(".features-box").css("text-align","right");
-                $("#seperator").show();
-            }
-            if($(window).width()<=993){
-                $(".features-box").css("border-right","none");   
-                $(".features-box").css("text-align","center");
-                $("#seperator").hide();
-            }
-        });
-        $(document).ready(function(){
-            $(document).scroll(function() {
-              
-               if(window.innerWidth>991)
-               {
-                    var y = $(this).scrollTop();
-                    if (y > 150) {
-                      $('.header-fixed').fadeIn();
-                    } else {
-                      $('.header-fixed').fadeOut();
-                    }
-                   if(y>350)
-                   {
-                       $('.backtotop').fadeIn();
-                   }
-                   else
-                   {
-                       $('.backtotop').fadeOut();
-                   }
-               }
-            });
-            
-           
-            
-            $('body').scrollspy({target: "#backtotop", offset: 50});
-                // Add smooth scrolling on all links inside the navbar
-              $("#backtotop a").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
 
-                  // Store hash
-                  var hash = this.hash;
-
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                }  // End if
-              });
-
-            
-        });
-    </script>
-</html>
+<?php include('about_footer.php'); ?>        

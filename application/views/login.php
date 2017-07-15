@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
-    <meta name="description" content="">
-    <meta name="author" content="">
-    
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    
-    <!-- custom css-->
-    <link rel="stylesheet" type="text/css" href="assets/css/landing.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/sidebar.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>Landing</title>
-    <style>
-   .carousel-control 			 { width:  4%; }
-    .carousel-control.left,.carousel-control.right {margin-left:0px;background-image:none;}
-    @media (max-width: 767px) {
-        .carousel-inner .active.left { left: -100%; }
-        .carousel-inner .next        { left:  100%; }
-        .carousel-inner .prev		 { left: -100%; }
-        .active > div { display:none; }
-        .active > div:first-child { display:block; }
-
-    }
-    @media (min-width: 767px) and (max-width: 992px ) {
-        .carousel-inner .active.left { left: -50%; }
-        .carousel-inner .next        { left:  50%; }
-        .carousel-inner .prev		 { left: -50%; }
-        .active > div { display:none; }
-        .active > div:first-child { display:block; }
-        .active > div:first-child + div { display:block; }
-    }
-    @media (min-width: 992px ) {
-        .carousel-inner .active.left { left: -25%; }
-        .carousel-inner .next        { left:  25%; }
-        .carousel-inner .prev		 { left: -25%; }	
-    }
-    </style>
-</head>
-<body>
-    <div id="top" class="header-panel-top">
+<?php include('about_header') ?>
+    <body>
+        <div id="top" class="header-panel-top">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -58,22 +12,20 @@
                 </div>
                 <div class="col-md-6">
                     <div class="pull-right">
-                    <diV style="float:left">Login | Signup</diV>
-                    <img src="assets/images/header_top_right_text.png" alt="free delivery" style="margin-left:10px">
+                    <img src="assets/images/header_top_right_text.png" alt="free delivery">
                     <span style="margin-left:5px">Free delivery for orders Rs. 500 and above</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="header-fixed">
-        <div class="container">
-            <div class="row">
+        <div class="header-fixed">
+            <div class="container">
+                <div class="row">
                 <div class="col-md-3" style="padding-right:0px">
                     <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;height:31px;padding-top:5px;width:100%">
                     <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px"><span style="font-weight:900">SHOP</span> <img src="assets/images/shopicon.png" style="float:right;margin-top: 6px;">
-                    <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><img src="assets/images/mylogosmall.jpg" style="height:50px;"></div></button>
+                    <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><center><img src="assets/images/mylogosmall.jpg" style="height:50px"></center></div></button>
                     <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%">
                      
                      <li>
@@ -661,172 +613,63 @@
                                 </a>
                             </div>
                     </div>
-                    <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
+                    <div class="dropdown" style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="assets/images/carticon.png" class="cart"><span class="first">Your Cart</span>
                           <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
                       </button>
-                      <div class="dropdown-content" style="top:50px;padding-left:0px;padding-right:0px;">
-                        <div style="width:100%;max-height:220px;overflow-y:scroll;overflow-x:hidden;">
-                            <br>
-                        <div class="row">
-                            <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
-                                <div class="cartfhead" style="float:left">Your Cart <span>(0 items)</span></div>
-                                <div style="float:right;margin-top:-20px">
-                                <center><img src="assets/images/cartfilled.png" class="cart"><span >Your Saved</span>
-                                  <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div></center>
-                                </div>
-                            </div>
-                        </div>
-                          
-                          <hr>
-                          
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float:left">
-                                    <div style="float:left">
-                                        <img src="assets/images/psmall.jpg">
-                                    </div>
-                                    <div style="float:right">
-                                        <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div style="float:right">
-                                    <div style="float:left">
-                                        <center>
-                                        <select class="qselect" style="margin-top:20px;">
-                                          <option>5 Kg</option>
-                                          <option>10 Kg</option>
-                                        </select>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
-                                        </center>
-                                    </div>
-                                    <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                        <hr>
-                          
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float:left">
-                                    <div style="float:left">
-                                        <img src="assets/images/psmall.jpg">
-                                    </div>
-                                    <div style="float:right">
-                                        <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div style="float:right">
-                                    <div style="float:left">
-                                        <center>
-                                        <div class="qfix" style="margin-top:20px;padding-top:10px">5 Kg</div>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
-                                        </center>
-                                    </div>
-                                    <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                          <hr>
-                        </div>
-                        <div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-5"><button class="btn btn-block bcartview"><img src="assets/images/addbicon.png"> View Cart</button></div>
-                                    <div class="col-md-5"><button class="btn btn-block coutview">Check Out</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>  
+                      <div class="dropdown-content" style="top:55px">
+                        <p>It apears that your cart is currently empty!</p><br>
+                         <a class="cbtn">CONTINUE SHOPPING</a>
                       </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    
-    <div class="container" style="padding-bottom:30px;">
-        <div class="row">
-        <div class="col-md-3">
-            <img src="assets/images/mylogo.jpg" alt="logo" style="width:250px;height:63px">
-        </div>
-        <div class="col-md-6">
-            <form class="">
-            <div class="search-box">
-                <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
             </div>
-            <input type="submit" class="sbutn" value="Search">
-            </form>    
         </div>
-        <div class="col-md-3" style="overflow-x: visible;">
-            <!--
-            <div class="div-welc1">
-                <div class="welc">Welcome Guest</div>
-                    <div class="customer-links">
-                        <a href="">
-                            Login
-                        <span class="or">|</span>
-                        Signup
-                        </a>    
-                    </div>
-            </div>
-            -->
-            <div class="dropdown" style="float:right;">
-              <button class="dropbtn div-welc2">
-                  <center><img src="assets/images/carticon.png" class="cart"><span class="first">Your Cart</span>
-                  <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
-              </button>
-              <div class="dropdown-content">
-                <p>It apears that your cart is currently empty!</p><br>
-                 <a class="cbtn">CONTINUE SHOPPING</a>
-              </div>
-            </div>
-        </div>    
-        </div>
-    
-        <div class="row" style="padding-top:20px">
-            <div class="col-md-3" style="padding-right:0px;">
-                <div class="sidebarhead xs-hidden" style="border-width:1px;border:1px solid #96C658;">
-                    Shop <img src="assets/images/shopicon.png" style="float:right;margin-top: 6px;">
+        
+        <div class="container" style="padding-bottom:30px;">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="assets/images/mylogo.jpg" alt="logo" style="width:250px;height:63px">
                 </div>
-                 <ul class="shoplinks xs-hidden">
+                <div class="col-md-6">
+                    <form class="">
+                    <div class="search-box">
+                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+                    </div>
+                    <input type="submit" class="sbutn" value="Search">
+                    </form>    
+                </div>
+                <div class="col-md-3" style="overflow-x: visible;">
+                    <div class="div-welc1">
+                        <div class="welc">Welcome Guest</div>
+                            <div class="customer-links">
+                                <a href="">
+                                    Login
+                                <span class="or">|</span>
+                                Signup
+                            </a>    
+                            </div>
+                    </div>
+                    <div class="dropdown" style="float:right;">
+                      <button class="dropbtn div-welc2">
+                          <center><img src="assets/images/carticon.png" class="cart"><span class="first">Your Cart</span>
+                          <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
+                      </button>
+                      <div class="dropdown-content">
+                        <p>It apears that your cart is currently empty!</p><br>
+                         <a class="cbtn">CONTINUE SHOPPING</a>
+                      </div>
+                    </div>
+                </div>    
+                </div>
+            
+            <div class="row" style="padding-top:20px">
+                <div class="col-md-3 xs-hidden" style="padding-right:0px;">
+                    <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;padding-top:0px;width:100%;height:40px;padding-bottom:0px">
+                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px;height:40px"><span style="font-weight:900">SHOP</span> <img src="assets/images/shopicon.png" style="float:right;margin-top: 6px;"></button>
+                    <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%;top:50px">
                      
                      <li>
                          <div class="dropleft">
@@ -1388,1211 +1231,73 @@
                          </div>
                      </li>
                 </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-9 col-slidemain" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="midlehead  xs-hidden">
+                            <a id="m1">
+                            <span class="mitem" ><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">Daily Need Store</span></span>
+                            </a>
+                            <a  id="m2">
+                            <span class="mitem" style="margin-left:20px"><img src="assets/images/slider_top_link_2.png" class="mitem1"><span class="mitem2">Special Offer</span></span>
+                            </a>
+                            <a  id="m3">
+                            <span class="mitem"  style="margin-left:20px"><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">New Arrival</span></span>
+                            </a >
+                            <a id="m4" style="float:right">
+                            <span class="mitem" ><img src="assets/images/slider_top_link_3.png" class="mitem1"><span class="mitem2">Recipie Blog</span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
             </div>
-            
-            <div class="col-md-9 col-slidemain" >
-                
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="midlehead  xs-hidden">
-                        <a id="m1">
-                        <span class="mitem" ><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">Daily Need Store</span></span>
+        </div>
+        
+        <div class="container">
+            <div id="tabs"> <a href=""> Home </a> <i class="fa fa-caret-right" aria-hidden="true"></i> Account</div>
+        </div>
+       
+        <div class="container">
+            <div class="row">
+                <div class = "col-sm-6" id="loginside">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="email" placeholder="EMAIL" id="customer_login_email"><br><br>
+                        <input  type="password" placeholder="PASSWORD" id="customer_login_password">
+                        <a id="forgot-p" href="">Forgot your password?</a>
+                        <input type="submit" class="btn submit-btn" value="SIGN IN">
+                        <div id="OR">
+                            <div class= "line" id ="l1"  style="float: left"></div>
+                            <span>OR</span>
+                            <div class= "line" id ="l2" style="float: right"></div>
+                        </div>
+                        <a class="social_login facebook" href="">
+                            <span>Sign in with Facebook</span><i class="fa fa-facebook fa-fw oxi_icon oxi_icon_facebook"></i>
                         </a>
-                        <a  id="m2">
-                        <span class="mitem" style="margin-left:20px"><img src="assets/images/slider_top_link_2.png" class="mitem1"><span class="mitem2">Special Offer</span></span>
+                        <a class="social_login google" href="">
+                            <span>Sign in with Google +</span><i class="fa fa-google fa-fw oxi_icon oxi_icon_google"></i>
                         </a>
-                        <a  id="m3">
-                        <span class="mitem"  style="margin-left:20px"><img src="assets/images/slider_top_link_1.png" class="mitem1"><span class="mitem2">New Arrival</span></span>
-                        </a >
-                        <a id="m4" style="float:right">
-                        <span class="mitem" ><img src="assets/images/slider_top_link_3.png" class="mitem1"><span class="mitem2">Recipie Blog</span></span>
-                        </a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-        
-                <div class="row">
-                    <div class="col-md-9 col-slider">
-                        <div class="homeslider">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                          <!-- Wrapper for slides -->
-                           <!-- Indicators -->
-                          <div class="carousel-inner">
-                            <div id="slide1" class="item active">
-                              <img src="assets/images/home_slider_image_1.jpg">
-                            </div>
-                            <div id="slide2" class="item">
-                              <img src="assets/images/home_slider_image_2.jpg">
-                            </div>
-                            <div id="slide3" class="item">
-                              <img src="assets/images/home_slider_image_3.jpg">
-                            </div>
-                            <div id="slide3" class="item">
-                              <img src="assets/images/home_slider_image_3.jpg">
-                            </div>
-                            <div id="slide3" class="item">
-                              <img src="assets/images/home_slider_image_3.jpg">
-                            </div>
-                          </div>
-                          
-                              <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                                <li data-target="#myCarousel" data-slide-to="4"></li>
-                              </ol>
-                        </div>
-                            <!--div class="row">
-                                <div class="col-md-4" style="padding-right:0px;">
-                                    <div id="ind1" class="box2 text-center xs-hidden">
-                                        Free homefoil<br>
-                                        <span>On Order Rs 999</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style="padding-left:0px;padding-right:0px;">
-                                    <div id="ind2" class="box text-center xs-hidden">
-                                        Free homefoil<br>
-                                        <span>On Order Rs 999</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4"  style="padding-left:0px;">
-                                    <div id="ind3" class="box text-center xs-hidden">
-                                        Free homefoil<br>
-                                        <span>On Order Rs 999</span>
-                                    </div>
-                                    <div class="arow-up"></div>
-                                </div>
-                            </div-->
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sbanner">
-                        <div class="sidebanners">
-                        <img src="assets/images/home_slider_image_1.jpg" style="margin-bottom:15px">
-                        <img src="assets/images/home_slider_image_2.jpg">
-                        </div>
-                    </div>
-                </div>
-                
-            </div>    
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-12">
-                
-                <div class="carousel slide carousel1" id="myCarousel1">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 1</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 2</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 3</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 4</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 5</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 6</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 7</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 8</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 9</div>
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/home_slider_image_4.jpg" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 10</div>
-                          </a></center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                <div class="col-sm-6" id="regside">
+                    <h2>Register</h2>
+                    <form>
+                        <input type="text" placeholder="First Name" id="customer_fn">
+                        <input type="text" placeholder="Second Name" id="customer_ln">
+                        <input type="email" placeholder="Email" id="customer_reg_email">
+                        <input type="password" placeholder="Password" id="customer_reg_password">
+                        <input type="submit" class = "btn submit-btn" id="register" value="REGISTER">
+                    </form>
                 </div>
             </div>
         </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-4">
-                <img class="imgbanner3" src="assets/images/home_slider_image_1.jpg">
-            </div>
-            <div class="col-md-4">
-                <img class="imgbanner3" src="assets/images/home_slider_image_2.jpg">
-            </div>
-            <div class="col-md-4">
-                <img class="imgbanner3" src="assets/images/home_slider_image_3.jpg">
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-right:0px;padding-left:0px">
-                <div class="line-head"><center>BEST<span> SELLING</span></center></div>
-            </div>
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-left:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-12">
-                
-                <div class="carousel slide carousel1" id="myCarousel2">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div  class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-right:0px;padding-left:0px">
-                <div class="line-head"><center>NEW<span> ARRIVAL</span></center></div>
-            </div>
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-left:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-12">
-                
-                <div class="carousel slide carousel1" id="myCarousel3">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div  class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel3" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel3" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-12">
-                
-                <div class="carousel slide carousel1" id="myCarousel4">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_1.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_2.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_3.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_4.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_5.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_6.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_7.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_8.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="assets/images/brand_9.png" style="width:100px;height:50px">
-                          </a></center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        <div class="row">
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-right:0px;padding-left:0px">
-                <div class="line-head"><center>KAREYANA<span> PRODUCTS</span></center></div>
-            </div>
-            <div class="col-md-5 col-sm-4 col-xs-3" style="padding-left:0px;padding-top:15px">
-                <div class="hline"></div>
-                <div class="hline" style="margin-top:2px"></div>
-            </div>
-        </div>
-        <br><br>
-        
-        
-        <div class="row">
-            <div class="col-md-12">
-                
-                <div class="carousel slide carousel1" id="myCarousel5">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div  class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel5" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel5" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        
-        
-    </div>
-    
-    <div id="backtotop" class="container-fluid">
+        <div id="backtotop" class="container-fluid">
         <a href="#top"><div class="backtotop"></div></a>
-    </div>
-    
-    <div id="message" class="container-fluid">
-        <div class="message"><i class="fa fa-comment" aria-hidden="true"></i><span class="messagetext">Contact Us</span></div>
-    </div>
-    
-    <div id="contactform" class="container-fluid">
-        <div class="contactform">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="" style="float:left">Contact Us</div><div style="float:right"><i id="cclose" class="fa fa-times-circle" style="float:right" aria-hidden="true" ></i></div>
-                </div>
-            </div><br>
-            <div class="row">
-                <div class="col-md-12">
-                    <center><input type="email" class="input-lg cinput"  placeholder="Email"></center>
-                </div>
-            </div><br>
-            <div class="row">
-                <div class="col-md-12">
-                    <center><input type="number" class="input-lg cinput"  placeholder="Phone number"></center>
-                </div>
-            </div><br>
-            <div class="row">
-                <div class="col-md-12">
-                    <center><input type="text" class="input-lg cinput"  placeholder="subject"></center>
-                </div>
-            </div><br>
-            <div class="row">
-                <div class="col-md-12">
-                <center><textarea class="input-lg cinput"  placeholder="State Your Query"></textarea></center>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
-                <center><button class="btn-lg sbtn">Submit</button></center>
-                </div>
-            </div>
         </div>
-    </div>
-    
-    <footer>
-        <div class = "container-fluid" id ="footer-features">
-            <div class = "container">
-                <div class = "row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_1.png">
-                        <span>SAFE & SECURED PAYMENTS</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_2.png">
-                        <span>DELIVERY WITHIN 24 HOURS FROM 7 AM TO 9 PM</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_3.png">
-                        <span>NO QUESTION ASKED RETURN POLICY</span>
-                    </div>
-                    <div class="col-md-2 features-box">
-                        <img src="assets/images/footfeat_4.png">
-                        <span>BEST PRICES & BEST SERVICES</span>
-                    </div>
-                    <div class="col-md-2 features-box" id="last-f-box" style="border-right:none">
-                        <img src="assets/images/footfeat_5.png">
-                        <span>THE HIGHEST PRODUCT QUALITY</span>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid" id="footer-top">
-            <div class = "container">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> ABOUT US</p>
-                        <div class ="top-links">
-                            <p> <a href="">About Us</a><br>
-                                <a href="">Why Bazaarcart</a><br>
-                                <a href="">Our-Story</a><br>
-                                <a href="">Contact Us</a><br>
-                                <a href="">FAQ</a><br>
-                                <a href="">Sell With Us</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> OUR POLICIES</p>
-                        <div class ="top-links">
-                            <p> <a href="">Terms and Conditions</a><br>
-                                <a href="">Privacy Policy</a><br>
-                                <a href="">Shipping Policy</a><br>
-                                <a href="">Return Policy</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <p class ="top-title"> NEWS AND MEDIA</p>
-                        <div class ="top-links">
-                            <p> <a href="">Press</a><br>
-                                <a href="">Sitemap</a><br>
-                                <a href="">Shop by brand</a><br>
-                                <a href="">Our Coupon Partners</a><br>
-                                <a href="">Society Registerations</a><br>
-                                <a href="">Product Enquiry/Suggestion</a></p>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <p class="nletter">NEWS LETTER SIGNUP</p>
-                        <div id = "seperator"></div>
-                        <div>
-                            <input class="email-box" type ="email" placeholder="Email Address"><br>
-                            <input class="subscribe" type ="button" value="Subscribe"><br>
-                            <p class = "aval">Available On</p>
-                            <a><img class ="playstore" src ="assets/images/playstore.png"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container-fluid" id = "footer-bottom1">
-            <div class="container" id="bottom-container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4" id="payment">
-                        Payment Method
-                        <a href=""><i class="fa fa-money" id="cod" aria-hidden="true"></i><span style="color:#333;font-weight:900;margin-left:5px">Cash On Delivery</span></a>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 contact">
-                        Contact Us
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-                     <div class="col-md-4"></div>
-                    <div class="col-md-4 social-media-icons">
-                        <a href="" class ="social-media"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
-                        <a href="" class ="social-media"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
-                        <a href="" class ="social-media"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="col-md-4"></div>
-            </div>
-        </div>
-        <div class="container-fluid" id="footer-bottom2">
-            <div class="container">
-               <p>Copyright©2016.Bazaarcart.com All rights reserved</p>
-            </div>
-        </div>   
-    </footer>
-    
-    <script>
-        if($(window).width()<=993){
-            $(".features-box").css("border-right","none");
-            $(".features-box").css("text-align","center");
-            $("#seperator").hide();
-        }
-        $(window).resize(function() {
-            if($(window).width()>993){
-                $(".features-box").css("border-right","1px solid #DEDEDE");   
-                 $(".features-box").css("border-right","1px solid #DEDEDE");   
-                $("#last-f-box").css("border-right","none");
-                $(".features-box").css("text-align","right");
-                $("#seperator").show();
-            }
-            if($(window).width()<=993){
-                $(".features-box").css("border-right","none");   
-                $(".features-box").css("text-align","center");
-                $("#seperator").hide();
-            }
-        });
-        
-        $(document).ready(function(){
-            // Activate Carousel
-          
-            /*
-            $("#myCarousel").on('slid.bs.carousel', function () {
-                if($('#slide1').hasClass('active'))
-                {
-                    console.log('hello');
-                        $('#ind3').removeClass('box2');
-                        $('#ind2').removeClass('box');
-                        $('#ind1').removeClass('box');
-                        $('#ind1').addClass('box2');
-                        $('#ind2').addClass('box');
-                        $('#ind3').addClass('box');
-                }
-                else if($('#slide2').hasClass('active'))
-                {
-                    $('#ind1').removeClass('box2');
-                        $('#ind2').removeClass('box');
-                        $('#ind3').removeClass('box');
-                        $('#ind2').addClass('box2');
-                        $('#ind3').addClass('box');
-                        $('#ind1').addClass('box');
-                }
-                else if($('#slide3').hasClass('active'))
-                {
-                    $('#ind2').removeClass('box2');
-                        $('#ind3').removeClass('box');
-                        $('#ind1').removeClass('box');
-                        $('#ind3').addClass('box2');
-                        $('#ind2').addClass('box');
-                        $('#ind1').addClass('box');
-                }
-            });
-            $('#ind1').mouseenter(function(){
-               if($('#slide2').hasClass('active'))
-               {
-                   $("#myCarousel").carousel("prev");
-                   $('#ind2').removeClass('box2');
-                   $('#ind2').addClass('box');
-               }
-               else
-               {
-                   $("#myCarousel").carousel("next");
-               }
-            });
-            $('#ind2').mouseenter(function(){
-               if($('#slide3').hasClass('active'))
-               {
-                   $("#myCarousel").carousel("prev");
-                   $('#ind3').removeClass('box2');
-                   $('#ind3').addClass('box');
-               }
-               else
-               {
-                   $("#myCarousel").carousel("next");
-               }
-            });
-            $('#ind3').mouseenter(function(){
-               if($('#slide3').hasClass('active'))
-               {
-                   $("#myCarousel").carousel("prev");
-                   $('#ind1').removeClass('box2');
-                   $('#ind1').addClass('box');
-               }
-               else
-               {
-                   $("#myCarousel").carousel("next");
-               }
-            });
-            */
-            $(document).scroll(function() {
-              
-               if(window.innerWidth>991)
-               {
-                    var y = $(this).scrollTop();
-                    if (y > 150) {
-                      $('.header-fixed').fadeIn();
-                    } else {
-                      $('.header-fixed').fadeOut();
-                    }
-                   if(y>350)
-                   {
-                       $('.backtotop').fadeIn();
-                   }
-                   else
-                   {
-                       $('.backtotop').fadeOut();
-                   }
-               }
-            });
-            
-            $('#myCarousel1').carousel({
-              interval: false
-            })
-            
-            $('#myCarousel2').carousel({
-              interval: false
-            })
-            
-            $('#myCarousel3').carousel({
-              interval: false
-            })
-            
-            $('#myCarousel4').carousel({
-              interval: false
-            })
-            $('#myCarousel5').carousel({
-              interval: false
-            })
 
-            $('.carousel1 .item').each(function(){
-                
-              var next = $(this).next();
-                
-              if (!next.length) {
-                next = $(this).siblings(':first');
-              }
-              next.children(':first-child').clone().appendTo($(this));
-                
-              for (var i=0;i<4;i++) {
-                next=next.next();
-                if (!next.length) {
-                    next = $(this).siblings(':first');
-                }
 
-                next.children(':first-child').clone().appendTo($(this));
-              }
-            });
-            
-            
-            $('body').scrollspy({target: "#backtotop", offset: 50});
-                // Add smooth scrolling on all links inside the navbar
-              $("#backtotop a").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                  // Prevent default anchor click behavior
-                  event.preventDefault();
-
-                  // Store hash
-                  var hash = this.hash;
-
-                  // Using jQuery's animate() method to add smooth page scroll
-                  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                  $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                  }, 800, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                  });
-                }  // End if
-              });
-            
-            
-            $('body').on('click', '.addbtn', function() {
-                $(this).parent().children('.addbtn').css('display','none');
-                $(this).parent().children('.qmang').children('.qval').text("1");
-                $(this).parent().children('.qmang').css('display','block');
-            });
-            $('body').on('click', '.fa-minus', function() {
-                var m = $(this).parent().children('.qval').text();
-                m--;
-                if(m===0)
-                {
-                    $(this).parent().parent().children('.qmang').css('display','none');
-                    $(this).parent().parent().children('.addbtn').css('display','block');
-                }
-                else{
-                    
-                    $(this).parent().children('.qval').text(m);
-                }
-            });
-            $('body').on('click', '.fa-plus', function() {
-                var m = $(this).parent().children('.qval').text();
-                m++;
-                $(this).parent().children('.qval').text(m);
-            });
-            
-            $('#message').click(function(){
-                $('#message').css('display','none');
-                $('#contactform').css('display','block');
-            });
-            
-            $('#cclose').click(function(){
-                $('#contactform').css('display','none');
-                $('#message').css('display','block');
-            });
-            
-        });
-    </script>
-    
-</body>
-
-</html>
+    <?php include('about_footer.php') ?>

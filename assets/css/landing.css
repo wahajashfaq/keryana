@@ -155,51 +155,51 @@ img:hover{
     color:#fff;
 }
 
-        .dropbtn {
-            height: 54px !important;
-            border: none !important;
-            background-color: #fff;
-        }
+.dropbtn {
+    height: 54px !important;
+    border: none !important;
+    background-color: #fff;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            background-color: #fff;
-            min-width: 400px;
-            z-index: 1;
-            top:60px;
-            border-color: #92c83f !important;
-            border-width: 1px !important;
-            border-style: solid !important;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    min-width: 400px;
+    z-index: 1;
+    top:60px;
+    border-color: #92c83f !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
-        .dropdown-content p{
-            font-size: 12px;
-        }
+.dropdown-content p{
+    font-size: 12px;
+}
 
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .dropdown:hover .first,.second{
     font-size: 10px;
 }
-        .dropdown:hover .dropbtn {
-            border-color: #92c83f !important;
-            border-width: 1px !important;
-            border-style: solid !important;
-            border-bottom-width: 0px !important;
-        }
+.dropdown:hover .dropbtn {
+    border-color: #92c83f !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-bottom-width: 0px !important;
+}
 .sidebarhead{
     background-color:#96C658;
     color:#fff;
@@ -212,20 +212,20 @@ img:hover{
     padding-left: 12px;
 }
 .midlehead{
-     color:#313131;
-    font-size: 12px;
-    font-weight: 600;
-    text-shadow: none;
-    border-width:1px;
-    border:1px solid #c6c6c6;
-    border-left:0;
-    height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    line-height:40px
+   color:#313131;
+   font-size: 12px;
+   font-weight: 600;
+   text-shadow: none;
+   border-width:1px;
+   border:1px solid #c6c6c6;
+   border-left:0;
+   height: 40px;
+   padding-left: 10px;
+   padding-right: 10px;
+   line-height:40px
 }
 .midlehead a{
-     color:#313131 !important;
+   color:#313131 !important;
 }
 .midlehead a:hover{
     text-decoration: none;
@@ -256,14 +256,14 @@ img:hover{
     margin-left: 10px;
 }
 .shoplinks li{
-      font-size: 13px;
-    color: #000;
-    font-weight: 400;
-    height: 33px;
-    line-height: 33px;
-    border: 1px solid #e9e8e8;
-    border-top: 0;
-    background: #fff;
+  font-size: 13px;
+  color: #000;
+  font-weight: 400;
+  height: 33px;
+  line-height: 33px;
+  border: 1px solid #e9e8e8;
+  border-top: 0;
+  background: #fff;
 }
 .shoplinks>li:hover {
     
@@ -292,7 +292,7 @@ img:hover{
     bottom: -50px !important;
 }
 .carousel-indicators li.active{
-        background-color: #96C658 !important;
+    background-color: #96C658 !important;
 }
 .homeslider img{
     height:320px !important;
@@ -344,17 +344,17 @@ img:hover{
     color:#838383;
 }
 .header-fixed{
- display: none;
- z-index: 20;
- padding-top: 10px;
- position: fixed;
- top:0px;
- right: 0px;
- left: 0px;
- bottom: 0px;
- height: 50px;
- background-color: #fff;
- box-shadow: 0px 0px 10px  #888888;
+   display: none;
+   z-index: 20;
+   padding-top: 10px;
+   position: fixed;
+   top:0px;
+   right: 0px;
+   left: 0px;
+   bottom: 0px;
+   height: 50px;
+   background-color: #fff;
+   box-shadow: 0px 0px 10px  #888888;
 }
 .sidebanners{
     width: 100%;
@@ -550,7 +550,7 @@ img:hover{
     height: 36px;
     padding-left: 15px;
     padding-right: 15px;
-     border-width: 1px;
+    border-width: 1px;
     border-style: solid;
     border-color: #028f88;
 }
@@ -750,4 +750,30 @@ img:hover{
         margin-left:150px !important;
         margin-right:150px !important; 
     }
+}
+
+
+
+.carousel-control             { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:0px;background-image:none;}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev        { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev        { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev        { left: -25%; }    
 }
