@@ -8,6 +8,22 @@ class Signup extends CI_Controller {
 		$this->load->view('login');
 	}
 
+	public function CreateAccount(){
+
+		echo $this->input->post('fname');
+		echo $this->input->post('lname');
+		echo $this->input->post('email');
+		echo $this->input->post('pass');
+
+		exit;
+	}
+
+	public function Login(){
+		echo $this->input->post('email');
+		echo $this->input->post('pass');		
+
+		exit;
+	}
 }
 
 /* End of file signup.php */

@@ -638,7 +638,7 @@
                     <div class="div-welc1" style="margin-top:-5px;">
                         <div class="welc">Welcome Guest</div>
                             <div class="customer-links">
-                                <a href="">
+                                <a href="<?php echo base_url("signup") ?>">
                                     Login
                                 </a>
                                 <span class="or">|</span>

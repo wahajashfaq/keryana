@@ -1,12 +1,6 @@
 <?php include('landing_header.php') ?>
 
 
-
-
-
-
-
-
     
         <div class="container" style="padding-bottom:30px;">
             <div class="row">
@@ -25,7 +19,7 @@
             <div class="div-welc1">
                 <div class="welc">Welcome Guest</div>
                     <div class="customer-links">
-                        <a href="">
+                        <a href="<?php echo base_url('signup') ?>">
                             Login
                         <span class="or">|</span>
                         Signup
