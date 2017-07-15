@@ -18,7 +18,7 @@
                             <span>OR</span>
                             <div class= "line" id ="l2" style="float: right"></div>
                         </div>
-                        <a class="social_login facebook" href="">
+                        <a class="social_login facebook" href="<?php echo base_url();?>signup/fblogin">
                             <span>Sign in with Facebook</span><i class="fa fa-facebook fa-fw oxi_icon oxi_icon_facebook"></i>
                         </a>
                         <a class="social_login google" href="">
@@ -30,7 +30,7 @@
                     <h2>Register</h2>
                     <form method="post" action="signup/CreateAccount">  
                         <input type="text" name="fname" placeholder="First Name" id="customer_fn">
-                        <input type="text" name="lname" placeholder="Last Name" id="customer_ln">
+                        <input type="text" name="lname" placeholder="Last Name" id="<custo></custo>mer_ln">
                         <input type="email" name="email" placeholder="Email" id="customer_reg_email">
                         <input type="password" name="pass" placeholder="Password" id="customer_reg_password">
                         <input type="submit" class = "btn submit-btn" id="register" value="REGISTER">

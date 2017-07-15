@@ -12,6 +12,7 @@
 	},
 	"require": {
 		"php": ">=5.3.7",
+		"mpdf/mpdf": "^6.1",
 		"facebook/graph-sdk": "^5.5"
 	},
 	"suggest": {
