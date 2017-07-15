@@ -1,0 +1,112 @@
+
+        #footer-features{
+            background-color: #F9F9F9;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #494949;
+            border-bottom: 1px solid #DEDEDE;
+        }
+        .features-box{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-right: 1px solid #DEDEDE;
+            text-align: right;
+            min-height: 90px;
+        }
+        .features-box img{
+            float: left;
+        }
+        .features-box span{
+            vertical-align: top;
+        }
+        #footer-top{
+            background-color: #F9F9F9;
+            font-size: 13px;
+            padding-bottom: 10px;
+        }
+        #footer-top div{
+            padding-top: 5px;
+        }
+        .top-title{
+            color: #6e6e6e;
+            font-size: 13px;
+        }
+        .top-links a{
+            color: #6e6e6e;
+            font-size: 10px;
+        }
+        .email-box{
+            margin-left: 20px;
+            width: 200px;
+            height: 30px;
+        }
+        .subscribe{
+            background-color: #96C658;
+            color: white;
+            margin-top: 5px;
+            margin-left: 20px;
+            border: none;
+            height: 30px;
+        }
+        .aval{
+            margin-top:30px; 
+            margin-left: 21px;
+        }
+        .playstore{
+            margin-left: 20px;
+            width :200px;
+        }
+        #seperator{
+            width:1px;
+            height:100px;
+            background-color: #DEDEDE;
+            float:left;
+        }
+        #footer-bottom1{
+            background-color: #F1F1F1;
+        }
+        #bottom-container{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            
+        }
+        #payment{
+            font-weight: bold;
+            text-align: center;
+        }
+        #cod{
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .contact{
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .social-media{
+            padding: 3px;
+        }
+        .social-media-icons{
+            text-align: center
+        }
+        #footer-bottom2{
+            background-color: #96C658;
+            text-align: center;
+            color: white;
+            padding-top: 5px;
+        }
+        .nletter{
+            margin-left: 21px;
+        }
+        @media (min-width:0px) and (max-width:991px)
+        {
+            .nletter{margin-left: 0px;}
+            .email-box{margin-left: 0px;}
+        .subscribe{margin-left: 0px;}
+        .aval{margin-left: 0px;}
+        .playstore{margin-left: 0px;}
+        .contact span{   padding-left: 0px;}
+        .contact{padding-right: 0px;margin-top: 20px}
+        }

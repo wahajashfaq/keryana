@@ -1,0 +1,89 @@
+.dropleft {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    z-index: 16;
+}
+
+.dropleft:hover .droplbtn {
+   background: #92c83f;
+    color: #fff;
+}
+
+.dropleft:hover .fa-caret-ritght
+{
+    color: #fff;
+}
+
+.dropleft-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    left:100%;
+    top:0;
+    color:#313131;
+    background-color: #fff;
+    border: 1px solid #e9e8e8;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    min-width:315% ;
+    padding-top: 10px;
+    line-height: 25px;
+    z-index: 5;
+    height: 330px;
+}
+.dropleft-content a{
+    text-decoration: none;
+}
+.dropleft-content .head{
+    font-size: 14px;
+    font-weight: 700;
+    color:#313131;
+}
+.dropleft-content .head:hover{
+    color:#96C658;
+}
+.dropleft-content .item:hover{
+    color:#96C658;
+}
+
+.dropleft-content .item{
+    font-size: 14px;
+    color: #838383
+}
+
+.dropleft:hover .dropleft-content {
+    display: block;
+}
+
+.dropleft:hover  {
+    background: #92c83f;
+    color: #fff;
+}
+
+.dropleft:hover .fa-caret-right{
+    color: #fff;
+}
+
+
+
+.dropbtnf {
+    cursor: pointer;
+}
+
+.dropdownf {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentf {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    margin-top: -10px;
+}
+
+.dropdownf:hover .dropdown-contentf {
+    display: block;
+}
+
