@@ -40,7 +40,7 @@ class Signup extends CI_Controller {
 		$permissions = ['email','user_location','user_birthday','publish_actions']; 
 // For more permissions like user location etc you need to send your application for review
 
-		$loginUrl = $helper->getLoginUrl('http://www.localhost/signup/fbcallback', $permissions);
+		$loginUrl = $helper->getLoginUrl('http://www.localhost/keryana/signup/fbcallback', $permissions);
 
 		header("location: ".$loginUrl);
 	}
