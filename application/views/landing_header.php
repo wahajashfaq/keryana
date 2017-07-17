@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/landing.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sidebar.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
+
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
     
     <title>About Us</title>
 
@@ -640,9 +642,9 @@
                             <div class="customer-links">
                                 <a href="<?php echo base_url("signup") ?>">
                                     Login
-                                </a>
+                                
                                 <span class="or">|</span>
-                                <a>
+                                
                                 Signup
                                 </a>
                             </div>

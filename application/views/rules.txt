@@ -8,8 +8,8 @@ Field Names
 			Login Form
 	------------------------
 		
-		-email
-		-pass		
+		-l_email
+		-l_pass		
 
 	------------------------
 			Signup Form
