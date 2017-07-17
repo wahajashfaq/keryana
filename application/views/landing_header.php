@@ -24,7 +24,7 @@
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
     
-    <title>About Us</title>
+    <title>Landing</title>
 
     </head>
 
@@ -39,13 +39,15 @@
 
                <span style="margin-left:5px">8010 103 104 (10AM to 8PM)</span>
                <a href="">Where We Deliver</a>
-            </span>
+                </span>
                 </div>
                 <div class="col-md-6">
-                    <div class="pull-right">
-                    <diV style="float:left">Login | Signup</diV>
-                    <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="margin-left:10px">
-                    <span style="margin-left:5px">Free delivery for orders Rs. 500 and above</span>
+                    <div class="pull-right" style="widht:100%;">
+                        <div style="float:left">
+                        <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="float:left,margin-left:10px">
+                        <span style="margin-right:5px,float:left">Free delivery for orders Rs. 500 and above</span>
+                        </div>
+                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
                     </div>
                 </div>
             </div>
@@ -637,6 +639,7 @@
                     </form>
                 </div>
                 <div class="col-md-3" style="overflow-x: visible;">
+                    <!--
                     <div class="div-welc1" style="margin-top:-5px;">
                         <div class="welc">Welcome Guest</div>
                             <div class="customer-links">
@@ -648,7 +651,7 @@
                                 Signup
                                 </a>
                             </div>
-                    </div>
+                    </div>-->
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>

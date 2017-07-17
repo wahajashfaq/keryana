@@ -3,6 +3,38 @@ body{
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
+.hlogin{
+    color: #fff !important;
+    padding: 5px;
+    padding-right: 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #96C658;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.hlogin1{
+    color: #fff !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 100px;
+    background-color: #28a7db;
+    margin-left: -72px !important;
+    margin-right: 0px !important; 
+}
+
+.hlogin2{
+    color: #fff !important;
+    padding: 5px;
+    padding-left: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #242424;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
 
 .header-panel-top {
     width: 100%;
