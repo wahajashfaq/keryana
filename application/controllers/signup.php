@@ -141,6 +141,7 @@ class Signup extends CI_Controller {
     
         // User Information Retrival begins.....................................
 
+    $me = $response->getGraphUser();
     $this->load->model('customer');
     $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
 
