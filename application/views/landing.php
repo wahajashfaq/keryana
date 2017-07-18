@@ -5,7 +5,7 @@
     <div class="container" style="padding-bottom:30px;">
         <div class="row">
         <div class="col-md-3">
-            <img src="assets/images/mylogo.jpg" alt="logo" style="width:250px;height:63px">
+            <img src=" <?php echo base_url('assets/images/mylogo.jpg'); ?> " alt="logo" style="width:250px;height:63px">
         </div>
         <div class="col-md-6">
             <form class="">
