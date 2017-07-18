@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
+
     
     <title>Landing</title>
 

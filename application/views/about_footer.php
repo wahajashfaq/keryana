@@ -185,4 +185,6 @@
 
     <script type="text/javascript" src="<?php echo base_url('assets/js/cart.js') ?>"></script>
     
+
+    
 </html>
