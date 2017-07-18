@@ -30,9 +30,12 @@
                 <a class="social_login facebook" href="<?php echo base_url();?>signup/fblogin">
                     <span>Sign in with Facebook</span><i class="fa fa-facebook fa-fw oxi_icon oxi_icon_facebook"></i>
                 </a>
-                <a class="social_login google" href="">
-                    <span>Sign in with Google +</span><i class="fa fa-google fa-fw oxi_icon oxi_icon_google"></i>
-                </a>
+                
+                <div class="g-signin2" data-onsuccess="onSignIn" spellcheck="width:100%">
+                    <a class="social_login google" href="#">
+                        <span>Sign in with Google +</span><i class="fa fa-google fa-fw oxi_icon oxi_icon_google"></i>
+                    </a>
+                </div>
             </form>
         </div>
         <div class="col-sm-6" id="regside">
@@ -53,6 +56,24 @@
 <div id="backtotop" class="container-fluid">
     <a href="#top"><div class="backtotop"></div></a>
 </div>
-
-
+<script>
+    function sendgmail_data() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          
+        }
+      };
+      xhttp.open("GET", "signup.php?fname=Henry&lname=Ford", true);
+      xhttp.send();
+    }
+    function onSignIn(googleUser) {
+          var profile = googleUser.getBasicProfile();
+          console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+          console.log('Name: ' + profile.getName());
+          console.log('Image URL: ' + profile.getImageUrl());
+          console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+          redirect('http:google.com');
+    }
+</script>
 <?php include('about_footer.php') ?>

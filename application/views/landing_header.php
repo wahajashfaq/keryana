@@ -3,10 +3,12 @@
 	<head>
          <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="google-signin-client_id" content="746867537974-de9u4f9gq2em1giqa8qe0omc3s7k3hce.apps.googleusercontent.com">
     
+<script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css') ?> ">
     
 
@@ -629,19 +631,19 @@
                 </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <form class="">
                     <div>
                     <div class="search-box" style="margin-top:0px">
                         <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
                     </div>
                     </div>
-                    <input type="submit" class="sbutn" value="Search" style="margin-top:0px">
+                    <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
                     </form>
                 </div>
-                <div class="col-md-3" style="overflow-x: visible;">
-                    <!--
-                    <div class="div-welc1" style="margin-top:-5px;">
+                <div class="col-md-4" style="overflow-x: visible;">
+                    
+                    <!--div class="div-welc1" style="margin-top:-5px;">
                         <div class="welc">Welcome Guest</div>
                             <div class="customer-links">
                                 <a href="<?php echo base_url("signup") ?>">
@@ -652,7 +654,8 @@
                                 Signup
                                 </a>
                             </div>
-                    </div>-->
+                    </div-->
+                    <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left:-86px!important">or</span></diV>
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>

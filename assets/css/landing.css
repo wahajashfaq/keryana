@@ -679,6 +679,9 @@ img:hover{
 }
 @media (min-width:0px) and (max-width:991px)
 {
+    .contactform{
+        right: 0px;
+    }
     .xs-hidden{
         display: none;
     }
