@@ -52,8 +52,6 @@ class Signup extends CI_Controller {
 
     if ($this->form_validation->run() == TRUE)
     {
-
-
       $this->load->model('customer');
       $login_id = $this->customer->login($this->input->post());
 
@@ -68,7 +66,6 @@ class Signup extends CI_Controller {
           // Incorrect username/password
         $this->session->set_flashdata('error', 'Invalid username/password');
         return redirect('signup');
-
       }
 
     } 
@@ -142,8 +139,7 @@ class Signup extends CI_Controller {
       exit;
     }
     
-        // User Information Retrival begins................................................
-    $me = $response->getGraphUser();
+        // User Information Retrival begins.....................................
 
     $this->load->model('customer');
     $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
