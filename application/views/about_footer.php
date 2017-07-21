@@ -83,8 +83,16 @@
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-4" id="payment">
-                        Payment Method
+                        <center>Payment Method</center>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <center>
                         <a href=""><i class="fa fa-money" id="cod" aria-hidden="true"></i><span style="color:#333;font-weight:900;margin-left:5px">Cash On Delivery</span></a>
+                        </center>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
