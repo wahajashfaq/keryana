@@ -747,6 +747,9 @@ img:hover{
     .product{
         border: none;
     }
+    .qview{
+        left:45% !important;
+    }
 }
 @media (min-width:0px) and (max-width:500px){
     .dropdown-content{
