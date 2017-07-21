@@ -677,6 +677,22 @@ img:hover{
     background-color: #e9e8e8;
     width: 100%;
 }
+
+.product-search-container{
+    position: fixed;
+    max-height:  500px;
+    background: #fff;
+    width: 100% !important;
+    box-shadow:  0 0 30px  #888888 !important;
+    top:110px;
+    z-index: 90;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#product-search{
+    display: none;
+}
 @media (min-width:0px) and (max-width:991px)
 {
     .contactform{
@@ -811,4 +827,27 @@ img:hover{
     .carousel-inner .active.left { left: -25%; }
     .carousel-inner .next        { left:  25%; }
     .carousel-inner .prev        { left: -25%; }    
+}
+
+@media(min-width:0px) and (max-width:1000px)
+{
+    .product-search-container{
+        width: 100% !important;
+    }
+}
+
+@media (min-width:0px) and (max-width:991px)
+{
+    .product-search-container{
+        top: 0px;
+        z-index: 1000;
+        min-height: 100%;
+    }
+}
+
+@media (min-width:992px)
+{
+    .dhidden{
+        display: none;
+    }
 }

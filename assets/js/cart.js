@@ -99,6 +99,7 @@
                       $('.header-fixed').fadeIn();
                     } else {
                       $('.header-fixed').fadeOut();
+                       $('#product-search').css('top','110px');
                     }
                    if(y>350)
                    {

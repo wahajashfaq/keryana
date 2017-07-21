@@ -139,8 +139,11 @@
                     var y = $(this).scrollTop();
                     if (y > 150) {
                       $('.header-fixed').fadeIn();
+                       $('#product-search').css('top','60px');
+                        console.log('hello');
                     } else {
                       $('.header-fixed').fadeOut();
+                      $('#product-search').css('top','110px');
                     }
                    if(y>350)
                    {
