@@ -28,4 +28,14 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('about');	
 	}
+    
+    public function category(){
+
+		$this->load->view('category');	
+	}
+    
+    public function product(){
+
+		$this->load->view('product');	
+	}
 }
