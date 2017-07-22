@@ -9,10 +9,6 @@
         </div>
         <div class="col-md-6">
             <form class="">
-                <div class="search-box">
-                    <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
-                </div>
-                <input type="submit" class="sbutn" value="Search">
             <div class="search-box">
                 <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
             </div>
