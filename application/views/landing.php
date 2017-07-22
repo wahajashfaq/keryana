@@ -9,10 +9,17 @@
         </div>
         <div class="col-md-6">
             <form class="">
+<<<<<<< HEAD
                 <div class="search-box">
                     <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
                 </div>
                 <input type="submit" class="sbutn" value="Search">
+=======
+            <div class="search-box">
+                <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+            </div>
+            <!-- input type="submit" class="sbutn" value="Search"-->
+>>>>>>> origin/master
             </form>    
         </div>
         <div class="col-md-3" style="overflow-x: visible;">
