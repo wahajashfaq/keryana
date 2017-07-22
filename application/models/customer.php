@@ -39,6 +39,7 @@ class Customer extends CI_Model {
 	public function login($post_data){
 
 	
+		$this->db->where('Visibility',1);
 		$this->db->where('Email', $post_data["l_email"]); 
 		$this->db->where('Password', md5($post_data["l_pass"])); 
 		$query = $this->db->get('customers');

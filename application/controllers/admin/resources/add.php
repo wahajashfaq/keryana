@@ -108,6 +108,25 @@ class Add extends CI_Controller {
 		}
 
 	}
+
+
+	public function product(){
+
+
+	}
+
+	public function first_category(){
+
+		
+	}
+
+	public function second_category(){
+
+	}
+
+	public function third_category(){
+
+	}
 }
 
 /* End of file add.php */

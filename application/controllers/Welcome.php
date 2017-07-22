@@ -44,7 +44,7 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('product');	
 	}
-    
+
     public function home(){
 
 		$this->load->view('home');	
