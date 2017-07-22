@@ -21,9 +21,15 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('landing');
+		
 	}
 
 
+	public function test(){
+		$this->load->model('images');
+		$this->images->getBannerOne();
+		
+	}
 	public function about(){
 
 		$this->load->view('about');	

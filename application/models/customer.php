@@ -26,7 +26,8 @@ class Customer extends CI_Model {
 		$this->db->set('Visibility', 1); 
 
 		$this->db->insert('customers'); 
-
+		echo $this->db->insert_id();
+		
 		print_r($post_data);
 		exit;
 		echo "Sign up Model";
