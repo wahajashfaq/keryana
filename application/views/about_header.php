@@ -12,11 +12,10 @@
             <div class="search-box">
                 <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
             </div>
-            <input type="submit" class="sbutn" value="Search">
             </form>    
         </div>
         <div class="col-md-3" style="overflow-x: visible;">
-            <div class="div-welc1">
+            <!-- div class="div-welc1">
                 <div class="welc">Welcome Guest</div>
                     <div class="customer-links">
                         <a href="<?php echo base_url('signup') ?>">
@@ -25,7 +24,7 @@
                         Signup
                     </a>    
                     </div>
-            </div>
+            </div -->
             <div class="dropdown" style="float:right;">
               <button class="dropbtn div-welc2">
                   <center><img src="<?php echo base_url('assets/images/carticon.png')?>
