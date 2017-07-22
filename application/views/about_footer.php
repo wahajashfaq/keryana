@@ -191,6 +191,18 @@
 
             
         });
+        $('#search').on('input', function() {
+           
+            var value=$('#search').val();
+            if(value.length>2)
+            {
+                $('#product-search').css('display','block');
+            }
+            else
+            {
+                $('#product-search').css('display','none');
+            }
+        });
     </script>
 
 
