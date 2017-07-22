@@ -23,11 +23,11 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/landing.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sidebar.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
-
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/home_header.css') ?>">
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
 
     
-    <title>Landing</title>
+    <title>HOME</title>
 
     </head>
 
@@ -50,7 +50,23 @@
                         <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="float:left,margin-left:10px">
                         <span style="margin-right:5px,float:left">Free delivery for orders Rs. 500 and above</span>
                         </div>
-                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
+                        <diV style="float:right;margin-right:50px">
+                         <ul>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                    </li>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </li>
+                        </ul>
+                        </diV>
                     </div>
                 </div>
             </div>
@@ -655,7 +671,22 @@
                                 </a>
                             </div>
                     </div-->
-                    <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left:-86px!important">or</span></diV>
+                    <diV style="float:left;margin-right:50px;margin-top:5px">
+                        <ul>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                    </li>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </li>
+                        </ul></diV>
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>

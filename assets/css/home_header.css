@@ -1,0 +1,24 @@
+.header-img{
+    border-style: solid;
+    border-color: #96C658;
+    background-color: #96C658;
+    border-radius: 12px;
+    color: #fff !important;
+    border-width: 2px;
+    padding: 2px 2px 2px 2px;
+    text-decoration: none !important;
+}
+
+.dropdown-toggle{
+    text-decoration-line: none !important;
+}
+.dropdown-menu{
+    color: #28a7db !important;
+}
+
+.dropdown-menu a{
+    color: #96C658 !important;
+}
+.dropdown-menu a i{
+    color: #28a7db !important;
+}
