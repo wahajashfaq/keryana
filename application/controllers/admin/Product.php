@@ -12,13 +12,28 @@ class Product extends CI_Controller {
 	}
 
 
+	public function add2(){
+
+		$data = array(
+			'category_name'=> $this->input->post('category_name'),
+			'category_id'=> $this->input->post('category_ID')
+			);
+
+
+			echo $data["catergory_name"];
+			$this->load->model('Categories');
+			$this->Categories->addSecondCategory($data);
+
+
+	}
+
 	public function Add_Category(){
 
 		$type = $this->input->post('category_type');
 
 		$data = array(
-			'catergory_name'=> $this->input->post('category'),
-			'$category_id'= $this->input->post('category_ID')
+			'category_name'=> $this->input->post('category'),
+			'category_id'=> $this->input->post('category_ID')
 			);
 
 		if($type=="first"){

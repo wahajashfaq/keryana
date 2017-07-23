@@ -4,15 +4,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Categories extends CI_Model {
 
 
-
-
 	public function getFirstCategoryID($enc_id){  // Where EncryptedID is given
 
 			$this->db->where('EncryptedId',$enc_id);
 			$query = $this->db->get('first_category');
 
 			if($query->num_rows()){ 
-				return $query->result()->ID;
+				return $query->row()->ID;
 			}	
 			else {
 				return FALSE;
@@ -26,7 +24,7 @@ class Categories extends CI_Model {
 			$query = $this->db->get('second_category');
 
 			if($query->num_rows()){ 
-				return $query->result()->ID;
+				return $query->row()->ID;
 			}	
 			else {
 				return FALSE;
@@ -34,14 +32,10 @@ class Categories extends CI_Model {
 	}
 
 
-
-
-
 	public function getFirstCategory(){
 
 		$this->db->where('Visibility',1);
 		$query = $this->db->get('first_category');
-
 		
 		if($query->num_rows()){ 
 			return $query->result();
@@ -56,8 +50,6 @@ class Categories extends CI_Model {
 
 		$this->db->where('Visibility',1);
 		$query = $this->db->get('second_category');
-
-
 		
 		if($query->num_rows()){ 
 			return $query->result();
@@ -91,7 +83,7 @@ class Categories extends CI_Model {
 		$time = now('Asia/Karachi');
 		
 
-		$this->db->set('Name', $post_data["catergory_name"]); 
+		$this->db->set('Name', $post_data["category_name"]); 
 		$this->db->set('CreationDate', mdate($datestring, $time));
 		$this->db->set('ModifiedDate', mdate($datestring, $time));
 		$this->db->set('Visibility', 1); 
@@ -117,9 +109,10 @@ class Categories extends CI_Model {
 		$time = now('Asia/Karachi');
 		
 
-		$this->db->set('Name', $post_data["catergory_name"]); 
+		$this->db->set('Name', $post_data["category_name"]); 
 		$this->db->set('CreationDate', mdate($datestring, $time));
 		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('FirstCategoryID', $this->getFirstCategoryID($post_data["category_id"]));
 		$this->db->set('Visibility', 1); 
 
 		$this->db->insert('second_category'); 
@@ -143,9 +136,10 @@ class Categories extends CI_Model {
 		$time = now('Asia/Karachi');
 		
 
-		$this->db->set('Name', $post_data["catergory_name"]); 
+		$this->db->set('Name', $post_data["category_name"]); 
 		$this->db->set('CreationDate', mdate($datestring, $time));
 		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('SecondCategoryID', $this->getSecondCategoryID($post_data["category_id"]));
 		$this->db->set('Visibility', 1); 
 
 		$this->db->insert('third_category'); 

@@ -107,7 +107,7 @@
 				if(second_category!=''){
 					jQuery.ajax({
 						type: "POST",
-						url: "<?php echo base_url(); ?>" + "admin/product/add",
+						url: "<?php echo base_url(); ?>" + "admin/product/Add_Category",
 						dataType: 'json',
 						data: {category : second_category , category_type:'second', category_ID : cat_ID},
 						success: function(res) {
@@ -131,7 +131,7 @@
 				if(third_category!=''){
 					jQuery.ajax({
 						type: "POST",
-						url: "<?php echo base_url(); ?>" + "admin/product/add",
+						url: "<?php echo base_url(); ?>" + "admin/product/Add_Category",
 						dataType: 'json',
 						data: {category : third_category,category_type:'third', category_ID : cat_ID},
 						success: function(res) {
