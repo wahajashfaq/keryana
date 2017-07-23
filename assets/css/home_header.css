@@ -18,6 +18,7 @@
 
 .dropdown-menu a{
     color: #96C658 !important;
+    border-left: none !important;
 }
 .dropdown-menu a i{
     color: #28a7db !important;

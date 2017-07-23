@@ -1246,6 +1246,16 @@
 <br><br>
 
 <div class="row">
+            <div class="col-md-6">
+                <img class="imgbanner3" src="assets/images/home_slider_image_1.jpg">
+            </div>
+            <div class="col-md-6">
+                <img class="imgbanner3" src="assets/images/home_slider_image_2.jpg">
+            </div>
+</div>
+<br><br>    
+    
+<div class="row">
     <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
         <div class="hline"></div>
         <div class="hline" style="margin-top:2px"></div>
@@ -1446,236 +1456,7 @@
     <a href="#top"><div class="backtotop"></div></a>
 </div>
 
-<div id="message" class="container-fluid">
-    <div class="message"><i class="fa fa-comment" aria-hidden="true"></i><span class="messagetext">Contact Us</span></div>
-</div>
 
-<div id="contactform" class="container-fluid">
-    <div class="contactform">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="" style="float:left">Contact Us</div><div style="float:right"><i id="cclose" class="fa fa-times-circle" style="float:right" aria-hidden="true" ></i></div>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-md-12">
-            <center><input type="email" id="contact_email" class="input-lg cinput"  placeholder="Email"></center>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-md-12">
-                <center><input type="number" id="contact_number" class="input-lg cinput"  placeholder="Phone number"></center>
-            </div>
-        </div><br>
-        <div class="row">
-            <div class="col-md-12">
-                <center><input type="text" id="contact_subject" class="input-lg cinput"  placeholder="subject"></center>
-            </div>
-<<<<<<< HEAD
-        </div>
-        <br><br>
-        
-         <div class="row">
-            <div class="col-md-6">
-                <img class="imgbanner3" src="assets/images/home_slider_image_1.jpg">
-            </div>
-            <div class="col-md-6">
-                <img class="imgbanner3" src="assets/images/home_slider_image_2.jpg">
-            </div>
-        </div>
-        <br><br>
-        
-=======
-        </div><br>
->>>>>>> origin/master
-        <div class="row">
-            <div class="col-md-12">
-                <center><textarea class="input-lg cinput" id="contact_query"  placeholder="State Your Query"></textarea></center>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-<<<<<<< HEAD
-                
-                <div class="carousel slide carousel1" id="myCarousel5">
-                  <div class="carousel-inner">
-                    <div class="item active">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div  class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <select class="qselect">
-                                  <option>5 Kg</option>
-                                  <option>10 Kg</option>
-                              </select>
-                              <br><br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
-                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
-                              <br><br><div>Product name</div>
-                              </div><br>
-                              <button class="qview">QUICK VIEW</button>
-                              <div class="qfix">5 Kg</div>
-                              <br>
-                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
-                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                          </center>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#myCarousel5" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                  <a class="right carousel-control" href="#myCarousel5" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        
-        
-        
-    </div>
     
     <div id="backtotop" class="container-fluid">
         <a href="#top"><div class="backtotop"></div></a>
@@ -1685,7 +1466,7 @@
     
             <div class="row">
                 <div class="col-md-12">
-                    <i class="fa fa-times-circle" aria-hidden="true" style="float:right;color:#28a7db;margin-top:5px;font-size:25px"></i>
+                    <i class="fa fa-times-circle" id="sclose" aria-hidden="true" style="float:right;color:#28a7db;margin-top:5px;font-size:25px"></i>
                 </div>
             </div>
             <div class="row dhidden">
@@ -1824,63 +1605,21 @@
                     <center><input type="text" class="input-lg cinput"  placeholder="subject"></center>
                 </div>
             </div><br>
+            
             <div class="row">
                 <div class="col-md-12">
                 <center><textarea class="input-lg cinput"  placeholder="State Your Query"></textarea></center>
                 </div>
             </div>
             <br>
+            
             <div class="row">
                 <div class="col-md-12">
                 <center><button class="btn-lg sbtn">Submit</button></center>
                 </div>
-=======
-                <center><input id="contact_btn" type="submit" class="btn-lg sbtn">Submit</input></center>
->>>>>>> origin/master
             </div>
         </div>
     </div>
-</div>
 
 
-
-<script type="text/javascript">
-// Ajax post
-    $(document).ready(function() {
-        $("#contact_btn").click(function(event) {
-
-            event.preventDefault();
-            var contact_email = $("input#contact_email").val();
-            var contact_number = $("input#contact_number").val();
-            var contact_subject = $("input#contact_subject").val();
-            var contact_query = $("textarea#contact_query").val();
-            alert(contact_query);
-            jQuery.ajax({
-                type: "POST",
-                url: "<?php echo base_url(); ?>" + "/contactus/contact_us",
-                dataType: 'json',
-                data: { c_email: contact_email, 
-                        c_number: contact_number,
-                        c_subject : contact_subject,
-                        c_query : contact_query
-                },
-                success: function(res) {
-
-        alert("OK");
-                    if (res)
-                    {
-                    // Show Entered Value
-                    /*
-                    jQuery("div#result").show();
-                    jQuery("div#value").html(res.username);
-                    jQuery("div#value_pwd").html(res.pwd);
-                    */
-
-                    alert(res.c_number);
-                }
-            }
-        });
-        });
-    });
-</script>
 <?php include('about_footer.php'); ?>        

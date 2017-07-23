@@ -148,7 +148,6 @@
                     if (y > 150) {
                       $('.header-fixed').fadeIn();
                        $('#product-search').css('top','60px');
-                        console.log('hello');
                     } else {
                       $('.header-fixed').fadeOut();
                       $('#product-search').css('top','110px');
@@ -162,8 +161,9 @@
                        $('.backtotop').fadeOut();
                    }
                }
+                
+                
             });
-            
            
             
             $('body').scrollspy({target: "#backtotop", offset: 50});
@@ -202,9 +202,62 @@
             {
                 $('#product-search').css('display','none');
             }
-        });
+        });    
     </script>
+    <script type="text/javascript">
+// Ajax post
+    $(document).ready(function() {
+        $("#contact_btn").click(function(event) {
 
+            event.preventDefault();
+            var contact_email = $("input#contact_email").val();
+            var contact_number = $("input#contact_number").val();
+            var contact_subject = $("input#contact_subject").val();
+            var contact_query = $("textarea#contact_query").val();
+            alert(contact_query);
+            jQuery.ajax({
+                type: "POST",
+                url: "<?php echo base_url(); ?>" + "/contactus/contact_us",
+                dataType: 'json',
+                data: { c_email: contact_email, 
+                        c_number: contact_number,
+                        c_subject : contact_subject,
+                        c_query : contact_query
+                },
+                success: function(res) {
+
+        alert("OK");
+                    if (res)
+                    {
+                    // Show Entered Value
+                    /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    alert(res.c_number);
+                }
+            }
+        });
+        });
+        $('#message').click(function(){
+                $('#message1').css('display','none');
+                $('#contactform').css('display','block');
+            });
+            
+            $('#cclose').click(function(){
+                $('#contactform').css('display','none');
+                $('#message1').css('display','block');
+            });
+            $('#sclose').click(function(){
+                $('#product-search').css('display','none');
+            });
+
+    });
+    
+  
+</script>
 
     <script type="text/javascript" src="<?php echo base_url('assets/js/cart.js') ?>"></script>
     
