@@ -20,9 +20,14 @@ class ContactUs extends CI_Controller {
 			);
 
 //Either you can print value or you can send value to database
-		$this->load->model('contact');
-		$this->contact->addContactData($data);
-		echo json_encode($data);
+
+		if($data["c_email"]!="" && $data["c_subject"]!="" && $data["c_query"!=""]){
+			$this->load->model('contact');
+			$this->contact->addContactData($data);
+			echo json_encode($data);
+		} else {
+			echo json_encode("Please fill all necessay fields");
+		}
 		//$this->contact->addContactData();
 	}
 

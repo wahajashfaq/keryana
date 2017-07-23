@@ -26,10 +26,11 @@
 
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
 
+
     
     <title>Landing</title>
-
-    </head>
+        
+        </head>
 
 
 <body>

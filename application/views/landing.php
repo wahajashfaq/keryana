@@ -1592,30 +1592,30 @@
             </div><br>
             <div class="row">
                 <div class="col-md-12">
-                    <center><input type="email" class="input-lg cinput"  placeholder="Email"></center>
+                    <center><input type="email" id="contact_email" class="input-lg cinput"  placeholder="Email"></center>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-md-12">
-                    <center><input type="number" class="input-lg cinput"  placeholder="Phone number"></center>
+                    <center><input type="number" id="contact_number" class="input-lg cinput"  placeholder="Phone number"></center>
                 </div>
             </div><br>
             <div class="row">
                 <div class="col-md-12">
-                    <center><input type="text" class="input-lg cinput"  placeholder="subject"></center>
+                    <center><input type="text" id="contact_subject" class="input-lg cinput"  placeholder="subject"></center>
                 </div>
             </div><br>
             
             <div class="row">
                 <div class="col-md-12">
-                <center><textarea class="input-lg cinput"  placeholder="State Your Query"></textarea></center>
+                <center><textarea class="input-lg cinput" id="contact_query"  placeholder="State Your Query"></textarea></center>
                 </div>
             </div>
             <br>
             
             <div class="row">
                 <div class="col-md-12">
-                <center><button class="btn-lg sbtn">Submit</button></center>
+                <center><button id="contact_btn" class="btn-lg sbtn">Submit</button></center>
                 </div>
             </div>
         </div>

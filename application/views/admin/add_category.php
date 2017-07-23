@@ -9,74 +9,143 @@
 </head>
 <body>
 
-	<input type="text"  name="first_category" id="first_category" placeholder="First category">
-	<input type="submit" id="btn_first">
+
+	<fieldset>
+		<legend>Add First Category</legend>
+
+		<input type="text"  name="first_category" id="first_category" placeholder="First category">
+		<input type="submit" id="btn_first">
+
+	</fieldset>
+
+
+	<fieldset>
+		<legend>Add Second Category</legend>
+
+		<select id="f_cat" >
+
+			<?php 
+			foreach ($first_categories as $row) { ?>
+			# code...
+
+			<option value="<?php echo $row->EncryptedId ?>"><?php echo $row->Name ?></option>
+			<?php
+		}
+		?>
+	</select>
+
+
 	<input type="text" name="second_category"  id="second_category" placeholder="Second category">
-	<input type="submit" id="btn_second">
-	<input type="text" name="third_category" id="third_category" placeholder="Third category">
-	<input type="submit" id="btn_third">
+	<input type="submit" id="btn_second">	
+</fieldset>
+
+<fieldset>
+	<legend>Add Third Category</legend>
+
+	
+	<select id="s_cat">
+
+		<?php 
+		foreach ($second_categories as $row) { ?>
+		# code...
+
+		<option value="<?php echo $row->EncryptedId ?>"><?php echo $row->Name ?></option>
+		<?php
+	}
+	?>
+</select>
+
+<input type="text" name="third_category" id="third_category" placeholder="Third category">
+<input type="submit" id="btn_third">
+</fieldset>
 
 
 
 
-	<script type="text/javascript">
+
+
+
+<script type="text/javascript">
 
 		// Ajax post
+
+
 		$(document).ready(function() {
 			$("#btn_first").click(function(event) {
+
+				var cat_ID = $('#f_cat').val();
+				alert(cat_ID);
+
 				event.preventDefault();
 				var first_category = $("input#first_category").val();
-				jQuery.ajax({
-					type: "POST",
-					url: "<?php echo base_url(); ?>" + "admin/product/Add_Category",
-					dataType: 'json',
-					data: {category : first_category,category_type:'first'},
-					success: function(res) {
-						if (res)
-						{
+
+				if(first_category!=''){
+
+					jQuery.ajax({
+						type: "POST",
+						url: "<?php echo base_url(); ?>" + "admin/product/Add_Category",
+						dataType: 'json',
+						data: {category : first_category,category_type:'first' , category_ID : cat_ID},
+						success: function(res) {
+							if (res)
+							{
 							// Show Entered Value
-						alert(res);
+							alert(res);
 						}
 					}
 				});
+				}
 			});
 
 			$("#btn_second").click(function(event) {
+
+				var cat_ID = $('#f_cat').val();
+				alert(cat_ID);
+
 				event.preventDefault();
 				var second_category = $("input#second_category").val();
-				jQuery.ajax({
-					type: "POST",
-					url: "<?php echo base_url(); ?>" + "admin/product/add",
-					dataType: 'json',
-					data: {category : second_category , category_type:'second'},
-					success: function(res) {
-						if (res)
-						{
+				if(second_category!=''){
+					jQuery.ajax({
+						type: "POST",
+						url: "<?php echo base_url(); ?>" + "admin/product/add",
+						dataType: 'json',
+						data: {category : second_category , category_type:'second', category_ID : cat_ID},
+						success: function(res) {
+							if (res)
+							{
 							// Show Entered Value
-						alert(res);
+							alert(res);
 						}
 					}
 				});
+				}
 			});
 
 			$("#btn_third").click(function(event) {
+
+				var cat_ID = $('#s_cat').val();
+				alert(cat_ID);
+
 				event.preventDefault();
 				var third_category = $("input#third_category").val();
-				jQuery.ajax({
-					type: "POST",
-					url: "<?php echo base_url(); ?>" + "admin/product/add",
-					dataType: 'json',
-					data: {category : third_category,category_type:'third'},
-					success: function(res) {
-						if (res)
-						{
+				if(third_category!=''){
+					jQuery.ajax({
+						type: "POST",
+						url: "<?php echo base_url(); ?>" + "admin/product/add",
+						dataType: 'json',
+						data: {category : third_category,category_type:'third', category_ID : cat_ID},
+						success: function(res) {
+							if (res)
+							{
 							// Show Entered Value
-						alert(res);
+							alert(res);
 						}
 					}
 				});
+				}
 			});
+
 		});
-</script>
+	</script>
 </body>
 </html>

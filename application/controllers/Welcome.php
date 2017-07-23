@@ -49,4 +49,9 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('home');	
 	}
+
+	public function popup(){
+		$this->load->view('popup');	
+
+	}
 }

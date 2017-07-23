@@ -5,7 +5,10 @@ class Product extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('admin/add_category');
+		$this->load->model('Categories');
+		$first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$this->load->view('admin/add_category',['first_categories'=>$first_categories,'second_categories'=>$second_categories]);	
 	}
 
 
@@ -14,7 +17,8 @@ class Product extends CI_Controller {
 		$type = $this->input->post('category_type');
 
 		$data = array(
-			'catergory_name'=> $this->input->post('category')
+			'catergory_name'=> $this->input->post('category'),
+			'$category_id'= $this->input->post('category_ID')
 			);
 
 		if($type=="first"){

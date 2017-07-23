@@ -214,7 +214,6 @@
             var contact_number = $("input#contact_number").val();
             var contact_subject = $("input#contact_subject").val();
             var contact_query = $("textarea#contact_query").val();
-            alert(contact_query);
             jQuery.ajax({
                 type: "POST",
                 url: "<?php echo base_url(); ?>" + "/contactus/contact_us",
@@ -226,7 +225,6 @@
                 },
                 success: function(res) {
 
-        alert("OK");
                     if (res)
                     {
                     // Show Entered Value
@@ -236,7 +234,7 @@
                     jQuery("div#value_pwd").html(res.pwd);
                     */
 
-                    alert(res.c_number);
+                    alert(res);
                 }
             }
         });

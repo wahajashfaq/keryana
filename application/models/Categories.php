@@ -5,14 +5,45 @@ class Categories extends CI_Model {
 
 
 
+
+	public function getFirstCategoryID($enc_id){  // Where EncryptedID is given
+
+			$this->db->where('EncryptedId',$enc_id);
+			$query = $this->db->get('first_category');
+
+			if($query->num_rows()){ 
+				return $query->result()->ID;
+			}	
+			else {
+				return FALSE;
+			}		
+	}
+
+
+	public function getSecondCategoryID($enc_id){  // Where EncryptedID is given
+
+			$this->db->where('EncryptedId',$enc_id);
+			$query = $this->db->get('second_category');
+
+			if($query->num_rows()){ 
+				return $query->result()->ID;
+			}	
+			else {
+				return FALSE;
+			}		
+	}
+
+
+
+
+
 	public function getFirstCategory(){
 
 		$this->db->where('Visibility',1);
 		$query = $this->db->get('first_category');
 
 		
-		if($query->num_rows()){ // Successfully Logged in
-			print_r($query->row());
+		if($query->num_rows()){ 
 			return $query->result();
 		}	
 		else {
@@ -20,14 +51,15 @@ class Categories extends CI_Model {
 		}	
 	}
 
+
 	public function getSecondCategory(){
 
 		$this->db->where('Visibility',1);
 		$query = $this->db->get('second_category');
 
+
 		
-		if($query->num_rows()){ // Successfully Logged in
-			print_r($query->row());
+		if($query->num_rows()){ 
 			return $query->result();
 		}	
 		else {
@@ -51,6 +83,8 @@ class Categories extends CI_Model {
 	}
 
 	public function addFirstCategory($post_data){
+
+
 
 		$this->load->helper('date');
 		$datestring = '%Y-%m-%d %h:%i:%s';
