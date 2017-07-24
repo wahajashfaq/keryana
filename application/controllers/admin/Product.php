@@ -8,6 +8,7 @@ class Product extends CI_Controller {
 		$this->load->model('Categories');
 		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
+		
 		$this->load->view('admin/add_category',['first_categories'=>$first_categories,'second_categories'=>$second_categories]);	
 	}
 

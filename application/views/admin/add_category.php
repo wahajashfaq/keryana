@@ -22,13 +22,12 @@
 	<fieldset>
 		<legend>Add Second Category</legend>
 
+		
 		<select id="f_cat" >
 
 			<?php 
 			foreach ($first_categories as $row) { ?>
-			# code...
-
-			<option value="<?php echo $row->EncryptedId ?>"><?php echo $row->Name ?></option>
+			<option value="<?php echo $row["EncryptedId"] ?>"><?php echo $row["Name"]; ?></option>
 			<?php
 		}
 		?>
@@ -47,9 +46,8 @@
 
 		<?php 
 		foreach ($second_categories as $row) { ?>
-		# code...
 
-		<option value="<?php echo $row->EncryptedId ?>"><?php echo $row->Name ?></option>
+		<option value="<?php echo $row["EncryptedId"] ?>"><?php echo $row["Name"] ?></option>
 		<?php
 	}
 	?>
@@ -74,7 +72,6 @@
 			$("#btn_first").click(function(event) {
 
 				var cat_ID = $('#f_cat').val();
-				alert(cat_ID);
 
 				event.preventDefault();
 				var first_category = $("input#first_category").val();
@@ -90,17 +87,18 @@
 							if (res)
 							{
 							// Show Entered Value
-							alert(res);
+							alert("Added");
 						}
 					}
 				});
 				}
+
+							location.reload();
 			});
 
 			$("#btn_second").click(function(event) {
 
 				var cat_ID = $('#f_cat').val();
-				alert(cat_ID);
 
 				event.preventDefault();
 				var second_category = $("input#second_category").val();
@@ -114,17 +112,18 @@
 							if (res)
 							{
 							// Show Entered Value
-							alert(res);
+							alert("Added");
 						}
 					}
 				});
 				}
+
+							location.reload();
 			});
 
 			$("#btn_third").click(function(event) {
 
 				var cat_ID = $('#s_cat').val();
-				alert(cat_ID);
 
 				event.preventDefault();
 				var third_category = $("input#third_category").val();
@@ -138,11 +137,13 @@
 							if (res)
 							{
 							// Show Entered Value
-							alert(res);
+							alert("Added");
 						}
 					}
 				});
 				}
+
+							location.reload();
 			});
 
 		});

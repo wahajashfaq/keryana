@@ -20,7 +20,60 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('landing');
+
+		$this->load->model('Categories');
+		$first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$third_categories = $this->Categories->getThirdCategory();
+
+		
+		echo "------------First---------------------";
+
+		for ($i=0; $i <count($second_categories); $i++) { 
+				$second_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($third_categories); $j++) { 
+				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
+
+					array_push($second_categories[$i]["SUB CATEGORIES"], $third_categories[$j]);
+
+				}
+			}
+		}
+
+
+
+		for ($i=0; $i <count($first_categories); $i++) { 
+				$first_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($second_categories); $j++) { 
+				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
+
+					array_push($first_categories[$i]["SUB CATEGORIES"], $second_categories[$j]);
+
+				}
+			}
+		}
+
+		
+		echo "<pre>";
+		print_r($first_categories);
+		echo "</pre>";
+
+		echo "------------SECOND---------------------";
+		echo "<pre>";
+		print_r($second_categories);
+		echo "</pre>";
+
+
+		// echo "------------Third---------------------";
+		// echo "<pre>";
+		// print_r($third_categories);
+		// echo "</pre>";
+
+
+
+		
+		
+		$this->load->view('landing',["categories"=>$first_categories]);
 		
 	}
 
@@ -53,5 +106,17 @@ class Welcome extends CI_Controller {
 	public function popup(){
 		$this->load->view('popup');	
 
+	}
+
+
+	public function phparray(){
+		$arr = [];
+		$arr2= ["First Name"=>"Khawar","Last Name"=>"Hussain"];
+		$arr1= ["First Name"=>"Abdul","Last Name"=>"Khan","Middle Name"=>"Rehman"];
+		$arr[0]= $arr1;
+		$arr[1]= $arr2;
+
+		echo count($arr1);
+		print_r($arr) ;
 	}
 }

@@ -38,7 +38,7 @@ class Categories extends CI_Model {
 		$query = $this->db->get('first_category');
 		
 		if($query->num_rows()){ 
-			return $query->result();
+			return $query->result_array();
 		}	
 		else {
 			return FALSE;
@@ -52,7 +52,7 @@ class Categories extends CI_Model {
 		$query = $this->db->get('second_category');
 		
 		if($query->num_rows()){ 
-			return $query->result();
+			return $query->result_array();
 		}	
 		else {
 			return FALSE;
@@ -66,8 +66,7 @@ class Categories extends CI_Model {
 
 		
 		if($query->num_rows()){ // Successfully Logged in
-			print_r($query->row());
-			return $query->result();
+			return $query->result_array();
 		}	
 		else {
 			return FALSE;
