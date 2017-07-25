@@ -1247,10 +1247,10 @@
 
 <div class="row">
             <div class="col-md-6">
-                <img class="imgbanner3" src="assets/images/home_slider_image_1.jpg">
+                <img class="imgbanner3" src=" <?php echo base_url('assets/images/home_slider_image_1.jpg') ?>">
             </div>
             <div class="col-md-6">
-                <img class="imgbanner3" src="assets/images/home_slider_image_2.jpg">
+                <img class="imgbanner3" src=" <?php echo base_url('assets/images/home_slider_image_1.jpg') ?>">
             </div>
 </div>
 <br><br>    

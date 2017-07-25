@@ -1,73 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-         <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="google-signin-client_id" content="746867537974-de9u4f9gq2em1giqa8qe0omc3s7k3hce.apps.googleusercontent.com">
-    
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css') ?> ">
-    
+<?php include('home_header.php') ?>
 
-    <!-- custom css-->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/landing.css') ?>">
-    
-    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/jquery/jquery-3.2.1.min.js') ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('assets/bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js') ?>"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-   
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/login.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/landing.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sidebar.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/profile.css') ?>">
-    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
-
-    
-    <title>Landing</title>
-
-    </head>
-
-
-<body>
-    <div id="top" class="header-panel-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <span>
-                    <img src="<?php echo base_url('assets/images/header_top_left_text.png') ?>" alt="8010 103 104 (10AM to 8PM)">
-
-               <span style="margin-left:5px">8010 103 104 (10AM to 8PM)</span>
-               <a href="">Where We Deliver</a>
-                </span>
-                </div>
-                <div class="col-md-6">
-                    <div class="pull-right" style="widht:100%;">
-                        <div style="float:left">
-                        <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="float:left,margin-left:10px">
-                        <span style="margin-right:5px,float:left">Free delivery for orders Rs. 500 and above</span>
-                        </div>
-                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
-                    </div>
-                </div>
-            </div>
+<div class="container" style="padding-bottom:30px;">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="<?php echo base_url('assets/images/mylogo.jpg')?>" alt="logo" style="width:250px;height:63px">
         </div>
-    </div>
-    
-    
+        <div class="col-md-6">
+            <form class="">
+            <div class="search-box">
+                <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+            </div>
+            </form>    
+        </div>
+        <div class="col-md-3" style="overflow-x: visible;">
+            <!-- div class="div-welc1">
+                <div class="welc">Welcome Guest</div>
+                    <div class="customer-links">
+                        <a href="<?php echo base_url('signup') ?>">
+                            Login
+                        <span class="or">|</span>
+                        Signup
+                    </a>    
+                    </div>
+            </div -->
+            <div class="dropdown" style="float:right;">
+              <button class="dropbtn div-welc2">
+                  <center><img src="<?php echo base_url('assets/images/carticon.png')?>
 
-
-    <div class="header-fixed">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3" style="padding-right:0px">
-                    <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;height:31px;padding-top:5px;width:100%">
-                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px"><span style="font-weight:900">SHOP</span> <img src="<?php echo base_url('assets/images/shopicon.png') ?>" style="float:right;margin-top: 6px;">
-                    <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><img src="<?php echo base_url('assets/images/mylogosmall.jpg') ?>" style="height:50px;"></div></button>
-                    <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%">
+                  " class="cart"><span class="first">Your Cart</span>
+                  <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
+              </button>
+              <div class="dropdown-content">
+                <p>It apears that your cart is currently empty!</p><br>
+                 <a class="cbtn">CONTINUE SHOPPING</a>
+              </div>
+            </div>
+        </div>    
+        </div>
+    
+    <div class="row" style="padding-top:20px">
+                <div class="col-md-3 xs-hidden" style="padding-right:0px;">
+                    <div class="sidebarhead dropdownf" style="border-width:1px;border:1px solid #96C658;padding-top:0px;width:100%;height:40px;padding-bottom:0px">
+                    <button class="dropbtnf" style="border:none;background:none;width:100%;padding-left:0px;height:40px"><span style="font-weight:900">SHOP</span> <img src="<?php echo base_url('assets/images/shopicon.png')?>" style="float:right;margin-top: 6px;"></button>
+                    <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%;top:50px">
                      
                      <li>
                          <div class="dropleft">
@@ -631,156 +606,287 @@
                 </ul>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <form class="">
+
+                <div class="col-md-9 col-slidemain" >
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="midlehead  xs-hidden">
+                            <a id="m1">
+                            <span class="mitem" ><img src="<?php echo base_url('assets/images/slider_top_link_1.png')?>" class="mitem1"><span class="mitem2">Daily Need Store</span></span>
+                            </a>
+                            <a  id="m2">
+                            <span class="mitem" style="margin-left:20px"><img src="<?php echo base_url('assets/images/slider_top_link_2.png')?>" class="mitem1"><span class="mitem2">Special Offer</span></span>
+                            </a>
+                            <a  id="m3">
+                            <span class="mitem"  style="margin-left:20px"><img src="<?php echo base_url('assets/images/slider_top_link_1.png')?>" class="mitem1"><span class="mitem2">New Arrival</span></span>
+                            </a >
+                            <a id="m4" style="float:right">
+                            <span class="mitem" ><img src="<?php echo base_url('assets/images/slider_top_link_3.png')?>" class="mitem1"><span class="mitem2">Recipie Blog</span></span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home"><center><i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</center></a></li>
+                <li><a data-toggle="tab" href="#menu1"><center><i class="fa fa-history" aria-hidden="true"></i> ORDER HISTORY</center></a></li>
+                <li><a data-toggle="tab" href="#menu2"><center><i class="fa fa-map-marker" aria-hidden="true"></i> MY LOCATION</center></a></li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active"><br>
+                        <div class="pbox">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <span class="name">NAME:</span><span style="float:right">Wahaj Ashfaq</span>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">
+                                    <span class="name">KARYANA ID:</span><span style="float:right">KAR7868</span>
+                                </div>
+                            </div><hr>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <span class="name"><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL:</span><span style="float:right">wahajashfaq@gmail.com</span>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">
+                                    <span class="name"><i class="fa fa-phone-square" aria-hidden="true"></i> PHONE #:</span><span style="float:right">0336-4380838</span>
+                                </div>
+                            </div><hr>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> ADDRESS:</span><p >Fazal Rehman Fabrics Qadirpur Ran</p>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">
+                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> CITY:</span><span style="float:right">Multan</span><br><br>
+                                    <span class="name">LOYALITY POINTS:</span><span style="float:right">50</span>
+                                </div>
+                            </div>
+                    </div> 
+                    <div class="pbox">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="name">UPDATE CONTACT DETAILS:</span>
+                                </div><br><br>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <span>City:</span><br><br>
+                                    <input type="text" class="form-control" placeholder="Enter City:">
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">
+                                    <span>Phone #:</span><br><br>
+                                    <input type="number" class="form-control" placeholder="Enter Phone Number:">
+                                </div>
+                            </div><hr>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <span>Address Line 1:</span><br><br>
+                                    <input class="form-control" placeholder="Enter Adress Here:">
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="col-md-5">
+                                    <span>Address Line 2:</span><br><br>
+                                    <input class="form-control" placeholder="Enter Adress Here:">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5"></div>
+                                <div class="col-md-2">
+                                    <br><button class="subscribe btn-block" style="margin-left:0px;border-radius:3px">Save Changes</button>
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                            </div>
+                    </div> 
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <h3>Menu 1</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <h3>Menu 2</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+    <div id="backtotop" class="container-fluid">
+        <a href="#top"><div class="backtotop"></div></a>
+    </div>
+
+    <div class="product-search-container" id="product-search">
+    
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="fa fa-times-circle" id="sclose" aria-hidden="true" style="float:right;color:#28a7db;margin-top:5px;font-size:25px"></i>
+                </div>
+            </div>
+            <div class="row dhidden">
+                <div class="col-md-12">
+                  <form class="">
                     <div>
                     <div class="search-box" style="margin-top:0px">
                         <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
                     </div>
                     </div>
                     <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
-                    </form>
+                  </form>
                 </div>
-                <div class="col-md-4" style="overflow-x: visible;">
-                    
-                    <!--div class="div-welc1" style="margin-top:-5px;">
-                        <div class="welc">Welcome Guest</div>
-                            <div class="customer-links">
-                                <a href="<?php echo base_url("signup") ?>">
-                                    Login
-                                
-                                <span class="or">|</span>
-                                
-                                Signup
-                                </a>
-                            </div>
-                    </div-->
-                    <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left:-86px!important">or</span></diV>
-                    <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
-                      <button class="dropbtn div-welc2" style="margin-top:0px;">
-                          <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>
-                          <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
-                      </button>
-                      <div class="dropdown-content" style="top:50px;padding-left:0px;padding-right:0px;">
-                        <div style="width:100%;max-height:220px;overflow-y:scroll;overflow-x:hidden;">
-                            <br>
-                        <div class="row">
-                            <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
-                                <div class="cartfhead" style="float:left">Your Cart <span>(0 items)</span></div>
-                                <div style="float:right;margin-top:-20px">
-                                <center><img src="<?php echo base_url('assets/images/cartfilled.png') ?>" class="cart"><span >Your Saved</span>
-                                  <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div></center>
-                                </div>
-                            </div>
-                        </div>
-                          
-                          <hr>
-                          
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float:left">
-                                    <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
-                                    </div>
-                                    <div style="float:right">
-                                        <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div style="float:right">
-                                    <div style="float:left">
-                                        <center>
-                                        <select class="qselect" style="margin-top:20px;">
-                                          <option>5 Kg</option>
-                                          <option>10 Kg</option>
-                                        </select>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
-                                        </center>
-                                    </div>
-                                    <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                        <hr>
-                          
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float:left">
-                                    <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
-                                    </div>
-                                    <div style="float:right">
-                                        <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div style="float:right">
-                                    <div style="float:left">
-                                        <center>
-                                        <div class="qfix" style="margin-top:20px;padding-top:10px">5 Kg</div>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
-                                        </center>
-                                    </div>
-                                    <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
-                          <hr>
-                        </div>
-                        <div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-5"><button class="btn btn-block bcartview"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"> View Cart</button></div>
-                                    <div class="col-md-5"><button class="btn btn-block coutview">Check Out</button></div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>  
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
+                    <div class="hline"></div>
+                    <div class="hline" style="margin-top:2px"></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6" style="padding-right:0px;padding-left:0px">
+                    <div class="line-head"><center>SEARCH<span> RESULTS</span></center></div>
+                </div>
+                <div class="col-md-5 col-sm-4 col-xs-3" style="padding-left:0px;padding-top:15px">
+                    <div class="hline"></div>
+                    <div class="hline" style="margin-top:2px"></div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                      <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
                       </div>
-                    </div>
+                    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
+                </div>
+                <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
+                      </div>
+                <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
+                      </div>
+                <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
+                      </div>
+                <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+                          <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+                          <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
+                              <br><br><div>Product name</div>
+                              </div><br>
+                              <button class="qview">QUICK VIEW</button>
+                              <div class="qfix">5 Kg</div>
+                              <br>
+                              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
+                              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                          </center>
+                      </div>
+            </div>
+            <br>
+            <br>
+    </div>
+
+    <div id="message" class="container-fluid">
+        <div class="message"><i class="fa fa-comment" aria-hidden="true"></i><span class="messagetext">Contact Us</span></div>
+    </div>
+    
+    <div id="contactform" class="container-fluid">
+        <div class="contactform">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="" style="float:left">Contact Us</div><div style="float:right"><i id="cclose" class="fa fa-times-circle" style="float:right" aria-hidden="true" ></i></div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <center><input type="email" class="input-lg cinput"  placeholder="Email"></center>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <center><input type="number" class="input-lg cinput"  placeholder="Phone number"></center>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-12">
+                    <center><input type="text" class="input-lg cinput"  placeholder="subject"></center>
+                </div>
+            </div><br>
+            
+            <div class="row">
+                <div class="col-md-12">
+                <center><textarea class="input-lg cinput"  placeholder="State Your Query"></textarea></center>
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-md-12">
+                <center><button class="btn-lg sbtn">Submit</button></center>
                 </div>
             </div>
         </div>
     </div>
-    
+
+
+<?php include('about_footer.php'); ?>        
