@@ -27,7 +27,6 @@ class Welcome extends CI_Controller {
 		$third_categories = $this->Categories->getThirdCategory();
 
 		
-		echo "------------First---------------------";
 
 		for ($i=0; $i <count($second_categories); $i++) { 
 				$second_categories[$i]["SUB CATEGORIES"] = [];
@@ -54,6 +53,7 @@ class Welcome extends CI_Controller {
 		}
 
 		
+/*		echo "------------First---------------------";
 		echo "<pre>";
 		print_r($first_categories);
 		echo "</pre>";
@@ -63,11 +63,11 @@ class Welcome extends CI_Controller {
 		print_r($second_categories);
 		echo "</pre>";
 
-
-		// echo "------------Third---------------------";
-		// echo "<pre>";
-		// print_r($third_categories);
-		// echo "</pre>";
+		echo "------------Third---------------------";
+		echo "<pre>";
+		print_r($third_categories);
+		echo "</pre>";
+*/
 
 
 

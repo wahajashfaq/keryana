@@ -3,6 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Add extends CI_Controller {
 
+
+	public function __construct(){
+
+		parent::__construct();
+		if(!$this->session->userdata('admin_id'))
+			return redirect('admin/login');
+	}
+
+
 	public function index()
 	{
 		$this->load->view('admin/fileupload');
@@ -115,9 +124,14 @@ class Add extends CI_Controller {
 
 	}
 
-	public function first_category(){
+	public function categories(){
 
+
+		$this->load->model('Categories');
+		$first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
 		
+		$this->load->view('admin/add_categories',['first_categories'=>$first_categories,'second_categories'=>$second_categories]);		
 	}
 
 	public function second_category(){

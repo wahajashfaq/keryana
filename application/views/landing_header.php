@@ -51,7 +51,11 @@
                         <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="float:left,margin-left:10px">
                         <span style="margin-right:5px,float:left">Free delivery for orders Rs. 500 and above</span>
                         </div>
+                        <a href="<?php echo base_url('signup') ?>">
+                            
                         <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -635,8 +639,8 @@
                 <div class="col-md-5">
                     <form class="">
                     <div>
-                    <div class="search-box" style="margin-top:0px">
-                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+                    <div class="search-box"  style="margin-top:0px">
+                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search" >
                     </div>
                     </div>
                     <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
@@ -656,7 +660,9 @@
                                 </a>
                             </div>
                     </div-->
+                    <a href="<?php echo base_url('signup'); ?>">
                     <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left:-86px!important">or</span></diV>
+                    </a>
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>

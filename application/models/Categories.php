@@ -153,6 +153,74 @@ class Categories extends CI_Model {
 		echo "Category Model";
 
 	}
+
+
+	public function updateFirstCategory($post_data){
+
+		$this->load->helper('date');
+		$datestring = '%Y-%m-%d %h:%i:%s';
+		$time = now('Asia/Karachi');
+
+
+		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('Name', $post_data["updated_value"]); // New Value
+		$this->db->where('EncryptedId', $post_data["category_id"]); 
+		$this->db->update('first_category');
+
+	}
+	public function updateSecondCategory($post_data){
+
+		$this->load->helper('date');
+		$datestring = '%Y-%m-%d %h:%i:%s';
+		$time = now('Asia/Karachi');
+
+
+		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('Name', $post_data["updated_value"]); // New Value
+		$this->db->where('EncryptedId', $post_data["category_id"]); 
+		$this->db->update('second_category');
+
+	}
+	public function updateThirdCategory($post_data){
+
+		$this->load->helper('date');
+		$datestring = '%Y-%m-%d %h:%i:%s';
+		$time = now('Asia/Karachi');
+
+
+		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('Name', $post_data["updated_value"]); // New Value
+		$this->db->where('EncryptedId', $post_data["category_id"]); 
+		$this->db->update('third_category');
+
+	}
+
+	public function deleteFirstCategory($post_data){
+
+
+		$this->db->set('Visibility', 0); 
+		$this->db->where('EncryptedId',$post_data["category_id"]);
+		$this->db->update('first_category');
+
+		echo "OKAY";
+		exit;
+	}
+
+	public function deleteSecondCategory($post_data){
+
+
+		$this->db->set('Visibility', 0); 
+		$this->db->where('EncryptedId',$post_data["category_id"]);
+		$this->db->update('second_category');
+	}
+
+	public function deleteThirdCategory($post_data){
+
+
+		$this->db->set('Visibility', 0); 
+		$this->db->where('EncryptedId',$post_data["category_id"]);
+		$this->db->update('third_category');
+	}
 	
 }
 

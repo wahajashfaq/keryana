@@ -52,12 +52,13 @@
 
 
 
-        <?php foreach ($categories as $category){?>
+        <?php $count = 0;
+        foreach ($categories as $category){?>
 
          <li>
              <div class="dropleft">
                  <span class="text"><?php echo $category["Name"]; ?></span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                 <div class="dropleft-content">
+                 <div class="dropleft-content"  style="top:<?php echo $count*-33;$count++; ?>px;">
                      <div class="container-fluid">
                          <div class="row">
                          <?php foreach ($category["SUB CATEGORIES"] as $category2){?>
@@ -82,117 +83,6 @@
 
 
 
- <li>
-     <div class="dropleft">
-         <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-         <div class="dropleft-content" style="top:-264px">
-             <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-md-3">
-                         <a><div class="head">Flours and Grains</div></a>
-                         <a><div class="item">Atta</div></a>
-                         <a><div class="item">Besan</div></a>
-                         <a><div class="item">Dalia</div></a>
-                         <a><div class="item">Maida</div></a>
-                         <a><div class="item">Sooji / Suji</div></a>
-                         <a><div class="item">Rice</div></a>
-                         <a><div class="item">Poha / Chidwa</div></a>
-                         <a><div class="item">Upma</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Value Added</div></a>
-                         <a><div class="item">Sugar & Sugar Free</div></a>
-                         <a><div class="item">Salt</div></a>
-                         <a><div class="item">Pickle</div></a>
-                         <a><div class="item">Papad</div></a>
-                         <a><div class="item">Khakhra</div></a>
-                         <a><div class="item">Boondi</div></a>
-                         <a><div class="item">Saffron</div></a>
-                         <a><div class="item">Aluminium Foil</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Flours and Grains</div></a>
-                         <a><div class="item">Atta</div></a>
-                         <a><div class="item">Besan</div></a>
-                         <a><div class="item">Dalia</div></a>
-                         <a><div class="item">Maida</div></a>
-                         <a><div class="item">Sooji / Suji</div></a>
-                         <a><div class="item">Rice</div></a>
-                         <a><div class="item">Poha / Chidwa</div></a>
-                         <a><div class="item">Upma</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Value Added</div></a>
-                         <a><div class="item">Sugar & Sugar Free</div></a>
-                         <a><div class="item">Salt</div></a>
-                         <a><div class="item">Pickle</div></a>
-                         <a><div class="item">Papad</div></a>
-                         <a><div class="item">Khakhra</div></a>
-                         <a><div class="item">Boondi</div></a>
-                         <a><div class="item">Saffron</div></a>
-                         <a><div class="item">Aluminium Foil</div></a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </li>
-
- <li>
-     <div class="dropleft">
-         <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-         <div class="dropleft-content" style="top:-297px">
-             <div class="container-fluid">
-                 <div class="row">
-                     <div class="col-md-3">
-                         <a><div class="head">Value Added</div></a>
-                         <a><div class="item">Sugar & Sugar Free</div></a>
-                         <a><div class="item">Salt</div></a>
-                         <a><div class="item">Pickle</div></a>
-                         <a><div class="item">Papad</div></a>
-                         <a><div class="item">Khakhra</div></a>
-                         <a><div class="item">Boondi</div></a>
-                         <a><div class="item">Saffron</div></a>
-                         <a><div class="item">Aluminium Foil</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Flours and Grains</div></a>
-                         <a><div class="item">Atta</div></a>
-                         <a><div class="item">Besan</div></a>
-                         <a><div class="item">Dalia</div></a>
-                         <a><div class="item">Maida</div></a>
-                         <a><div class="item">Sooji / Suji</div></a>
-                         <a><div class="item">Rice</div></a>
-                         <a><div class="item">Poha / Chidwa</div></a>
-                         <a><div class="item">Upma</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Value Added</div></a>
-                         <a><div class="item">Sugar & Sugar Free</div></a>
-                         <a><div class="item">Salt</div></a>
-                         <a><div class="item">Pickle</div></a>
-                         <a><div class="item">Papad</div></a>
-                         <a><div class="item">Khakhra</div></a>
-                         <a><div class="item">Boondi</div></a>
-                         <a><div class="item">Saffron</div></a>
-                         <a><div class="item">Aluminium Foil</div></a>
-                     </div>
-                     <div class="col-md-3">
-                         <a><div class="head">Flours and Grains</div></a>
-                         <a><div class="item">Atta</div></a>
-                         <a><div class="item">Besan</div></a>
-                         <a><div class="item">Dalia</div></a>
-                         <a><div class="item">Maida</div></a>
-                         <a><div class="item">Sooji / Suji</div></a>
-                         <a><div class="item">Rice</div></a>
-                         <a><div class="item">Poha / Chidwa</div></a>
-                         <a><div class="item">Upma</div></a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </li>
 </ul>
 </div>
 
@@ -289,80 +179,22 @@
 
                 <div class="carousel slide carousel1" id="myCarousel1">
                   <div class="carousel-inner">
-                    <div class="item active">
+
+
+                    <?php $count = 0;
+                    foreach ($categories as $category){?>
+                    <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
                       <div class="col-md-2">
                           <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 1</div>
+                              <div><?php echo $category["Name"]; ?></div>
                           </a></center>
                       </div>
                   </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 2</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 3</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 4</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 5</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 6</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 7</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 8</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 9</div>
-                          </a></center>
-                      </div>
-                  </div>
-                  <div class="item">
-                      <div class="col-md-2">
-                          <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/home_slider_image_4.jpg') ?>" class="img-circle" style="width:100px;height:100px">
-                              <div>Grocery and Staples 10</div>
-                          </a></center>
-                      </div>
-                  </div>
-              </div>
+                  <?php } ?>
+          </div>
+
               <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
               <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-          </div>
       </div>
   </div>
   <br><br>
@@ -1163,6 +995,7 @@
             </div>
             <br>
             <br>
+            
     </div>
 
     <div id="message" class="container-fluid">
@@ -1207,5 +1040,5 @@
         </div>
     </div>
 
-
+</div>
 <?php include('about_footer.php'); ?>        

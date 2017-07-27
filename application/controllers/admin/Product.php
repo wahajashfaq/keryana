@@ -5,6 +5,9 @@ class Product extends CI_Controller {
 
 	public function index()
 	{
+
+		$this->load->view('admin/add_product');
+		exit;
 		$this->load->model('Categories');
 		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
@@ -26,6 +29,12 @@ class Product extends CI_Controller {
 			$this->Categories->addSecondCategory($data);
 
 
+	}
+
+
+	public function Add(){
+
+		$this->load->view('admin/add_product');
 	}
 
 	public function Add_Category(){
