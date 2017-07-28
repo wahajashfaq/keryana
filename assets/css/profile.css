@@ -46,3 +46,9 @@
     font-size: 15px;
 }
 
+@media(min-width:0px) and (max-width:340px)
+{
+    .nav-tabs>li>a{
+        font-size: 12px;
+    }
+}
