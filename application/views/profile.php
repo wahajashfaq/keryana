@@ -638,7 +638,7 @@
               </ul>
 
               <div class="tab-content">
-                <div id="home" class="tab-pane fade in active"><br>
+                <div id="home" class="tab-pane fade in active">
                         <div class="pbox">
                             <div class="row">
                                 <div class="col-md-5">
@@ -668,7 +668,8 @@
                                     <span class="name">LOYALITY POINTS:</span><span style="float:right">50</span>
                                 </div>
                             </div>
-                    </div> 
+                            
+                        </div> 
                     <div class="pbox">
                             <div class="row">
                                 <div class="col-md-12">
