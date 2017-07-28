@@ -1,0 +1,48 @@
+.nav-tabs>li.active>a{
+    border-color: #28a7db !important;
+    background-color: #28a7db !important;
+    color: #fff;
+}
+.nav-tabs{
+    border:none;
+}
+.nav-tabs>li>a{
+    font-size: 15px;
+    font-weight: 700;
+    color: #28a7db;
+    border-color: #28a7db !important;
+}
+.nav-tabs>li{
+    width: 33.33%;
+}
+.nav-tabs>li>a:focus{
+    color: #fff !important;
+}
+.pbox{
+    width: 100%;
+    border: 1px solid #e9e8e8;
+    border-radius: 3px;
+    margin-top: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.name{
+    color: #28a7db !important;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pbox span{
+    color: #c6c6c6;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.pbox p{
+    color: #c6c6c6;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
