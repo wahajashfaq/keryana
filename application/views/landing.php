@@ -245,8 +245,9 @@
                   </select>
                   <br><br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
+                  </center>
               </div>
           </div>
           <div class="item">
@@ -259,8 +260,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
       </div>
@@ -277,8 +278,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -292,8 +293,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -310,8 +311,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -325,8 +326,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -343,8 +344,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -358,8 +359,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -376,8 +377,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -391,8 +392,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -437,8 +438,9 @@
                   </select>
                   <br><br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
+                  </center>
               </div>
           </div>
           <div class="item">
@@ -451,8 +453,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
       </div>
@@ -469,8 +471,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -484,8 +486,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -502,8 +504,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -517,8 +519,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -535,8 +537,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -550,8 +552,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -568,8 +570,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -583,8 +585,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -707,8 +709,9 @@
                   </select>
                   <br><br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
+                  </center>
               </div>
           </div>
           <div class="item">
@@ -721,8 +724,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
       </div>
@@ -739,8 +742,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -754,8 +757,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -772,8 +775,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -787,8 +790,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -805,8 +808,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -820,8 +823,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-                  <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                   <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -838,8 +841,8 @@
               </select>
               <br><br>
               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
           </center>
       </div>
   </div>
@@ -853,8 +856,8 @@
                   <div class="qfix">5 Kg</div>
                   <br>
                   <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
                   <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                  <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               </center>
           </div>
 </div>
@@ -923,8 +926,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                       </div>
                     <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
@@ -936,8 +939,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                 </div>
                 <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
@@ -949,8 +952,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                       </div>
                 <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
@@ -962,8 +965,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                       </div>
                 <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
@@ -975,8 +978,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                       </div>
                 <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
@@ -988,8 +991,8 @@
                               <div class="qfix">5 Kg</div>
                               <br>
                               <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
-                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                              <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
                           </center>
                       </div>
             </div>
