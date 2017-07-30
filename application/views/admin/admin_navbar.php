@@ -251,6 +251,9 @@
                                 <li>
                                     <a href="<?php echo base_url('admin/resources/add/brand') ?>">Brand</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo base_url('admin/resources/add/CategoryImages') ?>">Category Images</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

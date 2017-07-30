@@ -280,6 +280,33 @@ class Categories extends CI_Model {
 			return FALSE;
 		}	
 	}
+
+
+	public function setFirstCategoryImage($category_id,$image){
+
+		$this->db->where('EncryptedId',$category_id);
+		$this->db->set('Image',$image);
+		$this->db->update('first_category');
+
+
+	}
+	public function setSecondCategoryImage($category_id,$image){
+
+
+		
+		$this->db->where('EncryptedId',$category_id);
+		$this->db->set('Image',$image);
+		$this->db->update('second_category');
+
+	}
+	public function setThirdCategoryImage($category_id,$image){
+
+		
+		$this->db->where('EncryptedId',$category_id);
+		$this->db->set('Image',$image);
+		$this->db->update('third_category');
+
+	}
 }
 
 /* End of file Categories.php */

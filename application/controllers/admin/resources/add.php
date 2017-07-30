@@ -20,6 +20,129 @@ class Add extends CI_Controller {
 
 	// Similarly create banner 2
 
+	public function AddCategoryFF(){
+
+		
+	}
+
+	public function CategoryImages(){
+
+
+		$this->load->model('Categories');
+		$first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$third_categories = $this->Categories->getThirdCategory();
+		$this->load->view('admin/category_images',['first_categories'=>$first_categories,'second_categories'=>$second_categories,'third_categories'=>$third_categories]);
+
+	}
+
+	public function FirstCategoryImage(){
+
+
+		$CategoryID = $this->input->post('Fcategory_ID');
+
+		$config['upload_path']          = './uploads/category';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$config['file_name'] = $CategoryID; 
+
+
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+		
+
+		if($this->upload->do_upload('image_file')){
+		
+			$img = $this->upload->data()['file_name'];
+			$this->load->model('Categories');
+			$this->Categories->setFirstCategoryImage($CategoryID,$img);
+
+
+			$this->session->set_flashdata('message', "Image has been updated");
+			return redirect('admin/resources/add/CategoryImages');
+		}else
+        {
+                $error = array('error' => $this->upload->display_errors());
+
+                print_r($error);
+        }
+
+	}
+
+	public function SecondCategoryImage(){
+		
+		$CategoryID = $this->input->post('Fcategory_ID');
+
+		$config['upload_path']          = './uploads/category';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$config['file_name'] = $CategoryID; 
+
+
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+		
+
+		if($this->upload->do_upload('image_file')){
+		
+			$img = $this->upload->data()['file_name'];
+			$this->load->model('Categories');
+			$this->Categories->setSecondCategoryImage($CategoryID,$img);
+
+
+			$this->session->set_flashdata('message', "Image has been updated");
+			return redirect('admin/resources/add/CategoryImages');
+		}else
+        {
+                $error = array('error' => $this->upload->display_errors());
+
+                print_r($error);
+        }
+	}
+
+	public function ThirdCategoryImage(){
+		
+		$CategoryID = $this->input->post('Fcategory_ID');
+
+		$config['upload_path']          = './uploads/category';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+
+		$config['file_name'] = $CategoryID; 
+
+
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+		
+
+		if($this->upload->do_upload('image_file')){
+		
+			$img = $this->upload->data()['file_name'];
+			$this->load->model('Categories');
+			$this->Categories->setThirdCategoryImage($CategoryID,$img);
+
+
+			$this->session->set_flashdata('message', "Image has been updated");
+			return redirect('admin/resources/add/CategoryImages');
+		}else
+        {
+                $error = array('error' => $this->upload->display_errors());
+
+                print_r($error);
+        }
+	}
+
 
 	public function banner_one(){
 
@@ -94,6 +217,7 @@ class Add extends CI_Controller {
 
 
 		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
 
 		
 
@@ -192,3 +316,8 @@ class Add extends CI_Controller {
 
 /* End of file add.php */
 /* Location: ./application/controllers/admin/resources/add.php */
+
+
+
+
+
