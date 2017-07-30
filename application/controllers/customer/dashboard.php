@@ -13,9 +13,21 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-		
-		echo "customer : ".$this->session->userdata("customer_id");				
+		$this->load->model('Customer');
+		$data = $this->Customer->getProfileInfo($this->session->userdata("customer_id"));	
+		$this->load->view('customer/profile',["PROFILE"=>$data]);
+		//echo "customer : ".$this->session->userdata("customer_id");				
 	}
+
+
+	public function logout(){
+
+    $this->load->model('Customer');
+    $this->Customer->setLastLoginTime($this->session->userdata('customer_id'));
+    $this->session->unset_userdata('customer_id');
+    return redirect('');
+  }
+
 
 }
 

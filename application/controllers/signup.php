@@ -6,6 +6,8 @@ class Signup extends CI_Controller {
   function __construct()
   {
     parent::__construct();
+    if($this->session->userdata('customer_id'))
+      return redirect('customer/dashboard','refresh');
   }
 
   public function index()
@@ -58,7 +60,6 @@ class Signup extends CI_Controller {
       if($login_id){
 
         // Correct username/password
-
         $this->session->set_userdata('customer_id',$login_id);
         return redirect('customer/dashboard');
       }else{
@@ -146,6 +147,9 @@ class Signup extends CI_Controller {
     $this->load->model('customer');
     $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
 
+        $this->session->set_userdata('customer_id',$login_id);
+        return redirect('customer/dashboard');
+
     $location = $me->getProperty('location');
     echo "Full Name: ".$me->getProperty('name')."<br>";
     echo "First Name: ".$me->getProperty('first_name')."<br>";
@@ -161,6 +165,11 @@ class Signup extends CI_Controller {
 
 
   }
+
+
+
+
+
 }
 
 

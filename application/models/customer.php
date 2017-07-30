@@ -3,6 +3,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Customer extends CI_Model {
 
+
+
+
+	public function getProfileInfo($customer_ID){
+
+		$this->db->where('EncryptedId', $customer_ID);
+		$query = $this->db->get('customers');
+
+
+		if ($query->num_rows()) {
+			/*echo "<pre>";
+			print_r($query->result_array());
+			echo "</pre>";*/
+			return $query->result_array();
+
+		}
+	}
+
+	public function setLastLoginTime($customer_ID){
+
+
+		$this->load->helper('date');
+		$datestring = '%Y-%m-%d %h:%i:%s';
+		$time = now('Asia/Karachi');
+
+
+		$this->db->set('LastLogin', mdate($datestring, $time));
+		$this->db->where('EncryptedId', $customer_ID);
+		$this->db->update('customers');
+	}
+
+
+
 	public function signup($post_data){
 
 		$this->load->helper('date');
@@ -13,9 +46,10 @@ class Customer extends CI_Model {
 		$this->db->set('FirstName', $post_data["fname"]); 
 		$this->db->set('LastName', $post_data["lname"]); 
 		$this->db->set('Email', $post_data["email"]); 
+		$this->db->set('EncryptedId', md5($post_data["email"])); 
 		$this->db->set('FacebookId', ''); 
 		$this->db->set('Password', md5($post_data["pass"]));
-		$this->db->set('Country', '');
+		$this->db->set('City', '');
 		$this->db->set('IpAddress', $this->input->ip_address());
 		$this->db->set('DateOfCreation', mdate($datestring, $time));
 		$this->db->set('LastLogin', mdate($datestring, $time));
@@ -47,7 +81,7 @@ class Customer extends CI_Model {
 		
 		if($query->num_rows()){ // Successfully Logged in
 			print_r($query->row());
-			return $query->row()->ID;
+			return $query->row()->EncryptedId;
 		}	
 		else {
 			return FALSE;
@@ -55,6 +89,7 @@ class Customer extends CI_Model {
 	}
 
 
+	
 
 
 public function fb_signup($email,$firstname,$lastname,$fb_id){
@@ -75,9 +110,10 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 		$this->db->set('FirstName', $firstname); 
 		$this->db->set('LastName', $lastname); 
 		$this->db->set('Email', $email); 
+		$this->db->set('EncryptedId', md5($post_data["email"])); 
 		$this->db->set('FacebookId', $fb_id); 
 		$this->db->set('Password', '');
-		$this->db->set('Country', '');
+		$this->db->set('City', '');
 		$this->db->set('IpAddress', $this->input->ip_address());
 		$this->db->set('DateOfCreation', mdate($datestring, $time));
 		$this->db->set('LastLogin', mdate($datestring, $time));
@@ -96,11 +132,20 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 		echo "Logged the user in";
 	}
 
-
-	exit;
-
-
 }
+
+
+//------------- Update Data
+	public function updateProfile($post_data,$customer_ID){
+
+
+		$this->db->set('City', $post_data["city"]);
+		$this->db->set('Mobile', $post_data['contact_number']);
+		$this->db->set('Address', $post_data['address']);
+		$this->db->where('EncryptedId', $customer_ID);
+		$this->db->update('customers');
+
+	}
 
 }
 

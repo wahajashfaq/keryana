@@ -642,30 +642,30 @@
                         <div class="pbox">
                             <div class="row">
                                 <div class="col-md-5">
-                                    <span class="name">NAME:</span><span style="float:right">Wahaj Ashfaq</span>
+                                    <span class="name">NAME:</span><span style="float:right"><?php echo $PROFILE[0]["FirstName"]." ".$PROFILE[0]["LastName"] ?></span>
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
-                                    <span class="name">KARYANA ID:</span><span style="float:right">KAR7868</span>
+                                    <span class="name">KARYANA ID:</span><span style="float:right"><?php echo $PROFILE[0]["EncryptedId"] ?></span>
                                 </div>
                             </div><hr>
                             <div class="row">
                                 <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL:</span><span style="float:right">wahajashfaq@gmail.com</span>
+                                    <span class="name"><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL:</span><span style="float:right"><?php echo $PROFILE[0]['Email'] ?></span>
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-phone-square" aria-hidden="true"></i> PHONE #:</span><span style="float:right">0336-4380838</span>
+                                    <span class="name"><i class="fa fa-phone-square" aria-hidden="true"></i> PHONE #:</span><span style="float:right"><?php echo $PROFILE[0]['Mobile'] ?></span>
                                 </div>
                             </div><hr>
                             <div class="row">
                                 <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> ADDRESS:</span><p >Fazal Rehman Fabrics Qadirpur Ran</p>
+                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> ADDRESS:</span><p ><?php echo $PROFILE[0]['Address'] ?></p>
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> CITY:</span><span style="float:right">Multan</span><br><br>
-                                    <span class="name">LOYALITY POINTS:</span><span style="float:right">50</span>
+                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> CITY:</span><span style="float:right"><?php echo $PROFILE[0]['City'] ?></span><br><br>
+                                    <span class="name">LOYALITY POINTS:</span><span style="float:right"><?php echo $PROFILE[0]['LoyaltyPoints'] ?></span>
                                 </div>
                             </div>
                             
@@ -676,21 +676,23 @@
                                     <span class="name">UPDATE CONTACT DETAILS:</span>
                                 </div><br><br>
                             </div>
+                            <form method="post" action="<?php echo base_url("customer/Profile/update"); ?>">
+                                
                             <div class="row">
                                 <div class="col-md-5">
                                     <span>City:</span><br><br>
-                                    <input type="text" class="form-control" placeholder="Enter City:">
+                                    <input type="text" name="city" class="form-control" placeholder="Enter City:">
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
                                     <span>Phone #:</span><br><br>
-                                    <input type="number" class="form-control" placeholder="Enter Phone Number:">
+                                    <input type="number" name="contact_number" class="form-control" placeholder="Enter Phone Number:">
                                 </div>
                             </div><hr>
                             <div class="row">
                                 <div class="col-md-5">
                                     <span>Address Line 1:</span><br><br>
-                                    <input class="form-control" placeholder="Enter Adress Here:">
+                                    <input class="form-control" type="text" maxlength="50" name="address" placeholder="Enter Adress Here:">
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
@@ -701,11 +703,12 @@
                             <div class="row">
                                 <div class="col-md-5"></div>
                                 <div class="col-md-2">
-                                    <br><button class="subscribe btn-block" style="margin-left:0px;border-radius:3px">Save Changes</button>
+                                    <br><input type="submit" class="subscribe btn-block" style="margin-left:0px;border-radius:3px" value="Save Changes">
                                 </div>
                                 <div class="col-md-5">
                                 </div>
                             </div>
+                            </form>
                     </div> 
                 </div>
                 <div id="menu1" class="tab-pane fade">
@@ -890,4 +893,4 @@
     </div>
 
 
-<?php include('about_footer.php'); ?>        
+<?php $this->load->view('about_footer.php'); ?>        
