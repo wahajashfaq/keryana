@@ -32,9 +32,57 @@ class Product extends CI_Controller {
 	}
 
 
+	public function allProduct(){
+		$this->load->view('admin/all_product');
+	}
 	public function Add(){
 
-		$this->load->view('admin/add_product');
+		$this->load->model('Brand');
+		$this->load->model('Categories');
+		$brands_arr = $this->Brand->getAllBrands();
+		$first_categories = $this->Categories->getFirstCategory();
+		$this->load->view('admin/add_product',['brands'=>$brands_arr,'first_category'=>$first_categories]);
+	}
+
+	public function getSecondCategory(){
+
+		$this->load->model('Categories');
+		$result = $this->Categories->getSecondCategoryData($this->input->post('first_category_ID'));
+
+		$returnData = '<option value="" >Select Second Category</option>';
+
+        if($result) {
+
+        	foreach ($result as $row) {
+
+        	$option = '<option value="'.$row["EncryptedId"].'" >'.$row["Name"].'</option>';
+        	$returnData = $returnData.$option;
+        	
+        	}
+        		# code...
+        }                     
+
+        echo "$returnData";
+	}
+
+	public function getThirdCategory(){
+
+		$this->load->model('Categories');
+		$result = $this->Categories->getThirdCategoryData($this->input->post('second_category_ID'));
+
+		$returnData = '<option value="" >Select Second Category</option>';
+
+        if($result) {
+
+        	foreach ($result as $row) {
+
+        	$option = '<option value="'.$row["EncryptedId"].'" >'.$row["Name"].'</option>';
+        	$returnData = $returnData.$option;
+        	
+        	}
+        }                     
+
+        echo "$returnData";
 	}
 
 	public function Add_Product(){
@@ -56,6 +104,9 @@ class Product extends CI_Controller {
 		print_r($this->input->post());
 		echo "$img";
 		echo "</pre>";
+
+		$this->load->model('KeryanaProduct');
+		$this->KeryanaProduct->addNewProduct($this->input->post(),$img);
 	}
 
 	public function Add_Category(){
@@ -87,6 +138,3 @@ class Product extends CI_Controller {
 	}
 
 }
-
-/* End of file KeryanaProducts.php */
-/* Location: ./application/controllers/admin/KeryanaProducts.php */

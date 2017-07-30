@@ -1,18 +1,18 @@
 <?php include('admin_header.php'); ?>
-    <style type="text/css">
-        #preview > img{
-            z-index: -1;
-        }
+<style type="text/css">
+    #preview > img{
+        z-index: -1;
+    }
 
-        #preview{
-            height: 250px;
-            width: 220px;
-            z-index: -1;
-        }
+    #preview{
+        height: 250px;
+        width: 220px;
+        z-index: -1;
+    }
 
-        
-        
-    </style>
+
+
+</style>
 <body>
 
 
@@ -34,7 +34,7 @@
                                 <div class="form-group">
                                     <div class="row">
                                        <div class="col-md-6">
-                                           <input type="text"  class="form-control"  name="first_category" id="first_category" placeholder="Product Name">
+                                           <input type="text"  class="form-control"  name="product_name" id="product_name" placeholder="Product Name">
                                        </div>
                                    </div>
                                    <hr/>
@@ -46,59 +46,116 @@
                                    <hr/>
                                    <div class="row">
                                        <div class="col-md-6">
-                                           <input type="number"  min="1" max="4" class="form-control"  name="unit" id="unit" placeholder="Number of Unit (1-4)">
+                                           <select name="brand_id" class="form-control" >
 
-                                           <hr/>
-                                           <div id="dynamic_inputs">
-
-                                           </div>
-                                       </div>
-                                   </div>
-
-                               </div>
-
-                               <div class="upload_form_cont">
-                                <div>
-                                    <div><label for="image_file">Please select image file</label></div>
-                                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected();" /></div>
+                                            <option value="" >Select Brand</option>
+                                            <?php 
+                                            foreach ($brands as $row) { ?>
+                                            <option value="<?php echo $row["EncryptedId"] ?>"><?php echo $row["Name"]; ?></option>
+                                            <?php
+                                        }
+                                        ?>
+                                    </select>
+                                    <a target="blank" href="<?php echo base_url('admin/resources/add/brand') ?>">Add Brand</a>
                                 </div>
-                                <div id="fileinfo">
-                                    <div id="filename"></div>
-                                    <div id="filesize"></div>
-                                    <div id="filetype"></div>
-                                    <div id="filedim"></div>
-                                </div>
-                                <img id="preview" />
-                               
-                                <div id="progress_info">
-                                    <div id="progress"></div>
-                                    <div id="progress_percent">&nbsp;</div>
-                                    <div class="clear_both"></div>
-                                    <div>
-                                        <div id="speed">&nbsp;</div>
-                                        <div id="remaining">&nbsp;</div>
-                                        <div id="b_transfered">&nbsp;</div>
-                                        <div class="clear_both"></div>
-                                    </div>
-                                    <div id="upload_response"></div>
-                                </div>
-
-                                <?php echo @$error;?>
                             </div>
-                        
-                            <input type="submit" name="btn_submit" value="Add">
-                        </fieldset>
-                    </form>
+                            <hr/>
+                            <div class="row">
+                               <div class="col-md-4">
 
+                                <div id="add_categories">
+                                    <select name="first_category_type" id="first_category_type" class="form-control" >
 
+                                        <option value="" >Select First Category</option>
+                                        <?php 
+                                        foreach ($first_category as $row) { ?>
+                                        <option value="<?php echo $row["EncryptedId"] ?>"><?php echo $row["Name"]; ?></option>
+                                        <?php
+                                    }
+                                    ?>
+                                </select>
+                            </div>    
+                        </div>
+
+                               <div class="col-md-4">
+
+                                <div id="add_categories">
+                                    <select name="second_category_type" id="second_category_type" class="form-control" >
+
+                                        <option value="" >Select Second Category</option>
+                                        
+                                </select>
+                            </div>    
+                        </div>
+
+                               <div class="col-md-4">
+
+                                <div id="add_categories">
+                                    <select name="third_category_type" id="third_category_type" class="form-control" >
+
+                                        <option value="" >Select Second Category</option>
+                                    }
+                                    ?>
+                                </select>
+                            </div>    
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                       <div class="col-md-6">
+                           <input type="number"  min="1" max="4" class="form-control"  name="unit" id="unit" placeholder="Number of Unit (1-4)">
+
+                           <hr/>
+                           <div id="dynamic_inputs">
+
+                           </div>
+                       </div>
+                   </div>
+
+               </div>
+
+               <div class="upload_form_cont">
+                <div>
+                    <div><label for="image_file">Please select image file</label></div>
+                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected();" /></div>
                 </div>
-                <div class="panel-footer">
-
+                <div id="fileinfo">
+                    <div id="filename"></div>
+                    <div id="filesize"></div>
+                    <div id="filetype"></div>
+                    <div id="filedim"></div>
                 </div>
+                <img id="preview" />
+
+                <div id="progress_info">
+                    <div id="progress"></div>
+                    <div id="progress_percent">&nbsp;</div>
+                    <div class="clear_both"></div>
+                    <div>
+                        <div id="speed">&nbsp;</div>
+                        <div id="remaining">&nbsp;</div>
+                        <div id="b_transfered">&nbsp;</div>
+                        <div class="clear_both"></div>
+                    </div>
+                    <div id="upload_response"></div>
+                </div>
+
+                <?php echo @$error;?>
             </div>
-            <!-- /.col-lg-4 -->
-        </div>
-    </div>
+
+            <input type="submit" name="btn_submit" value="Add">
+        </fieldset>
+    </form>
+
+
+</div>
+<div class="panel-footer">
+
+</div>
+</div>
+<!-- /.col-lg-4 -->
+</div>
+</div>
 
 
 
@@ -107,7 +164,7 @@
 
 
 
-    <script type="text/javascript">
+<script type="text/javascript">
 
         // Ajax post
 
@@ -115,6 +172,48 @@
 
 
         $(document).ready(function() {
+
+            $('#first_category_type').change(function() {
+                var firstCategory = $('#first_category_type').val();
+
+                 if(firstCategory!=''){
+
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "<?php echo base_url(); ?>" + "admin/product/getSecondCategory",
+                        dataType: 'text',
+                        data: {first_category_ID : firstCategory},
+                        success: function(res) {
+                            if (res)
+                            {
+                            // Show Entered Value
+                            $('#second_category_type').html(res);
+                        }
+                    }
+                });
+                }
+            });
+
+             $('#second_category_type').change(function() {
+                var secondCategory = $('#second_category_type').val();
+
+                 if(secondCategory!=''){
+
+                    jQuery.ajax({
+                        type: "POST",
+                        url: "<?php echo base_url(); ?>" + "admin/product/getThirdCategory",
+                        dataType: 'text',
+                        data: {second_category_ID : secondCategory},
+                        success: function(res) {
+                            if (res)
+                            {
+                            // Show Entered Value
+                            $('#third_category_type').html(res);
+                        }
+                    }
+                });
+                }
+            });
 
             $('input#unit').change(function() {
             // Check input( $( this ).val() ) for validity here
@@ -261,7 +360,7 @@ function fileSelected() {
     document.getElementById('error2').style.display = 'none';
     document.getElementById('abort').style.display = 'none';
     document.getElementById('warnsize').style.display = 'none';
-*/
+    */
     // get selected file element
     var oFile = document.getElementById('image_file').files[0];
 

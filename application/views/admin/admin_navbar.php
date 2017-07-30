@@ -248,6 +248,9 @@
                                 <li>
                                     <a href="<?php echo base_url('admin/Product/Add') ?>">Product</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo base_url('admin/resources/add/brand') ?>">Brand</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -259,7 +262,7 @@
                                     <a href="<?php echo base_url('admin/category/allCategories') ?>">Categories</a>
                                 </li>
                                 <li>
-                                    <a href="morris.html">Products</a>
+                                    <a href="<?php echo base_url('admin/product/allProduct') ?>">Products</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

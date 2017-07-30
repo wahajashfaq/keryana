@@ -73,6 +73,53 @@ class Add extends CI_Controller {
 			$this->load->view('upload_success', $data);
 		}
 	}
+
+	public function brand(){
+
+		$this->load->view('admin/add_brand');
+	}
+
+
+	public function add_brand(){
+
+
+		$brand_name = $this->input->post('brand_name');
+
+		$config['upload_path']          = './uploads/brands';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 1000;
+		$config['max_width']            = 1024;
+		$config['max_height']           = 768;
+		$config['file_name'] = $brand_name; // 
+
+
+		$this->load->library('upload', $config);
+
+		
+
+		if($this->upload->do_upload('image_file')){
+		
+			$img = $this->upload->data()['file_name'];
+			$this->load->model('Brand');
+			$this->Brand->addNewBrand($brand_name,$img);
+
+
+			$this->session->set_flashdata('message', "$brand_name added in your Brands");
+			return redirect('admin/resources/add/brand');
+
+			echo "<pre>";
+			print_r($this->input->post());
+			echo "$img";
+			echo "</pre>";
+		}else
+        {
+                $error = array('error' => $this->upload->display_errors());
+
+                print_r($error);
+        }
+
+
+	}
 	public function sliding_banner(){
 
 		$config['upload_path']          = './uploads/sliding_banner/';

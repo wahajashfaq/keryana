@@ -1,0 +1,9 @@
+slider banner 600*320
+slider side banners 300*152.5
+category slider 100*100 
+3 banners  400*200
+2 banners  600*200
+inner category banners 600*300
+brands slider 100*50
+product 150*150
+note: product can be any but width should be less than 300

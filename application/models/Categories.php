@@ -31,6 +31,19 @@ class Categories extends CI_Model {
 			}		
 	}
 
+	public function getThirdCategoryID($enc_id){  // Where EncryptedID is given
+
+			$this->db->where('EncryptedId',$enc_id);
+			$query = $this->db->get('third_category');
+
+			if($query->num_rows()){ 
+				return $query->row()->ID;
+			}	
+			else {
+				return FALSE;
+			}		
+	}
+
 
 	public function getFirstCategory(){
 
@@ -221,7 +234,52 @@ class Categories extends CI_Model {
 		$this->db->where('EncryptedId',$post_data["category_id"]);
 		$this->db->update('third_category');
 	}
-	
+
+
+	// _________________________________________________________________
+	public function getFirstCategoryData($enc_id){
+
+		$this->db->where('Visibility',1);
+		$this->db->where('EncryptedId',$enc_id);
+		$query = $this->db->get('first_category');
+		
+		if($query->num_rows()){ 
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}	
+	}
+
+
+	public function getSecondCategoryData($enc_id){
+
+		$this->db->where('Visibility',1);
+		$this->db->where('FirstCategoryID', $this->getFirstCategoryID($enc_id));
+		$query = $this->db->get('second_category');
+		
+		if($query->num_rows()){ 
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}	
+	}
+
+	public function getThirdCategoryData($enc_id){
+
+		$this->db->where('Visibility',1);
+		$this->db->where('SecondCategoryID', $this->getSecondCategoryID($enc_id));
+		$query = $this->db->get('third_category');
+
+		
+		if($query->num_rows()){ // Successfully Logged in
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}	
+	}
 }
 
 /* End of file Categories.php */

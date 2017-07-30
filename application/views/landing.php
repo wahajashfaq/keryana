@@ -48,10 +48,6 @@
         </div>
         <ul class="shoplinks xs-hidden">
 
-
-
-
-
         <?php $count = 0;
         foreach ($categories as $category){?>
 
@@ -80,8 +76,6 @@
          </li>
 
         <?php } ?>
-
-
 
 </ul>
 </div>
@@ -600,61 +594,22 @@
     <div class="col-md-12">
 
         <div class="carousel slide carousel1" id="myCarousel4">
+        
           <div class="carousel-inner">
-            <div class="item active">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_1.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_2.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_3.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_4.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_5.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_6.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_7.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_8.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
-          <div class="item">
-              <div class="col-md-2">
-                  <center><a href="#" class="slider2-label"><img src="<?php echo base_url('assets/images/brand_9.png') ?>" style="width:100px;height:50px">
-                  </a></center>
-              </div>
-          </div>
+
+
+             <?php $count = 0;
+                    foreach ($brands as $brand){?>
+                    <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
+                      <div class="col-md-2">
+
+                          <?php $imageURL = base_url('uploads/brands/'.$brand["ImageUrl"]); ?>
+                          <center><a href="#" class="slider2-label"><img src="<?php echo $imageURL; ?>" class="img-circle" style="width:100px;height:100px">
+                          </a></center>
+                      </div>
+                  </div>
+                  <?php } ?>
+
       </div>
       <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
       <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>

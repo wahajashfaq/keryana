@@ -22,10 +22,11 @@ class Welcome extends CI_Controller {
 	{
 
 		$this->load->model('Categories');
+		$this->load->model('Brand');
 		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
-
+		$brands = $this->Brand->getAllBrands();
 		
 
 		for ($i=0; $i <count($second_categories); $i++) { 
@@ -69,12 +70,7 @@ class Welcome extends CI_Controller {
 		echo "</pre>";
 */
 
-
-
-		
-		
-		$this->load->view('landing',["categories"=>$first_categories]);
-		
+		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands]);		
 	}
 
 
@@ -93,9 +89,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('category');	
 	}
     
-    public function product(){
+    public function product($product_ID){
 
-		$this->load->view('product');	
+    	$this->load->model('KeryanaProduct'); 
+    	$product_detail = $this->KeryanaProduct->getSingleProduct($product_ID);
+    	$product_units = $this->KeryanaProduct->getProductUnit($product_ID);
+		$this->load->view('product',["PRODUCT"=>$product_detail,"UNITS"=>$product_units]);	
 	}
 
     public function home(){
@@ -105,6 +104,11 @@ class Welcome extends CI_Controller {
 
 	public function popup(){
 		$this->load->view('popup');	
+
+	}
+
+	public function profile(){
+		$this->load->view('profile');	
 
 	}
 
