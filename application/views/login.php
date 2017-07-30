@@ -31,11 +31,6 @@
                     <span>Sign in with Facebook</span><i class="fa fa-facebook fa-fw oxi_icon oxi_icon_facebook"></i>
                 </a>
                 
-                <div class="g-signin2" data-onsuccess="onSignIn" spellcheck="width:100%">
-                    <a class="social_login google" href="#">
-                        <span>Sign in with Google +</span><i class="fa fa-google fa-fw oxi_icon oxi_icon_google"></i>
-                    </a>
-                </div>
             </form>
         </div>
         <div class="col-sm-6" id="regside">
