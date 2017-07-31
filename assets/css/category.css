@@ -60,9 +60,21 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+.check{
+    margin-top: 10px;
+    margin-left: 25px;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.check>label{
+    font-size: 12px;
+    font-weight: 100 !important;
+}
 @media (min-width:0px) and (max-width:991px)
 {
     .cbanner{
         height: auto !important;
+        margin-top: 20px;
     }
 }
