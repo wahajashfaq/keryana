@@ -537,6 +537,7 @@ img:hover{
     border-radius: 5px;
     font-size: 15px;
     background-color: #96C658 !important;
+    margin-top: 40px;
 }
 .addbtn span{
     color: #fff;
@@ -544,7 +545,7 @@ img:hover{
     margin-top: 5px;
 }
 .qmang{
-    display: none;
+    display: block;
     max-width: 150px;
 }
 .qmang i{
@@ -688,6 +689,7 @@ img:hover{
     z-index: 90;
     overflow-y: auto;
     overflow-x: hidden;
+    left:0px;
 }
 
 #product-search{

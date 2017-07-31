@@ -123,4 +123,12 @@ class Welcome extends CI_Controller {
 		echo count($arr1);
 		print_r($arr) ;
 	}
+    
+    public function profile(){
+        $this->load->view('profile');   
+    }
+    
+    public function loc(){
+        $this->load->view('loc');   
+    }
 }
