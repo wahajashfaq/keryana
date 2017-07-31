@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sidebar.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/profile.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/category.css') ?>">
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
 
 

@@ -1,0 +1,68 @@
+.cbox{
+     border: 1px solid #e9e8e8;
+    width: 100%;
+    padding: 2px;
+    margin-top: -30px;
+    padding-bottom: 20px;
+}
+
+.cbox1{
+    background-color: #96C658;
+    font-size: 20px;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+.Maincat{
+    color: #000;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.Maincat i{
+    font-weight: 500;
+}
+.Maincat span{
+    margin-left: 5px;
+}
+
+.Maincat.sub{
+    margin-top: 10px;
+    padding-left:    30px;
+}
+
+.Maincat.active{
+    font-weight: 900;
+}
+
+.Maincat.active>i{
+    font-weight: 900;
+}
+
+.cbanner{
+    height: 320px;
+    width:100%;
+    margin-top: -30px;
+}
+
+.head{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #6d6d6d;
+    font-weight: 700;
+    font-size: 12px;
+    border-bottom: 2px dotted #7d7d7d;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (min-width:0px) and (max-width:991px)
+{
+    .cbanner{
+        height: auto !important;
+    }
+}
