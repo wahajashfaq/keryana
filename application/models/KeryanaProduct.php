@@ -29,9 +29,9 @@ class KeryanaProduct extends CI_Model {
 
 		if($query->num_rows()){ 
 
-			echo "<pre>";
+			/*echo "<pre>";
 			print_r($query->result_array());
-			echo "</pre>";
+			echo "</pre>";*/
 
 			return $query->result_array();
 
@@ -78,6 +78,21 @@ class KeryanaProduct extends CI_Model {
 		}
 
 	}
+
+
+	public function getNewArrivals(){
+
+		$this->db->where('Visibility', 1);
+		$this->db->order_by("ID", "desc"); $this->db->limit(10);
+		$query = $this->db->get('products');
+
+		if($query->num_rows()){
+			return $query->result_array();
+		}else{
+			return FALSE;
+		}
+	}
+
 
 
 	public function searchProduct(){

@@ -22,12 +22,25 @@ class Welcome extends CI_Controller {
 	{
 
 		$this->load->model('Categories');
+		$this->load->model('KeryanaProduct');
 		$this->load->model('Brand');
 		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 		$brands = $this->Brand->getAllBrands();
-		
+		$newArrivals = $this->KeryanaProduct->getNewArrivals();
+				
+
+
+		foreach ($newArrivals as &$row) {
+
+    	$units["Units"] = array();
+    	$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+
+
+		}
+
+
 
 		for ($i=0; $i <count($second_categories); $i++) { 
 				$second_categories[$i]["SUB CATEGORIES"] = [];
@@ -39,7 +52,6 @@ class Welcome extends CI_Controller {
 				}
 			}
 		}
-
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
@@ -70,7 +82,7 @@ class Welcome extends CI_Controller {
 		echo "</pre>";
 */
 
-		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands]);		
+		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands,"NewArrivals"=>$newArrivals]);		
 	}
 
 
@@ -124,9 +136,6 @@ class Welcome extends CI_Controller {
 		print_r($arr) ;
 	}
     
-    public function profile(){
-        $this->load->view('profile');   
-    }
     
     public function loc(){
         $this->load->view('loc');   
