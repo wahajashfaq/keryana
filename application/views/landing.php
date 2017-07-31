@@ -462,7 +462,7 @@
 <div class="row">
   <div class="col-md-12">
 
-    <div class="carousel slide carousel1" id="myCarousel4">
+    <div class="carousel slide carousel1" id="myCarousel5">
 
       <div class="carousel-inner">
 
@@ -480,8 +480,8 @@
       <?php } ?>
 
     </div>
-    <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-    <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+    <a class="left carousel-control" href="#myCarousel5" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a class="right carousel-control" href="#myCarousel5" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
   </div>
 </div>
 </div>
