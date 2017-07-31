@@ -77,6 +77,7 @@
     
 
 
+    
     <div class="header-fixed">
         <div class="container">
             <div class="row">
@@ -86,573 +87,42 @@
                     <div style="background-color:#fff;width:40px;margin-top:-40px;margin-left:-20px"><img src="<?php echo base_url('assets/images/mylogosmall.jpg') ?>" style="height:50px;"></div></button>
                     <ul class="shoplinks xs-hidden dropdown-contentf" style="width:100%">
                      
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
+                     <?php $count = 0;
+        foreach ($categories as $category){?>
+
+         <li>
+             <div class="dropleft">
+                 <span class="text"><?php echo $category["Name"]; ?></span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
+                 <div class="dropleft-content"  style="top:<?php echo $count*-33;$count++; ?>px;">
+                     <div class="container-fluid">
+                         <div class="row">
+                         <?php foreach ($category["SUB CATEGORIES"] as $category2){?>
+                             <div class="col-md-3">
+                                 <a><div class="head"><?php echo $category2["Name"]; ?></div></a>
+
+                         <?php foreach ($category2["SUB CATEGORIES"] as $category4){?>
+                                 <a><div class="item"><?php echo $category4["Name"]; ?></div></a>
+
+                        <?php } ?>
+
                              </div>
+                        <?php } ?>
+
                          </div>
-                     </li>
-                     
-                     <li>
-                           <div class="dropleft">
-                             <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-33px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-66px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-99px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                        <div class="dropleft">
-                             <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-132px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-165px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-198px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-231px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">Grocery and Staples</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-264px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
-                     
-                     <li>
-                         <div class="dropleft">
-                             <span class="text">branded foods</span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
-                             <div class="dropleft-content" style="top:-297px">
-                                 <div class="container-fluid">
-                                     <div class="row">
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                             <a><div class="head">Value Added</div></a>
-                                                   <a><div class="item">Sugar & Sugar Free</div></a>
-                                                    <a><div class="item">Salt</div></a>
-                                                     <a><div class="item">Pickle</div></a>
-                                                    <a><div class="item">Papad</div></a>
-                                                    <a><div class="item">Khakhra</div></a>
-                                                    <a><div class="item">Boondi</div></a>
-                                                    <a><div class="item">Saffron</div></a>
-                                                    <a><div class="item">Aluminium Foil</div></a>
-                                         </div>
-                                         <div class="col-md-3">
-                                                 <a><div class="head">Flours and Grains</div></a>
-                                             <a><div class="item">Atta</div></a>
-                                                    <a><div class="item">Besan</div></a>
-                                                     <a><div class="item">Dalia</div></a>
-                                                    <a><div class="item">Maida</div></a>
-                                                    <a><div class="item">Sooji / Suji</div></a>
-                                                    <a><div class="item">Rice</div></a>
-                                                    <a><div class="item">Poha / Chidwa</div></a>
-                                                    <a><div class="item">Upma</div></a>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </li>
+                     </div>
+                 </div>
+             </div>
+         </li>
+
+        <?php } ?>
                 </ul>
                     </div>
                 </div>
                 <div class="col-md-5">
                     <form class="">
                     <div>
-                    <div class="search-box" style="margin-top:0px">
-                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search">
+                    <div class="search-box"  style="margin-top:0px">
+                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search" >
                     </div>
                     </div>
                     <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
@@ -672,22 +142,23 @@
                                 </a>
                             </div>
                     </div-->
-                    <diV style="float:left;margin-right:50px;margin-top:5px">
-                        <ul>
+                    <diV style="float:left;margin-top:5px">
+                         <ul>
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                     <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> MY Profile</a>
                                     </li>
                                     <li class="divider"></li>
-                                    <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                    <li><a href="<?php echo base_url('customer/dashboard/logout'); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                                     </li>
                                 </ul>
                                 <!-- /.dropdown-user -->
                             </li>
-                        </ul></diV>
+                        </ul>
+                    </diV>
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>
