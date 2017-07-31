@@ -11,15 +11,15 @@ class KeryanaProduct extends CI_Model {
 
 	public function getProductID($enc_id){  // Where EncryptedID is given
 
-			$this->db->where('EncryptedId',$enc_id);
-			$query = $this->db->get('products');
+		$this->db->where('EncryptedId',$enc_id);
+		$query = $this->db->get('products');
 
-			if($query->num_rows()){ 
-				return $query->row()->ID;
-			}	
-			else {
-				return FALSE;
-			}		
+		if($query->num_rows()){ 
+			return $query->row()->ID;
+		}	
+		else {
+			return FALSE;
+		}		
 	}
 
 	public function getProductUnit($product_ID){
@@ -29,40 +29,53 @@ class KeryanaProduct extends CI_Model {
 
 		if($query->num_rows()){ 
 
-				echo "<pre>";
-				print_r($query->result_array());
-				echo "</pre>";
+			echo "<pre>";
+			print_r($query->result_array());
+			echo "</pre>";
 
-				return $query->result_array();
+			return $query->result_array();
 
-			}	
-			else {
-				return FALSE;
-			}
+		}	
+		else {
+			return FALSE;
+		}
 
 	}
 	public function getSingleProduct($product_ID){
 
-			$this->db->select('products.*,products.Name as PNAME,brands.Name as BNAME');
-			$this->db->where('products.Visibility',1);
-			$this->db->where('products.EncryptedId',$product_ID)
-						->from('products')
-			 			->join('brands', 'brands.ID = products.BrandID');
-			$query = $this->db->get();
+		$this->db->select('products.*,products.Name as PNAME');
+		$this->db->where('EncryptedId', $product_ID);
+		$query = $this->db->get('products');
 
-			if($query->num_rows()){ 
+		if($query->num_rows()){ 
 
-				echo "<pre>";
-				print_r($query->result_array());
-				echo "</pre>";
+			if($query->row()->BrandID){
+				$this->db->select('products.*,products.Name as PNAME,brands.Name as BNAME');
+				$this->db->where('products.Visibility',1);
+				$this->db->where('products.EncryptedId',$product_ID)
+				->from('products')
+				->join('brands', 'brands.ID = products.BrandID');
+				$query2 = $this->db->get();
 
-				return $query->result_array();
+				if($query2->num_rows()){ 
 
-			}	
-			else {
-				return FALSE;
+					echo "<pre>";
+					print_r($query2->result_array());
+					echo "</pre>";
+
+					return $query2->result_array();
+
+				}	
+				else {
+					return FALSE;
+				}
 			}
 
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}
 
 	}
 
@@ -87,6 +100,27 @@ class KeryanaProduct extends CI_Model {
 		}
 
 	}
+
+	public function updateProduct($post_data,$image_url){
+
+		$this->load->helper('date');
+		$datestring = '%Y-%m-%d %h:%i:%s';
+		$time = now('Asia/Karachi');
+		
+		$CI =&get_instance();
+		$CI->load->model('Categories');
+
+
+		$this->db->where('Name', $post_data["product_name"]); 
+		$this->db->set('ModifiedDate', mdate($datestring, $time));
+		$this->db->set('BrandID', '');
+		$this->db->set('Details','');
+		$this->db->set('Image',$image_url);
+		$this->db->set('Visibility', 1); 
+
+		$this->db->update('products'); 
+
+	}
 	public function addNewProduct($post_data,$image_url){
 
 		$this->load->helper('date');
@@ -94,9 +128,9 @@ class KeryanaProduct extends CI_Model {
 		$time = now('Asia/Karachi');
 		
 		$CI =&get_instance();
-    	$CI->load->model('Categories');
-    	$CI->load->model('Brand');
-     	
+		$CI->load->model('Categories');
+		$CI->load->model('Brand');
+
 
 		$this->db->set('Name', $post_data["product_name"]); 
 		$this->db->set('CreationDate', mdate($datestring, $time));

@@ -272,16 +272,8 @@
                         </li>
 
                         <li>
-                            <a href="#"><i class="fa fa-envelope fa-fw"></i>Messages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="<?php echo base_url('admin/category/allCategories') ?>">Categories</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Products</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="<?php echo base_url('admin/Message') ?>"><i class="fa fa-envelope fa-fw"></i>Messages</span></a>
+                            
                         </li>
 
                         <li>

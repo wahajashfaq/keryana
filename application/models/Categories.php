@@ -45,6 +45,61 @@ class Categories extends CI_Model {
 	}
 
 
+
+	// Add if Exist other wise return ID
+
+
+	public function FILE_getFirstCategoryID($name){  // Where Name is given
+
+			$this->db->where('Name',$name);
+			$query = $this->db->get('first_category');
+
+			if($query->num_rows()){ 
+				return $query->row()->ID;
+			}	
+			else {
+
+				$data = array('category_name' => $name );
+				return $this->addFirstCategory($data);
+			}		
+	}
+
+
+	public function FILE_getSecondCategoryID($name,$FirstCategoryID){  // Where Name is given
+
+			$this->db->where('Name',$name);
+			$query = $this->db->get('second_category');
+
+			if($query->num_rows()){ 
+				return $query->row()->ID;
+			}	
+			else {
+
+				$data = array('category_name' => $name , 'category_id'=>md5($FirstCategoryID));
+				return $this->addSecondCategory($data);
+			}		
+	}
+
+	public function FILE_getThirdCategoryID($name,$SecondCategoryID){  // Where Name is given
+
+			$this->db->where('Name',$name);
+			$query = $this->db->get('third_category');
+
+			if($query->num_rows()){ 
+				return $query->row()->ID;
+			}	
+			else {
+
+				$data = array('category_name' => $name , 'category_id'=>md5($SecondCategoryID));
+				return $this->addThirdCategory($data);
+			}		
+	}
+
+
+
+	// _______________________________________
+
+
 	public function getFirstCategory(){
 
 		$this->db->where('Visibility',1);
@@ -107,9 +162,7 @@ class Categories extends CI_Model {
 		$this->db->where('ID', $inserted_id); //which row want to upgrade  
 		$this->db->update('first_category');
 
-		print_r($post_data);
-		exit;
-		echo "Category Model";
+		return $inserted_id;
 
 	}
 
@@ -134,9 +187,7 @@ class Categories extends CI_Model {
 		$this->db->where('ID', $inserted_id); //which row want to upgrade  
 		$this->db->update('second_category');
 
-		print_r($post_data);
-		exit;
-		echo "Category Model";
+		return $inserted_id;
 
 	}
 
@@ -161,9 +212,7 @@ class Categories extends CI_Model {
 		$this->db->where('ID', $inserted_id); //which row want to upgrade  
 		$this->db->update('third_category');
 
-		print_r($post_data);
-		exit;
-		echo "Category Model";
+		return $inserted_id;
 
 	}
 

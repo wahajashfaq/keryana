@@ -633,8 +633,8 @@
         <div class="col-md-12">
             <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home"><center><i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</center></a></li>
-                <li><a data-toggle="tab" href="#menu1"><center><i class="fa fa-history" aria-hidden="true"></i> ORDER HISTORY</center></a></li>
-                <li><a data-toggle="tab" href="#menu2"><center><i class="fa fa-map-marker" aria-hidden="true"></i> MY LOCATION</center></a></li>
+                <li><a data-toggle="tab" href="#order"><center><i class="fa fa-history" aria-hidden="true"></i> ORDER HISTORY</center></a></li>
+                <li><a data-toggle="tab" href="#loc"><center><i class="fa fa-map-marker" aria-hidden="true"></i> MY LOCATION</center></a></li>
               </ul>
 
               <div class="tab-content">
@@ -711,13 +711,43 @@
                             </form>
                     </div> 
                 </div>
-                <div id="menu1" class="tab-pane fade">
-                  <h3>Menu 1</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div id="order" class="tab-pane fade">
+                  <center><h3 style="color: #c6c6c6">Order History</h3></center>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Sr #</th>
+                        <th>OrderID</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>      
+                      <tr class="success">
+                        <td>1</td>
+                        <td>9567</td>
+                        <td>1200 Rs</td>
+                        <td>7/29/2017</td>
+                        <td>12:00</td>
+                        <td>Delivered</td>
+                        <td><a>View details</a></td>
+                      </tr>
+                      <tr class="warning">
+                        <td>2</td>
+                        <td>3452</td>
+                        <td>1300 Rs</td>
+                        <td>12/03/2016</td>
+                        <td>05:15</td>
+                        <td>Pending</td>
+                        <td><a>View details</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div id="menu2" class="tab-pane fade">
-                  <h3>Menu 2</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div id="loc" class="tab-pane fade">
+                    <?php include('loc.php'); ?>    
                 </div>
               </div>
             
@@ -892,5 +922,9 @@
         </div>
     </div>
 
+<<<<<<< HEAD:application/views/customer/profile.php
 
 <?php $this->load->view('about_footer.php'); ?>        
+=======
+<?php include('about_footer.php'); ?>        
+>>>>>>> origin/master:application/views/profile.php

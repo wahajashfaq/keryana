@@ -16,6 +16,102 @@ class Product extends CI_Controller {
 	}
 
 
+	public function CSV(){
+
+
+        $this->load->model('csv_model');
+        $this->load->library('csvimport');
+        $this->load->model('Categories');
+
+		$data['addressbook'] = $this->csv_model->get_addressbook();
+        $data['error'] = '';    //initialize image upload error array to empty
+
+        $config['upload_path'] = './uploads/ProductList';
+        $config['allowed_types'] = '*';
+        $config['max_size'] = '2000';
+
+        $this->load->library('upload', $config);
+
+
+        // If upload failed, display error
+        if (!$this->upload->do_upload()) {
+            $data['error'] = $this->upload->display_errors();
+            echo "<pre>";
+                    print_r($data);
+                    echo "</pre>";
+                    exit;
+            $this->load->view('csvindex', $data);
+        } else {
+            $file_data = $this->upload->data();
+            $file_path =  './uploads/ProductList/'.$file_data['file_name'];
+            
+            if ($this->csvimport->get_array($file_path)) {
+
+                $csv_array = $this->csvimport->get_array($file_path);
+                    /*echo "<pre>";
+                    print_r($csv_array);
+                    echo "</pre>";
+                    exit;*/
+                foreach ($csv_array as $row) {
+
+                	$firstCategoryID = $this->Categories->FILE_getFirstCategoryID($row['Category']);
+                	$seconCategoryID = $this->Categories->FILE_getSecondCategoryID($row['Sub1'],$firstCategoryID);
+                	$thirdCategoryID = $this->Categories->FILE_getThirdCategoryID($row['Sub2'],$seconCategoryID);
+                	$product_name = $row['ProductName'];;
+                	$imageName = $row['picCode'].'.jpg';
+                	$no_of_units = 0;
+                	$units = array();
+                	$prices = array();
+                	for ($i=1; $i<= 4; $i++) { 
+                		if($row['Q'.$i]){
+
+                			$no_of_units++;
+                			/*$units["unit$i"] = 	$row['Q'.$i];
+                			$prices["price$i"] = 	$row['P'.$i];*/
+                		} else{
+                			break;
+                		}
+                	}
+
+
+                	echo "<pre>";
+                	echo "$firstCategoryID  $seconCategoryID  $thirdCategoryID $product_name $imageName";
+                	echo "</pre>";
+
+                    $insert_data = array(
+                        'product_name'=> $row['ProductName'],
+                        'first_category_type'=>md5($firstCategoryID),
+                        'second_category_type'=>md5($seconCategoryID),
+                        'third_category_type'=>md5($thirdCategoryID),
+                        'unit'=> $no_of_units,
+                        'unit1' => $row['Q1'],
+                        'unit2' => $row['Q2'],
+                        'unit3' => $row['Q3'],
+                        'unit4' => $row['Q4'],
+                        'price1' => $row['P1'],
+                        'price2' => $row['P2'],
+                        'price3' => $row['P3'],
+                        'price4' => $row['P4'],
+                        'brand_id' => '',
+                        'product_detail' => ''
+                    );
+
+                
+					$this->load->model('KeryanaProduct');
+					$this->KeryanaProduct->updateProduct($insert_data,$imageName);
+                }
+                	exit;
+                $this->session->set_flashdata('success', 'Csv Data Imported Succesfully');
+                redirect(base_url().'csv');
+                //echo "<pre>"; print_r($insert_data);
+            } else 
+                $data['error'] = "Error occured";
+                $this->load->view('csvindex', $data);
+            }
+            
+        } 
+
+
 	public function add2(){
 
 		$data = array(
@@ -98,12 +194,12 @@ class Product extends CI_Controller {
 		if($this->upload->do_upload('image_file')){
 		
 		$img = $this->upload->data()['file_name'];
-
-		}
 		echo "<pre>";
 		print_r($this->input->post());
 		echo "$img";
 		echo "</pre>";
+		}
+
 
 		$this->load->model('KeryanaProduct');
 		$this->KeryanaProduct->addNewProduct($this->input->post(),$img);

@@ -48,7 +48,7 @@
 				<div class="upload_form_cont">
                 <div>
                     <div><label for="image_file">Please select image file</label></div>
-                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected(1);" /></div>
+                    <div><input type="file" name="image_file" id="image_file1" onchange="fileSelected(1);" /></div>
                 </div>
                 <div id="fileinfo">
                     <div id="filename"></div>
@@ -105,7 +105,7 @@
 			<div class="upload_form_cont">
                 <div>
                     <div><label for="image_file">Please select image file</label></div>
-                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected(2);" /></div>
+                    <div><input type="file" name="image_file" id="image_file2" onchange="fileSelected(2);" /></div>
                 </div>
                 <div id="fileinfo">
                     <div id="filename"></div>
@@ -162,7 +162,7 @@
 					<div class="upload_form_cont">
                 <div>
                     <div><label for="image_file">Please select image file</label></div>
-                    <div><input type="file" name="image_file" id="image_file" onchange="fileSelected(3);" /></div>
+                    <div><input type="file" name="image_file" id="image_file3" onchange="fileSelected(3);" /></div>
                 </div>
                 <div id="fileinfo">
                     <div id="filename"></div>
@@ -242,12 +242,16 @@
 
 		function fileSelected(id) {
 			$preview = '';
+			$image_file =''
 			if(id==1){
 				$preview = 'preview1';
+				$image_file = 'image_file1';
 			} else if(id==2){
 				$preview = 'preview2';
+				$image_file = 'image_file2';
 			} else if(id==3){
 				$preview = 'preview3';
+				$image_file = 'image_file3';
 			}
 
 
@@ -259,7 +263,7 @@
 		    document.getElementById('warnsize').style.display = 'none';
 		    */
 		    // get selected file element
-		    var oFile = document.getElementById('image_file').files[0];
+		    var oFile = document.getElementById($image_file).files[0];
 
 		    // filter for image files
 		    var rFilter = /^(image\/bmp|image\/gif|image\/jpeg|image\/png|image\/tiff)$/i;

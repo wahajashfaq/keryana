@@ -188,7 +188,7 @@
             </div>
             <div class ="col-sm-6 product_delivery">
                 <h4><strong><?php echo $PRODUCT[0]["PNAME"] ?></strong></h4>
-                <p class="sample-vendor"><span>Brand: <?php echo $PRODUCT[0]["BNAME"] ?></span></p>
+                <p class="sample-vendor"><span>Brand: <?php if(isset($PRODUCT[0]["BNAME"]))echo $PRODUCT[0]["BNAME"]; ?></span></p>
                 <div class="prices">
                     <span class="price on-sale">Rs. <span id="product_price">281.00</span></span>
                     <span class="compare-price">Rs. 330.00</span>
