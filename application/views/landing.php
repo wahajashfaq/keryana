@@ -428,12 +428,17 @@
 
        <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
             <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-              <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
+              <?php if(isset($row["OfferType"])) 
+
+                echo "<div class='discount' style='margin-left:10px'><center>19% <span>OFF</span></center></div><br><br>";
+               ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
               <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
                 <br><br><div><?php echo $row["Name"] ?></div>
               </div><br>
-              <button class="qview">QUICK VIEW</button>
-              <select class="new_arrivals_product qselect"  onchange="testing('<?php echo $row["EncryptedId"]; ?>')" > id="<?php echo $row["EncryptedId"]; ?>">
+              <a target="_blank" href="<?php echo base_url('welcome/product/'.$row["EncryptedId"]); ?>"><button class="qview">QUICK VIEW</button></a>
+              <?php if(count($row["Units"])==1)
+                    echo "<div class='qfix'>".$row['Units'][0]['Unit']."</div>";else{ ?>
+              <select class="new_arrivals_product qselect"  onchange="testing('<?php echo $row["EncryptedId"]; ?>')"  id="<?php echo $row["EncryptedId"]; ?>">
                 <?php 
                     foreach ($row["Units"] as $units) { ?>
                     <option data-percentage="" value="<?php echo $units["Price"]; ?>"><?php echo $units["Unit"]; ?></option>
@@ -441,9 +446,12 @@
                 }
                 ?>
 
+                <?php } ?>
+
               </select>
               <br><br>
-              <span class="oprice">Rs 1000</span><span class="nprice">Rs 500</span><br><br>
+              <span class="new_arrivals_price nprice" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
+              <!-- <span class="nprice">Rs 500</span><br><br> -->
               <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
               <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
             </center>
@@ -874,18 +882,19 @@
 </div>
 
 
-<script type="text/javascript">
-      function testing(event){
-
-        alert(event);
-      }
-    $(document).ready(function(){
-
-      $('select.new_arrivals_product').change(function(){
-      });
-    });
-</script>
 
 
 
 <?php include('about_footer.php'); ?>        
+
+
+<script type="text/javascript">
+      function testing(event){
+
+          $price = $('.new_arrivals_product#'+event).val();
+          console.log($('#'+event+'.new_arrivals_price').html($price));
+          alert($('#'+event+'.new_arrivals_price').html());
+
+      }
+
+</script>
