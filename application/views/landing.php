@@ -1,6 +1,21 @@
 <?php include('landing_header.php') ?>
 
+<div id="PrintResult">
+  <?php 
 
+  if ($CartItems = $this->session->userdata('My_Cart')) {
+
+
+    echo "<pre>";
+    print_r ($CartItems);
+    echo "</pre>";
+
+    session_unset('My_Cart');
+
+  } 
+
+  ?>
+</div>
 
 <div class="container" style="padding-bottom:30px;">
   <div class="row">
@@ -420,49 +435,49 @@
 
       <div class="carousel slide carousel1" id="myCarousel4">
         <div class="carousel-inner">
-  
-        
 
-       <?php $count = 0;
-       foreach ($NewArrivals as $row){?>
 
-       <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
-            <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
-              <?php if(isset($row["OfferType"])) 
 
-                echo "<div class='discount' style='margin-left:10px'><center>19% <span>OFF</span></center></div><br><br>";
-               ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
-              <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
-                <br><br><div><?php echo $row["Name"] ?></div>
-              </div><br>
-              <a target="_blank" href="<?php echo base_url('welcome/product/'.$row["EncryptedId"]); ?>"><button class="qview">QUICK VIEW</button></a>
-              <?php if(count($row["Units"])==1)
-                    echo "<div class='qfix'>".$row['Units'][0]['Unit']."</div>";else{ ?>
-              <select class="new_arrivals_product qselect"  onchange="testing('<?php echo $row["EncryptedId"]; ?>')"  id="<?php echo $row["EncryptedId"]; ?>">
-                <?php 
-                    foreach ($row["Units"] as $units) { ?>
-                    <option data-percentage="" value="<?php echo $units["Price"]; ?>"><?php echo $units["Unit"]; ?></option>
-                    <?php
-                }
-                ?>
+         <?php $count = 0;
+         foreach ($NewArrivals as $row){?>
 
-                <?php } ?>
+         <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
+          <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+            <?php if(isset($row["OfferType"])) 
 
-              </select>
-              <br><br>
-              <span class="new_arrivals_price nprice" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
-              <!-- <span class="nprice">Rs 500</span><br><br> -->
-              <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-              <button class="addbtn"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
-            </center>
-          </div>
-        </div>
+            echo "<div class='discount' style='margin-left:10px'><center>19% <span>OFF</span></center></div><br><br>";
+            ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
+            <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
+              <br><br><div><?php echo $row["Name"] ?></div>
+            </div><br>
+            <a target="_blank" href="<?php echo base_url('welcome/product/'.$row["EncryptedId"]); ?>"><button class="qview">QUICK VIEW</button></a>
+            <?php if(count($row["Units"])==1)
+            echo "<div class='qfix'>".$row['Units'][0]['Unit']."</div>";else{ ?>
+            <select class="new_arrivals_product qselect"  onchange="testing('<?php echo $row["EncryptedId"]; ?>')"  id="<?php echo $row["EncryptedId"]; ?>">
+              <?php 
+              foreach ($row["Units"] as $units) { ?>
+              <option data-percentage="<?php echo $units["ID"]; ?>" value="<?php echo $units["Price"]; ?>"><?php echo $units["Unit"]; ?></option>
+              <?php
+            }
+            ?>
 
-      <?php } ?>
+            <?php } ?>
+
+          </select>
+          <br><br>
+          <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
+          <!-- <span class="nprice">Rs 500</span><br><br> -->
+          <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+          <button class="addbtn" onclick="add_data('<?php echo $row["EncryptedId"]; ?>',this)" ><img  class="btn_image" width="26" height="21" src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
+        </center>
+      </div>
     </div>
-    <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-    <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+
+    <?php } ?>
   </div>
+  <a class="left carousel-control" href="#myCarousel4" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+  <a class="right carousel-control" href="#myCarousel4" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>
 </div>
 </div>
 <br><br>
@@ -699,7 +714,7 @@
 </div>
 <br><br>
 
- -->
+-->
 
 </div>
 
@@ -865,11 +880,6 @@
     </div>
     <br>
 
-    <select class="testing">
-      <option>2</option>
-      <option>2</option>
-      <option>2</option>
-    </select>
     
     <div class="row">
       <div class="col-md-12">
@@ -889,12 +899,74 @@
 
 
 <script type="text/javascript">
-      function testing(event){
 
-          $price = $('.new_arrivals_product#'+event).val();
-          console.log($('#'+event+'.new_arrivals_price').html($price));
-          alert($('#'+event+'.new_arrivals_price').html());
 
-      }
+  function testing(event){
 
-</script>
+    $price = $('.new_arrivals_product#'+event).val();
+    $percentage = $('.new_arrivals_product#'+event).find(':selected').attr('data-percentage');
+    console.log($('#'+event+'.new_arrivals_price').html($price));
+    console.log($('#'+event+'.new_arrivals_price').attr('data-percentage',$percentage));
+        //  alert($('#'+event+'.new_arrivals_price').attr('data-percentage'));
+       //   alert($('#'+event+'.new_arrivals_price').html());
+
+     }
+
+
+     function   add_data(product_ID,event){
+
+      $(document).ready(function(){
+
+        $price = $('#'+product_ID+'.new_arrivals_price').html();
+        $quantity = $('#'+product_ID+'.new_arrivals_quantity').html();
+        $percentage = $('#'+product_ID+'.new_arrivals_price').attr('data-percentage');
+
+
+
+            //console.log("Price =>"+$price+"  AND  ID =>"+$percentage);
+            //  alert($quantity);
+
+            jQuery.ajax({
+
+              type: "POST",
+              url: "<?php echo base_url(); ?>" + "/customer/Cart/AddToCart",
+              dataType: 'text',
+              data: {
+                priceOfProduct : $price, 
+                UnitID : $percentage,
+                quantityOfProduct : $quantity
+              },
+              success: function(res) {
+
+                if (res)
+                {
+                    // Show Entered Value
+                    /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    //alert(res);
+                    $(event).children().attr('src',"<?php echo base_url('assets/images/addbicon.png');?>");
+                  }
+
+                },
+                beforeSend : function()
+                {
+                  $(event).children().attr('src',"<?php echo base_url('assets/images/adding.gif');?>");
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("some error");
+                }
+              });
+
+
+          });
+    }
+
+
+
+
+
+  </script>

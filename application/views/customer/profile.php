@@ -922,9 +922,4 @@
         </div>
     </div>
 
-<<<<<<< HEAD:application/views/customer/profile.php
-
 <?php $this->load->view('about_footer.php'); ?>        
-=======
-<?php include('about_footer.php'); ?>        
->>>>>>> origin/master:application/views/profile.php

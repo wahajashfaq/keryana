@@ -175,18 +175,20 @@
               });
             
             
+            $('.qval').text("1");
+/*
             $('body').on('click', '.addbtn', function() {
                 $(this).parent().children('.addbtn').css('display','none');
                 $(this).parent().children('.qmang').children('.qval').text("1");
                 $(this).parent().children('.qmang').css('display','block');
-            });
+            });*/
             $('body').on('click', '.fa-minus', function() {
                 var m = $(this).parent().children('.qval').text();
-                m--;
+                  m--;
                 if(m===0)
                 {
-                    $(this).parent().parent().children('.qmang').css('display','none');
-                    $(this).parent().parent().children('.addbtn').css('display','block');
+                   // $(this).parent().parent().children('.qmang').css('display','none');
+                   // $(this).parent().parent().children('.addbtn').css('display','block');
                 }
                 else{
                     
