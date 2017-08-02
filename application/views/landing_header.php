@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/landing.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/sidebar.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/footer.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/home_header.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/profile.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/category.css') ?>">
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
@@ -52,11 +53,32 @@
                         <img src="<?php echo base_url('assets/images/header_top_right_text.png') ?>" alt="free delivery" style="float:left,margin-left:10px">
                         <span style="margin-right:5px,float:left">Free delivery for orders Rs. 500 and above</span>
                         </div>
+
+                        <?php if ($this->session->userdata('customer_id')){ ?>
+                            <diV style="float:right;margin-right:50px">
+                         <ul>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> MY Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="<?php echo base_url('customer/dashboard/logout'); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                    </li>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </li>
+                        </ul>
+                        </diV>
+                        <?php } else { ?>
                         <a href="<?php echo base_url('signup') ?>">
                             
                         <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
 
                         </a>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

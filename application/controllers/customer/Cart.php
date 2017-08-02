@@ -20,8 +20,14 @@ class Cart extends CI_Controller {
 			if ($this->session->userdata('My_Cart')) {
 				$CartItems = $this->session->userdata('My_Cart');
 
-				$CartItems[$UNIT_ID] = ["Price"=>$PRICE,"Quantity"=>$QUANTITY];
+				if(isset($CartItems[$UNIT_ID])){
+					$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+				}else {
+
+					$CartItems[$UNIT_ID] = ["Price"=>$PRICE,"Quantity"=>$QUANTITY];
+				}
 				$this->session->set_userdata("My_Cart",$CartItems);
+
 				echo("Alreay Exist");
 			} else {
 
@@ -35,7 +41,7 @@ class Cart extends CI_Controller {
 			$CartItems = $this->session->userdata('My_Cart');
 
 				
-				//array_splice($CartItems, array_search('399', $CartItems), 1);
+				//array_splice($CartItems, array_search('391', $CartItems), 1);
 
 		}	
 

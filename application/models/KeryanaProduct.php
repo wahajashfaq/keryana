@@ -168,6 +168,122 @@ class KeryanaProduct extends CI_Model {
 		$this->addProductPrice_Unit($post_data,$inserted_id);
 	}	
 
+
+	public function getProductByCategoryID($type,$category_ID){
+
+
+		$CI =&get_instance();
+		$CI->load->model('Categories');
+
+
+		if($type=="First"){
+
+			$this->db->where('FirstCategoryID',$CI->Categories->getFirstCategoryID($category_ID));	
+
+		}else if($type=="Second"){
+			$this->db->where('SecondCategoryID',$CI->Categories->getSecondCategoryID($category_ID));	
+
+		}else if($type=="Third"){
+			$this->db->where('ThirdCategoryID',$CI->Categories->getThirdCategoryID($category_ID));	
+
+		}else {
+
+		}
+
+		$this->db->where('Visibility',1);
+		$query = $this->db->get('products');
+		if($query->num_rows()){ 
+
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}		
+
+	}
+
+
+	public function getCategoriesTypes($type,$category_ID){
+
+
+		$CI =&get_instance();
+		$CI->load->model('Categories');
+
+
+		if($type=="First"){
+
+			$this->db->where('Visibility',1);
+			$this->db->where('FirstCategoryID',$CI->Categories->getSecondCategoryID($category_ID));
+			$query = $this->db->get('second_category');
+
+			if($query->num_rows()){ 
+
+				return $query->result_array();
+			}	
+			else {
+				return FALSE;
+			}
+
+		}else if($type=="Second"){
+
+
+			$this->db->where('Visibility',1);
+			$this->db->where('SecondCategoryID',$CI->Categories->getSecondCategoryID($category_ID));
+			$query = $this->db->get('third_category');
+
+			if($query->num_rows()){ 
+
+				return $query->result_array();
+			}	
+			else {
+				return FALSE;
+			}
+
+		}else if($type=="Third"){
+
+			$this->db->select('SecondCategoryID');
+			$this->db->where('Visibility',1);
+			$this->db->where('EncryptedId',$category_ID);
+			$query = $this->db->get('third_category');
+
+			if($query->num_rows()){ 
+				$parentID =  $query->row()->SecondCategoryID;
+
+				$this->db->where('Visibility',1);
+				$this->db->where('SecondCategoryID',$parentID);
+				$query = $this->db->get('third_category');
+
+				if($query->num_rows()){ 
+
+					return $query->result_array();
+				}	
+				else {
+					return FALSE;
+				}
+
+			}	
+			else {
+				return FALSE;
+			}
+
+		}else {
+
+		}
+
+		$this->db->where('Visibility',1);
+		$query = $this->db->get('products');
+		if($query->num_rows()){ 
+
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}		
+
+	}
+
+
+
 }
 
 /* End of file product.php */

@@ -96,9 +96,10 @@ class Welcome extends CI_Controller {
 		$this->load->view('about');	
 	}
     
-    public function category(){
+    public function category($type,$category_id){
         
         $this->load->model('Categories');	
+        $this->load->model('KeryanaProduct');	
         $first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
@@ -127,7 +128,31 @@ class Welcome extends CI_Controller {
 		}
 
 
-		$this->load->view('category',["categories"=>$first_categories]);		
+
+		$result_sidebar   = $this->KeryanaProduct->getCategoriesTypes($type,$category_id);
+		$result_products  = $this->KeryanaProduct->getProductByCategoryID($type,$category_id);
+		foreach ($result_products as &$row) {
+
+    	$units["Units"] = array();
+    	$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+
+		}
+
+    	$sub_category = "";
+    	$currentCategory = [];
+    	if($type=="First"){
+    		$sub_category = "Second";
+    		$currentCategory = $this->Categories->getFirstCategoryData($category_id);
+
+    	} else if($type=="Second"){
+    		$sub_category = "Third";
+    		$currentCategory = $this->Categories->getSecondCategoryData_ID($category_id);
+    		
+    	} else if($type="Third"){
+    		$sub_category = "Third";
+    	}
+
+		$this->load->view('category',["categories"=>$first_categories,"filterd"=>$result_products,"side_categories"=>$result_sidebar,"SubCategory"=>$sub_category,"CurrentCategory"=>$currentCategory]);
 
 	}
     

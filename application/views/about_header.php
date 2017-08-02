@@ -32,11 +32,16 @@
                   " class="cart"><span class="first">Your Cart</span>
                   <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
               </button>
+
+            <?php if ($this->session->userdata('My_Cart')): ?>
               <div class="dropdown-content">
                 <p>It apears that your cart is currently empty!</p><br>
                  <a class="cbtn">CONTINUE SHOPPING</a>
               </div>
+            <?php endif ?>
             </div>
+                
+
         </div>    
         </div>
             <div class="row" style="padding-top:20px">

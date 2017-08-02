@@ -331,6 +331,25 @@ class Categories extends CI_Model {
 	}
 
 
+// ________________ FInal UPDATE On THIS FILE
+
+
+	public function getSecondCategoryData_ID($enc_id){
+
+		$this->db->where('Visibility',1);
+		$this->db->where('EncryptedId',$enc_id);
+		$query = $this->db->get('second_category');
+		
+		if($query->num_rows()){ 
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}	
+	}
+
+	//________________________________________________
+
 	public function setFirstCategoryImage($category_id,$image){
 
 		$this->db->where('EncryptedId',$category_id);

@@ -68,16 +68,16 @@
 
               <li>
                <div class="dropleft">
-                 <span class="text"><?php echo $category["Name"]; ?></span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
+                 <a style="color:black;" href="<?php echo base_url('welcome/category/First/'.$category["EncryptedId"]) ?>" target="blank"><span class="text"><?php echo $category["Name"]; ?></span></a><i class="fa fa-caret fa-caret-right" style="float:right"></i>
                  <div class="dropleft-content"  style="top:<?php echo $count*-33;$count++; ?>px;">
                    <div class="container-fluid">
                      <div class="row">
                        <?php foreach ($category["SUB CATEGORIES"] as $category2){?>
                        <div class="col-md-3">
-                         <a><div class="head"><?php echo $category2["Name"]; ?></div></a>
+                         <a href="<?php echo base_url('welcome/category/Second/'.$category2["EncryptedId"]) ?>" target="blank"><div class="head"><?php echo $category2["Name"]; ?></div></a>
 
                          <?php foreach ($category2["SUB CATEGORIES"] as $category4){?>
-                         <a><div class="item"><?php echo $category4["Name"]; ?></div></a>
+                         <a href="<?php echo base_url('welcome/category/Third/'.$category4["EncryptedId"]) ?>" target="blank"><div class="item"><?php echo $category4["Name"]; ?></div></a>
 
                          <?php } ?>
 
@@ -443,12 +443,14 @@
 
          <div class="item <?php if($count==0){echo "active";$count="1";} ?>">
           <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+            <div style="height: 40px">
             <?php if(isset($row["OfferType"])) 
 
             echo "<div class='discount' style='margin-left:10px'><center>19% <span>OFF</span></center></div><br><br>";
             ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
+            </div>
             <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
-              <br><br><div><?php echo $row["Name"] ?></div>
+              <br><br><div style="height: 20px;"><?php echo $row["Name"] ?></div>
             </div><br>
             <a target="_blank" href="<?php echo base_url('welcome/product/'.$row["EncryptedId"]); ?>"><button class="qview">QUICK VIEW</button></a>
             <?php if(count($row["Units"])==1)
@@ -461,9 +463,11 @@
             }
             ?>
 
-            <?php } ?>
+          </select><br>
+            <?php } 
 
-          </select>
+            ?>
+
           <br><br>
           <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
           <!-- <span class="nprice">Rs 500</span><br><br> -->
@@ -922,7 +926,6 @@
         $percentage = $('#'+product_ID+'.new_arrivals_price').attr('data-percentage');
 
 
-
             //console.log("Price =>"+$price+"  AND  ID =>"+$percentage);
             //  alert($quantity);
 
@@ -949,6 +952,7 @@
 
                     //alert(res);
                     $(event).children().attr('src',"<?php echo base_url('assets/images/addbicon.png');?>");
+                    $('.dropdown-content').html(res);
                   }
 
                 },
