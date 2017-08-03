@@ -1,4 +1,4 @@
-<?php include('home_header.php') ?>
+<?php include('customer/home_header.php') ?>
 
 <div class="container" style="padding-bottom:30px;">
     <div class="row">
@@ -94,132 +94,95 @@
                         </div>
                     </div>
                 </div>    
-            </div>
-    
+    </div>
     <div class="row">
-        <div class="col-md-12">
-            <ul class="nav nav-tabs">
-                <li class="active"><a data-toggle="tab" href="#home"><center><i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</center></a></li>
-                <li><a data-toggle="tab" href="#order"><center><i class="fa fa-history" aria-hidden="true"></i> ORDER HISTORY</center></a></li>
-                <li><a data-toggle="tab" href="#loc"><center><i class="fa fa-map-marker" aria-hidden="true"></i> MY LOCATION</center></a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade in active">
-                        <div class="pbox">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <span class="name">NAME:</span><span style="float:right"><?php echo $PROFILE[0]["FirstName"]." ".$PROFILE[0]["LastName"] ?></span>
-                                </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-5">
-                                    <span class="name">KARYANA ID:</span><span style="float:right"><?php echo $PROFILE[0]["EncryptedId"] ?></span>
-                                </div>
-                            </div><hr>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL:</span><span style="float:right"><?php echo $PROFILE[0]['Email'] ?></span>
-                                </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-phone-square" aria-hidden="true"></i> PHONE #:</span><span style="float:right"><?php echo $PROFILE[0]['Mobile'] ?></span>
-                                </div>
-                            </div><hr>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> ADDRESS:</span><p ><?php echo $PROFILE[0]['Address'] ?></p>
-                                </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-5">
-                                    <span class="name"><i class="fa fa-map-marker" aria-hidden="true"></i> CITY:</span><span style="float:right"><?php echo $PROFILE[0]['City'] ?></span><br><br>
-                                    <span class="name">LOYALITY POINTS:</span><span style="float:right"><?php echo $PROFILE[0]['LoyaltyPoints'] ?></span>
-                                </div>
-                            </div>
-                            
-                        </div> 
-                    <div class="pbox">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <span class="name">UPDATE CONTACT DETAILS:</span>
-                                </div><br><br>
-                            </div>
-                            <form method="post" action="<?php echo base_url("customer/Profile/update"); ?>">
-                                
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <span>City:</span><br><br>
-                                    <input type="text" name="city" class="form-control" placeholder="Enter City:">
-                                </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-5">
-                                    <span>Phone #:</span><br><br>
-                                    <input type="number" name="contact_number" class="form-control" placeholder="Enter Phone Number:">
-                                </div>
-                            </div><hr>
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <span>Address Line 1:</span><br><br>
-                                    <input class="form-control" type="text" maxlength="50" name="address" placeholder="Enter Adress Here:">
-                                </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-5">
-                                    <span>Address Line 2:</span><br><br>
-                                    <input class="form-control" placeholder="Enter Adress Here:">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-5"></div>
-                                <div class="col-md-2">
-                                    <br><input type="submit" class="subscribe btn-block" style="margin-left:0px;border-radius:3px" value="Save Changes">
-                                </div>
-                                <div class="col-md-5">
-                                </div>
-                            </div>
-                            </form>
-                    </div> 
-                </div>
-                <div id="order" class="tab-pane fade">
-                  <center><h3 style="color: #c6c6c6">Order History</h3></center>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Sr #</th>
-                        <th>OrderID</th>
-                        <th>Total</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>      
-                      <tr class="success">
-                        <td>1</td>
-                        <td>9567</td>
-                        <td>1200 Rs</td>
-                        <td>7/29/2017</td>
-                        <td>12:00</td>
-                        <td>Delivered</td>
-                        <td><a>View details</a></td>
-                      </tr>
-                      <tr class="warning">
-                        <td>2</td>
-                        <td>3452</td>
-                        <td>1300 Rs</td>
-                        <td>12/03/2016</td>
-                        <td>05:15</td>
-                        <td>Pending</td>
-                        <td><a>View details</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div id="loc" class="tab-pane fade">
-                    <?php include('loc.php'); ?>    
-                </div>
-              </div>
-            
+        <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
+            <br>
+            <div class="cartfhead" style="float:left">Your Cart <span>(0 items)</span></div>
+            <div style="float:right;margin-top:-20px">
+            <img src="<?php echo base_url('assets/images/cartfilled.png') ?>" class="cart"><span >Your Saved</span>
+            <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div>
+            </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12" style="overflow-x:auto">
+            <table class="table table-bordered" >
+                <thead>
+                  <tr>
+                      <th><center>Sr #</center></th>
+                      <th><center>Product Name</center></th>
+                      <th><center>Unit</center></th>
+                      <th><center>Quantity</center></th>
+                      <th><center>Price / Unit</center></th>
+                      <th><center>Discount</center></th>
+                      <th><center>Total</center></th>
+                      <th><center>Remove</center></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><center>1</center></td>
+                    <td>
+                        <center><img src="<?php echo base_url('uploads/product_images/224.jpg') ?>"  style="max-width:120px;height:auto">
+                            <div>Mountain Dew</div>
+                        </center>
+                    </td>
+                    <td>
+                        <center><div class="qfix" style="float:none;">5 Kg</div></center>
+                    </td>
+                    <td>
+                        <center><div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
+                    </td>
+                      <td><center>Rs 50</center></td>
+                      <td><center>Rs 0</center></td>
+                      <td><center>Rs 50</center></td>
+                      <td><center><i class="fa fa-trash-o" aria-hidden="true" style="font-size:20px;color:#28a7db"></i></center></td>
+                  </tr>
+                  <tr>
+                    <td><center>2</center></td>
+                    <td>
+                        <center><img src="<?php echo base_url('uploads/product_images/276.jpg') ?>"  style="max-width:120px;height:auto">
+                            <div>Nescafe Jar</div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <select class="qselect" style="margin-top:20px;">
+                              <option>5 Kg</option>
+                              <option>10 Kg</option>
+                            </select>
+                        </center>
+                    </td>
+                    <td>
+                        <center><div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div></center>
+                    </td>
+                      <td><center>Rs 50</center></td>
+                      <td><center>Rs 0</center></td>
+                      <td><center>Rs 50</center></td>
+                      <td><center><i class="fa fa-trash-o" aria-hidden="true" style="font-size:20px;color:#28a7db"></i></center></td>
+                  </tr>
+                  <tr>
+                      <th colspan="4"><center>Sub Total</center></th>
+                      <td colspan="4"><center>Rs 0</center></td>
+                  </tr>
+                  <tr>
+                      <th colspan="4"><center>Total Discount</center></th>
+                      <td colspan="4"><center>Rs 0</center></td>
+                  </tr>
+                  <tr>
+                      <th colspan="4"><center>Dilivery Charges</center></th>
+                      <td colspan="4"><center>Free</center></td>
+                  </tr>
+                  <tr>
+                  <th colspan="4"><center>Total</center></th>
+                      <td colspan="4"><center>Rs 0</center></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
 </div>
 
 

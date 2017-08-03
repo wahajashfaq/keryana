@@ -27,6 +27,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/home_header.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/profile.css') ?>">
     <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/favicon.png') ?>"/>
+        
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/confirmation.css') ?>"/>
 
     
     <title>HOME</title>
@@ -165,7 +167,7 @@
                           <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
                       </button>
                       <div class="dropdown-content" style="top:50px;padding-left:0px;padding-right:0px;">
-                        <div style="width:100%;max-height:220px;overflow-y:scroll;overflow-x:hidden;">
+                        <div style="width:100%;max-height:220px;overflow-y:auto;overflow-x:hidden;">
                             <br>
                         <div class="row">
                             <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
@@ -183,7 +185,7 @@
                             <div class="col-md-12">
                                 <div style="float:left">
                                     <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
+                                        <img class="pimg" src="<?php echo base_url('assets/images/psmall.jpg') ?>">
                                     </div>
                                     <div style="float:right">
                                         <center>
@@ -215,7 +217,7 @@
                             <div class="col-md-12">
                                 <div style="float:left">
                                     <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
+                                        <img class="pimg" src="<?php echo base_url('assets/images/psmall.jpg') ?>">
                                     </div>
                                     <div style="float:right">
                                         <center>
@@ -242,31 +244,15 @@
                         </div>
                         <div>
                         <div class="row">
-                            <br>
                             <div class="col-md-12" style="padding-left:30px;padding-right:40px">
                                 <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <br>
                                 <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <br>
                                 <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <br>
                                 <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs 0</div>
-                                <hr>
+                                <br>
                             </div>
                         </div>
                         <div class="row">

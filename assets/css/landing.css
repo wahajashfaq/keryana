@@ -218,7 +218,10 @@ img:hover{
 .dropdown-content p{
     font-size: 12px;
 }
-
+.dropdown-content pimg{
+    width: 100px;
+    height: 100px;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -546,7 +549,7 @@ img:hover{
 }
 .qmang{
     display: block;
-    max-width: 150px;
+    width: 150px;
 }
 .qmang i{
     background-color:  #96C658 !important;
@@ -830,6 +833,28 @@ label:hover:before {
     .dropdown-content{
         min-width: 290px;
     }
+    .cartfhead{
+        font-size: 15px;
+    }
+    /*
+.qmang .fa-minus{
+    padding-left: 13px;
+    padding-right: 14px;
+}
+
+.qmang .fa-plus{
+    padding-left: 14px;
+    padding-right: 13px;
+}
+.qmang span{
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    height: 36px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    */
 }
 @media (min-width:992px) and (max-width:1007px){
     .container{

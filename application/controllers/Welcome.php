@@ -226,6 +226,108 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('home',["categories"=>$first_categories]);		
 	}
+    
+    public function viewcart()
+    {
+        $this->load->model('Categories');	
+        $first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$third_categories = $this->Categories->getThirdCategory();
+
+		for ($i=0; $i <count($second_categories); $i++) { 
+				$second_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($third_categories); $j++) { 
+				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
+
+					array_push($second_categories[$i]["SUB CATEGORIES"], $third_categories[$j]);
+
+				}
+			}
+		}
+
+
+		for ($i=0; $i <count($first_categories); $i++) { 
+				$first_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($second_categories); $j++) { 
+				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
+
+					array_push($first_categories[$i]["SUB CATEGORIES"], $second_categories[$j]);
+
+				}
+			}
+		}
+
+
+		$this->load->view('viewcart',["categories"=>$first_categories]);
+    }
+    
+    public function checkout()
+    {
+        $this->load->model('Categories');	
+        $first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$third_categories = $this->Categories->getThirdCategory();
+
+		for ($i=0; $i <count($second_categories); $i++) { 
+				$second_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($third_categories); $j++) { 
+				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
+
+					array_push($second_categories[$i]["SUB CATEGORIES"], $third_categories[$j]);
+
+				}
+			}
+		}
+
+
+		for ($i=0; $i <count($first_categories); $i++) { 
+				$first_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($second_categories); $j++) { 
+				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
+
+					array_push($first_categories[$i]["SUB CATEGORIES"], $second_categories[$j]);
+
+				}
+			}
+		}
+
+
+		$this->load->view('checkout',["categories"=>$first_categories]);
+    }
+    
+    public function confirmation()
+    {
+        $this->load->model('Categories');	
+        $first_categories = $this->Categories->getFirstCategory();
+		$second_categories = $this->Categories->getSecondCategory();
+		$third_categories = $this->Categories->getThirdCategory();
+
+		for ($i=0; $i <count($second_categories); $i++) { 
+				$second_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($third_categories); $j++) { 
+				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
+
+					array_push($second_categories[$i]["SUB CATEGORIES"], $third_categories[$j]);
+
+				}
+			}
+		}
+
+
+		for ($i=0; $i <count($first_categories); $i++) { 
+				$first_categories[$i]["SUB CATEGORIES"] = [];
+			for ($j=0; $j <count($second_categories); $j++) { 
+				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
+
+					array_push($first_categories[$i]["SUB CATEGORIES"], $second_categories[$j]);
+
+				}
+			}
+		}
+
+
+		$this->load->view('confirmation',["categories"=>$first_categories]);
+    }
 
 	public function popup(){
 		$this->load->view('popup');	
