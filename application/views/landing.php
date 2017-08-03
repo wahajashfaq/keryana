@@ -20,7 +20,7 @@
 <div class="container" style="padding-bottom:30px;">
   <div class="row">
     <div class="col-md-3">
-      <img src=" <?php echo base_url('assets/images/mylogo.jpg') ?> " alt="logo" style="width:250px;height:63px">
+      <img src="<?php echo base_url('assets/images/mylogo.jpg') ?>" alt="logo" style="width:250px;height:63px">
     </div>
     <div class="col-md-6">
       <form class="">
@@ -124,29 +124,22 @@
                   <!-- Indicators -->
 
                   <div class="carousel-inner">
-                    <div id="slide1" class="item active">
-                      <img src="<?php echo base_url('assets/images/home_slider_image_1.jpg') ?>">
+                    
+
+                    <?php $count=1; foreach ($SlidingBanners as $banner): ?>
+                      <div id="slide<?php echo $count ?>" class="item <?php if ($count==1){ echo "active"; }$count++; ?>">
+                        <img src="<?php echo base_url('uploads/sliding_banner/'.$banner["ImageUrl"]); ?>">
+                      </div>
+                        
+                              
+                    <?php endforeach ?>
                     </div>
-                    <div id="slide2" class="item">
-                      <img src="<?php echo base_url('assets/images/home_slider_image_2.jpg') ?>">
-                    </div>
-                    <div id="slide3" class="item">
-                      <img src="<?php echo base_url('assets/images/home_slider_image_3.jpg') ?>">
-                    </div>
-                    <div id="slide3" class="item">
-                      <img src="<?php echo base_url('assets/images/home_slider_image_3.jpg') ?>">
-                    </div>
-                    <div id="slide3" class="item">
-                      <img src="<?php echo base_url('assets/images/home_slider_image_3.jpg') ?>">
-                    </div>
-                  </div>
 
                   <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
+                    <?php $count=1; foreach ($SlidingBanners as $banner): ?>
+                      <li data-target="#myCarousel" data-slide-to="<?php echo $count-1; ?>" <?php if ($count==1){ echo "class='active'"; }$count++; ?>"></li>      
+                    <?php endforeach ?>
                   </ol>
                 </div>
                             <!--div class="row">
@@ -174,12 +167,12 @@
                           </div>
                           <div class="col-md-3 col-sbanner">
                             <div class="sidebanners">
-                              <img src="<?php echo base_url('assets/images/home_slider_image_1.jpg') ?>" style="margin-bottom:15px">
-                              <img src="<?php echo base_url('assets/images/home_slider_image_2.jpg') ?>">
+                              <img src="<?php echo base_url('uploads/banners/banner_one.jpg') ?>" style="margin-bottom:15px">
+                              <img src="<?php echo base_url('uploads/banners/banner_two.jpg') ?>">
                             </div>
                           </div>
-                        </div>
 
+                        </div>
                       </div>    
                     </div>
                     <br><br>

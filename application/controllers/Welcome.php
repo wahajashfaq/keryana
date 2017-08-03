@@ -24,18 +24,20 @@ class Welcome extends CI_Controller {
 		$this->load->model('Categories');
 		$this->load->model('KeryanaProduct');
 		$this->load->model('Brand');
+		$this->load->model('Banner');
 		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 		$brands = $this->Brand->getAllBrands();
 		$newArrivals = $this->KeryanaProduct->getNewArrivals();
-				
+		$slidingBanners = $this->Banner->getEnableSlidingBanners();
+
 
 
 		foreach ($newArrivals as &$row) {
 
-    	$units["Units"] = array();
-    	$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+			$units["Units"] = array();
+			$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
 
 
 		}
@@ -43,7 +45,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -55,7 +57,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -65,24 +67,9 @@ class Welcome extends CI_Controller {
 			}
 		}
 
-		
-/*		echo "------------First---------------------";
-		echo "<pre>";
-		print_r($first_categories);
-		echo "</pre>";
 
-		echo "------------SECOND---------------------";
-		echo "<pre>";
-		print_r($second_categories);
-		echo "</pre>";
 
-		echo "------------Third---------------------";
-		echo "<pre>";
-		print_r($third_categories);
-		echo "</pre>";
-*/
-
-		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands,"NewArrivals"=>$newArrivals]);		
+		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands,"NewArrivals"=>$newArrivals,"SlidingBanners"=>$slidingBanners]);		
 	}
 
 
@@ -95,17 +82,17 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('about');	
 	}
-    
-    public function category($type,$category_id){
-        
-        $this->load->model('Categories');	
-        $this->load->model('KeryanaProduct');	
-        $first_categories = $this->Categories->getFirstCategory();
+
+	public function category($type,$category_id){
+
+		$this->load->model('Categories');	
+		$this->load->model('KeryanaProduct');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -117,7 +104,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -131,44 +118,49 @@ class Welcome extends CI_Controller {
 
 		$result_sidebar   = $this->KeryanaProduct->getCategoriesTypes($type,$category_id);
 		$result_products  = $this->KeryanaProduct->getProductByCategoryID($type,$category_id);
-		foreach ($result_products as &$row) {
 
-    	$units["Units"] = array();
-    	$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+		if ($result_products) {
+			foreach ($result_products as &$row) {
+
+				$units["Units"] = array();
+				$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+
+			}
 
 		}
+		
+		$sub_category = "";
+		$currentCategory = [];
+		if($type=="First"){
+			$sub_category = "Second";
+			$currentCategory = $this->Categories->getFirstCategoryData($category_id);
 
-    	$sub_category = "";
-    	$currentCategory = [];
-    	if($type=="First"){
-    		$sub_category = "Second";
-    		$currentCategory = $this->Categories->getFirstCategoryData($category_id);
+		} else if($type=="Second"){
+			$sub_category = "Third";
+			$currentCategory = $this->Categories->getSecondCategoryData_ID($category_id);
 
-    	} else if($type=="Second"){
-    		$sub_category = "Third";
-    		$currentCategory = $this->Categories->getSecondCategoryData_ID($category_id);
-    		
-    	} else if($type="Third"){
-    		$sub_category = "Third";
-    	}
+		} else if($type="Third"){
+			$sub_category = "Third";
+			$currentCategory = $this->KeryanaProduct->getThirdCategoryParent($category_id);
+		}
 
 		$this->load->view('category',["categories"=>$first_categories,"filterd"=>$result_products,"side_categories"=>$result_sidebar,"SubCategory"=>$sub_category,"CurrentCategory"=>$currentCategory]);
 
 	}
-    
-    public function product($product_ID){
 
-    	$this->load->model('KeryanaProduct'); 
-    	$product_detail = $this->KeryanaProduct->getSingleProduct($product_ID);
-    	$product_units = $this->KeryanaProduct->getProductUnit($product_ID);
-        
-        $this->load->model('Categories');	
-        $first_categories = $this->Categories->getFirstCategory();
+	public function product($product_ID){
+
+		$this->load->model('KeryanaProduct'); 
+		$product_detail = $this->KeryanaProduct->getSingleProduct($product_ID);
+		$product_units = $this->KeryanaProduct->getProductUnit($product_ID);
+
+		$this->load->model('Categories');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -180,7 +172,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -193,15 +185,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('product',["PRODUCT"=>$product_detail,"UNITS"=>$product_units,"categories"=>$first_categories]);	
 	}
 
-    public function home(){
+	public function home(){
 
-        $this->load->model('Categories');	
-        $first_categories = $this->Categories->getFirstCategory();
+		$this->load->model('Categories');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -213,7 +205,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -226,16 +218,16 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('home',["categories"=>$first_categories]);		
 	}
-    
-    public function viewcart()
-    {
-        $this->load->model('Categories');	
-        $first_categories = $this->Categories->getFirstCategory();
+
+	public function viewcart()
+	{
+		$this->load->model('Categories');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -247,7 +239,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -259,17 +251,17 @@ class Welcome extends CI_Controller {
 
 
 		$this->load->view('viewcart',["categories"=>$first_categories]);
-    }
-    
-    public function checkout()
-    {
-        $this->load->model('Categories');	
-        $first_categories = $this->Categories->getFirstCategory();
+	}
+
+	public function checkout()
+	{
+		$this->load->model('Categories');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -281,7 +273,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -293,17 +285,17 @@ class Welcome extends CI_Controller {
 
 
 		$this->load->view('checkout',["categories"=>$first_categories]);
-    }
-    
-    public function confirmation()
-    {
-        $this->load->model('Categories');	
-        $first_categories = $this->Categories->getFirstCategory();
+	}
+
+	public function confirmation()
+	{
+		$this->load->model('Categories');	
+		$first_categories = $this->Categories->getFirstCategory();
 		$second_categories = $this->Categories->getSecondCategory();
 		$third_categories = $this->Categories->getThirdCategory();
 
 		for ($i=0; $i <count($second_categories); $i++) { 
-				$second_categories[$i]["SUB CATEGORIES"] = [];
+			$second_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($third_categories); $j++) { 
 				if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
 
@@ -315,7 +307,7 @@ class Welcome extends CI_Controller {
 
 
 		for ($i=0; $i <count($first_categories); $i++) { 
-				$first_categories[$i]["SUB CATEGORIES"] = [];
+			$first_categories[$i]["SUB CATEGORIES"] = [];
 			for ($j=0; $j <count($second_categories); $j++) { 
 				if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
 
@@ -327,7 +319,7 @@ class Welcome extends CI_Controller {
 
 
 		$this->load->view('confirmation',["categories"=>$first_categories]);
-    }
+	}
 
 	public function popup(){
 		$this->load->view('popup');	
@@ -350,6 +342,6 @@ class Welcome extends CI_Controller {
 		echo count($arr1);
 		print_r($arr) ;
 	}
-    
-    
+
+
 }

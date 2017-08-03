@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 31, 2017 at 12:55 PM
+-- Generation Time: Aug 03, 2017 at 08:49 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `addressbook` (
   `phone` varchar(100) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=149 ;
 
 --
 -- Dumping data for table `addressbook`
@@ -62,7 +62,133 @@ INSERT INTO `addressbook` (`id`, `firstname`, `lastname`, `phone`, `email`) VALU
 (20, 'Cailin', 'Jason', '1-532-863-2211', 'ipsum.dolor.sit@odio.co.uk'),
 (21, NULL, NULL, NULL, NULL),
 (22, NULL, NULL, NULL, NULL),
-(23, NULL, NULL, NULL, NULL);
+(23, NULL, NULL, NULL, NULL),
+(24, NULL, NULL, NULL, NULL),
+(25, NULL, NULL, NULL, NULL),
+(26, NULL, NULL, NULL, NULL),
+(27, NULL, NULL, NULL, NULL),
+(28, NULL, NULL, NULL, NULL),
+(29, NULL, NULL, NULL, NULL),
+(30, NULL, NULL, NULL, NULL),
+(31, NULL, NULL, NULL, NULL),
+(32, NULL, NULL, NULL, NULL),
+(33, NULL, NULL, NULL, NULL),
+(34, NULL, NULL, NULL, NULL),
+(35, NULL, NULL, NULL, NULL),
+(36, NULL, NULL, NULL, NULL),
+(37, NULL, NULL, NULL, NULL),
+(38, NULL, NULL, NULL, NULL),
+(39, NULL, NULL, NULL, NULL),
+(40, NULL, NULL, NULL, NULL),
+(41, NULL, NULL, NULL, NULL),
+(42, NULL, NULL, NULL, NULL),
+(43, NULL, NULL, NULL, NULL),
+(44, NULL, NULL, NULL, NULL),
+(45, NULL, NULL, NULL, NULL),
+(46, NULL, NULL, NULL, NULL),
+(47, NULL, NULL, NULL, NULL),
+(48, NULL, NULL, NULL, NULL),
+(49, NULL, NULL, NULL, NULL),
+(50, NULL, NULL, NULL, NULL),
+(51, NULL, NULL, NULL, NULL),
+(52, NULL, NULL, NULL, NULL),
+(53, NULL, NULL, NULL, NULL),
+(54, NULL, NULL, NULL, NULL),
+(55, NULL, NULL, NULL, NULL),
+(56, NULL, NULL, NULL, NULL),
+(57, NULL, NULL, NULL, NULL),
+(58, NULL, NULL, NULL, NULL),
+(59, NULL, NULL, NULL, NULL),
+(60, NULL, NULL, NULL, NULL),
+(61, NULL, NULL, NULL, NULL),
+(62, NULL, NULL, NULL, NULL),
+(63, NULL, NULL, NULL, NULL),
+(64, NULL, NULL, NULL, NULL),
+(65, NULL, NULL, NULL, NULL),
+(66, NULL, NULL, NULL, NULL),
+(67, NULL, NULL, NULL, NULL),
+(68, NULL, NULL, NULL, NULL),
+(69, NULL, NULL, NULL, NULL),
+(70, NULL, NULL, NULL, NULL),
+(71, NULL, NULL, NULL, NULL),
+(72, NULL, NULL, NULL, NULL),
+(73, NULL, NULL, NULL, NULL),
+(74, NULL, NULL, NULL, NULL),
+(75, NULL, NULL, NULL, NULL),
+(76, NULL, NULL, NULL, NULL),
+(77, NULL, NULL, NULL, NULL),
+(78, NULL, NULL, NULL, NULL),
+(79, NULL, NULL, NULL, NULL),
+(80, NULL, NULL, NULL, NULL),
+(81, NULL, NULL, NULL, NULL),
+(82, NULL, NULL, NULL, NULL),
+(83, NULL, NULL, NULL, NULL),
+(84, NULL, NULL, NULL, NULL),
+(85, NULL, NULL, NULL, NULL),
+(86, NULL, NULL, NULL, NULL),
+(87, NULL, NULL, NULL, NULL),
+(88, NULL, NULL, NULL, NULL),
+(89, NULL, NULL, NULL, NULL),
+(90, NULL, NULL, NULL, NULL),
+(91, NULL, NULL, NULL, NULL),
+(92, NULL, NULL, NULL, NULL),
+(93, NULL, NULL, NULL, NULL),
+(94, NULL, NULL, NULL, NULL),
+(95, NULL, NULL, NULL, NULL),
+(96, NULL, NULL, NULL, NULL),
+(97, NULL, NULL, NULL, NULL),
+(98, NULL, NULL, NULL, NULL),
+(99, NULL, NULL, NULL, NULL),
+(100, NULL, NULL, NULL, NULL),
+(101, NULL, NULL, NULL, NULL),
+(102, NULL, NULL, NULL, NULL),
+(103, NULL, NULL, NULL, NULL),
+(104, NULL, NULL, NULL, NULL),
+(105, NULL, NULL, NULL, NULL),
+(106, NULL, NULL, NULL, NULL),
+(107, NULL, NULL, NULL, NULL),
+(108, NULL, NULL, NULL, NULL),
+(109, NULL, NULL, NULL, NULL),
+(110, NULL, NULL, NULL, NULL),
+(111, NULL, NULL, NULL, NULL),
+(112, NULL, NULL, NULL, NULL),
+(113, NULL, NULL, NULL, NULL),
+(114, NULL, NULL, NULL, NULL),
+(115, NULL, NULL, NULL, NULL),
+(116, NULL, NULL, NULL, NULL),
+(117, NULL, NULL, NULL, NULL),
+(118, NULL, NULL, NULL, NULL),
+(119, NULL, NULL, NULL, NULL),
+(120, NULL, NULL, NULL, NULL),
+(121, NULL, NULL, NULL, NULL),
+(122, NULL, NULL, NULL, NULL),
+(123, NULL, NULL, NULL, NULL),
+(124, NULL, NULL, NULL, NULL),
+(125, NULL, NULL, NULL, NULL),
+(126, NULL, NULL, NULL, NULL),
+(127, NULL, NULL, NULL, NULL),
+(128, NULL, NULL, NULL, NULL),
+(129, NULL, NULL, NULL, NULL),
+(130, NULL, NULL, NULL, NULL),
+(131, NULL, NULL, NULL, NULL),
+(132, NULL, NULL, NULL, NULL),
+(133, NULL, NULL, NULL, NULL),
+(134, NULL, NULL, NULL, NULL),
+(135, NULL, NULL, NULL, NULL),
+(136, NULL, NULL, NULL, NULL),
+(137, NULL, NULL, NULL, NULL),
+(138, NULL, NULL, NULL, NULL),
+(139, NULL, NULL, NULL, NULL),
+(140, NULL, NULL, NULL, NULL),
+(141, NULL, NULL, NULL, NULL),
+(142, NULL, NULL, NULL, NULL),
+(143, NULL, NULL, NULL, NULL),
+(144, NULL, NULL, NULL, NULL),
+(145, NULL, NULL, NULL, NULL),
+(146, NULL, NULL, NULL, NULL),
+(147, NULL, NULL, NULL, NULL),
+(148, NULL, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -142,6 +268,45 @@ INSERT INTO `brands` (`ID`, `EncryptedId`, `Name`, `ImageUrl`, `Visibility`) VAL
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `cart`
+--
+
+CREATE TABLE IF NOT EXISTS `cart` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `EncryptedId` varchar(255) DEFAULT NULL,
+  `CustomerID` int(11) DEFAULT NULL,
+  `CreationDate` datetime DEFAULT NULL,
+  `ModifiedDate` datetime DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL,
+  `Visibility` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `CustomerID` (`CustomerID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart_products`
+--
+
+CREATE TABLE IF NOT EXISTS `cart_products` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `EncryptedId` varchar(255) DEFAULT NULL,
+  `CartID` int(11) DEFAULT NULL,
+  `ProductID` int(11) DEFAULT NULL,
+  `Quantity` int(11) DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL,
+  `CreationDate` datetime DEFAULT NULL,
+  `ModifiedDate` datetime DEFAULT NULL,
+  `Visibility` int(11) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `CartID` (`CartID`),
+  KEY `ProductID` (`ProductID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `contact_us`
 --
 
@@ -210,7 +375,7 @@ CREATE TABLE IF NOT EXISTS `customers` (
 --
 
 INSERT INTO `customers` (`ID`, `FirstName`, `LastName`, `Email`, `EncryptedId`, `FacebookId`, `Password`, `City`, `IpAddress`, `DateOfCreation`, `LastLogin`, `Mobile`, `Address`, `ZipCode`, `LoyaltyPoints`, `Visibility`) VALUES
-(1, 'Khawar', 'Hussain', 'khawarhussain10@gmail.com', 'ab7f85526867916faaf0f35ce9b5f9c3', NULL, '4f5193eb93febf51d4eddfa846a8bea5', 'KSK', '::1', '2017-07-16 21:35:18', '2017-07-31 10:50:16', '', '', '', 25, 1),
+(1, 'Khawar', 'Hussain', 'khawarhussain10@gmail.com', 'ab7f85526867916faaf0f35ce9b5f9c3', NULL, '4f5193eb93febf51d4eddfa846a8bea5', 'KSK', '::1', '2017-07-16 21:35:18', '2017-08-02 05:19:07', '', '', '', 25, 1),
 (5, 'Abdur', 'Rehman', 'abdkhan422@gmail.com', '47e33975835566be99d83be09a761989', '', 'd93ec75bca4b7ef88df5a6c591654422', '', '::1', '2017-07-30 02:48:56', '2017-07-30 03:11:34', '', '', '', 25, 1);
 
 -- --------------------------------------------------------
@@ -245,6 +410,26 @@ INSERT INTO `first_category` (`ID`, `EncryptedId`, `Name`, `CreationDate`, `Modi
 (8, 'c9f0f895fb98ab9159f51fd0297e236d', 'Grocery & Staples', '2017-07-31 12:35:47', '2017-07-31 12:35:47', NULL, 1),
 (9, '45c48cce2e2d7fbdea1afc51c7c6ad26', 'Baverages', '2017-07-31 12:35:51', '2017-07-31 12:35:51', NULL, 1),
 (10, 'd3d9446802a44259755d38e6d163e820', 'NewTestCat', '2017-07-31 10:59:25', '2017-07-31 10:59:25', NULL, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order`
+--
+
+CREATE TABLE IF NOT EXISTS `order` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `EncryptedId` varchar(255) DEFAULT NULL,
+  `CartID` int(11) DEFAULT NULL,
+  `Status` int(11) DEFAULT '0',
+  `ReceiveTime` datetime DEFAULT NULL,
+  `MobileNumber` varchar(20) DEFAULT NULL,
+  `Address` varchar(100) DEFAULT NULL,
+  `Longitude` varchar(50) DEFAULT NULL,
+  `Latitude` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`),
+  KEY `CartID` (`CartID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -557,7 +742,7 @@ INSERT INTO `products` (`ID`, `EncryptedId`, `Name`, `Details`, `CreationDate`, 
 (276, 'db8e1af0cb3aca1ae2d0018624204529', 'Nescafe 3 in 1 box 20 gm', '', '2017-07-31 01:33:32', '2017-07-31 01:46:25', 9, 17, 45, 0, '', NULL, NULL, '275.jpg', 0, 1),
 (277, '20f07591c6fcb220ffe637cda29bb3f6', 'Nescafe Classic Jar', '', '2017-07-31 01:33:32', '2017-07-31 01:46:25', 9, 17, 45, 0, '', NULL, NULL, '276.jpg', 0, 1),
 (278, '07cdfd23373b17c6b337251c22b7ea57', 'Nescafe Manu-Lette', '', '2017-07-31 01:33:33', '2017-07-31 01:46:25', 9, 17, 45, 0, '', NULL, NULL, '277.jpg', 0, 1),
-(279, 'd395771085aab05244a4fb8fd91bf4ee', 'Nescafe Manu-Cappuccino', '', '2017-07-31 01:33:33', '2017-07-31 01:46:25', 9, 17, 45, 0, '', NULL, NULL, '278.jpg', 0, 1);
+(279, 'd395771085aab05244a4fb8fd91bf4ee', 'Nescafe Manu-Cappuccino', '', '2017-07-31 01:33:33', '2017-07-31 01:46:25', 9, 17, 45, 0, '', '1', NULL, '278.jpg', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -1132,6 +1317,25 @@ INSERT INTO `third_category` (`ID`, `EncryptedId`, `Name`, `SecondCategoryID`, `
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `cart`
+--
+ALTER TABLE `cart`
+  ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`CustomerID`) REFERENCES `customers` (`ID`);
+
+--
+-- Constraints for table `cart_products`
+--
+ALTER TABLE `cart_products`
+  ADD CONSTRAINT `cart_products_ibfk_1` FOREIGN KEY (`CartID`) REFERENCES `cart` (`ID`),
+  ADD CONSTRAINT `cart_products_ibfk_2` FOREIGN KEY (`ProductID`) REFERENCES `products` (`ID`);
+
+--
+-- Constraints for table `order`
+--
+ALTER TABLE `order`
+  ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`CartID`) REFERENCES `cart` (`ID`);
 
 --
 -- Constraints for table `products`
