@@ -102,16 +102,17 @@
 
          <li>
              <div class="dropleft">
-                 <span class="text"><?php echo $category["Name"]; ?></span><i class="fa fa-caret fa-caret-right" style="float:right"></i>
+             <a style="color:black;" href="<?php echo base_url('welcome/category/First/'.$category["EncryptedId"]) ?>" target="blank">
+                 <span class="text"><?php echo $category["Name"]; ?></span></a><i class="fa fa-caret fa-caret-right" style="float:right"></i>
                  <div class="dropleft-content"  style="top:<?php echo $count*-33;$count++; ?>px;">
                      <div class="container-fluid">
                          <div class="row">
                          <?php foreach ($category["SUB CATEGORIES"] as $category2){?>
                              <div class="col-md-3">
-                                 <a><div class="head"><?php echo $category2["Name"]; ?></div></a>
+                                 <a href="<?php echo base_url('welcome/category/Second/'.$category2["EncryptedId"]) ?>" target="blank"><div class="head"><?php echo $category2["Name"]; ?></div></a>
 
                          <?php foreach ($category2["SUB CATEGORIES"] as $category4){?>
-                                 <a><div class="item"><?php echo $category4["Name"]; ?></div></a>
+                                 <a href="<?php echo base_url('welcome/category/Third/'.$category4["EncryptedId"]) ?>" target="blank"><div class="item"><?php echo $category4["Name"]; ?></div></a>
 
                         <?php } ?>
 

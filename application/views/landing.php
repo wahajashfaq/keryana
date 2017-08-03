@@ -953,12 +953,15 @@
                     //alert(res);
                     $(event).children().attr('src',"<?php echo base_url('assets/images/addbicon.png');?>");
                     $('.dropdown-content').html(res);
+
+                    $(event).attr('disable',"true");
                   }
 
                 },
                 beforeSend : function()
                 {
                   $(event).children().attr('src',"<?php echo base_url('assets/images/adding.gif');?>");
+                  $(event).attr('disable',"true");
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                   alert("some error");

@@ -5,10 +5,12 @@
             <div class="cbox">
                 <div class="cbox1">Our Categories</div>
                 <a href=""><div class="Maincat active"><i class="fa fa-angle-right" aria-hidden="true"></i><span><?php echo $CurrentCategory[0]["Name"] ?></span></div></a>
-                <?php foreach ($side_categories as $row): ?>
+                <?php if ($side_categories): ?>
+                  <?php foreach ($side_categories as $row): ?>
                   
                 <a href="<?php echo base_url('welcome/category/'.$SubCategory.'/'.$row["EncryptedId"]) ?>" ><div class="Maincat sub"><i class="fa fa-angle-right" aria-hidden="true"></i><span><?php echo $row["Name"]; ?></span></div></a>
                 <?php endforeach ?>
+                <?php endif ?>
             </div>
             <div class="cbox" style="margin-top:10px">
                 <div class="cbox1">Refine</div>
@@ -81,6 +83,9 @@
             <img class="cbanner" src="<?php echo base_url('assets/images/home_slider_image_1.jpg') ?>"><br><br>
             <div class="row">
 
+
+            <?php if ($filterd){?>
+              
             <?php foreach ($filterd as $row){?> 
 
              <div class="col-md-3 product" style="padding-left:0px;padding-right:0px">
@@ -113,7 +118,12 @@
             </center>
             </div>
             
-            <?php } ?>
+            <?php } // End of Foreach Loop ?>
+            <?php } // End of If => No Product Check
+              else {
+                echo "<h1>No Product Found</h1>";
+              }
+             ?>
             </div>
         </div>
     </div>
@@ -190,9 +200,5 @@
 
           });
     }
-
-
-
-
 
   </script>

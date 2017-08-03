@@ -203,6 +203,34 @@ class KeryanaProduct extends CI_Model {
 	}
 
 
+
+	public function getThirdCategoryParent($category_ID){
+
+
+			$this->db->select('SecondCategoryID');
+			$this->db->where('Visibility',1);
+			$this->db->where('EncryptedId',$category_ID);
+			$query = $this->db->get('third_category');
+
+			if($query->num_rows()){ 
+
+				$parentID =  $query->row()->SecondCategoryID;
+				$this->db->where('Visibility',1);
+				$this->db->where('ID',$parentID);
+				$query = $this->db->get('second_category');
+				
+
+				if($query->num_rows()){ 
+
+					return $query->result_array();
+				}	
+				else {
+					return FALSE;
+				}
+			}
+
+	}
+
 	public function getCategoriesTypes($type,$category_ID){
 
 
