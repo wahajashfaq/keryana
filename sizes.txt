@@ -6,4 +6,4 @@ category slider 100*100
 inner category banners 600*300
 brands slider 100*50
 product 150*150
-note: product can be any but width should be less than 300
+note: product can be any but width bjt propotionate to square

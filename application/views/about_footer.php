@@ -192,10 +192,45 @@
             
         });
         $('#search').on('input', function() {
+            $.ajaxSetup ({
+            // Disable caching of AJAX responses
+                cache: false
+            });
            
             var value=$('#search').val();
             if(value.length>2)
             {
+                console.log(value);
+             jQuery.ajax({
+              type: "POST",
+              url: "<?php echo base_url(); ?>" + "/search",
+              dataType: 'text',
+              data: { name: value },
+              success: function(res) {
+
+                if (res)
+                {
+                    // Show Entered Value
+                    /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    //alert(res);
+                    $('#psearch').remove();
+                    $("#product-search").append(res);
+                  }
+
+                },
+                beforeSend : function()
+                {
+                  $(event).children().attr('src',"<?php echo base_url('assets/images/adding.gif');?>");
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("some error");
+                }
+              });
                 $('#product-search').css('display','block');
             }
             else
