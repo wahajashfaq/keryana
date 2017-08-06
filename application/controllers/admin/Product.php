@@ -129,6 +129,8 @@ class Product extends CI_Controller {
 
 
 	public function allProduct(){
+
+        
 		$this->load->view('admin/all_product');
 	}
 	public function Add(){

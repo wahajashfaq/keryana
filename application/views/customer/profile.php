@@ -159,12 +159,12 @@
                             <div class="row">
                                 <div class="col-md-5">
                                     <span>Address Line 1:</span><br><br>
-                                    <input class="form-control" type="text" maxlength="50" name="address" placeholder="Enter Adress Here:">
+                                    <input class="form-control" type="text" maxlength="50" name="address1" placeholder="Enter Adress Here:">
                                 </div>
                                 <div class="col-md-2"></div>
                                 <div class="col-md-5">
                                     <span>Address Line 2:</span><br><br>
-                                    <input class="form-control" placeholder="Enter Adress Here:">
+                                    <input name="address2" class="form-control" placeholder="Enter Adress Here:">
                                 </div>
                             </div>
                             <div class="row">
@@ -181,36 +181,39 @@
                 <div id="order" class="tab-pane fade">
                   <center><h3 style="color: #c6c6c6">Order History</h3></center>
                   <table class="table">
+
+                  <?php if ($OrderHistory){ ?>
+                      
+                        
                     <thead>
                       <tr>
                         <th>Sr #</th>
                         <th>OrderID</th>
                         <th>Total</th>
-                        <th>Date</th>
-                        <th>Time</th>
+                        <th>Date & Time</th>
                         <th>Status</th>
                       </tr>
                     </thead>
                     <tbody>      
-                      <tr class="success">
-                        <td>1</td>
-                        <td>9567</td>
-                        <td>1200 Rs</td>
-                        <td>7/29/2017</td>
-                        <td>12:00</td>
-                        <td>Delivered</td>
+                      <?php $count = 1; foreach ($OrderHistory as $row): ?>
+                        
+                      <tr class="<?php if($row["Status"]==1) echo "success"; else if($row["Status"]==0) echo "warning" ?>">
+                        <td><?php echo $count++; ?></td>
+                        <td><?php echo $row["EncryptedId"] ?></td>
+                        <td>Rs <?php echo $row["TotalAmount"] ?></td>
+                        <td><?php echo $row["ReceiveTime"] ?></td>
+                        <td><?php if($row["Status"]==1) echo "Deliverd"; else if($row["Status"]==0) echo "Pending" ?></td>
                         <td><a>View details</a></td>
                       </tr>
-                      <tr class="warning">
-                        <td>2</td>
-                        <td>3452</td>
-                        <td>1300 Rs</td>
-                        <td>12/03/2016</td>
-                        <td>05:15</td>
-                        <td>Pending</td>
-                        <td><a>View details</a></td>
-                      </tr>
-                    </tbody>
+
+                      <?php endforeach ?>
+
+                  <?php } // End of IF 
+
+                    else {
+                        echo "<h2>No Order Yet</h2>";
+                    }
+                  ?></tbody>
                   </table>
                 </div>
                 <div id="loc" class="tab-pane fade">

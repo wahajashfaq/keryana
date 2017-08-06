@@ -1,27 +1,27 @@
 
-        if($(window).width()<=993){
-            $(".features-box").css("border-right","none");
-            $(".features-box").css("text-align","center");
-            $("#seperator").hide();
-        }
-        $(window).resize(function() {
-            if($(window).width()>993){
-                $(".features-box").css("border-right","1px solid #DEDEDE");   
-                 $(".features-box").css("border-right","1px solid #DEDEDE");   
-                $("#last-f-box").css("border-right","none");
-                $(".features-box").css("text-align","right");
-                $("#seperator").show();
-            }
-            if($(window).width()<=993){
-                $(".features-box").css("border-right","none");   
-                $(".features-box").css("text-align","center");
-                $("#seperator").hide();
-            }
-        });
-        
-        $(document).ready(function(){
+if($(window).width()<=993){
+  $(".features-box").css("border-right","none");
+  $(".features-box").css("text-align","center");
+  $("#seperator").hide();
+}
+$(window).resize(function() {
+  if($(window).width()>993){
+    $(".features-box").css("border-right","1px solid #DEDEDE");   
+    $(".features-box").css("border-right","1px solid #DEDEDE");   
+    $("#last-f-box").css("border-right","none");
+    $(".features-box").css("text-align","right");
+    $("#seperator").show();
+  }
+  if($(window).width()<=993){
+    $(".features-box").css("border-right","none");   
+    $(".features-box").css("text-align","center");
+    $("#seperator").hide();
+  }
+});
+
+$(document).ready(function(){
             // Activate Carousel
-          
+            
             /*
             $("#myCarousel").on('slid.bs.carousel', function () {
                 if($('#slide1').hasClass('active'))
@@ -92,25 +92,25 @@
             */
             $(document).scroll(function() {
               
-               if(window.innerWidth>991)
-               {
-                    var y = $(this).scrollTop();
-                    if (y > 150) {
-                      $('.header-fixed').fadeIn();
-                    } else {
-                      $('.header-fixed').fadeOut();
-                       $('#product-search').css('top','110px');
-                    }
-                   if(y>350)
-                   {
-                       $('.backtotop').fadeIn();
-                   }
-                   else
-                   {
-                       $('.backtotop').fadeOut();
-                   }
-               }
-            });
+             if(window.innerWidth>991)
+             {
+              var y = $(this).scrollTop();
+              if (y > 150) {
+                $('.header-fixed').fadeIn();
+              } else {
+                $('.header-fixed').fadeOut();
+                $('#product-search').css('top','110px');
+              }
+              if(y>350)
+              {
+               $('.backtotop').fadeIn();
+             }
+             else
+             {
+               $('.backtotop').fadeOut();
+             }
+           }
+         });
             
             $('#myCarousel1').carousel({
               interval: false
@@ -132,18 +132,18 @@
             })
 
             $('.carousel1 .item').each(function(){
-                
+              
               var next = $(this).next();
-                
+              
               if (!next.length) {
                 next = $(this).siblings(':first');
               }
               next.children(':first-child').clone().appendTo($(this));
-                
+              
               for (var i=0;i<4;i++) {
                 next=next.next();
                 if (!next.length) {
-                    next = $(this).siblings(':first');
+                  next = $(this).siblings(':first');
                 }
 
                 next.children(':first-child').clone().appendTo($(this));
@@ -153,7 +153,7 @@
             
             $('body').scrollspy({target: "#backtotop", offset: 50});
                 // Add smooth scrolling on all links inside the navbar
-              $("#backtotop a").on('click', function(event) {
+                $("#backtotop a").on('click', function(event) {
                 // Make sure this.hash has a value before overriding default behavior
                 if (this.hash !== "") {
                   // Prevent default anchor click behavior
@@ -173,45 +173,50 @@
                   });
                 }  // End if
               });
-            
-            
-            $('.qval').text("1");
+                
+                
+                if($('.qval').text()=="1"){
+                  $('.qval').text("1");
+                }
 /*
             $('body').on('click', '.addbtn', function() {
                 $(this).parent().children('.addbtn').css('display','none');
                 $(this).parent().children('.qmang').children('.qval').text("1");
                 $(this).parent().children('.qmang').css('display','block');
-            });*/
-            $('body').on('click', '.fa-minus', function() {
+              });*/
+              $('body').on('click', '.fa-minus', function() {
                 var m = $(this).parent().children('.qval').text();
-                  m--;
+                m--;
                 if(m===0)
                 {
                    // $(this).parent().parent().children('.qmang').css('display','none');
                    // $(this).parent().parent().children('.addbtn').css('display','block');
+                 }else if(m<0){
+
+                 }
+
+                 else{
+                  
+                  $(this).parent().children('.qval').text(m);
                 }
-                else{
-                    
-                    $(this).parent().children('.qval').text(m);
-                }
-            });
-            $('body').on('click', '.fa-plus', function() {
+              });
+              $('body').on('click', '.fa-plus', function() {
                 var m = $(this).parent().children('.qval').text();
                 m++;
                 $(this).parent().children('.qval').text(m);
-            });
-            
-            $('#message').click(function(){
+              });
+              
+              $('#message').click(function(){
                 $('#message').css('display','none');
                 $('#contactform').css('display','block');
-            });
-            
-            $('#cclose').click(function(){
+              });
+              
+              $('#cclose').click(function(){
                 $('#contactform').css('display','none');
                 $('#message').css('display','block');
+              });
+              
             });
-            
-        });
 
 
 

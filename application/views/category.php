@@ -5,10 +5,12 @@
             <div class="cbox">
                 <div class="cbox1">Our Categories</div>
                 <a href=""><div class="Maincat active"><i class="fa fa-angle-right" aria-hidden="true"></i><span><?php echo $CurrentCategory[0]["Name"] ?></span></div></a>
-                <?php foreach ($side_categories as $row): ?>
+                <?php if ($side_categories): ?>
+                  <?php foreach ($side_categories as $row): ?>
                   
                 <a href="<?php echo base_url('welcome/category/'.$SubCategory.'/'.$row["EncryptedId"]) ?>" ><div class="Maincat sub"><i class="fa fa-angle-right" aria-hidden="true"></i><span><?php echo $row["Name"]; ?></span></div></a>
                 <?php endforeach ?>
+                <?php endif ?>
             </div>
             <div class="cbox" style="margin-top:10px">
                 <div class="cbox1">Refine</div>
@@ -81,9 +83,26 @@
             <img class="cbanner" src="<?php echo base_url('assets/images/home_slider_image_1.jpg') ?>"><br><br>
             <div class="row">
 
+
+            <?php if ($filterd){?>
+              
             <?php foreach ($filterd as $row){?> 
 
              <div class="col-md-3 product" style="padding-left:0px;padding-right:0px">
+             <div style="height: 40px">
+            <?php if(isset($row["OfferType"])) 
+
+              if($row["OfferType"]=="Amount"){
+
+            echo "<div class='discount' style='margin-left:10px'><center>Rs ".$row['OfferAmount']."<span>OFF</span></center></div><br><br>";
+
+              }else if($row["OfferType"]=="Percent"){
+
+            echo "<div class='discount' style='margin-left:10px'><center>".$row['OfferAmount']."%<span>OFF</span></center></div><br><br>";
+              }
+
+            ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
+            </div>
 
               <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
                 <br><br><div><?php echo $row["Name"] ?></div>
@@ -105,15 +124,20 @@
             ?>
 
           <br><br>
-          <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
+          Rs <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" ><?php echo $row["Units"][0]["Price"]; ?></span>
           <!-- <span class="nprice">Rs 500</span><br><br> -->
-          <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">1</span><i class="fa fa-plus" aria-hidden="true"></i></div>
           <button class="addbtn" onclick="add_data('<?php echo $row["EncryptedId"]; ?>',this)" ><img  class="btn_image" width="26" height="21" src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
               <hr>
             </center>
             </div>
             
-            <?php } ?>
+            <?php } // End of Foreach Loop ?>
+            <?php } // End of If => No Product Check
+              else {
+                echo "<h1>No Product Found</h1>";
+              }
+             ?>
             </div>
         </div>
     </div>
@@ -149,7 +173,7 @@
 
 
             //console.log("Price =>"+$price+"  AND  ID =>"+$percentage);
-            //  alert($quantity);
+              alert("Qunatity => "+ $quantity + "  Price =>"+$price+"  AND  ID =>"+$percentage);
 
             jQuery.ajax({
 
@@ -190,9 +214,5 @@
 
           });
     }
-
-
-
-
 
   </script>

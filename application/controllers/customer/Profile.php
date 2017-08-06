@@ -25,6 +25,21 @@ class Profile extends CI_Controller {
 		return redirect('customer/dashboard','refresh');
 	}
 
+	public function updateCheck(){
+
+		
+		$this->load->model('Customer');
+		$this->Customer->updateProfile($this->input->post(),$this->session->userdata('customer_id'));
+
+		return redirect('customer/checkout','refresh');
+
+	}
+
+	public function orderDetails($orderID){
+
+		echo "$orderID";
+
+	}
 }
 
 /* End of file Profile.php */

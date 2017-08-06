@@ -43,8 +43,62 @@ class Dashboard extends CI_Controller {
 		}
         
 		$this->load->model('Customer');
+		$this->load->model('Order');
+		$this->load->model('Cart_Model');
+
 		$data = $this->Customer->getProfileInfo($this->session->userdata("customer_id"));	
-		$this->load->view('customer/profile',["PROFILE"=>$data,"categories"=>$first_categories]);
+		$cart_result = $this->Cart_Model->getCurrentCart($data[0]["EncryptedId"]);
+		$orderHistory = $this->Order->orderHistory($this->session->userdata("customer_id"));
+
+		foreach ($orderHistory as &$orders) {
+
+			$CartProducts = $this->Cart_Model->getCartsByOrders($orders["CartID"]);
+
+			$totalDiscount = 0;
+	        $subTotal = 0;
+
+
+	      foreach ($CartProducts as $row){
+
+	        $discount = 0;
+
+	        if($row["OfferType"])  {
+	          if($row["OfferType"]=="Amount"){
+
+	            $discount = $row["OfferAmount"]*$row["Quantity"];
+
+
+	          }else if($row["OfferType"]=="Percent"){
+
+	            $discount = ($row["Price"]*$row["OfferAmount"]*0.01)*$row["Quantity"];
+	          }
+	        }
+
+	          $totalDiscount = $totalDiscount+$discount;
+//	          echo $row['Price']. "x" .$row['Quantity']. " => " . $row['Price']*$row['Quantity']. " - " . $discount . "<br>";
+	          $subTotal =$subTotal+ $row["Price"]*$row["Quantity"];
+
+	      }
+			# code...
+	        $subTotal = (float)$subTotal;
+	        $totalDiscount = (float)$totalDiscount;
+	        $points = (float)$orders['LoyaltyPointUse'];
+	        $temp = $subTotal - $totalDiscount - $points;
+
+
+	        /*echo " subTotal : $subTotal <br>";
+	        echo " Total Discount : $totalDiscount <br>";
+	        echo " Point Used : ". $orders['LoyaltyPointUse']." <br>";
+	        echo " Subtotal - DIscout = " . $temp ."<br>";
+	      	echo "Total Amount : Rs ".$temp;*/
+
+	      $orders["TotalAmount"] = $temp;
+		} // End of Order Loop
+
+		  
+		
+	
+		$this->load->view('customer/profile',["PROFILE"=>$data,"categories"=>$first_categories,"OrderHistory"=>$orderHistory]);
 		//echo "customer : ".$this->session->userdata("customer_id");				
 	}
 
@@ -54,6 +108,7 @@ class Dashboard extends CI_Controller {
     $this->load->model('Customer');
     $this->Customer->setLastLoginTime($this->session->userdata('customer_id'));
     $this->session->unset_userdata('customer_id');
+    $this->session->unset_userdata('My_Cart');
     return redirect('');
   }
 

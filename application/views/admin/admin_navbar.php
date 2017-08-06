@@ -254,6 +254,9 @@
                                 <li>
                                     <a href="<?php echo base_url('admin/resources/add/CategoryImages') ?>">Category Images</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo base_url('admin/resources/sliders') ?>">Sliders</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -267,6 +270,18 @@
                                 <li>
                                     <a href="<?php echo base_url('admin/product/allProduct') ?>">Products</a>
                                 </li>
+                                <li>
+                                    <a href="<?php echo base_url('admin/resources/sliders/all') ?>">Sliding Banners</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-camera fa-fw"></i>Banner<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="<?php echo base_url('admin/resources/sliders/sidebanner') ?>">Side Banner</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
@@ -274,6 +289,11 @@
                         <li>
                             <a href="<?php echo base_url('admin/Message') ?>"><i class="fa fa-envelope fa-fw"></i>Messages</span></a>
                             
+                        </li>
+
+                        <li>
+                            <a href="<?php echo base_url('admin/AllOrders') ?>"><i class="fa fa-bar-chart-o fa-fw"></i> Orders</a>
+                            <!-- /.nav-second-level -->
                         </li>
 
                         <li>

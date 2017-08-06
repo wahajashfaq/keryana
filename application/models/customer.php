@@ -21,6 +21,22 @@ class Customer extends CI_Model {
 		}
 	}
 
+
+
+	public function getCustomerID($enc_id){  // Where EncryptedID is given
+
+			$this->db->where('EncryptedId',$enc_id);
+			$query = $this->db->get('customers');
+
+			if($query->num_rows()){ 
+				return $query->row()->ID;
+			}	
+			else {
+				return FALSE;
+			}		
+	}
+
+
 	public function setLastLoginTime($customer_ID){
 
 
@@ -35,6 +51,13 @@ class Customer extends CI_Model {
 	}
 
 
+	public function updateLoyaltyPoints($customer_ID, $used_points,$original_points){
+
+		$this->db->where('ID', $customer_ID);
+		$this->db->set('LoyaltyPoints',$original_points-$used_points);
+		$this->db->update('customers');
+
+	}
 
 	public function signup($post_data){
 
@@ -139,11 +162,24 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 	public function updateProfile($post_data,$customer_ID){
 
 
-		$this->db->set('City', $post_data["city"]);
-		$this->db->set('Mobile', $post_data['contact_number']);
-		$this->db->set('Address', $post_data['address']);
-		$this->db->where('EncryptedId', $customer_ID);
-		$this->db->update('customers');
+
+		if($post_data["city"]!=''){
+			$this->db->set('City', $post_data["city"]);
+		}
+
+		if($post_data["contact_number"]!=''){
+			$this->db->set('Mobile', $post_data['contact_number']);
+		}
+		if($post_data["address1"]!=''){
+			$this->db->set('Address', $post_data['address1']." ".$post_data['address2']);
+		} 
+		if($post_data["city"]=='' && $post_data["address1"]=='' && $post_data["contact_number"]==''){ 
+
+		}else {
+			
+			$this->db->where('EncryptedId', $customer_ID);
+			$this->db->update('customers');
+		}
 
 	}
 

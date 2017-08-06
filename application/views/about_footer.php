@@ -293,5 +293,155 @@
 </script>
 
     <script type="text/javascript" src="<?php echo base_url('assets/js/cart.js') ?>"></script>
+
+    <script type="text/javascript">
+        
+
+
+  function plus(e){
+
+    $myOBJ = $(e).parent().children('.qval');
+    $quantity = $myOBJ.html();
+    $unitid = $($myOBJ).attr('id');
+    $price = $($myOBJ).attr('data-price');
+    $quantity++;
+
+  //      console.log($(e).parent().children('.qval').html());
+
+  
+              jQuery.ajax({
+
+                type: "POST",
+                url: "<?php echo base_url(); ?>" + "/customer/Cart/updateQuantity",
+                dataType: 'text',
+                data: {
+                  priceOfProduct : $price, 
+                  UnitID : $unitid,
+                  quantityOfProduct : $quantity
+                },
+                success: function(res) {
+
+                  if (res)
+                  {
+                    // Show Entered Value
+                    /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    //alert(res);
+                    $('.dropdown-content').html(res);
+                    location.reload();
+                  }
+
+                },
+                beforeSend : function()
+                {
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("some error");
+                }
+              });
+
+}
+
+function minus(e){
+
+  $myOBJ = $(e).parent().children('.qval');
+  $quantity = $myOBJ.html();
+  $unitid = $($myOBJ).attr('id');
+  $price = $($myOBJ).attr('data-price');
+  $quantity--;
+
+      //alert($('img#'+$unitid).attr('src'));
+
+
+                jQuery.ajax({
+
+                  type: "POST",
+                  url: "<?php echo base_url(); ?>" + "/customer/Cart/updateQuantity",
+                  dataType: 'text',
+                  data: {
+                    priceOfProduct : $price, 
+                    UnitID : $unitid,
+                    quantityOfProduct : $quantity
+                  },
+                  success: function(res) {
+
+                    if (res)
+                    {
+                              // Show Entered Value
+                              /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    //alert(res);
+                    $('.dropdown-content').html(res);
+                    location.reload();
+                  }
+
+                },
+                beforeSend : function()
+                {
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("some error");
+                }
+              });
+
+      //console.log($(e).parent().children('.qval').html());
+    }
+
+
+
+
+    function removeProduct(e){
+
+    $unitid = $(e).attr('id');
+    alert($unitid);
+      //alert($('img#'+$unitid).attr('src'));
+
+
+          jQuery.ajax({
+
+            type: "POST",
+            url: "<?php echo base_url(); ?>" + "/customer/Cart/deleteFromCart",
+            dataType: 'text',
+            data: {
+              UnitID : $unitid
+            },
+            success: function(res) {
+
+              if (res)
+              {
+                        // Show Entered Value
+                        /*
+              jQuery("div#result").show();
+              jQuery("div#value").html(res.username);
+              jQuery("div#value_pwd").html(res.pwd);
+              */
+
+              //alert(res);
+              $('#dropdown-content').html(res);
+              location.reload();
+            }
+
+          },
+          beforeSend : function()
+          {
+          },
+          error: function(XMLHttpRequest, textStatus, errorThrown) {
+            alert("some error");
+          }
+        });
+
+      //console.log($(e).parent().children('.qval').html());
+    }
+
+    
+    </script>
     
 </html>

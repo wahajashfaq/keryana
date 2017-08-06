@@ -143,8 +143,6 @@ class Categories extends CI_Model {
 
 	public function addFirstCategory($post_data){
 
-
-
 		$this->load->helper('date');
 		$datestring = '%Y-%m-%d %h:%i:%s';
 		$time = now('Asia/Karachi');
