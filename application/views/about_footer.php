@@ -1,3 +1,88 @@
+<div id="backtotop" class="container-fluid">
+  <a href="#top"><div class="backtotop"></div></a>
+</div>
+
+<div class="product-search-container" id="product-search">
+
+  <div class="row">
+    <div class="col-md-12">
+      <i class="fa fa-times-circle" id="sclose" aria-hidden="true" style="float:right;color:#28a7db;margin-top:5px;font-size:25px"></i>
+    </div>
+  </div>
+  <div class="row dhidden">
+    <div class="col-md-12">
+      <form class="">
+        <div>
+          <div class="search-box" style="margin-top:0px">
+            <input onclick="" type="text" name="q" value="" onkeyup="searchProducts(this.value)" placeholder="Search for a Brand, Product or Specific Item" class="search" id="search">
+          </div>
+        </div>
+        <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
+      <div class="hline"></div>
+      <div class="hline" style="margin-top:2px"></div>
+    </div>
+    <div class="col-md-2 col-sm-4 col-xs-6" style="padding-right:0px;padding-left:0px">
+      <div class="line-head"><center>SEARCH<span> RESULTS</span></center></div>
+    </div>
+    <div class="col-md-5 col-sm-4 col-xs-3" style="padding-left:0px;padding-top:15px">
+      <div class="hline"></div>
+      <div class="hline" style="margin-top:2px"></div>
+    </div>
+  </div>
+    
+  <br><br>
+<br>
+<br>
+
+</div>
+
+<div id="message" class="container-fluid">
+  <div class="message"><i class="fa fa-comment" aria-hidden="true"></i><span class="messagetext">Contact Us</span></div>
+</div>
+
+<div id="contactform" class="container-fluid">
+  <div class="contactform">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="" style="float:left">Contact Us</div><div style="float:right"><i id="cclose" class="fa fa-times-circle" style="float:right" aria-hidden="true" ></i></div>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-12">
+        <center><input type="email" id="contact_email" class="input-lg cinput"  placeholder="Email"></center>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-12">
+        <center><input type="number" id="contact_number" class="input-lg cinput"  placeholder="Phone number"></center>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-md-12">
+        <center><input type="text" id="contact_subject" class="input-lg cinput"  placeholder="subject"></center>
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col-md-12">
+        <center><textarea class="input-lg cinput" id="contact_query"  placeholder="State Your Query"></textarea></center>
+      </div>
+    </div>
+    <br>
+
+    
+    <div class="row">
+      <div class="col-md-12">
+        <center><button id="contact_btn" class="btn-lg sbtn">Submit</button></center>
+      </div>
+    </div>
+  </div>
+</div>
 
         <footer>
         <div class = "container-fluid" id ="footer-features">
@@ -191,13 +276,15 @@
 
             
         });
-        $('#search').on('input', function() {
+        
+        
+        function  searchProducts(keys) {
             $.ajaxSetup ({
             // Disable caching of AJAX responses
                 cache: false
             });
            
-            var value=$('#search').val();
+            var value=keys;
             if(value.length>2)
             {
                 console.log(value);
@@ -218,7 +305,7 @@
                     */
 
                     //alert(res);
-                    $('#psearch').remove();
+                    $('#searchParent').remove();
                     $("#product-search").append(res);
                   }
 
@@ -235,9 +322,10 @@
             }
             else
             {
+                    $('#searchParent').remove();
                 $('#product-search').css('display','none');
             }
-        });    
+        }   
     </script>
     <script type="text/javascript">
 // Ajax post

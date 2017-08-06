@@ -50,6 +50,8 @@ class Dashboard extends CI_Controller {
 		$cart_result = $this->Cart_Model->getCurrentCart($data[0]["EncryptedId"]);
 		$orderHistory = $this->Order->orderHistory($this->session->userdata("customer_id"));
 
+        if($orderHistory){
+        
 		foreach ($orderHistory as &$orders) {
 
 			$CartProducts = $this->Cart_Model->getCartsByOrders($orders["CartID"]);
@@ -94,7 +96,7 @@ class Dashboard extends CI_Controller {
 
 	      $orders["TotalAmount"] = $temp;
 		} // End of Order Loop
-
+        }
 		  
 		
 	

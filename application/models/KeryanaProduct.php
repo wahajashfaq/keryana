@@ -95,8 +95,14 @@ class KeryanaProduct extends CI_Model {
 
 
 
-	public function searchProduct(){
-
+	public function searchProduct($data){
+        $sql="SELECT * FROM `products` WHERE `Name` LIKE '%".$data['name']."%'";
+        $query = $this->db->query($sql);
+		if($query->num_rows()){
+			return $query->result_array();
+		}else{
+			return FALSE;
+		}      
 	}
 
 

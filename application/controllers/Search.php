@@ -15,6 +15,7 @@ class search extends CI_Controller {
         $psearch =  $this->KeryanaProduct->searchProduct($this->input->post());
         $output="";
         $count=0;
+        $output = "<div id='searchParent'>"; 
         if($psearch)
         {
             foreach ($psearch as &$row) {
@@ -25,7 +26,8 @@ class search extends CI_Controller {
 
             }
 
-            $output="<div class='row' id='psearch'>";
+               
+            $output =$output."<div class='row' id='psearch'>";
             foreach($psearch as $var)
             {
             $output=$output."<div class='col-md-2 product' style='padding-left:0px;padding-right:0px'>";
@@ -61,11 +63,11 @@ class search extends CI_Controller {
                  $count=0;
                 }
             }
-            $output=$output."</div>";
+            $output=$output."</div></div>";
         }
         else
         {
-            $output="<div class='row' id='psearch'><div class='col-md-12'>";
+            $output=$output."<div class='row' id='psearch'><div class='col-md-12'>";
             $output=$output."<center><h1>Products not found<h1></center>";
             $output=$output."</div></div>";
         }

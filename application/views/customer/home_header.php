@@ -134,7 +134,7 @@
                     <form class="">
                     <div>
                     <div class="search-box"  style="margin-top:0px">
-                        <input onclick="" type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search" >
+                        <input onclick="" type="text" name="q" onkeyup="searchProducts(this.value)" value="" placeholder="Search for a Brand, Product or Specific Item" class="search" >
                     </div>
                     </div>
                     <!-- input type="submit" class="sbutn" value="Search" style="margin-top:0px" -->
