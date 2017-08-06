@@ -29,3 +29,4 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-project
 
 application/controllers/Welcome.php
+application/views/landing_header.php
