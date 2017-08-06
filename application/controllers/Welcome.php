@@ -91,6 +91,10 @@ class Welcome extends CI_Controller {
 		$this->images->getBannerOne();
 		
 	}
+    
+    public function orderdetails(){
+		$this->load->view('orderdetails');
+	}
 	public function about(){
 
 		$this->load->view('about');	

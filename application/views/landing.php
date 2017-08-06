@@ -23,12 +23,11 @@
       <img src=" <?php echo base_url('assets/images/mylogo.jpg') ?> " alt="logo" style="width:250px;height:63px">
     </div>
     <div class="col-md-6">
-      <form class="">
+      
         <div class="search-box">
           <input  type="text" name="q" value="" placeholder="Search for a Brand, Product or Specific Item" class="search" id="search">
         </div>
-        <!-- input type="submit" class="sbutn" value="Search"-->
-      </form>    
+        <!-- input type="submit" class="sbutn" value="Search"-->   
     </div>
     <div class="col-md-3" style="overflow-x: visible;">
             <!--
@@ -469,7 +468,7 @@
             ?>
 
           <br><br>
-          <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
+          <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span><br><br>
           <!-- <span class="nprice">Rs 500</span><br><br> -->
           <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
           <button class="addbtn" onclick="add_data('<?php echo $row["EncryptedId"]; ?>',this)" ><img  class="btn_image" width="26" height="21" src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
@@ -751,7 +750,7 @@
       </form>
     </div>
   </div>
-  <div class="row">
+  <div class="row" >
     <div class="col-md-5 col-sm-4 col-xs-3" style="padding-right:0px;padding-top:15px">
       <div class="hline"></div>
       <div class="hline" style="margin-top:2px"></div>
@@ -765,6 +764,7 @@
     </div>
   </div>
   <br><br>
+    <!--
   <div class="row">
     <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
       <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
@@ -779,7 +779,7 @@
       <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
     </center>
   </div>
-  <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
     <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
     <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
       <br><br><div>Product name</div>
@@ -792,7 +792,7 @@
     <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
   </center>
 </div>
-<div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
   <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
   <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
     <br><br><div>Product name</div>
@@ -805,7 +805,7 @@
   <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
 </center>
 </div>
-<div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
   <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
   <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
     <br><br><div>Product name</div>
@@ -818,7 +818,7 @@
   <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
 </center>
 </div>
-<div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
   <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
   <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
     <br><br><div>Product name</div>
@@ -831,7 +831,7 @@
   <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
 </center>
 </div>
-<div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
+    <div class="col-md-2 product" style="padding-left:0px;padding-right:0px">
   <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br>
   <center><div class="slider3-label"><img src="assets/images/product.jpg" style="width:150px;height:150px">
     <br><br><div>Product name</div>
@@ -844,9 +844,9 @@
   <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
 </center>
 </div>
-</div>
-<br>
-<br>
+  </div>
+    -->
+
 
 </div>
 
