@@ -291,7 +291,7 @@
                         <?php } else { ?>
                         <a href="<?php echo base_url('signup') ?>">
                             
-                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left: -89px !important;">or</span></diV>
+                        <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left: -89px !important;">or</span></diV>
 
                         </a>
                         <?php } ?>
