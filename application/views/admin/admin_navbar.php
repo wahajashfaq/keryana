@@ -292,6 +292,11 @@
                         </li>
 
                         <li>
+                            <a href="<?php echo base_url('admin/AllOrders') ?>"><i class="fa fa-bar-chart-o fa-fw"></i> Orders</a>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                        <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>

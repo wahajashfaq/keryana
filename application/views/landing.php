@@ -6,11 +6,11 @@
   if ($CartItems = $this->session->userdata('My_Cart')) {
 
 
-    echo "<pre>";
-    print_r ($CartItems);
-    echo "</pre>";
+    // echo "<pre>";
+    // print_r ($CartItems);
+    // echo "</pre>";
 
-    session_unset('My_Cart');
+    //session_unset('My_Cart');
 
   } 
 
@@ -49,8 +49,112 @@
                 <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
               </button>
               <div class="dropdown-content">
-                <p>It apears that your cart is currently empty!</p><br>
-                <a class="cbtn">CONTINUE SHOPPING</a>
+                <?php $items=1; if ($CartProducts){ ?>
+        
+                        <div style="width:100%;max-height:220px;overflow-y:auto;overflow-x:hidden;">
+                            <br>
+                        <div class="row">
+                            <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
+                                <div class="cartfhead" style="float:left">Your Cart <span>(<?php if(!$CartProducts){echo 0;}else echo count($CartProducts) ?> items)</span></div>
+                                <div style="float:right;margin-top:-20px">
+                                <center><img src="<?php echo base_url('assets/images/cartfilled.png') ?>" class="cart"><span >Your Saved</span>
+                                  <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div></center>
+                                </div>
+                            </div>
+                        </div>
+                          
+                          <hr>
+                          
+                           <?php
+
+                      $totalDiscount = 0;
+                      $subTotal = 0;
+
+                      foreach ($CartProducts as $row): ?>
+
+                      <?php 
+
+                      $discount = 0;
+
+                      if($row["OfferType"])  {
+                        if($row["OfferType"]=="Amount"){
+
+                          $discount = $row["OfferAmount"]*$row["Quantity"];
+
+
+                        }else if($row["OfferType"]=="Percent"){
+
+                          $discount = ($row["Price"]*$row["OfferAmount"]*0.01)*$row["Quantity"];
+                        }
+                      }
+
+                      $totalDiscount = $totalDiscount+$discount;
+                      $subTotal =$subTotal+ $row["Price"]*$row["Quantity"];
+
+                      
+                      ?>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="float:left">
+                                    <div style="float:left">
+                                        <img class="pimg" style="max-height: 100px;width: :auto;max-width: : 100px; " src="<?php echo base_url('uploads/product_images/'.$row["Image"]) ?>">
+                                    </div>
+                                    <div style="float:right">
+                                        <center>
+                                       <div style="margin-top:20px;color:"><?php echo $row["Name"] ?></div>
+                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" onclick="minus(this)" aria-hidden="true"></i><span class="qval" data-price="<?php echo $row["Price"] ?>" id="<?php echo $row["ProductID"] ?>"><?php echo $row["Quantity"];?></span><i onclick="plus(this)" class="fa fa-plus" aria-hidden="true"></i></div>
+                                        </center>
+                                    </div>
+                                </div>
+                                <div style="float:right">
+                                    <div style="float:left">
+                                        <center>
+                                        <div class="qfix" style="margin-top:20px;"><?php echo $row["Unit"] ?></div>
+                                        <div style="margin-top:10px;color: #313131">Rs <?php echo $row["Price"]; ?></div>
+                                        </center>
+                                    </div>
+                                    <div style="float:right;margin-right:10px">
+                                        <i id="<?php echo $row["ProductID"] ?>" onclick="removeProduct(this);" class="fa fa-times-circle" aria-hidden="true" ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <hr>
+
+
+                    <?php endforeach ?>
+
+                          <hr>
+                        </div>
+                        <div>
+                        <div class="row">
+                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs <?php echo $subTotal; ?></div>
+                                <br>
+                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs <?php echo $discount; ?></div>
+                                <br>
+                                <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
+                                <br>
+                                <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs <?php echo $subTotal-$totalDiscount; ?></div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br>
+                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <div class="row">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-5"><button class="btn btn-block bcartview"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"> View Cart</button></div>
+                                    <div class="col-md-5"><button class="btn btn-block coutview">Check Out</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>  
+
+                  <?php } else echo"<div style='margin-left:15px;'><p>It apears that your cart is currently empty!</p><br>
+                        <a class='cbtn'>CONTINUE SHOPPING</a></div>"?>
               </div>
             </div>
           </div>    
@@ -439,7 +543,15 @@
             <div style="height: 40px">
             <?php if(isset($row["OfferType"])) 
 
-            echo "<div class='discount' style='margin-left:10px'><center>19% <span>OFF</span></center></div><br><br>";
+              if($row["OfferType"]=="Amount"){
+
+            echo "<div class='discount' style='margin-left:10px'><center>Rs ".$row['OfferAmount']."<span>OFF</span></center></div><br><br>";
+
+              }else if($row["OfferType"]=="Percent"){
+
+            echo "<div class='discount' style='margin-left:10px'><center>".$row['OfferAmount']."%<span>OFF</span></center></div><br><br>";
+              }
+
             ?><!-- <div class="discount" style="margin-left:10px"><center>19% <span>OFF</span></center></div><br><br> -->
             </div>
             <center><div class="slider3-label"><img src="<?php echo base_url('uploads/product_images/'.$row["Image"]); ?>" style="width:150px;height:150px">
@@ -462,9 +574,9 @@
             ?>
 
           <br><br>
-          <span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" >Rs <?php echo $row["Units"][0]["Price"]; ?></span>
+          <span>Rs </span><span class="new_arrivals_price nprice" data-percentage="<?php echo $row["Units"][0]["ID"]; ?>" id="<?php echo $row["EncryptedId"]; ?>" ><?php echo $row["Units"][0]["Price"]; ?></span>
           <!-- <span class="nprice">Rs 500</span><br><br> -->
-          <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="qmang"><i class="fa fa-minus" aria-hidden="true"></i><span id="<?php echo $row["EncryptedId"]; ?>"  class="new_arrivals_quantity qval">1</span><i class="fa fa-plus" aria-hidden="true"></i></div>
           <button class="addbtn" onclick="add_data('<?php echo $row["EncryptedId"]; ?>',this)" ><img  class="btn_image" width="26" height="21" src="<?php echo base_url('assets/images/addbicon.png') ?>"><span>Add</span></button>
         </center>
       </div>
@@ -509,10 +621,10 @@
 
 <div class="row">
   <div class="col-md-6">
-    <img class="imgbanner3" src=" <?php echo base_url('assets/images/home_slider_image_1.jpg') ?>">
+    <img class="imgbanner3" src=" <?php echo base_url('uploads/banners/banner_one.jpg') ?>">
   </div>
   <div class="col-md-6">
-    <img class="imgbanner3" src=" <?php echo base_url('assets/images/home_slider_image_1.jpg') ?>">
+    <img class="imgbanner3" src=" <?php echo base_url('uploads/banners/banner_two.jpg') ?>">
   </div>
 </div>
 <br><br>    

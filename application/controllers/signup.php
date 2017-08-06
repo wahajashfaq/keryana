@@ -41,6 +41,7 @@ class Signup extends CI_Controller {
 
   }
 
+  
 
 
   public function Login(){
@@ -60,8 +61,18 @@ class Signup extends CI_Controller {
       if($login_id){
 
         // Correct username/password
+        $this->load->model('Cart_Model');
         $this->session->set_userdata('customer_id',$login_id);
-        return redirect('customer/dashboard');
+        if($this->session->userdata('My_Cart')){
+
+          if ($previousData = $this->Cart_Model->get_Cart_Session($login_id)) {
+              $this->Cart_Model->updateCart($previousData);
+          }
+        }else{
+           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($login_id));   // Load into session
+        }
+
+        return redirect('');
       }else{
 
           // Incorrect username/password
@@ -148,7 +159,8 @@ class Signup extends CI_Controller {
     $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
 
         $this->session->set_userdata('customer_id',$login_id);
-        return redirect('customer/dashboard');
+        $this->session->userdata('My_Cart',[]);
+        return redirect('');
 
     $location = $me->getProperty('location');
     echo "Full Name: ".$me->getProperty('name')."<br>";

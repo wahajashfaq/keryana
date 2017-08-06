@@ -18,6 +18,8 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+
 	public function index()
 	{
 
@@ -38,7 +40,6 @@ class Welcome extends CI_Controller {
 
 			$units["Units"] = array();
 			$row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
-
 
 		}
 
@@ -68,19 +69,128 @@ class Welcome extends CI_Controller {
 		}
 
 
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
 
-		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands,"NewArrivals"=>$newArrivals,"SlidingBanners"=>$slidingBanners]);		
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+
+		$this->load->view('landing',["categories"=>$first_categories,"brands"=>$brands,"NewArrivals"=>$newArrivals,"SlidingBanners"=>$slidingBanners,"CartProducts"=>$cart_result]);		
 	}
 
 
 	public function test(){
-		$this->load->model('images');
-		$this->images->getBannerOne();
+
+		$this->load->model('Cart_Model');
+		echo "<a href=".base_url('Welcome/clearCart').">Clear Cart</a>";
+		echo "<pre>";
+		print_r ($this->session->userdata('My_Cart'));
+		echo "</pre>";
+
+		//echo  $this->session->userdata('customer_id');
+		if($this->session->userdata('My_Cart') && $this->session->userdata('customer_id')){
+			$this->Cart_Model->addProductInExistingCart($this->session->userdata('My_Cart'),$this->session->userdata('customer_id'));
+		} // End of IF (Either User is not logged in or cart is empty)
+		else {
+
+
+
+			if($this->session->userdata('My_Cart')){
+				echo "You are Not Logged in ";
+			}else if($this->session->userdata('customer_id')){
+				echo "Your Cart Is Empty";
+			}else {
+				echo "Your Cart is Empty And You are not Logged In";
+			}
+		}
 		
+	}
+
+	public function clearCart(){
+
+		if($this->session->userdata('My_Cart')){
+			$this->session->unset_userdata('My_Cart');
+
+		}
+
+		return redirect('Welcome/test','refresh');
 	}
 	public function about(){
 
 		$this->load->view('about');	
+	}
+
+	public function cartView(){
+
+
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
+
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+		$this->load->view('cart_content',["CartProducts"=>$cart_result]);
 	}
 
 	public function category($type,$category_id){
@@ -144,7 +254,45 @@ class Welcome extends CI_Controller {
 			$currentCategory = $this->KeryanaProduct->getThirdCategoryParent($category_id);
 		}
 
-		$this->load->view('category',["categories"=>$first_categories,"filterd"=>$result_products,"side_categories"=>$result_sidebar,"SubCategory"=>$sub_category,"CurrentCategory"=>$currentCategory]);
+
+
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
+
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+		$this->load->view('category',["categories"=>$first_categories,"filterd"=>$result_products,"side_categories"=>$result_sidebar,"SubCategory"=>$sub_category,"CurrentCategory"=>$currentCategory,"CartProducts"=>$cart_result]);
 
 	}
 
@@ -182,7 +330,43 @@ class Welcome extends CI_Controller {
 			}
 		}
 
-		$this->load->view('product',["PRODUCT"=>$product_detail,"UNITS"=>$product_units,"categories"=>$first_categories]);	
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
+
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+		$this->load->view('product',["PRODUCT"=>$product_detail,"UNITS"=>$product_units,"categories"=>$first_categories,"CartProducts"=>$cart_result]);	
 	}
 
 	public function home(){
@@ -250,7 +434,44 @@ class Welcome extends CI_Controller {
 		}
 
 
-		$this->load->view('viewcart',["categories"=>$first_categories]);
+
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
+
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+		$this->load->view('viewcart',["categories"=>$first_categories,"CartProducts"=>$cart_result]);
 	}
 
 	public function checkout()
@@ -284,7 +505,43 @@ class Welcome extends CI_Controller {
 		}
 
 
-		$this->load->view('checkout',["categories"=>$first_categories]);
+		$this->load->model('Cart_Model');
+		if($userID=$this->session->userdata('customer_id')){
+
+			$cart_result = $this->Cart_Model->getCurrentCart($userID);
+
+		}else if($CartItems = $this->session->userdata('My_Cart'))
+		{
+			$cart_result = [];
+			foreach ($CartItems as $key => $value) {
+
+			if($CartItems[$key]){
+				$KeyResult = $this->Cart_Model->getCartsBySession($key);
+				$CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+				$CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+				$CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+				$CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+				$CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+				$CartItems[$key]["ProductID"] = $key;
+				/*echo "<pre>";
+				print_r ($CartItems[$key]);
+				echo "</pre>";	*/
+				$cart_result[$key] = $CartItems[$key];
+
+			}else{
+				$CartItems[$key] = null;
+			}		//$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+			}
+			$this->session->set_userdata("My_Cart",$cart_result);
+
+			//$cart_result = $CartItems;
+
+		}else {
+			$cart_result = null;
+		}
+
+		$this->load->view('checkout',["categories"=>$first_categories,"CartProducts"=>$cart_result]);
 	}
 
 	public function confirmation()
@@ -333,6 +590,7 @@ class Welcome extends CI_Controller {
 
 
 	public function phparray(){
+		
 		$arr = [];
 		$arr2= ["First Name"=>"Khawar","Last Name"=>"Hussain"];
 		$arr1= ["First Name"=>"Abdul","Last Name"=>"Khan","Middle Name"=>"Rehman"];

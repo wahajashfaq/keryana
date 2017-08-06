@@ -62,7 +62,7 @@
                                     <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
                                 </a>
                                 <ul class="dropdown-menu dropdown-user">
-                                    <li><a href="#"><i class="fa fa-user fa-fw"></i> MY Profile</a>
+                                    <li><a href="<?php echo base_url('customer/dashboard') ?>"><i class="fa fa-user fa-fw"></i> MY Profile</a>
                                     </li>
                                     <li class="divider"></li>
                                     <li><a href="<?php echo base_url('customer/dashboard/logout'); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
@@ -75,7 +75,7 @@
                         <?php } else { ?>
                         <a href="<?php echo base_url('signup') ?>">
                             
-                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1">or</span></diV>
+                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span  class="hlogin1">or</span></diV>
 
                         </a>
                         <?php } ?>
@@ -152,21 +152,22 @@
                                 Signup
                                 </a>
                             </div>
-                    </div-->
-                    <a href="<?php echo base_url('signup'); ?>">
-                    <diV style="float:left;margin-right:50px;margin-top:5px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left:-86px!important">or</span></diV>
-                    </a>
+                    </div--> 
                     <div class="dropdown" id="cart"  style="float:right;margin-top:-15px;">
                       <button class="dropbtn div-welc2" style="margin-top:0px;">
                           <center><img src="<?php echo base_url('assets/images/carticon.png') ?>" class="cart"><span class="first">Your Cart</span>
                           <div class="count-group"><span class="second">0</span><span class="second"> items</span></div></center>
                       </button>
                       <div class="dropdown-content" style="top:50px;padding-left:0px;padding-right:0px;">
-                        <div style="width:100%;max-height:220px;overflow-y:scroll;overflow-x:hidden;">
+                        
+
+                    <?php $items=1; if ($CartProducts){ ?>
+        
+                        <div style="width:100%;max-height:220px;overflow-y:auto;overflow-x:hidden;">
                             <br>
                         <div class="row">
                             <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
-                                <div class="cartfhead" style="float:left">Your Cart <span>(0 items)</span></div>
+                                <div class="cartfhead" style="float:left">Your Cart <span>(<?php if(!$CartProducts){echo 0;}else echo count($CartProducts) ?> items)</span></div>
                                 <div style="float:right;margin-top:-20px">
                                 <center><img src="<?php echo base_url('assets/images/cartfilled.png') ?>" class="cart"><span >Your Saved</span>
                                   <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div></center>
@@ -176,94 +177,80 @@
                           
                           <hr>
                           
+                           <?php
+
+                      $totalDiscount = 0;
+                      $subTotal = 0;
+
+                      foreach ($CartProducts as $row): ?>
+
+                      <?php 
+
+                      $discount = 0;
+
+                      if($row["OfferType"])  {
+                        if($row["OfferType"]=="Amount"){
+
+                          $discount = $row["OfferAmount"]*$row["Quantity"];
+
+
+                        }else if($row["OfferType"]=="Percent"){
+
+                          $discount = ($row["Price"]*$row["OfferAmount"]*0.01)*$row["Quantity"];
+                        }
+                      }
+
+                      $totalDiscount = $totalDiscount+$discount;
+                      $subTotal =$subTotal+ $row["Price"]*$row["Quantity"];
+
+                      
+                      ?>
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div style="float:left">
                                     <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
+                                        <img class="pimg" style="max-height: 100px;width: :auto;max-width: : 100px; " src="<?php echo base_url('uploads/product_images/'.$row["Image"]) ?>">
                                     </div>
                                     <div style="float:right">
                                         <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
+                                       <div style="margin-top:20px;color:"><?php echo $row["Name"] ?></div>
+                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" onclick="minus(this)" aria-hidden="true"></i><span class="qval" data-price="<?php echo $row["Price"] ?>" id="<?php echo $row["ProductID"] ?>"><?php echo $row["Quantity"];?></span><i onclick="plus(this)" class="fa fa-plus" aria-hidden="true"></i></div>
                                         </center>
                                     </div>
                                 </div>
                                 <div style="float:right">
                                     <div style="float:left">
                                         <center>
-                                        <select class="qselect" style="margin-top:20px;">
-                                          <option>5 Kg</option>
-                                          <option>10 Kg</option>
-                                        </select>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
+                                        <div class="qfix" style="margin-top:20px;"><?php echo $row["Unit"] ?></div>
+                                        <div style="margin-top:10px;color: #313131">Rs <?php echo $row["Price"]; ?></div>
                                         </center>
                                     </div>
                                     <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
+                                        <i id="<?php echo $row["ProductID"] ?>" onclick="removeProduct(this);" class="fa fa-times-circle" aria-hidden="true" ></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
                           
                         <hr>
-                          
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div style="float:left">
-                                    <div style="float:left">
-                                        <img src="<?php echo base_url('assets/images/psmall.jpg') ?>">
-                                    </div>
-                                    <div style="float:right">
-                                        <center>
-                                       <div style="margin-top:20px;color:">Product Name</div>
-                                        <div class="qmang" style="display:block;margin-top:10px"><i class="fa fa-minus" aria-hidden="true"></i><span class="qval">0</span><i class="fa fa-plus" aria-hidden="true"></i></div>
-                                        </center>
-                                    </div>
-                                </div>
-                                <div style="float:right">
-                                    <div style="float:left">
-                                        <center>
-                                        <div class="qfix" style="margin-top:20px;padding-top:10px">5 Kg</div>
-                                        <div style="margin-top:10px;color: #313131">Rs100</div>
-                                        </center>
-                                    </div>
-                                    <div style="float:right;margin-right:10px">
-                                        <i class="fa fa-times-circle" aria-hidden="true" ></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          
+
+
+                    <?php endforeach ?>
+
                           <hr>
                         </div>
                         <div>
                         <div class="row">
-                            <br>
                             <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs 0</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
+                                <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs <?php echo $subTotal; ?></div>
+                                <br>
+                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs <?php echo $discount; ?></div>
+                                <br>
                                 <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
-                                <hr>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <br>
-                            <div class="col-md-12" style="padding-left:30px;padding-right:40px">
-                                <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs 0</div>
-                                <hr>
+                                <br>
+                                <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs <?php echo $subTotal-$totalDiscount; ?></div>
+                                <br>
                             </div>
                         </div>
                         <div class="row">
@@ -277,8 +264,38 @@
                             </div>
                         </div>
                         </div>  
+
+                  <?php } else echo"<div style='margin-left:15px;'><p>It apears that your cart is currently empty!</p><br>
+                        <a class='cbtn'>CONTINUE SHOPPING</a></div>"?>
                       </div>
                     </div>
+
+                    <?php if ($this->session->userdata('customer_id')){ ?>
+                            <diV style="float:right;margin-right:50px">
+                         <ul>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <span class="header-img">WA</span><i class="fa fa-caret-down" style="margin-left:2px;color:#28a7db"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="<?php echo base_url('customer/dashboard') ?>"><i class="fa fa-user fa-fw"></i> MY Profile</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="<?php echo base_url('customer/dashboard/logout'); ?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                    </li>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </li>
+                        </ul>
+                        </diV>
+                        <?php } else { ?>
+                        <a href="<?php echo base_url('signup') ?>">
+                            
+                        <diV style="float:right;margin-right:50px"><span class="hlogin">LOGIN</span><span class="hlogin2">SIGNUP</span><span class="hlogin1" style="margin-left: -89px !important;">or</span></diV>
+
+                        </a>
+                        <?php } ?>
+
                 </div>
             </div>
         </div>
