@@ -9,8 +9,6 @@
                             <div class="col-md-12" style="padding-left:30px;padding-right:30px;">
                                 <div class="cartfhead" style="float:left">Your Cart <span>(<?php if(!$CartProducts){echo 0;}else echo count($CartProducts) ?> items)</span></div>
                                 <div style="float:right;margin-top:-20px">
-                                <center><img src="<?php echo base_url('assets/images/cartfilled.png') ?>" class="cart"><span >Your Saved</span>
-                                  <div class="count-group"><span style="color:#96C658;font-weight:700">Rs </span><span style="color:#96C658;font-weight:700"> 0</span></div></center>
                                 </div>
                             </div>
                         </div>
@@ -23,24 +21,11 @@
                       $subTotal = 0;
 
                       foreach ($CartProducts as $row): ?>
-
+                      
                       <?php 
 
-                      $discount = 0;
-
-                      if($row["OfferType"])  {
-                        if($row["OfferType"]=="Amount"){
-
-                          $discount = $row["OfferAmount"]*$row["Quantity"];
-
-
-                        }else if($row["OfferType"]=="Percent"){
-
-                          $discount = ($row["Price"]*$row["OfferAmount"]*0.01)*$row["Quantity"];
-                        }
-                      }
-
-                      $totalDiscount = $totalDiscount+$discount;
+                     
+                      $totalDiscount = $totalDiscount+($row["Discount"]*$row["Quantity"]);
                       $subTotal =$subTotal+ $row["Price"]*$row["Quantity"];
 
                       
@@ -75,7 +60,6 @@
                           
                         <hr>
 
-
                     <?php endforeach ?>
 
                           <hr>
@@ -85,9 +69,17 @@
                             <div class="col-md-12" style="padding-left:30px;padding-right:40px">
                                 <div style="float:left;font-weight:600">Sub Total</div><div style="float:right">Rs <?php echo $subTotal; ?></div>
                                 <br>
-                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs <?php echo $discount; ?></div>
+                                <div style="float:left;font-weight:600">Discount</div><div style="float:right">Rs <?php echo $totalDiscount; ?></div>
                                 <br>
-                                <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right">Free</div>
+                                <div style="float:left;font-weight:600">Delivery Charges</div><div style="float:right"><?php 
+                                  if(($subTotal-$totalDiscount)>499){
+                                    echo "Free";
+                                  }else{
+                                    echo "50";
+                                    $subTotal = $subTotal + 50;
+                                  }
+
+                                 ?></div>
                                 <br>
                                 <div style="float:left;font-weight:600">Total</div><div style="float:right">Rs <?php echo $subTotal-$totalDiscount; ?></div>
                                 <br>
@@ -98,11 +90,21 @@
                             <div class="col-md-12" style="padding-left:30px;padding-right:40px">
                                 <div class="row">
                                     <div class="col-md-2"></div>
-                                    <div class="col-md-5"><button class="btn btn-block bcartview"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"> View Cart</button></div>
-                                    <div class="col-md-5"><button class="btn btn-block coutview">Check Out</button></div>
+                                    <div class="col-md-5"><a href="<?php echo base_url('welcome/viewcart'); ?>"><button class="btn btn-block bcartview"><img src="<?php echo base_url('assets/images/addbicon.png') ?>"> View Cart</button></a></div>
+                                    <div class="col-md-5"><a href="<?php echo base_url('customer/checkout'); ?>"><button class="btn btn-block coutview">Check Out</button></a></div>
                                 </div>
                             </div>
                         </div>
                         </div>  
 
-                  <?php } else echo"<h1>Your Cart Is Empty</h1>"?>
+                  <?php } else echo"<div style='margin-left:15px;'><p>It apears that your cart is currently empty!</p><br>
+                        <a class='cbtn'>CONTINUE SHOPPING</a></div>"?>
+
+
+                  <script type="text/javascript">
+                    
+                    $('document').ready(function(){
+                      $('.items_COUNT').html("<?php echo $CartItemsCount ?>");
+                      //alert("<?php echo $CartItemsCount ?>");
+                    });
+                  </script>

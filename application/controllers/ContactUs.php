@@ -11,6 +11,28 @@ class ContactUs extends CI_Controller {
 		exit;
 	}
 
+	public function ccc($c_email,$c_number,$c_subject,$c_query){
+
+		$data = array(
+			'c_email'=> $c_email, 
+			'c_number'=> $c_number,
+			'c_subject' => $c_subject,
+			'c_query' => $c_query
+			);
+
+//Either you can print value or you can send value to database
+
+
+		if($data["c_email"]!="" && $data["c_subject"]!="" && $data["c_query"]!=""){
+			$this->load->model('contact');
+			$this->contact->addContactData($data);
+			echo json_encode("We Will reply you soon");
+
+		} else {
+			echo json_encode("Please fill all necessay fields");
+		}
+
+	}
 	public function contact_us(){
 		$data = array(
 			'c_email'=> $this->input->post('c_email'), 
@@ -21,10 +43,12 @@ class ContactUs extends CI_Controller {
 
 //Either you can print value or you can send value to database
 
-		if($data["c_email"]!="" && $data["c_subject"]!="" && $data["c_query"!=""]){
+
+		if($data["c_email"]!="" && $data["c_subject"]!="" && $data["c_query"]!=""){
 			$this->load->model('contact');
 			$this->contact->addContactData($data);
-			echo json_encode($data);
+			echo json_encode("We Will reply you soon");
+
 		} else {
 			echo json_encode("Please fill all necessay fields");
 		}

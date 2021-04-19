@@ -3,17 +3,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class search extends CI_Controller {
 
-	public function __construct(){
+  public function __construct(){
 
-		parent::__construct();
-	}
+    parent::__construct();
+  }
 
 
-	public function index()
-	{
-        $this->load->model('KeryanaProduct');
-        $psearch =  $this->KeryanaProduct->searchProduct($this->input->post());
-        $output="";
+  public function index()
+  {
+    $this->load->model('KeryanaProduct');
+    $psearch =  $this->KeryanaProduct->searchProduct($this->input->post());
+    if ($psearch) {
+      foreach ($psearch as &$row) {
+
+        $units["Units"] = array();
+        $row["Units"]  = $this->KeryanaProduct->getProductUnit($row["EncryptedId"]);
+
+
+        if($row["Units"]){
+          foreach ($row["Units"] as &$units) {
+          # code...
+          
+          $units["Discount"] = 0;
+          if(isset($units["OfferType"])) {
+
+            if($units["OfferType"]=="Amount"){
+
+              $units["Discount"] = $units["OfferAmount"];
+
+            }else if($units["OfferType"]=="Percent"){ 
+
+              $units["Discount"] = $units["OfferAmount"]*$units["Price"]/100;
+            }
+          }else{
+            $units["Discount"] = 0;
+          }
+        } 
+
+        }
+
+      }
+
+      return $this->load->view("search_products",['filterd'=>$psearch]);
+      exit;
+    }else{
+      echo "<center><em><h2 style='color:#A1DB09;'>No Product Found</h2></em></center>";
+      exit;
+    }
+
+
+        /*$output="";
         $count=0;
         $output = "<div id='searchParent'>"; 
         if($psearch)
@@ -85,7 +124,7 @@ class search extends CI_Controller {
       <button class="addbtn"><img src="assets/images/addbicon.png"><span>Add</span></button>
     </center>
   </div>
-  </div>*/
-        echo $output;
-    }
+  </div>
+  echo $output;*/
+}
 }

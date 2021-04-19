@@ -11,7 +11,7 @@
         <div class="col-lg-12">
           <div class="panel panel-default">
             <div class="panel-heading">
-              Banners
+              Side Banners
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
@@ -56,6 +56,8 @@
                                   <div id="progress"></div>
                                   <div id="progress_percent">&nbsp;</div>
                                   <div class="clear_both"></div>
+
+                                  <input type="text" name="url" class="form-control" placeholder="Banner URL">
                                   <input type="submit" name="btn_submit" class="btn btn-success" value="Upload">       
                                   
                                 </div>
@@ -102,6 +104,8 @@
                                   <div id="progress"></div>
                                   <div id="progress_percent">&nbsp;</div>
                                   <div class="clear_both"></div>
+                                  
+                                  <input type="text" name="url" class="form-control" placeholder="Banner URL">
                                   <input type="submit" name="btn_submit" class="btn btn-success" value="Upload">       
                                   
                                 </div>

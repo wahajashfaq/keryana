@@ -3,6 +3,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Banner extends CI_Model {
 
+
+	public function getBanners(){
+
+		$this->db->where('Visibility',1);
+		$query = $this->db->get('banners');
+		
+		if($query->num_rows()){ 
+			return $query->result_array();
+		}	
+		else {
+			return FALSE;
+		}		
+	}
 	public function getSlidingBanners(){
 
 		$this->db->where('Visibility',1);
@@ -69,7 +82,15 @@ class Banner extends CI_Model {
 		$this->db->set('ImageUrl', $image_url); 
 		$this->db->update('sliding_banners');
 	}
-	
+
+	public function setBannerURL($URL,$banner_NAME){
+
+		$this->db->set('PageUrl',$URL);
+		$this->db->where('Name', $banner_NAME);
+		$this->db->update('banners');
+
+	}
+
 
 }
 

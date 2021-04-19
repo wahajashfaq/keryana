@@ -10,70 +10,283 @@ class Signup extends CI_Controller {
       return redirect('customer/dashboard','refresh');
   }
 
-  public function index()
-  {
+
+
+
+  // __________________Load Categories_______________________
+
+
+  function load_categories(){
+
+
+    $this->load->model('Categories'); 
+    $first_categories = $this->Categories->getFirstCategory();
+    $second_categories = $this->Categories->getSecondCategory();
+    $third_categories = $this->Categories->getThirdCategory();
+
+    for ($i=0; $i <count($second_categories); $i++) { 
+      $second_categories[$i]["SUB CATEGORIES"] = [];
+      for ($j=0; $j <count($third_categories); $j++) { 
+        if($third_categories[$j]["SecondCategoryID"]==$second_categories[$i]["ID"]){
+
+          array_push($second_categories[$i]["SUB CATEGORIES"], $third_categories[$j]);
+
+        }
+      }
+    }
+
+
+    for ($i=0; $i <count($first_categories); $i++) { 
+      $first_categories[$i]["SUB CATEGORIES"] = [];
+      for ($j=0; $j <count($second_categories); $j++) { 
+        if($second_categories[$j]["FirstCategoryID"]==$first_categories[$i]["ID"]){
+
+          array_push($first_categories[$i]["SUB CATEGORIES"], $second_categories[$j]);
+
+        }
+      }
+    }
+
+    return $first_categories;
+
+  }
+
+
+  // ___________________________________________________
+
+
+  function getCartResult(){
+
+    $this->load->model('Customer');
+    $this->load->model('Cart_Model');
+    $total_items = 0;
+    if($userID=$this->session->userdata('customer_id')){
+
+      $cart_result = $this->Cart_Model->getCurrentCart($userID);
+      if($cart_result){
+        foreach ($cart_result as $items) {
+          $total_items = $total_items + 1;
+        }
+      }
+
+    }else if($CartItems = $this->session->userdata('My_Cart'))
+    {
+      $cart_result = [];
+      foreach ($CartItems as $key => $value) {
+
+        if($CartItems[$key]){
+          $KeyResult = $this->Cart_Model->getCartsBySession($key);
+          $CartItems[$key]["Image"] = $KeyResult[0]["Image"];
+          $CartItems[$key]["Name"] = $KeyResult[0]["Name"];
+          $CartItems[$key]["OfferType"] = $KeyResult[0]["OfferType"];
+          $CartItems[$key]["OfferAmount"] = $KeyResult[0]["OfferAmount"];
+          $CartItems[$key]["Discount"] = $value["Discount"];
+
+          $CartItems[$key]["Unit"] = $KeyResult[0]["Unit"];
+          $CartItems[$key]["ProductID"] = $key;
+        /*echo "<pre>";
+        print_r ($CartItems[$key]);
+        echo "</pre>";  
+        exit;*/
+        $cart_result[$key] = $CartItems[$key];
+        $total_items = $total_items + $CartItems[$key]["Quantity"];
+
+      }else{
+        $CartItems[$key] = null;
+      }   //$CartItems[$UNIT_ID]['Quantity'] = $CartItems[$UNIT_ID]['Quantity']+$QUANTITY;
+
+    }
+
+    $this->session->set_userdata("My_Cart",$cart_result);
+
+
+      //$cart_result = $CartItems;
+
+  }else {
+    $cart_result = null;
+  }
+
+  return ["CART"=>$cart_result,"TOTAL_ITEMS"=>$total_items];
+}
+
+
+public function index()
+{
     // echo  date('Y-m-d H:i:s');
     // echo $this->input->ip_address();
 
-    $this->load->view('login');
+  $first_categories = $this->load_categories();
+
+  $result = $this->getCartResult();
+  $cart_result  = $result["CART"];
+  $total_items = $result["TOTAL_ITEMS"];
+
+
+  $this->load->view('login',["categories"=>$first_categories,"CartProducts"=>$cart_result,"CartItemsCount"=>$total_items,"TITLE"=>"Login/Signup"]);
+}
+
+public function keryana($friend_ID,$confirmation_Code){
+
+  if($confirmation_Code)
+    echo "$friend_ID<br>$confirmation_Code<br>";
+  else
+    echo "$friend_ID<br>";
+}
+
+
+public function sendEmail($email,$password,$verificationCode,$userID){
+
+  $config = Array(
+    'protocol' => 'smtp',
+    'smtp_host' => 'ssl://mail.keryana.com',
+    'smtp_port' => 465,
+    'smtp_user' => 'welcome@keryana.com',
+    'smtp_pass' => 'Wahaj125',
+    'charset'   => 'iso-8859-1',
+    'mailtype' => 'html'
+    );
+  $this->load->library('email', $config);
+
+
+  $this->load->library('email');
+
+  $this->email->set_newline("\r\n");
+  $this->email->from('welcome@keryana.com', 'Keryana');
+  $this->email->to($email); 
+    //$this->email->cc('another@another-example.com'); 
+    //$this->email->bcc('them@their-example.com'); 
+
+  /*$verficationLink = "<a href='".base_url('signup/verification/'.$userID.'/'.$verificationCode)."'>Click Here to cofirm</a>";*/
+  $this->email->subject('Confirmation');
+  /*$this->email->message('<b>Email : </b>'.$email. '<br><b>Password : </b>'. $password .'<br><b>Verification Code : </b>'.$verficationLink);  */
+  $this->email->message('<b>Email : </b>'.$email. '<br><b>Password : </b>'. $password);  
+
+  if($this->email->send()){
+    echo "Email Send";
+  }else{
+
+    echo $this->email->print_debugger();    
   }
 
-  public function CreateAccount(){
+}
 
 
-    $this->load->helper('form');
-    $this->form_validation->set_error_delimiters('<em class="text-danger">', '</em>');
-    $this->form_validation->set_rules('fname', 'First Name', 'required');
-    $this->form_validation->set_rules('email', 'Email', 'required|is_unique[customers.Email]');
-    $this->form_validation->set_rules('pass', 'Password', 'required');
+public function verification($userID , $confirmationCode){
 
-    if ($this->form_validation->run() == TRUE)
-    {
 
-      $this->load->model('customer');
-      $this->customer->signup($this->input->post());
+  $this->load->model('customer');
+  if($this->customer->verifyCustomer($userID,$confirmationCode)){
 
-      return redirect('customer/dashboard');
+   $this->load->model('Cart_Model');
+   $this->session->set_userdata('customer_id',$userID);
+   $this->session->set_userdata('customer_name',$this->customer->getNameLetters($userID));
+   if($this->session->userdata('My_Cart')) {
 
-    } else {
-      $this->load->view('login');  
+    if ($previousData = $this->Cart_Model->get_Cart_Session($userID)) {
+      $this->Cart_Model->updateCart($previousData);
     }
 
   }
+  else{
+           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($userID));   // Load into session
+         }
 
-  
+         return redirect('');
 
 
-  public function Login(){
-
-
-
-    $this->load->helper('form');
-    $this->form_validation->set_error_delimiters('<em class="text-danger">', '</em>');
-    $this->form_validation->set_rules('l_email', 'Email', 'required');
-    $this->form_validation->set_rules('l_pass', 'Password', 'required');
-
-    if ($this->form_validation->run() == TRUE)
-    {
-      $this->load->model('customer');
-      $login_id = $this->customer->login($this->input->post());
-
-      if($login_id){
-
-        // Correct username/password
-        $this->load->model('Cart_Model');
-        $this->session->set_userdata('customer_id',$login_id);
-        if($this->session->userdata('My_Cart')){
-
-          if ($previousData = $this->Cart_Model->get_Cart_Session($login_id)) {
-              $this->Cart_Model->updateCart($previousData);
-          }
-        }else{
-           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($login_id));   // Load into session
-        }
+       } else {
 
         return redirect('');
-      }else{
+      }
+
+    }
+
+    public function CreateAccount(){
+
+
+      $this->load->helper('form');
+      $this->form_validation->set_error_delimiters('<em class="text-danger">', '</em>');
+      $this->form_validation->set_rules('fname', 'First Name', 'required');
+      $this->form_validation->set_rules('email', 'Email', 'required|is_unique[customers.Email]');
+      $this->form_validation->set_rules('pass', 'Password', 'required');
+
+      if ($this->form_validation->run() == TRUE)
+      {
+
+        $this->load->model('customer');
+        $userID =   $this->customer->signup($this->input->post());
+        $this->sendEmail($this->input->post('email'),$this->input->post('pass'),'','');
+        $this->load->model('Cart_Model');
+        $this->session->set_userdata('customer_id',$userID);
+        $this->session->set_userdata('customer_name',$this->customer->getNameLetters($userID));
+        if($this->session->userdata('My_Cart')){
+
+          if ($previousData = $this->Cart_Model->get_Cart_Session($userID)) {
+            $this->Cart_Model->updateCart($previousData);
+          }else{
+            $this->Cart_Model->addProductInExistingCart($this->session->userdata('My_Cart'),$this->session->userdata('customer_id'));
+          }
+
+        }
+        else{
+           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($userID));   // Load into session
+         }
+
+         return redirect('');
+
+       } else {
+
+
+      $first_categories = $this->load_categories();
+
+      $result = $this->getCartResult();
+      $cart_result  = $result["CART"];
+      $total_items = $result["TOTAL_ITEMS"];
+
+
+      $this->load->view('login',["categories"=>$first_categories,"CartProducts"=>$cart_result,"CartItemsCount"=>$total_items,"TITLE"=>"Login/Signup"]);
+      
+      }
+
+    }
+
+
+
+
+    public function Login(){
+
+
+
+      $this->load->helper('form');
+      $this->form_validation->set_error_delimiters('<em class="text-danger">', '</em>');
+      $this->form_validation->set_rules('l_email', 'Email', 'required');
+      $this->form_validation->set_rules('l_pass', 'Password', 'required');
+
+      if ($this->form_validation->run() == TRUE)
+      {
+        $this->load->model('customer');
+        $login_id = $this->customer->login($this->input->post());
+
+        if($login_id) {
+
+        // Correct username/password
+          $this->load->model('Cart_Model');
+          $this->session->set_userdata('customer_id',$login_id);
+          $this->session->set_userdata('customer_name',$this->customer->getNameLetters($login_id));
+          if($this->session->userdata('My_Cart')) {
+
+            if ($previousData = $this->Cart_Model->get_Cart_Session($login_id)) {
+              $this->Cart_Model->updateCart($previousData);
+            }else{
+
+              $this->Cart_Model->addProductInExistingCart($this->session->userdata('My_Cart'),$this->session->userdata('customer_id'));
+            }
+          } else{
+           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($login_id));   // Load into session
+         }
+
+         return redirect('');
+       }else{
 
           // Incorrect username/password
         $this->session->set_flashdata('error', 'Invalid username/password');
@@ -81,8 +294,17 @@ class Signup extends CI_Controller {
       }
 
     } 
-    else
-      $this->load->view('login');  
+    else{
+      $first_categories = $this->load_categories();
+
+      $result = $this->getCartResult();
+      $cart_result  = $result["CART"];
+      $total_items = $result["TOTAL_ITEMS"];
+
+
+      $this->load->view('login',["categories"=>$first_categories,"CartProducts"=>$cart_result,"CartItemsCount"=>$total_items,"TITLE"=>"Login/Signup"]);
+
+    }
   }
 
 
@@ -156,34 +378,48 @@ class Signup extends CI_Controller {
 
     $me = $response->getGraphUser();
     $this->load->model('customer');
-    $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
+    $login_id = $this->customer->fb_signup($me->getProperty('email'),$me->getProperty('first_name'),$me->getProperty('last_name'),$me->getProperty('id'));
 
-        $this->session->set_userdata('customer_id',$login_id);
-        $this->session->userdata('My_Cart',[]);
-        return redirect('');
+    $this->load->model('Cart_Model');
+    $this->session->set_userdata('customer_id',$login_id);
+    $this->session->set_userdata('customer_name',$this->customer->getNameLetters($login_id));
+    if($this->session->userdata('My_Cart')){
 
-    $location = $me->getProperty('location');
-    echo "Full Name: ".$me->getProperty('name')."<br>";
-    echo "First Name: ".$me->getProperty('first_name')."<br>";
-    echo "Last Name: ".$me->getProperty('last_name')."<br>";
-    echo "Gender: ".$me->getProperty('gender')."<br>";
-    echo "Email: ".$me->getProperty('email')."<br>";
-    echo "location: ".$location['name']."<br>";
-    echo "Birthday: ".$me->getProperty('birthday')."<br>";
-    echo "Facebook ID: <a href='https://www.facebook.com/".$me->getProperty('id')."' target='_blank'>".$me->getProperty('id')."</a>"."<br>";
-    $profileid = $me->getProperty('id');
-    echo "</br><img src='//graph.facebook.com/$profileid/picture?type=large'> ";
-    echo "</br></br>Access Token : </br>".$accessToken; 
+      if ($previousData = $this->Cart_Model->get_Cart_Session($login_id)) {
+        $this->Cart_Model->updateCart($previousData);
+      }else{
+       $this->Cart_Model->addProductInExistingCart($this->session->userdata('My_Cart'),$login_id);
+     }
+
+   }
+   else{
+           $this->session->set_userdata('My_Cart',$this->Cart_Model->get_Cart_Session($login_id));   // Load into session
+         }
+
+         return redirect('');
+
+         $location = $me->getProperty('location');
+         echo "Full Name: ".$me->getProperty('name')."<br>";
+         echo "First Name: ".$me->getProperty('first_name')."<br>";
+         echo "Last Name: ".$me->getProperty('last_name')."<br>";
+         echo "Gender: ".$me->getProperty('gender')."<br>";
+         echo "Email: ".$me->getProperty('email')."<br>";
+         echo "location: ".$location['name']."<br>";
+         echo "Birthday: ".$me->getProperty('birthday')."<br>";
+         echo "Facebook ID: <a href='https://www.facebook.com/".$me->getProperty('id')."' target='_blank'>".$me->getProperty('id')."</a>"."<br>";
+         $profileid = $me->getProperty('id');
+         echo "</br><img src='//graph.facebook.com/$profileid/picture?type=large'> ";
+         echo "</br></br>Access Token : </br>".$accessToken; 
 
 
-  }
+       }
 
 
 
 
 
-}
+     }
 
 
-/* End of file signup.php */
+     /* End of file signup.php */
 /* Location: ./application/controllers/signup.php */

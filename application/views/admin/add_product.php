@@ -103,6 +103,13 @@
                     <hr/>
                     <div class="row">
                        <div class="col-md-6">
+                           <input type="number" class="form-control"  name="excel_id" placeholder="Excel Id" required>
+                       </div>
+                   </div>
+                   
+                    <hr/>
+                    <div class="row">
+                       <div class="col-md-6">
                            <input type="number"  min="1" max="4" class="form-control"  name="unit" id="unit" placeholder="Number of Unit (1-4)">
 
                            <hr/>

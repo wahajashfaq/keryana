@@ -16,6 +16,8 @@ class AllOrders extends CI_Controller {
 
 		$this->load->model('Order');
 		$all_orders_result = $this->Order->getAllOrders();
+		$this->Order->markAllAsRead();
+
 
 		$this->load->view('admin/all_orders',["AllOrders"=>$all_orders_result]);
 	}

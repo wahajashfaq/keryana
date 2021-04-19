@@ -7,8 +7,27 @@ class Add extends CI_Controller {
 	public function __construct(){
 
 		parent::__construct();
+		$this->load->model('Categories');
 		if(!$this->session->userdata('admin_id'))
 			return redirect('admin/login');
+	}
+
+
+	public function ThirdCategoryImageAsParent(){
+
+		if($this->input->post('same_as_second')!==null){
+
+			$this->Categories->setThirdCategoryImageAsParent();
+
+		}
+	}
+
+	public function SecondCategoryImageAsParent(){
+		
+		if($this->input->post('same_as_first')!==null){
+			
+			$this->Categories->setSecondCategoryImageAsParent();
+		}
 	}
 
 
@@ -36,16 +55,47 @@ class Add extends CI_Controller {
 
 	}
 
+	public function Watermark($counter){
+
+		$this->load->model('Images');
+
+		// Code to add Watermark
+			$this->load->library('image_lib');
+
+            $i = 1;
+            for($i;$i<$counter;$i++){
+			$config['image_library'] = 'gd2';
+			$config['source_image'] = './uploads/product_images/'.$i.'.png';
+			$config['wm_type'] = 'overlay';
+			$config['wm_overlay_path'] = './assets/images/water.png';
+			$config['new_image'] = 'uploads/product_images/'.$i.'.png';
+        //the overlay image
+			$config['height'] = '50';
+            $config['padding'] = '50';
+            $config['wm_opacity'] = '0.6';
+            $config['wm_vrt_alignment'] = 'bottom';
+            $config['wm_hor_alignment'] = 'right';
+            $config['wm_vrt_offset'] = '100';
+			$this->image_lib->initialize($config);
+			if (!$this->image_lib->watermark()) {
+				echo $this->image_lib->display_errors();
+			} else {
+				echo $i .')Successfully updated image with watermark <br>';
+			}
+
+            }
+
+	}
 	public function FirstCategoryImage(){
 
 
 		$CategoryID = $this->input->post('Fcategory_ID');
 
 		$config['upload_path']          = './uploads/category';
-		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['allowed_types']        = '*';
+		$config['max_size']             = 10000;
+		$config['max_width']            = 16024;
+		$config['max_height']           = 16668;
 
 		$config['file_name'] = $CategoryID; 
 
@@ -78,10 +128,10 @@ class Add extends CI_Controller {
 		$CategoryID = $this->input->post('Fcategory_ID');
 
 		$config['upload_path']          = './uploads/category';
-		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['allowed_types']        = '*';
+		$config['max_size']             = 10000;
+		$config['max_width']            = 16024;
+		$config['max_height']           = 16668;
 
 		$config['file_name'] = $CategoryID; 
 
@@ -113,10 +163,10 @@ class Add extends CI_Controller {
 		$CategoryID = $this->input->post('Fcategory_ID');
 
 		$config['upload_path']          = './uploads/category';
-		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['allowed_types']        = '*';
+		$config['max_size']             = 10000;
+		$config['max_width']            = 16024;
+		$config['max_height']           = 16668;
 
 		$config['file_name'] = $CategoryID; 
 
@@ -148,9 +198,9 @@ class Add extends CI_Controller {
 
 		$config['upload_path']          = './uploads/banners/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000; // 1 MB
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 5000; // 1 MB
+		$config['max_width']            = 11024;
+		$config['max_height']           = 10768;
 
 		$config['file_name'] = "banner_two"; // , banner_one
 
@@ -210,9 +260,9 @@ class Add extends CI_Controller {
 
 		$config['upload_path']          = './uploads/brands';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000;
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 5000;
+		$config['max_width']            = 11024;
+		$config['max_height']           = 10768;
 		$config['file_name'] = $brand_name; // 
 
 
@@ -248,9 +298,9 @@ class Add extends CI_Controller {
 
 		$config['upload_path']          = './uploads/sliding_banner/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000; // 1 MB
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 10000; // 1 MB
+		$config['max_width']            = 11024;
+		$config['max_height']           = 10768;
 
 		$this->load->library('upload', $config);
 

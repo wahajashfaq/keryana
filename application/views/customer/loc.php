@@ -1,6 +1,6 @@
     <br>
-    <div style="height:400px;width:100%" id="map1"></div>
-    <button id="btn_first" style="width:100%;background-color:#28a7db;color:#fff;border:none;height:50px;font-size:20px;font-weight:700">Get My Location</button>
+    <div style="height:400px;width:100%;display:block" id="map1"></div>
+    <button id="btn_first" style="width:100%;background-color:#A1DB09;color:#fff;border:none;height:50px;font-size:20px;font-weight:700">Get My Location</button>
     <script>
       function initMap() {
           console.log('hello loc');

@@ -30,6 +30,20 @@ class Brand extends CI_Model {
 		}
 	}	
 
+	public function getBrandNameByID($brand_ID){
+
+
+		$this->db->where('Visibility',1);
+		$this->db->where('ID',$brand_ID);
+		$query = $this->db->get('brands');
+
+		if($query->num_rows()){ 
+			return $query->row()->Name;
+		}else {
+			return FALSE;
+		}
+	}
+
 	public function addNewBrand($brand_name,$image_url){
 
 		$this->db->set('Name',$brand_name);
@@ -39,7 +53,27 @@ class Brand extends CI_Model {
 
 		$inserted_id = $this->db->insert_id();
 
+		$this->db->set('EncryptedId', md5($inserted_id)); //value that used to update column  
+		$this->db->where('ID', $inserted_id); //which row want to upgrade  
+		$this->db->update('brands');
+
+		return md5($inserted_id);
 	}
+
+	public function getBrandIDByName($brand_name,$image_url){
+
+		$this->db->select('EncryptedId');
+		$this->db->where('Name', $brand_name);
+		$query = $this->db->get('brands');
+
+		if ($query->num_rows()) {
+			# code...
+			return $query->row()->EncryptedId;
+		}else {
+			return $this->addNewBrand($brand_name,$image_url);
+		}
+	}
+
 
 	public function deleteBrand($brand_id){
 

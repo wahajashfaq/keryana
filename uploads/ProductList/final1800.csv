@@ -1,0 +1,1776 @@
+picCode,Category,Sub1,Sub2,ProductName,Q1,Q2,Q3,Q4,P1,P2,P3,P4,brands,brand_image,excel_id,
+1,Grocery & Staples,Staples,Pulses,Daal Chana Moti,500 gm,1 kg,,,45,90,,,Local,local.png,1,0
+2,Grocery & Staples,Staples,Pulses,Daal Mash Moti,500 gm,1 kg,,,90,175,,,Local,local.png,2,0
+3,Grocery & Staples,Staples,Pulses,Daal Masoor Moti,500 gm,1 kg,,,80,160,,,Local,local.png,3,0
+4,Grocery & Staples,Staples,Pulses,Safaid Chana (White),500 gm,1 kg,,,75,145,,,Local,local.png,4,0
+5,Grocery & Staples,Staples,Pulses,Daal Moong,500 gm,1 kg,,,95,185,,,Local,local.png,5,0
+6,Grocery & Staples,Staples,Pulses,Sabut Masoor,500 gm,1 kg,,,75,150,,,Local,local.png,6,0
+7,Grocery & Staples,Staples,Pulses,Kala Chana (Black),500 gm,1 kg,,,45,90,,,Local,local.png,7,0
+8,Grocery & Staples,Staples,Pulses,White Lobia,500 gm,1 kg,,,75,150,,,Local,local.png,8,0
+9,Grocery & Staples,Staples,Pulses,Red Lobia,500 gm,1 kg,,,115,225,,,Local,local.png,9,0
+12,Grocery & Staples,Staples,Pulses,Baisan ,500 gm,1 kg,,,75,150,,,Local,local.png,10,0
+13,Grocery & Staples,Staples,Pulses,Suji,500 gm,1 kg,,,30,60,,,Local,local.png,11,0
+14,Grocery & Staples,Staples,Pulses,Bhuna Chana,50 gm ,100 gm,200 gm,,,,,,Local,local.png,12,0
+15,Grocery & Staples,Staples,Pulses,Daliya,500 gm,1 kg,,,40,80,,,Local,local.png,13,0
+16,Grocery & Staples,Staples,Rice,Super Kernal Rice,1 kg,3 kg,5 kg,,150,450,750,,Local,local.png,14,0
+17,Grocery & Staples,Staples,Rice,Super Basmati Rice,1 kg,3 kg,5 kg,,140,420,700,,Local,local.png,15,0
+18,Grocery & Staples,Staples,Flour & Grains ,Atta,10 kg,20 kg,,,,,,,Local,local.png,16,0
+19,Grocery & Staples,Staples,Flour & Grains ,Suji,500 gm,1 kg,,,30,60,,,Local,local.png,17,0
+20,Grocery & Staples,Staples,Flour & Grains ,Maida,1 kg,3 kg,5 kg,,50,150,250,,Local,local.png,18,0
+22,Grocery & Staples,Value Added,Salt & Sugar,National Iodized Salt,800 gm,,,,25,,,,National,national.png,19,0
+23,Grocery & Staples,Value Added,Salt & Sugar,National Chinese Salt,45 gm,415 gm,,,25,125,,,National,national.png,20,0
+24,Grocery & Staples,Value Added,Salt & Sugar,National Iodized Refined Salt,800 gm,,,,25,,,,National,national.png,21,0
+26,Grocery & Staples,Value Added,Salt & Sugar,Shangrila Chinese Salt,45gm,90 gm,,,25,50,,,Shangrila,shangrila.png,22,0
+27,Grocery & Staples,Value Added,Salt & Sugar,Medicam Sweatner MSC Free,200 tabs,,,,110,,,,Medicam,,23,0
+29,Grocery & Staples,Value Added,Aluminium Foil,Scotch Brite Aluminium Foil,1 Piece,,,,260,,,,Scotch Brite,,24,0
+32,Grocery & Staples,Cooking Needs,Masala & Spices,National Sabzi Masala ,100 gm,,,,50,,,,National,,25,0
+33,Grocery & Staples,Cooking Needs,Masala & Spices,National Pakora Mix,150 gm ,,,,40,,,,National,,26,0
+34,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Haleem Mix,300 gm,,,,100,,,,Shan ,,27,0
+35,Grocery & Staples,Cooking Needs,Masala & Spices,National Tikka Boti Masala,50 gm ,,,,50,,,,National,,28,0
+36,Grocery & Staples,Cooking Needs,Masala & Spices,National Pulao Masala,70 gm,140 gm,35 gm,,50,100,25,,National,,29,0
+37,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Tikka Boti Masala,50 gm ,,,,50,,,,Shan,,30,0
+38,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Seikh Kabab Masala,50 gm ,,,,50,,,,Shan,,31,0
+39,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Teekhi Kali Mirch Powder,50 gm ,,,,100,,,,Shan,,32,0
+40,Grocery & Staples,Cooking Needs,Masala & Spices,Colves (Loang),50 gm ,,,,90,,,,Local,,33,0
+41,Grocery & Staples,Cooking Needs,Masala & Spices,National Bihari Kabab Masala,50 gm ,,,,50,,,,National,,34,0
+42,Grocery & Staples,Cooking Needs,Masala & Spices,Coriander Powder (Pisa Dhaniya),200 gm,,,,50,,,,Local,,35,0
+43,Grocery & Staples,Cooking Needs,Masala & Spices,National Tandoor Masala ,50 gm,,,,50,,,,National,,36,0
+44,Grocery & Staples,Cooking Needs,Masala & Spices,Black Salt (Kala Namak),400 gm,,,,30,,,,Local,,37,0
+45,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Tez Lal Mirch Powder,50 gm,100 gm,200 gm,400 gm,35,65,120,220,Shan,,38,0
+46,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Chicken White Karahi,40 gm,,,,50,,,,Shan,,39,0
+47,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Paya Masala,50 gm ,,,,50,,,,Shan,,40,0
+48,Grocery & Staples,Cooking Needs,Masala & Spices,National Cumin Seeds,50 gm ,,,,50,,,,National,,41,0
+49,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Bombay Biryani Masala,60 gm,120 gm,,,50,80,,,Shan,,42,0
+50,Grocery & Staples,Cooking Needs,Masala & Spices,Topioco Sago (Sago Dana),200 gm,,,,35,,,,Local,,43,0
+51,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Keema Maslaa,50 gm ,,,,50,,,,Shan,,44,0
+52,Grocery & Staples,Cooking Needs,Masala & Spices,National Delhi Nihari,65 gm,130 gm,,,50,90,,,National,,45,0
+53,Grocery & Staples,Cooking Needs,Masala & Spices,National Quick Cook Haleem Mix,345 gm,,,,100,,,,National,,46,0
+54,Grocery & Staples,Cooking Needs,Masala & Spices,National Karahi Fry Gosht,50 gm ,100 gm,,,50,85,,,National,,47,0
+55,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Tikka Masala,50 gm ,100 gm,,,50,85,,,Shan,,48,0
+56,Grocery & Staples,Cooking Needs,Masala & Spices,National Salan (Curry) Masala,50 gm ,100 gm,,,35,50,,,National,,49,0
+57,Grocery & Staples,Cooking Needs,Masala & Spices,Green Cardamom (Small Elachi),50 gm ,,,,130,,,,Local,,50,0
+58,Grocery & Staples,Cooking Needs,Masala & Spices,Cumin Seed (Safaid Zeera) ,100 gm,200 gm,,,60,120,,,Local,,51,0
+59,Grocery & Staples,Cooking Needs,Masala & Spices,National Kofta Masala,50 gm ,,,,50,,,,National,,52,0
+60,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Achar Gosht,50 gm,100 gm,,,50,90,,,Shan,,53,0
+61,Grocery & Staples,Cooking Needs,Masala & Spices,Black Cardamom (Big Elachi),50 gm ,,,,130,,,,Local,,54,0
+62,Grocery & Staples,Cooking Needs,Masala & Spices,Black Pepper,50 gm,100 gm,,,65,120,,,Local,,55,0
+63,Grocery & Staples,Cooking Needs,Masala & Spices,National Mutton Biryani,45 gm,,,,50,,,,National,,56,0
+64,Grocery & Staples,Cooking Needs,Masala & Spices,Shan White Korma Masala,40 gm,,,,50,,,,Shan,,57,0
+65,Grocery & Staples,Cooking Needs,Masala & Spices,Shami Kabab Masala,50 gm ,,,,50,,,,Shan,,58,0
+66,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Koofta Masala,50 gm ,,,,50,,,,Shan,,59,0
+67,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Curry Masala,100 gm,,,,85,,,,Shan,,60,0
+68,Grocery & Staples,Cooking Needs,Masala & Spices,Bicarbonate Soda (Meetha Soda),200 gm,,,,25,,,,Local,,61,0
+69,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Sindhi Biryani,50 gm,,,,50,,,,Shan,,62,0
+70,Grocery & Staples,Cooking Needs,Masala & Spices,Turmeric Powder (Haldi Powder),200 gm,,,,55,,,,Local,,63,0
+71,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Biryani Masala,50 gm,,,,50,,,,Shan,,64,0
+72,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Zafrani Garam Masala,25 gm,50 gm,,,45,90,,,Shan,,65,0
+73,Grocery & Staples,Cooking Needs,Masala & Spices,National Black Pepper Powder,25 gm,50 gm,,,60,100,,,National,,66,0
+74,Grocery & Staples,Cooking Needs,Masala & Spices,National Coriander Powder,50 gm ,100 gm,200 gm,,40,60,100,,National,,67,0
+75,Grocery & Staples,Cooking Needs,Masala & Spices,National Ginger Powder,50 gm ,,,,55,,,,National,,68,0
+76,Grocery & Staples,Cooking Needs,Masala & Spices,National Garam Masala,25 gm,50 gm,,,50,85,,,National,,69,0
+77,Grocery & Staples,Cooking Needs,Masala & Spices,Nigella Seed (Kalonji),100 gm,,,,60,,,,Local,,70,0
+78,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Chapli Kabab,100 gm,,,,50,,,,Shan,,71,0
+79,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Nihari,60 gm,120 gm,,,50,85,,,Shan,,72,0
+80,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Bihari Kabab,50 gm ,,,,50,,,,Shan,,73,0
+81,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Taza Dhania Powder,100 gm,200 gm,,,60,100,,,Shan,,74,0
+82,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Chaat Masala,50 gm,100 gm,,,35,65,,,Shan,,75,0
+83,Grocery & Staples,Cooking Needs,Masala & Spices,National Chicken Jalfrezi ,50 gm ,,,,50,,,,National,,76,0
+84,Grocery & Staples,Cooking Needs,Masala & Spices,National Butter Chicken Masala,50 gm ,,,,50,,,,National,,77,0
+85,Grocery & Staples,Cooking Needs,Masala & Spices,Shan Tandoori Masala,50 gm ,100 gm,,,50,85,,,Shan,,78,0
+86,Grocery & Staples,Cooking Needs,Masala & Spices,National Korma Masala,50 gm ,100 gm,,,50,85,,,National,,79,0
+87,Grocery & Staples,Cooking Needs,Masala & Spices,National Cumin Powder,50 gm ,,,,55,,,,National,,80,0
+88,Grocery & Staples,Cooking Needs,Masala & Spices,Cinnamon (Dar Chini),100 gm,,,,50,,,,Local,,81,0
+89,Grocery & Staples,Cooking Needs,Masala & Spices,Red Chilli (lal Mirch),100 gm ,200 gm,500 gm,,40,70,170,,Local,,82,0
+90,Grocery & Staples,Cooking Needs,Pickle / Achar,National Mixed Pickle ,1 kg,,,,250,,,,National,,83,0
+91,Grocery & Staples,Cooking Needs,Pickle / Achar,National Mixed Pickle ,320 gm,400 gm,,,120,140,,,National,,84,0
+92,Grocery & Staples,Cooking Needs,Pickle / Achar,Shangrila Mixed Pickle in Oil,500 gm,1 kg,,,125,245,,,Shangrila,,85,0
+93,Grocery & Staples,Cooking Needs,Pickle / Achar,Shan Mixe Pickle,320 gm,400 gm,,,120,140,,,Shan,,86,0
+94,Grocery & Staples,Cooking Needs,Pickle / Achar,Shangrila Mixed Pickle in Oil,400 gm,320 gm,,,130,115,,,Shangrila,,87,0
+95,Grocery & Staples,Cooking Needs,Pickle / Achar,National Hyderabadi Mix Pickle,320 gm,,,,115,,,,National,,88,0
+96,Grocery & Staples,Cooking Needs,Pickle / Achar,National Hyderabadi Mix Pickle,400 gm ,1 kg,,,130,240,,,National,,89,0
+97,Grocery & Staples,Cooking Needs,Pickle / Achar,Shezan Satrangi Mix Pickle,330 gm,,,,110,,,,Shezan,,90,0
+98,Grocery & Staples,Cooking Needs,Pickle / Achar,Shan Mango Pickle,300 gm,,,,100,,,,Shan ,,91,0
+99,Grocery & Staples,Cooking Needs,Pickle / Achar,Mitchell's Mixed Pickle,400 gm,340 gm,,,130,115,,,Mitchell's,,92,0
+100,Grocery & Staples,Cooking Needs,Pickle / Achar,National Mango Pickle,400 gm,500 gm ,1 kg,,135,140,245,,National,,93,0
+101,Grocery & Staples,Cooking Needs,Pickle / Achar,National Mango Pickle,320 gm,,,,120,,,,National,,94,0
+102,Grocery & Staples,Cooking Needs,Pickle / Achar,National Garlic Pickle ,310 gm,,,,115,,,,National,,95,0
+103,Grocery & Staples,Cooking Needs,Pickle / Achar,Shezan Chilli & Lemon Pickle In Vinegar ,300 gm,,,,100,,,,Shezan,,96,0
+104,Grocery & Staples,Cooking Needs,Pickle / Achar,Shezan Chilli Pickle In Vinegar,300 gm,,,,100,,,,Shezan,,97,0
+105,Grocery & Staples,Cooking Needs,Pickle / Achar,National Chilli Pickle,310 gm,,,,115,,,,National,,98,0
+106,Grocery & Staples,Cooking Needs,Pickle / Achar,Shangrila Mango Pickle in Oil,320 gm,400 gm,500 gm,1 kg,100,125,135,245,Shangrila,,99,0
+107,Grocery & Staples,Cooking Needs,Pickle / Achar,Shezan Mix Vegetable Pickle,300 gm,,,,110,,,,Shezan,,100,0
+108,Grocery & Staples,Cooking Needs,Pickle / Achar,Mitchell's Plum Chutney,420 gm,,,,210,,,,Mitchell's,,101,0
+109,Grocery & Staples,Cooking Needs,Vinegar,Shangrila Synthetic Vinegar Sauce,800 ml,300 ml,120 ml,,85,50,30,,Shangrila,,102,0
+110,Grocery & Staples,Cooking Needs,Vinegar,National Synthetic Vinegar White ,725 ml,,,,75,,,,National,,103,0
+111,Grocery & Staples,Cooking Needs,Vinegar,Shangrila Synthetic Vinegar Sauce,4 ltr,,,,350,,,,Shangrila,,104,0
+112,Grocery & Staples,Cooking Needs,Vinegar,Mitchell's Apple Cider Vinegar,310 ml,,,,95,,,,Mitchell's,,105,0
+113,Grocery & Staples,Cooking Needs,Vinegar,Mitchell's Fruit Vinegar,800 ml,,,,95,,,,Mitchell's,,106,0
+114,Grocery & Staples,Cooking Needs,Vinegar,Mitchell's Synthetic Vinegar,800 ml,,,,95,,,,Mitchell's,,107,0
+115,Grocery & Staples,Cooking Needs,Cubes & Paste,Knorr Chicken Cubes,20 gm,,,,25,,,,Knorr,,108,0
+116,Grocery & Staples,Cooking Needs,Cubes & Paste,Green Cardamom (Small Elachi),50 gm,,,,125,,,,Local,,109,0
+117,Grocery & Staples,Cooking Needs,Cubes & Paste,National Ginger Garlic Paste,300 gm,,,,165,,,,National,,110,0
+118,Grocery & Staples,Cooking Needs,Cubes & Paste,Natiional Garlic Paste,300 gm,,,,135,,,,National,,111,0
+119,Grocery & Staples,Cooking Needs,Cubes & Paste,Mitchell's Tomato Puree,450 gm,,,,140,,,,Mitchell's,,112,0
+120,Grocery & Staples,Cooking Needs,Cubes & Paste,Shan Garlic Paste,310 gm,,,,190,,,,Shan,,113,0
+121,Grocery & Staples,Cooking Needs,Cubes & Paste,Shan Ginger Paste ,310 gm,,,,190,,,,Shan,,114,0
+122,Grocery & Staples,Cooking Needs,Cubes & Paste,Shangrila Ginger Garlic Paste,320 gm,,,,145,,,,Shangrila,,115,0
+123,Grocery & Staples,Cooking Needs,Cubes & Paste,Shan Ginger Garlic Past,310 gm,,,,190,,,,Shan,,116,0
+124,Grocery & Staples,Cooking Needs,Cubes & Paste,National Ginger Paste,300 gm,,,,165,,,,National,,117,0
+125,Grocery & Staples,Cooking Needs,Cubes & Paste,Shangrila Ginger Paste,320 gm,,,,145,,,,Shangrila,,118,0
+126,Grocery & Staples,Cooking Needs,Baking & Frying,Knorr Rolls & Wraps Mix Beef Masaledar,75 gm,,,,100,,,,Knorr,,119,0
+127,Grocery & Staples,Cooking Needs,Baking & Frying,Knorr Rolls & Wraps Chicken Paratha Mix,60 gm,,,,100,,,,Knorr,,120,0
+128,Grocery & Staples,Cooking Needs,Baking & Frying,Knorr Crispy Fried Chicken Mix,75 gm,,,,90,,,,Knorr,,121,0
+129,Grocery & Staples,Cooking Needs,Baking & Frying,Rafhan Cornflour,300 gm,,,,70,,,,Rafhan,,122,0
+130,Grocery & Staples,Cooking Needs,Baking & Frying,Knorr Chef's Nuggets Mix,75 gm,,,,100,,,,Knorr,,123,0
+131,Grocery & Staples,Oil & Ghee,Dalda,Dalda VTF Banaspati Ghee,1 kg x 5 Packs,,,,825,,,,Dalda,,124,0
+132,Grocery & Staples,Oil & Ghee,Dalda,Dalda Cooking Oil,1 ltr x 5 Packs,,,,825,,,,Dalda,,125,0
+133,Grocery & Staples,Oil & Ghee,Dalda,Dalda Cooking Oil Bottle,3 ltr,4.5 ltr,,,565,840,,,Dalda,,126,0
+134,Grocery & Staples,Oil & Ghee,Dalda,Dalda Canola Oil Bottle,3 ltr,4.5 ltr,,,565,840,,,Dalda,,127,0
+135,Grocery & Staples,Oil & Ghee,Dalda,Dalda Canola Oil,1 ltr x 5 Packs,,,,825,,,,Dalda,,128,0
+136,Grocery & Staples,Oil & Ghee,Dalda,Dalda Cooking Oil,1 ltr ,,,,165,,,,Dalda,,129,0
+137,Grocery & Staples,Oil & Ghee,Dalda,Dalda VTF Banaspati Ghee,1 kg,,,,165,,,,Dalda,,130,0
+138,Grocery & Staples,Oil & Ghee,Dalda,Dalda Canola Oil,1 ltr,,,,170,,,,Dalda,,131,0
+139,Grocery & Staples,Oil & Ghee,Dalda,Dalda VTF Banaspati Ghee Tin,2.5 kg ,5 kg ,,,470,905,,,Dalda,,132,0
+140,Grocery & Staples,Oil & Ghee,Dalda,Dalda Cooking Oil Tin,2.5 ltr,5 ltr,,,475,915,,,Dalda,,133,0
+141,Grocery & Staples,Oil & Ghee,Dalda,Dalda Extra Virgin Olive Oil,500 ml,1 ltr,,,500,910,,,Dalda,,134,0
+142,Grocery & Staples,Oil & Ghee,Dalda,Dalda Extra Virgin Olive Oil,3 ltr,4 ltr,,,2390,3350,,,Dalda,,135,0
+143,Grocery & Staples,Oil & Ghee,Dalda,Dalda Planta Cooking Oil,1 ltr x 5 Packs,1 ltr,,,900,180,,,Dalda,,136,0
+144,Grocery & Staples,Oil & Ghee,Dalda,Dalda Planta Cooking Oil Bottle,3 ltr,4.5 ltr,,,580,865,,,Dalda,,137,0
+145,Grocery & Staples,Oil & Ghee,Habib,Habib Banaspati Ghee,1 kg,,,,160,,,,Habib,,138,0
+146,Grocery & Staples,Oil & Ghee,Habib,Habib Cooking Oil,1 ltr,,,,165,,,,Habib,,139,0
+147,Grocery & Staples,Oil & Ghee,Habib,Habib Banaspati Ghee,1 kg x 5 Packs,,,,775,,,,Habib,,140,0
+148,Grocery & Staples,Oil & Ghee,Habib,Habib Cooking Oil,1 ltr x 5 Packs,,,,825,,,,Habib,,141,0
+149,Grocery & Staples,Oil & Ghee,Habib,Habib VTF Banaspati Ghee Tin,2.5 kg ,5  kg,,,450,895,,,Habib,,142,0
+150,Grocery & Staples,Oil & Ghee,Habib,Habib Cooking Oil Tin,2.5 ltr ,5 ltr ,,,495,920,,,Habib,,143,0
+151,Grocery & Staples,Oil & Ghee,Habib,Habib Super Cooking Oil,5 ltr,3 ltr,,,940,570,,,Habib,,144,0
+152,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Cooking Oil,1 ltr,,,,160,,,,Soya Supreme,,145,0
+153,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Cooking Oil,3 ltr,5 ltr  ,,,545,850,,,Soya Supreme,,146,0
+154,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Banaspati Ghee,1 kg,,,,160,,,,Soya Supreme,,147,0
+155,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Banaspati Ghee,1 kg x 5 Packs,,,,800,,,,Soya Supreme,,148,0
+156,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Cooking Oil,10 ltr,,,,1760,,,,Soya Supreme,,149,0
+157,Grocery & Staples,Oil & Ghee,Soya Supreme ,Soya Supreme Cooking Oil,1 ltr x 5 Packs,,,,800,,,,Soya Supreme,,150,0
+158,Grocery & Staples,Oil & Ghee,Mezan,Mezan Banaspati Ghee,1 kg x 5 Packs,,,,775,,,,Mezan,,151,0
+159,Grocery & Staples,Oil & Ghee,Mezan,Mezan Canola Oil,1 ltr x 5 Packs,,,,790,,,,Mezan,,152,0
+160,Grocery & Staples,Oil & Ghee,Mezan,Mezan Canola Oil,3 ltr,,,,520,,,,Mezan,,153,0
+161,Grocery & Staples,Oil & Ghee,Mezan,Mezan Cooking Oil,1 ltr x 5 Packs,1 ltr,,,825,165,,,Mezan,,154,0
+162,Grocery & Staples,Oil & Ghee,Mezan,Mezan Banaspati Ghee,1 kg,,,,155,,,,Mezan,,155,0
+163,Grocery & Staples,Oil & Ghee,Mezan,Mezan Sunlower Oil,1 ltr x 5 Packs,,,,825,,,,Mezan,,156,0
+164,Grocery & Staples,Oil & Ghee,Mezan,Mezan Sunlower Oil,1 ltr,,,,165,,,,Mezan,,157,0
+165,Grocery & Staples,Oil & Ghee,Mezan,Mezan Banaspati Ghee Tin,2.5 kg ,5 kg ,,,390,775,,,Mezan,,158,0
+166,Grocery & Staples,Oil & Ghee,Olpers,Olper's Tarka Desi Ghee Tin,1 kg,,,,690,,,,Olper's,,159,0
+167,Grocery & Staples,Oil & Ghee,Tullo,Tullo Special Banaspati Ghee,1 kg x 5 Packs,1 kg,,,750,150,,,Tullo,,160,0
+168,Grocery & Staples,Oil & Ghee,Tullo,Tullo Cooking Oil,1 ltr x 5 Packs,,,,800,,,,Tullo,,161,0
+169,Grocery & Staples,Oil & Ghee,Tullo,Tullo Cooking Oil,1 ltr,,,,160,,,,Tullo,,162,0
+170,Grocery & Staples,Oil & Ghee,Tullo,Tullo Cooking Oil Tin,2.5 ltr ,5 ltr ,,,390,780,,,Tullo,,163,0
+171,Grocery & Staples,Oil & Ghee,Tullo,Tullo Banaspati Ghee Tin,2.5 kg ,5 kg ,,,390,780,,,Tullo,,164,0
+172,Grocery & Staples,Oil & Ghee,Rafhan,Rafhan Corn Oil,2 ltr,4 ltr,9.5 ltr,3 ltr,730,1440,3390,1090,Rafhan,,165,0
+173,Grocery & Staples,Oil & Ghee,Kisan,Kisan Cooking Oil,1 ltr,,,,160,,,,Kisan,,166,0
+174,Grocery & Staples,Oil & Ghee,Kisan,Kisan Cooking Oil,1 ltr x 5 Packs,,,,800,,,,Kisan,,167,0
+175,Grocery & Staples,Oil & Ghee,Kisan,Kisan Banaspati Ghee,1 kg,,,,155,,,,Kisan,,168,0
+176,Grocery & Staples,Oil & Ghee,Kisan,Kisan Banaspati Ghee,1 kg x 5 Packs,,,,775,,,,Kisan,,169,0
+177,Grocery & Staples,Oil & Ghee,Eva,Eva Cooking Oil,1 ltr,,,,165,,,,Eva,,170,0
+178,Grocery & Staples,Oil & Ghee,Eva,Eva Canola Oil,1 ltr,5 kg ,,,170,825,,,Eva,,171,0
+179,Grocery & Staples,Oil & Ghee,Eva,Eva Cooking Oil,1 ltr x 5 Packs,,,,825,,,,Eva,,172,0
+180,Grocery & Staples,Oil & Ghee,Eva,Eva Cooking Oil Bottle,5 ltr,3 ltr,,,940,570,,,Eva,,173,0
+181,Grocery & Staples,Oil & Ghee,Eva,Eva Sunflower Oil,1 ltr x 5 Packs,1 ltr,,,825,165,,,Eva,,174,0
+182,Grocery & Staples,Oil & Ghee,Eva,Eva VTF Banaspati Ghee,5 kg Bucket,,,,900,,,,Eva,,175,0
+183,Grocery & Staples,Oil & Ghee,Eva,Eva VTF Banaspati Ghee,1 kg x 5 Packs,,,,840,,,,Eva,,176,0
+184,Grocery & Staples,Oil & Ghee,Eva,Eva Sunflower Oil Bottle,3 ltr,5 ltr,,,570,940,,,Eva,,177,0
+185,Beverages,Water,Mineral Water,Nestle Mineral Water,500 ml,1.5 ltr,,,25,50,,,Nestle,,178,0
+187,Beverages,Water,Mineral Water,Nestle Mineral Water,1.5 ltr x 6 Bottles,,,,300,,,,Nestle,,179,0
+188,Beverages,Water,Mineral Water,Aquafina Mineral Water,500 ml,1.5 ltr,,,25,50,,,Pepsi,,180,0
+189,Beverages,Water,Mineral Water,Aquafina Mineral Water,1.5 ltr x 6 Bottles,,,,300,,,,Pepsi,,181,0
+190,Beverages,Drinks,Enegry Drinks,Red Bull,250 ml,355 ml,,,170,250,,,Red Bull,,182,0
+191,Beverages,Drinks,Enegry Drinks,Nestle Milo RTD,200 ml,,,,35,,,,Nestle,,183,0
+192,Beverages,Drinks,Enegry Drinks,Sting Berry Blast,500 ml,,,,60,,,,Pepsi,,184,0
+193,Beverages,Drinks,Enegry Drinks,Red Bull Sugar Free,250 ml,,,,165,,,,Red Bull,,185,0
+194,Beverages,Drinks,Enegry Drinks,Nestle Milo Drink,240 ml,,,,85,,,,Nestle,,186,0
+195,Beverages,Drinks,Enegry Drinks,Nestle Milo Drinking Powder,80 gm,200 gm,300 gm,600 gm,90,210,265,530,Nestle,,187,0
+196,Beverages,Drinks,Enegry Drinks,Epic Energy Drink,250 ml,,,,110,,,,Epic,,188,0
+197,Beverages,Drinks,Juices,Nestle Fruita Vital Chaunsa Fruit Nectar,1 ltr,200 ml,,,150,30,,,Nestle,,189,0
+198,Beverages,Drinks,Juices,Nestle Nesfruta Mango Fruit Drink,1 ltr,,,,100,,,,Nestle,,190,0
+199,Beverages,Drinks,Juices,Nestle Fruita Vital Peach Fruit Drink,1 ltr,,,,150,,,,Nestle,,191,0
+200,Beverages,Drinks,Juices,Nestle Fruita Vital Red Grape Fruit Drink,1 ltr,200 ml,,,150,30,,,Nestle,,192,0
+201,Beverages,Drinks,Juices,Nestle Nesfruta Apple Fruit Drink,1 ltr,200 ml,,,100,20,,,Nestle,,193,0
+202,Beverages,Drinks,Juices,Nestle Fruita Vital Kinnow Fruit Nectar,1 ltr,,,,150,,,,Nestle,,194,0
+203,Beverages,Drinks,Juices,Nestle Fruita Vital White Grape & Lychee,1 ltr,,,,220,,,,Nestle,,195,0
+204,Beverages,Drinks,Juices,Rani Pulpy Orange,1 ltr,,,,150,,,,Rani,,196,0
+205,Beverages,Drinks,Juices,Nestle Fruita Vital Guava Fruit Nectar,1 lte,200 ml,,,150,30,,,Nestle,,197,0
+206,Beverages,Drinks,Juices,Nestle Fruita Vital Apple Fruit Nectar,1 lte,200 ml,,,150,30,,,Nestle,,198,0
+207,Beverages,Drinks,Juices,Shezan All Pure Orange Juice,1 ltr,,,,135,,,,Shezan,,199,0
+208,Beverages,Drinks,Juices,Rani Floats Mango ,240 ml,,,,55,,,,Rani,,200,0
+209,Beverages,Drinks,Juices,Shezan All Pure Mango Juice,1 ltr,,,,120,,,,Shezan,,201,0
+210,Beverages,Drinks,Juices,Shezan All Pure Grape Juice,1 ltr,250 ml,,,135,30,,,Shezan,,202,0
+211,Beverages,Drinks,Juices,Shezan All Pure Guava Juice,1 ltr,,,,120,,,,Shezan,,203,0
+212,Beverages,Drinks,Soft Drink,7up Buddy Pack,300 ml,,,,30,,,,Pepsi,,204,0
+213,Beverages,Drinks,Soft Drink,Pepsi Tin Pack ,250 ml,300 ml,,,35,35,,,Pepsi,,205,0
+214,Beverages,Drinks,Soft Drink,7 up Bottle,500 ml,1.5 ltr,2.25 ltr,,45,85,110,,Pepsi,,206,0
+215,Beverages,Drinks,Soft Drink,Pepsi Bottle,1.5 ltr,500 ml,345 ml,2.25 ltr,85,45,35,110,Pepsi,,207,0
+216,Beverages,Drinks,Soft Drink,Mirinda Bottle,500 ml,345 ml,1.5 ltr,2.25 ltr,45,35,85,110,Pepsi,,208,0
+217,Beverages,Drinks,Soft Drink,Coca Cola (Coke) Tin Pack,250 ml,330 ml,,,35,45,,,Coca Cola,,209,0
+218,Beverages,Drinks,Soft Drink,7up Diet Bottle,500 ml,1.5 ltr,2.25 ltr,,45,85,110,,Pepsi,,210,0
+219,Beverages,Drinks,Soft Drink,Mountain Dew Bottle,1.5 ltr,500 ml,345 ml,2.25 ltr,85,45,30,110,Pepsi,,211,0
+220,Beverages,Drinks,Soft Drink,7up Tin Pack,300 ml,250 ml,,,35,35,,,Pepsi,,212,0
+221,Beverages,Drinks,Soft Drink,Coca Cola (Coke) Bottle,500 ml,1.5 ltr,2.25 ltr,,45,85,110,,Coca Cola,,213,0
+222,Beverages,Drinks,Soft Drink,Sprite Bottle,500 ml,2.25 ltr,1.5 ltr,,40,110,85,,Coca Cola,,214,0
+223,Beverages,Drinks,Soft Drink,Coca Cola (Coke) Diet,500 ml,1.5 ltr,,,45,85,,,Coca Cola,,215,0
+224,Beverages,Drinks,Soft Drink,Mountain Dew Tin Pack,300 ml,330 ml,,,35,45,,,Pepsi,,216,0
+225,Beverages,Drinks,Soft Drink,Fanta Orange Bottle,500 ml,1.5 ltr,2.25 ltr,,40,85,105,,Coca Cola,,217,0
+226,Beverages,Drinks,Soft Drink,Fanta Orange Tin Pack,330 ml,,,,45,,,,Coca Cola,,218,0
+227,Beverages,Drinks,Soft Drink,Sprite Zero Bottle ,500 ml,1.5 ltr,,,45,90,,,Coca Cola,,219,0
+228,Beverages,Drinks,Soft Drink,Pepsi Diet Bottle,1.5 ltr,500 ml,,,85,45,,,Pepsi,,220,0
+229,Beverages,Drinks,Syrups & Squashes,Bake Parlor Icecream Sysups,800 ml,,,,132,,,,Bake Parlor,,221,0
+230,Beverages,Drinks,Syrups & Squashes,Hamdard Rooh Afza,800 ml,1.5 ltr,,,170,300,,,Hamdard,,222,0
+231,Beverages,Drinks,Syrups & Squashes,Qarshi Jam-e-Shireen,800 ml,1.5 ltr,3 ltr,,180,315,600,,Qarshi,,223,0
+232,Beverages,Drinks,Syrups & Squashes,Qarshi Jam-e-Shireen Sugar Free,800 ml,,,,170,,,,Qarshi,,224,0
+233,Beverages,Drinks,Syrups & Squashes,Mitchell's Mix Fruite Squashe,800 ml,1.5 ltr,,,165,270,,,Mitchell's,,225,0
+234,Beverages,Drinks,Syrups & Squashes,Shezan Lemon Barley Squashe,800 ml,,,,160,,,,Shezan,,226,0
+235,Beverages,Drinks,Syrups & Squashes,Shezan Samarqand Sharbat,800 ml,,,,160,,,,Shezan,,227,0
+240,Beverages,Drinks,Nutritional Drinks,Horlicks Chocolate,500 gm,,,,450,,,,Horlicks,,232,0
+241,Beverages,Drinks,Nutritional Drinks,Horlicks Classic Malt,500 gm,,,,450,,,,Horlicks,,233,0
+242,Beverages,Drinks,Nutritional Drinks,Complan Straawberry,200 gm,,,,225,,,,Complan,,234,0
+243,Beverages,Drinks,Nutritional Drinks,Energile Mix Fruit,400 gm,100 gm,,,130,45,,,Energile,,235,0
+244,Beverages,Drinks,Nutritional Drinks,Cadbury Bournvita Drinking Powder,500 gm,200 gm,,,550,265,,,Cadbury,,236,0
+245,Beverages,Drinks,Nutritional Drinks,Complan Chocolate,500 gm,,,,450,,,,Complan,,237,0
+246,Beverages,Drinks,Nutritional Drinks,Complan Mango,200 gm,,,,225,,,,Complan,,238,0
+247,Beverages,Drinks,Nutritional Drinks,Ovaltine Original,100 gm,,,,180,,,,Ovaltine,,239,0
+248,Beverages,Tea ,Supreme,Supreme Black Tea,95 gm,,,,82,,,,Supreme,,240,0
+249,Beverages,Tea ,Supreme,Supreme Black Tea,190 gm,475 gm,,,155,410,,,Supreme,,241,0
+250,Beverages,Tea ,Supreme,Supreme Black Tea Pouch,950 gm,,,,780,,,,Supreme,,242,0
+251,Beverages,Tea ,Supreme,Supreme Black Tea Jar,450 gm,,,,460,,,,Supreme,,243,0
+252,Beverages,Tea ,Lipton,Lipton Yellow Label Black Tea,95 gm,380 gm,475 gm,950 gm,90,370,450,820,Lipton,,244,0
+253,Beverages,Tea ,Lipton,Lipton Yellow Label Black Tea Bags,50 Sachets,100 Sachets,,,200,390,,,Lipton,,245,0
+254,Beverages,Tea ,Lipton,Lipton Yellow Label Black Tea Jar,475 gm,,,,510,,,,Lipton,,246,0
+255,Beverages,Tea ,Lipton,Lipton Yellow Label Black Tea,190 gm,,,,195,,,,Lipton,,247,0
+256,Beverages,Tea ,Tapal,Tapal Danedar Black Tea,95 gm,385 gm,950 gm,190 gm,85,335,950,170,Tapal,,248,0
+257,Beverages,Tea ,Tapal,Tapal Danedar Black Tea Jar,450 gm,,,,435,,,,Tapal,,249,0
+258,Beverages,Tea ,Tapal,Tapal Danedar Black Tea Bag,50 Sachets,100 Sachets,,,200,390,,,Tapal,,250,0
+259,Beverages,Tea ,Tapal,Tapal Family Mixture,190 gm,475 gm,950 gm,,145,370,710,,Tapal,,251,0
+260,Beverages,Tea ,Tapal,Tapal Family Mixture Jar,450 gm,,,,410,,,,Tapal,,252,0
+261,Beverages,Tea ,Tapal,Tapal Tezdam Black Tea,475 gm,950 gm,,,355,685,,,Tapal,,253,0
+262,Beverages,Tea ,Tapal,Tapal Tezdam Black Tea,95 gm,190 gm,,,70,135,,,Tapal,,254,0
+263,Beverages,Tea ,Geen Tea,Lipton Green Tea Bags -Lemon,25 Sachets,,,,100,,,,Lipton,,255,0
+264,Beverages,Tea ,Geen Tea,Tapal Green Tea Elaichi,45 gm,,,,95,,,,Tapal,,256,0
+265,Beverages,Tea ,Geen Tea,Tapal Green Tea Lemon,45 gm,,,,95,,,,Tapal,,257,0
+266,Beverages,Tea ,Geen Tea,Tapal Green Tea Bags - Lemon ,90 Sachets,,,,315,,,,Tapal,,258,0
+267,Beverages,Tea ,Geen Tea,Tapal Green Tea Jasmin Jar,100 gm,,,,120,,,,Tapal,,259,0
+268,Beverages,Tea ,Geen Tea,Tapal Green Tea lemon Jar,100 gm,,,,130,,,,Tapal,,260,0
+269,Beverages,Tea ,Geen Tea,Tapal Green Tea bags Selection Pack,32 Sachets,,,,105,,,,Tapal,,261,0
+270,Beverages,Tea ,Geen Tea,Lipton Clear Green Tea Bag Mint,25 Sachets,,,,100,,,,Lipton,,262,0
+271,Beverages,Tea ,Geen Tea,Lipton Green Tea Bag Pure & Light,25 Sachets,,,,100,,,,Lipton,,263,0
+272,Beverages,Coffee,Nestle,Nestle Coffee Mate,170 gm,400 gm,,,190,350,,,Nestle,,264,0
+273,Beverages,Coffee,Nescafe,Nescafe Matinal Coffee,50 gm ,,,,200,,,,Nescafe,,265,0
+274,Beverages,Coffee,Nescafe,Nescafe Gold Coffee,50 gm,100 gm,200 GM,,400,545,820,,Nescafe,,266,0
+275,Beverages,Coffee,Nescafe,Nescafe 3 in 1 box 20 gm,24 Sachets,,,,480,,,,Nescafe,,267,0
+276,Beverages,Coffee,Nescafe,Nescafe Classic Jar,100 gm,50 gm,200 gm,,315,165,520,,Nescafe,,268,0
+277,Beverages,Coffee,Nescafe,Nescafe Manu-Lette,6 Sachets,,,,460,,,,Nescafe,,269,0
+278,Beverages,Coffee,Nescafe,Nescafe Manu-Cappuccino,10 Sachets,,,,460,,,,Nescafe,,270,0
+279,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Sooper biscuit,Ticky Pack ,Half Roll,Family Pack,,120,15,35,,Peek Freans,,271,0
+280,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Peanut Pik Biscuit,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,272,0
+281,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Peanut Pista Biscuit,Half Roll,Family Pack,,,15,40,,,Peek Freans,,273,0
+282,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Party Biscuit,Half Roll,Family Pack,,,15,40,,,Peek Freans,,274,0
+283,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Click Biscuit,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,275,0
+284,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Butter Puff Biscuit,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,276,0
+285,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Gluco Biscuit,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,277,0
+286,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans RIO Strawberry & Vanila ,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,278,0
+287,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans RIO Vanila ,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,279,0
+288,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans RIO Chocolate & Vanila ,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,280,0
+289,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans RIO Chocolate  Biscuit ,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,281,0
+290,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Saltish  Biscuit ,Half Roll,Family Pack,,,15,40,,,Peek Freans,,282,0
+291,Snacks & Biscuits ,Biscuits & Cookies,LU,Lu Prince Pineapple Biscuit,Half Roll,,,,15,,,,LU,,283,0
+292,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Gala Biscuits,Mini Half Roll,Half Roll,Family Pack,,10,15,40,,LU,,284,0
+293,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Candi Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,285,0
+294,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Zeera Plus Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,286,0
+295,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Bakeri Butter Cookies,Bar Pack,Snack Pack,Family Pack,,10,20,40,,LU,,287,0
+296,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Prince Chocolate Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,288,0
+297,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Tuc Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,17,40,,LU,,289,0
+298,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Prince Strawberry Biscuits,Ticky Pack ,Half Roll,,,120,15,,,LU,,290,0
+299,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Ore Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,20,45,,LU,,291,0
+300,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Cocomo Biscuits,Ticky Pack ,Pouch,,,120,10,,,Bisconni,,292,0
+301,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Chocolate Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,120,35,,Bisconni,,293,0
+302,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Novita Chocolate Wafer,Half Roll,,,,10,,,,Bisconni,,294,0
+303,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Novita Orange Wafer,Half Roll,,,,10,,,,Bisconni,,295,0
+304,Snacks & Biscuits ,Biscuits & Cookies,Hilal,Hilal Cupkake Chocolate,12 pc,,,,120,,,,Hilal,,296,0
+305,Snacks & Biscuits ,Biscuits & Cookies,Hilal,Hilal Cupkake Strawbessry ,12 pc,,,,120,,,,Hilal,,297,0
+306,Snacks & Biscuits ,Biscuits & Cookies,Kolson,Kolson Bravo Biscuits,Ticky Pack ,Half Roll,Half Roll x 6,,120,15,90,,Kolson,,298,0
+307,Snacks & Biscuits ,Biscuits & Cookies,Kolson,Kolson Jam Heart Vanila,Ticky Pack ,Half Roll,Half Roll x 6,,150,15,90,,Kolson,,299,0
+308,Snacks & Biscuits ,Biscuits & Cookies,Kolson,Kolson Jam Heart Chocolate,Ticky Pack ,Half Roll,Half Roll x 6,,120,15,90,,Kolson,,300,0
+309,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Cafe Biscuits,Ticky Pack ,Half Roll ,Half Roll ,,120,15,15,,Mayfair,,301,0
+310,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Masala Potato Chips,22 gm,50 gm,120 gm,200 gm,10,30,50,100,Lays,,302,0
+311,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays French Potato Cheese,22 gm,50 gm,120 gm,200 gm,10,30,50,100,Lays,,303,0
+312,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy B.B.Q. Chips,33 gm,68 gm,,,25,50,,,Lays,,304,1
+313,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy Salt & Black Pepper Chips,33 gm,,,,25,,,,Lays,,305,1
+314,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Salted Potato Chips,22 gm,50 gm,120 gm,200 gm,10,30,50,100,Lays,,306,0
+315,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Yougourt n Herb ,27 gm,42 gm,14 gm,72 gm,20,30,10,50,Lays,,307,0
+316,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy Balsamic Vinegar & Onion,30 gm,,,,25,,,,Lays,,308,1
+317,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy Sour Cream & Onion,80 gm,33 gm,36 gm,,50,25,30,,Lays,,309,0
+318,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Twitch,18 gm,,,,10,,,,Kolson,,310,0
+319,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Slanty Jalapeno,22 gm,60 gm,,,10,35,,,Kolson,,311,0
+320,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Slanty Vegetable,16 gm,60 gm,,,10,35,,,Kolson,,312,0
+321,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Slanty Salted,22 gm,60 gm,,,10,35,,,Kolson,,313,0
+322,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Potato Sticks & Salt,30 gm,50 gm,,,10,15,,,Kolson,,314,0
+323,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Masala Cheese Balls,20 gm,,,,10,,,,Kolson,,315,0
+324,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Snackers Pizza,18 gm,,,,10,,,,Kolson,,316,0
+325,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Snackers French Cheese,18 gm,,,,10,,,,Kolson,,317,0
+326,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Star Cream & Herb,13 gm,,,,10,,,,Super Crisp,,318,1
+327,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Crunchy Red Flaming Hot,32 gm,,,,20,,,,Super Crisp,,319,0
+328,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Cheese Ocean Safari,21 gm,,,,15,,,,Super Crisp,,320,0
+329,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Bites Vegetable,17 gm,,,,10,,,,Super Crisp,,321,1
+330,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Ketchup,14 gm,22 gm,,,10,15,,,Super Crisp,,322,0
+334,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Spicy Sweet Chilli Snacks,11 oz,3.25 oz,Small,,495,180,60,,Doritos,,326,0
+335,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Nacho Cheese Snacks,60 GM,3.25 oz,7 oz,1 oz,110,180,350,60,Doritos,,327,0
+336,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Spicy Nacho Snacks,1.25 oz,,,,60,,,,Doritos,,328,0
+337,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Kurkure Red Chilli Jhatka,32 gm,75 gm,,,15,30,,,Kurkure,,329,0
+338,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye Salt & Pepper Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,330,0
+339,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye Masala Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,331,0
+340,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye Cheese Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,332,0
+341,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye Tomato Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,333,0
+342,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye BBQ Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,334,0
+343,Snacks & Biscuits ,Snacks & Nimko,Oye Hoye,Oye Hoye Salt Chips,29 gm,14 gm,45 gm,78 gm,20,10,30,50,Oye Hoye,,335,0
+345,Personel Care,Oral Care ,Tooth Paste,Doctor Tooth Paste,40 gm,70 gm,150 gm,100 gm,50,65,130,100,Doctor,,336,0
+346,Personel Care,Oral Care ,Tooth Paste,Colgate Maximum Cavity Protection Tooth paste,100 gm,50 gm,150 gm,200 gm,85,40,125,155,Colgate,,337,0
+347,Personel Care,Oral Care ,Tooth Paste,Sensodyne Multi Care Tooth Paste,100 gm,,,,215,,,,Sensodyne,,338,0
+348,Personel Care,Oral Care ,Tooth Paste,Colgate Tooth Paste Advance White,160 gm,,,,155,,,,Colgate,,339,0
+349,Personel Care,Oral Care ,Tooth Paste,Sparkle Strong Tooth Paste,200 gm,70 gm,,,75,35,,,Sparkle,,340,0
+350,Personel Care,Oral Care ,Tooth Paste,Close Up Deep Action Tooth Paste,125 gm,,,,125,,,,Close Up,,341,0
+351,Personel Care,Oral Care ,Tooth Paste,Close Up Gel Red Hot Tooth Paste ,125 gm,70 gm,,,115,75,,,Close Up,,342,0
+352,Personel Care,Oral Care ,Tooth Paste,English Anti Becterial Tooth Paste,Saver Pack,70 gm,140 gm,,90,50,120,,English,,343,0
+353,Personel Care,Oral Care ,Tooth Paste,Colgate Herbal Tooth Paste,150 gm,,,,120,,,,Colgate,,344,0
+354,Personel Care,Oral Care ,Tooth Paste,Forhan's Classic Tooth Paste,70 gm,150 gm,200 gm,120 gm,65,115,150,90,Forhan's,,345,0
+355,Personel Care,Oral Care ,Tooth Paste,Forhan's Florida Tooth Paste Extra Care,70 gm,150 gm,,,70,120,,,Forhan's,,346,0
+356,Personel Care,Oral Care ,Tooth Paste,Medicam Regular Tooth Paste,70 gm,150 gm,100 gm,40 gm,80,150,120,55,Medicam,,347,0
+357,Personel Care,Oral Care ,Tooth Paste,Medicam Herbal Tooth Paste,75 gm,45 gm,,,55,40,,,Medicam,,348,0
+358,Personel Care,Oral Care ,Tooth Paste,Oral-B 3D Tooth Paste,75 ml,,,,170,,,,Oral-B,,349,0
+359,Personel Care,Oral Care ,Tooth Paste,English Complete Cavity Protection Toothpaste,70 gm,140 gm,,,50,120,,,English,,350,0
+0,Personel Care,Oral Care ,Tooth Paste,Sparkle Clove & Pearl Tooth Paste,70 gm,,,,45,,,,Sparkle,,351,1
+0,Personel Care,Oral Care ,Tooth Paste,Sparkle Tooth Paste,70 gm,,,,35,,,,Sparkle,,352,1
+362,Personel Care,Oral Care ,Tooth Paste,English Herbal Tooth Paste ,140 gm,,,,120,,,,English,,353,0
+363,Personel Care,Oral Care ,Tooth Powder,Dentonic Tooth Powder,180 gm,,,,60,,,,Dentonic,,354,0
+364,Personel Care,Oral Care ,Mouth Wash,Colgate Plax Mouth Wash Cool Mint Imported,250 ml,,,,200,,,,Colgate,,355,0
+365,Personel Care,Oral Care ,Mouth Wash,Colgate Plax Anti Becterial Mouth Wash Soft Mint Imported,250 ml,,,,200,,,,Colgate,,356,0
+366,Personel Care,Oral Care ,Mouth Wash,Colgate Plax Mouth Wash Peppermint Fresh,60 ml,250 ml,500 ml,,40,185,250,,Colgate,,357,0
+367,Personel Care,Oral Care ,Mouth Wash,Colgate Plax Mouth Wash Freshmint Splash,500 ml,,,,250,,,,Colgate,,358,0
+368,Personel Care,Oral Care ,Mouth Wash,Sensodyne Splash Mouth Wash,500 ml,,,,275,,,,Sensodyne,,359,0
+369,Personel Care,Oral Care ,Mouth Wash,Medicam Mouth Wash,250 ml,,,,150,,,,Medicam,,360,0
+370,Personel Care,Oral Care ,Tooth Brush,Colgate Classic Deep Clean Tooth Brush,Medium,,,,35,,,,Colgate,,361,0
+371,Personel Care,Oral Care ,Tooth Brush,Colgate Classic Clean Tooth Brush,Medium,,,,40,,,,Colgate,,362,0
+372,Personel Care,Oral Care ,Tooth Brush,Colgate Tooth Brush,Kids,,,,45,,,,Colgate,,363,0
+373,Personel Care,Oral Care ,Tooth Brush,Colgate Tooth Brush Slim Soft,1 pc,,,,100,,,,Colgate,,364,0
+374,Personel Care,Oral Care ,Tooth Brush,Oral B Pro Expert Tooth Brush Complete Cross Action,1 pc,,,,240,,,,Oral-B,,365,0
+375,Personel Care,Oral Care ,Tooth Brush,Oral B Advantage Compete Tooth Brush,Medium,,,,120,,,,Oral-B,,366,0
+376,Personel Care,Oral Care ,Tooth Brush,Oral B Maxi Clean 3 Effect Tooth Brush,1 pc,,,,90,,,,Oral-B,,367,0
+377,Personel Care,Oral Care ,Tooth Brush,Oral B Pro Expert Clean Soft Brush,1 pc,,,,150,,,,Oral-B,,368,0
+378,Personel Care,Oral Care ,Tooth Brush,Oral B Pro Expert Clinic line Tooth Brush,1 pc,,,,300,,,,Oral-B,,369,0
+379,Personel Care,Oral Care ,Tooth Brush,Sheild Giggles Kids Tooth Brush,1 pc,,,,45,,,,Sheild,,370,1
+380,Personel Care,Oral Care ,Tooth Brush,Sheild Classic Tooth Brush Soft,1 pc,,,,30,,,,Sheild,,371,1
+381,Personel Care,Oral Care ,Tooth Brush,Sheild Falcon Tooth Brush ,Medium,,,,35,,,,Sheild,,372,1
+382,Personel Care,Oral Care ,Tooth Brush,Sheild Flex Adult Tooth Brush,Medium,,,,40,,,,Sheild,,373,1
+383,Personel Care,Oral Care ,Tooth Brush,Sheild Hippo Kids Tooth Brush,1 pc,,,,50,,,,Sheild,,374,0
+384,Personel Care,Oral Care ,Tooth Brush,Sheild New Sensation Tooth Brush Soft,1 pc,,,,55,,,,Sheild,,375,1
+0,Personel Care,Oral Care ,Tooth Brush,Sheild Anti-Bec Tooth Brush Soft,1 pc,,,,60,,,,Sheild,,376,1
+386,Personel Care,Oral Care ,Tooth Brush,Sensodyne Precision Tooth Brush,Medium,,,,110,,,,Sensodyne,,377,0
+387,Personel Care,Oral Care ,Tooth Brush,Sensodyne Precision Soft Tooth Brush,1 pc,,,,110,,,,Sensodyne,,378,0
+388,Personel Care,Oral Care ,Tooth Brush,Sensodyne Expert Tooth Brush,Medium,,,,130,,,,Sensodyne,,379,0
+389,Personel Care,Hair Care,Hair Cream  & Gel,Dabur Vatika Hair Cream Nourish & Protect,140 ml,70 ml,,,175,100,,,Dabur,,380,0
+390,Personel Care,Hair Care,Hair Cream  & Gel,Dabur Vatika Hair Cream Dandruff & Guard,140 ml,70 ml,,,175,100,,,Dabur,,381,0
+391,Personel Care,Hair Care,Hair Cream  & Gel,Dabur Vatika Hair Cream Hair Fall Control,140 ml,70 ml,,,175,100,,,Dabur,,382,0
+392,Personel Care,Hair Care,Hair Cream  & Gel,AXE Anti Dandruff Styling Hair Cream Imported,90 gm,,,,170,,,,AXE,,383,1
+393,Personel Care,Hair Care,Hair Cream  & Gel,Dabur Vatika Hair Gel Strong Hold,150 ml,,,,200,,,,Dabur,,384,0
+394,Personel Care,Hair Care,Hair Cream  & Gel,Dabur Vatika Hair Gel Maxx Hold,150 ml,,,,200,,,,Dabur,,385,0
+395,Personel Care,Hair Care,Hair Cream  & Gel,Set Wet Hair Gel Vertical Hold,100 ml,,,,145,,,,Set Wet,,386,0
+396,Personel Care,Hair Care,Hair Cream  & Gel,Set Wet Hair Gel Wet Look,100 ml,,,,145,,,,Set Wet,,387,0
+397,Personel Care,Hair Care,Hair Cream  & Gel,Set Wet Hair Gel Cool Hold,100 ml,,,,145,,,,Set Wet,,388,0
+398,Personel Care,Hair Care,Hair Cream  & Gel,L'Oreal Paris Sclap 6 Oil Nourishing Styling Cream,200 ml,,,,700,,,,L'Oreal,,389,0
+399,Personel Care,Hair Care,Hair Cream  & Gel,L'Oreal Paris Sclap 6 Oil Nourishing Cream,100 ml,200 ml,,,300,400,,,L'Oreal,,390,0
+400,Personel Care,Hair Care,Hair Cream  & Gel,L'Oreal Total Repair 5 Styling Cream,200 ml,,,,730,,,,L'Oreal,,391,0
+401,Personel Care,Hair Care,Hair Cream  & Gel,L'Oreal Paris Elvive Color Protect Mask,300 ml,,,,700,,,,L'Oreal,,392,0
+402,Personel Care,Hair Care,Hair Oil & Serum,L'Oreal Paris Sclap 6 oil Nourishing Treatment Oil,100 ml,,,,630,,,,L'Oreal,,393,0
+403,Personel Care,Hair Care,Hair Oil & Serum,L'Oreal Total Repair 5 Serum,80 ml,,,,705,,,,L'Oreal,,394,0
+404,Personel Care,Hair Care,Hair Oil & Serum,L'Oreal Paris Smooth Intense Serum,1 pc,,,,1000,,,,L'Oreal,,395,0
+405,Personel Care,Hair Care,Hair Oil & Serum,Dabur Amla Hair Oil,100 ml,200 ml,300 ml,50 ml,130,225,320,70,Dabur,,396,0
+406,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Sarson Hair Oil,100 ml,200 ml,,,110,185,,,Dabur,,397,0
+407,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Almond Hair Oil,100 ml,200 ml,,,140,250,,,Dabur,,398,0
+408,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Olive Hair Oil,100 ml ,200 ml,,,140,245,,,Dabur,,399,0
+409,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Kalonji Hair Oil,100 ml,200 ml,,,140,245,,,Dabur,,400,0
+410,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Cactus Hair Oil,100 ml,200 ml,,,140,245,,,Dabur,,401,0
+411,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Argan Hair Oil,200 ml,,,,245,,,,Dabur,,402,0
+412,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Garlic Hair Oil,200 ml,,,,245,,,,Dabur,,403,0
+413,Personel Care,Hair Care,Hair Oil & Serum,Dabur Vatika Coconut Hair Oil,200 ml,,,,265,,,,Dabur,,404,0
+414,Personel Care,Hair Care,Hair Oil & Serum,Kala Kola Hair Tonic,200 ml,,,,190,,,,Kala Kola,,405,0
+415,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Soft & Smooth,180 ml,,,,190,,,,Sunsilk,,406,0
+416,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Intense Repair,180 ml,,,,230,,,,Dove,,407,0
+417,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Hair Fall Solution,180 ml,,,,190,,,,Sunsilk,,408,0
+418,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Perfect Straight Nourishing,180 ml,,,,190,,,,Sunsilk,,409,0
+419,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Thick & Long Nourishing,180 ml,,,,190,,,,Sunsilk,,410,0
+420,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Black Shine,180 ml,,,,190,,,,Sunsilk,,411,0
+421,Personel Care,Hair Care,Conditioner,Sunsilk Hair Conditioner Anti Dandruff,180 ml,,,,190,,,,Sunsilk,,412,0
+422,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Straight & Silky,180 ml,,,,230,,,,Dove,,413,0
+423,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Nourishing Oil Care,180 ml,,,,195,,,,Dove,,414,0
+424,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Hair Fall Rescue,180 ml,,,,230,,,,Dove,,415,0
+425,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Dryness Care,180 ml,,,,230,,,,Dove,,416,0
+426,Personel Care,Hair Care,Conditioner,Dove Hair Conditioner Split End Rescue,180 ml,,,,230,,,,Dove,,417,0
+427,Personel Care,Hair Care,Conditioner,Pantene Hair Conditioner Moisture Renewal,180 ml,400 ml,,,200,380,,,Pantene,,418,0
+428,Personel Care,Hair Care,Conditioner,Pantene Hair Conditioner Pro-V Smooth & Strong,180 ml,,,,200,,,,Pantene,,419,0
+429,Personel Care,Hair Care,Conditioner,Pantene Hair Conditioner Nature Fusion,180 ml,,,,200,,,,Pantene,,420,0
+430,Personel Care,Hair Care,Conditioner,Pantene Hair Conditioner Pro-V Milky Extra,180 ml,400 ml,,,200,380,,,Pantene,,421,0
+431,Personel Care,Hair Care,Conditioner,Pantene Hair Conditioner Anti Hair Fall,180 ml,,,,200,,,,Pantene,,422,0
+432,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Paris Total Repair 5,175 ml,,,,250,,,,L'Oreal,,423,0
+433,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Sclap 6 Oil Nourishing,175 ml,,,,250,,,,L'Oreal,,424,0
+434,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Paris Elvive Color Protection,175 ml,,,,250,,,,L'Oreal,,425,0
+435,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Paris Nutri Gloss Shine,175 ml,,,,250,,,,L'Oreal,,426,0
+436,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Paris Hair Fall Repair 3X ,175 ml,,,,250,,,,L'Oreal,,427,0
+437,Personel Care,Hair Care,Conditioner,L'Oreal Hair Conditioner Paris Smooth Intense,175 ml,,,,250,,,,L'Oreal,,428,0
+438,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Developer 6% ,20 vol,,,,100,,,,Keune,,429,0
+439,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Dark Brown,No. 3,,,,355,,,,Keune,,430,0
+440,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Golden Blonde,NO. 7.3,,,,355,,,,Keune,,431,0
+441,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Brown,No. 4,,,,355,,,,Keune,,432,0
+442,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Developer 3% ,10 vol,,,,100,,,,Keune,,433,0
+443,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Dark Blonde,No. 6,,,,355,,,,Keune,,434,0
+444,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Black,No. 1,,,,355,,,,Keune,,435,0
+445,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Ash Blue,No. 0/11,,,,355,,,,Keune,,436,0
+446,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Pearl Blonde,No. 7.2,,,,355,,,,Keune,,437,0
+447,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Intense Red Blonde,No. 7.66,,,,355,,,,Keune,,438,0
+448,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Choco Blonde,No. 7.35,,,,355,,,,Keune,,439,0
+449,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Copper Blonde,No. 8.4,,,,355,,,,Keune,,440,0
+450,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Brown,No. 5,,,,355,,,,Keune,,441,0
+451,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Golden Brown,No. 4.3,,,,355,,,,Keune,,442,0
+452,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Matt Brown ,No. 5.19,,,,355,,,,Keune,,443,0
+453,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Intense Ash Brown,No. 5.11,,,,355,,,,Keune,,444,0
+454,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Golden Brown ,No. 5.3,,,,355,,,,Keune,,445,0
+455,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Copper Brown,No. 5.4,,,,355,,,,Keune,,446,0
+456,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Light Choco Brown,No. 5.35,,,,355,,,,Keune,,447,0
+457,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Dark Mocha Blonde,No. 6.03,,,,355,,,,Keune,,448,0
+458,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Dark Expresso Blonde,No. 6.37,,,,355,,,,Keune,,449,0
+459,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Dark Blonde,No. 6.00,,,,355,,,,Keune,,450,0
+460,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Blue Black,No. 1.1,,,,355,,,,Keune,,451,0
+461,Personel Care,Hair Care,Hair Color & Mehndi,Keune Tinta Color Medium Red Brown,No. 4.6,,,,355,,,,Keune,,452,0
+462,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Dark Brown,No. 03,,,,430,,,,Garnier,,453,0
+463,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Ash Blonde,No. 7.1,,,,430,,,,Garnier,,454,0
+464,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Blonde,No. 07,,,,430,,,,Garnier,,455,0
+465,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Burgundy,No 4.6,,,,430,,,,Garnier,,456,0
+466,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Nude Dark Blonde,No. 7.132,,,,430,,,,Garnier,,457,0
+467,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Nude Light Brown,No. 6.132,,,,430,,,,Garnier,,458,0
+468,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Mahogany Ash Light Brown,No. 5.15,,,,430,,,,Garnier,,459,0
+469,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Brown,No. 6.7,,,,430,,,,Garnier,,460,0
+470,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Brown,No. 4.7,,,,430,,,,Garnier,,461,0
+471,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Dark Black,No. 01+,,,,430,,,,Garnier,,462,0
+472,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Light Brown,No. 05,,,,430,,,,Garnier,,463,0
+473,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Brown,No. 04,,,,430,,,,Garnier,,464,0
+474,Personel Care,Hair Care,Hair Color & Mehndi,Garnier Color Naturals Crème Black,No. 01,,,,430,,,,Garnier,,465,0
+475,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Hair Fall Solution,200 ml,180 ml,700 ml ,400 ml,195,190,580,360,Sunsilk,,466,0
+476,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Soft & Smooth,200 ml,700 ml,400 ml,,195,580,360,,Sunsilk,,467,0
+477,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Perfact Straight,200 ml,400 ml,,,195,360,,,Sunsilk,,468,0
+478,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Stunning Black Shine,200 ml,400 ml,180 ml,700 ml,195,360,190,580,Sunsilk,,469,0
+479,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Thick & Long,200 ml,400 ml,700 ml,,195,360,580,,Sunsilk,,470,0
+480,Personel Care,Hair Care,Shampoo,Sunsilk Shampoo Anti Dandruff, 400 ml,200 ml,,,360,195,,,Sunsilk,,471,0
+481,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Classic Clean,200 ml,400 ml,700 ml,,195,375,600,,Head & Shoulders,,472,0
+482,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Refreshing Menthol,200 ml,400 ml,,,199,350,,,Head & Shoulders,,473,0
+483,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Anti Hair Fall,200 ml,700 ml,,,195,810,,,Head & Shoulders,,474,0
+484,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Hair Fall Defence,400 ml,200 ml,,,370,199,,,Head & Shoulders,,475,0
+485,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Mosturizing Scalp Care,400 ml,200 ml,700 ml,,375,195,600,,Head & Shoulders,,476,0
+486,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo Silky Black,200 ml,400 ml,,,199,375,,,Head & Shoulders,,477,0
+487,Personel Care,Hair Care,Shampoo,Head & Shoulders Shampoo For Men,200 ml,,,,199,,,,Head & Shoulders,,478,0
+488,Personel Care,Hair Care,Shampoo,Pantene Shampoo Pro-V Deep Black,400 ml,200 ml,,,360,195,,,Pantene,,479,0
+489,Personel Care,Hair Care,Shampoo,Pantene Shamoo Milky Extra Treatment,400 ml,200 ml,700 ml,,360,195,600,,Pantene,,480,0
+490,Personel Care,Hair Care,Shampoo,Pantene Shampoo Pro-V Smooh & Strong,400 ml,200 ml,,,360,195,,,Pantene,,481,0
+491,Personel Care,Hair Care,Shampoo,Pantene Shampoo Nature Fusion,180 ml,360 ml,,,190,350,,,Pantene,,482,0
+492,Personel Care,Hair Care,Shampoo,Pantene Shampoo Sheer Volume,200 ml,400 ml,,,195,360,,,Pantene,,483,0
+493,Personel Care,Hair Care,Shampoo,Pantene Shampoo Pro- V Anti Dandruff,400 ml,200 ml,,,360,195,,,Pantene,,484,0
+494,Personel Care,Hair Care,Shampoo,Pantene Shampoo Anti Hair Fall,700 ml,400 ml,200 ml,,600,360,195,,Pantene,,485,0
+495,Personel Care,Hair Care,Shampoo,Pantene Shampoo Moisture Renewal,400 ml,200 ml,,,360,195,,,Pantene,,486,0
+496,Personel Care,Hair Care,Shampoo,Dove Shampoo Intense Repair,175 ml,360 ml,700 ml,,210,370,595,,Dove,,487,0
+497,Personel Care,Hair Care,Shampoo,Dove Shampoo Straight & Silky,175 ml,360 ml,,,210,370,,,Dove,,488,0
+498,Personel Care,Hair Care,Shampoo,Dove Shampoo Nourishing Oil Care,175 ml,360 ml,,,210,370,,,Dove,,489,0
+499,Personel Care,Hair Care,Shampoo,Dove Shampoo Hair Fall Rescue,700 ml,175 ml,360 ml,,700,210,370,,Dove,,490,0
+500,Personel Care,Hair Care,Shampoo,Dove Shampoo Daily Shine,175 ml,360 ml,,,210,370,,,Dove,,491,0
+501,Personel Care,Hair Care,Shampoo,Dove Shampoo Split End Rescue,175 ml,360 ml,,,210,370,,,Dove,,492,0
+502,Personel Care,Hair Care,Shampoo,Dove Shampoo Color Rescue,175 ml,360 ml,,,210,370,,,Dove,,493,0
+503,Personel Care,Hair Care,Shampoo,Dove Shampoo Dryness Care,175 ml,360 ml,,,210,370,,,Dove,,494,0
+504,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Hair Fall Repair 3X,175 ml,360 ml,,,210,370, ,,L'Oreal,,495,0
+505,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Elvive Color Protect Caring,175 ml,360 ml,,,210,370,,,L'Oreal,,496,0
+506,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Smooth Intense,175 ml,360 ml,,,210,370,,,L'Oreal,,497,0
+507,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Sclap 6 Oil Nourishing,175 ml,360 ml,640 ml,,210,370,730,,L'Oreal,,498,0
+508,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Total Repair 5,175 ml,360 ml,,,210,370,,,L'Oreal,,499,0
+509,Personel Care,Hair Care,Shampoo,L'Oreal Shampoo Paris Elvive Nutri Gloss Shine,175 ml,360 ml,,,210,370,,,L'Oreal,,500,0
+510,Personel Care,Hair Care,Shampoo,Clear Shampoo Black Shine for Men,200 ml,400 ml,,,210,350,,,Clear,,501,0
+511,Personel Care,Hair Care,Shampoo,Clear Shampoo Soft &Shiny for Women,200 ml,400 ml,90 ml,,210,350,100,,Clear,,502,0
+512,Personel Care,Hair Care,Shampoo,Dabur Vatika Shampoo Dandruff Guard,400 ml,,,,310,,,,Dabur,,503,0
+513,Personel Care,Hair Care,Shampoo,Dabur Vatika Shampoo Moisture Treatment,200 ml,400 ml,,,170,310,,,Dabur,,504,0
+514,Personel Care,Hair Care,Shampoo,Dabur Vatika Black seed Shampoo,400 ml,,,,345,,,,Dabur,,505,0
+515,Personel Care,Hair Care,Shampoo,English Anti Lice Shampoo,Medium,,,,65,,,,English,,506,0
+516,Personel Care,Hair Care,Shampoo,Medicam Plus 3 Shampoo,100 ml,200 ml,,,60,120,,,Medicam,,507,0
+517,Personel Care,Hair Care,Shampoo,Medicam Amla Shampoo,100 ml,,,,60,,,,Medicam,,508,0
+518,Personel Care,Skin Care,Skin Cream,Touchme Bleach Cream,28 gm,,,,190,,,,Touchme,,509,0
+519,Personel Care,Skin Care,Skin Cream,Medicam Bleach Cream,small,40 gm,,,120,220,,,Medicam,,510,0
+520,Personel Care,Skin Care,Skin Cream,Skin White Whitening Cream,50 gm,,,,85,,,,Skin White,,511,0
+521,Personel Care,Skin Care,Skin Cream,Forhan's Vanishing Cream,100 ml,60 ml,,,100,70,,,Forhan's,,512,0
+522,Personel Care,Skin Care,Skin Cream,Forhan's Silkona Moisturizing and Nourishing Cold Cream,60 ml,,,,85,,,,Forhan's,,513,0
+523,Personel Care,Skin Care,Skin Cream,English Ubtan Turmeric Cream,58 gm,,,,75,,,,English,,514,0
+524,Personel Care,Skin Care,Skin Cream,English Prickly Heat Cream,80 ml,,,,90,,,,English,,515,0
+525,Personel Care,Skin Care,Skin Cream,Garnier BB Cream Oil Control,40 ml,,,,650,,,,Garnier,,516,0
+526,Personel Care,Skin Care,Skin Cream,Medicam Bleach Cream,40 gm,,,,220,,,,Medicam,,517,0
+527,Personel Care,Skin Care,Skin Cream,English Cold Cream,Medium,Large,,,65,90,,,English,,518,0
+528,Personel Care,Skin Care,Skin Cream,Garnier BB Cream Classic Light,50 ml,,,,650,,,,Garnier,,519,1
+529,Personel Care,Skin Care,Skin Cream,Garnier BB Cream Classic Extra Light,50 ml,,,,650,,,,Garnier,,520,0
+530,Personel Care,Skin Care,Skin Cream,Stillman's Freckle Cream,28 gm,,,,250,,,,Stillman's,,521,0
+531,Personel Care,Skin Care,Skin Cream,Skin White Gold Beauty Cream,1 pc,,,,225,,,,Skin White,,522,0
+532,Personel Care,Skin Care,Skin Cream,Skin White Whitening Cream ,90 gm,,,,130,,,,Skin White,,523,0
+533,Personel Care,Skin Care,Skin Cream,Forhan's Lemon Cream,60 ml,100 ml,,,85,120,,,Forhan's,,524,0
+534,Personel Care,Skin Care,Skin Cream,Forhan's Silkona Advance Whitening Cream,40 ml,,,,300,,,,Forhan's,,525,0
+535,Personel Care,Skin Care,Skin Cream,Ponds Age Miracle Night Cream,50 gm,,,,875,,,,Ponds,,526,0
+536,Personel Care,Skin Care,Skin Cream,Garnier BB Cream Oil Control Light,40 ml,,,,650,,,,Garnier,,527,0
+537,Personel Care,Skin Care,Skin Cream,Fair & Lovely BB Cream,40 gm,18 gm,,,290,175,,,Fair & Lovely,,528,0
+538,Personel Care,Skin Care,Skin Cream,Garnier Skin Naturals Light & Radiant Day Fairness Cream,18 ml,,,,160,,,,Garnier,,529,0
+539,Personel Care,Skin Care,Skin Cream,Skin White Milk And Haldi Cream,83 ml,,,,100,,,,Skin White,,530,0
+540,Personel Care,Skin Care,Skin Cream,Stillman's Skin Bleach Cream ,28 gm,,,,250,,,,Stillman's,,531,0
+541,Personel Care,Skin Care,Skin Cream,Forhan's Formenz Fairness Cream,60 ml,,,,100,,,,Forhan's,,532,0
+542,Personel Care,Skin Care,Skin Cream,Fair & Lovely Winter Fairness Cold Face Cream,70 gm,,,,170,,,,Fair & Lovely,,533,0
+543,Personel Care,Skin Care,Skin Cream,Ponds Moisturizing Cold Cream,100 ml,55 ml,,,185,120,,,Ponds,,534,0
+544,Personel Care,Skin Care,Skin Cream,Olivia Bleach Cream ,30 gm,,,,55,,,,Olivia,,535,0
+545,Personel Care,Skin Care,Skin Cream,Fair & Lovely Max Fairness Cream For Men,50 gm,,,,120,,,,Fair & Lovely,,536,0
+546,Personel Care,Skin Care,Skin Cream,Fair & Lovely Cream Multi Vitamin Jara,70 gm,,,,165,,,,Fair & Lovely,,537,0
+547,Personel Care,Skin Care,Skin Cream,Dove Pure And Sensitive Shower Cream,250 ml,,,,270,,,,Dove,,538,0
+548,Personel Care,Skin Care,Skin Cream,Fair & Lovely Moisturizer Cream Multi Vitamin,25  gm,50 gm,,,75,130,,,Fair & Lovely,,539,0
+549,Personel Care,Skin Care,Face Wah $ Scrub,Fair & Lovely Facial Wash Multi Vitamin,50 gm,,,,115,,,,Fair & Lovely,,540,0
+550,Personel Care,Skin Care,Face Wah $ Scrub,Ponds Pure White Beauty Face Wash,100 gm,,,,280,,,,Ponds,,541,0
+551,Personel Care,Skin Care,Face Wah $ Scrub,Ponds Pimple Clear White Multi-Action Facial Wash,50 gm,100 gm,,,140,265,,,Ponds,,542,0
+552,Personel Care,Skin Care,Face Wah $ Scrub,Ponds Pure White Facial Foam,100 gm,50 gm,,,200,150,,,Ponds,,543,0
+553,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Men Power Light Intensive Fairness Face Wash,50 gm,,,,170,,,,Garnier,,544,0
+554,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Men Power White Double Action Face Wash,100 gm,,,,300,,,,Garnier,,545,0
+555,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Men Oil Clear Deep Cleansing Face Wash,50 gm,100 gm,,,170,300,,,Garnier,,546,0
+556,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Skin Naturals | Light & Radiant Fairness Face Wash,50 ml,100 ml,,,130,240,,,Garnier,,547,0
+557,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Men Acno Fight 6 in 1 Pimple Clearing Face Wash,100 gm,50 gm,,,300,170,,,Garnier,,548,0
+558,Personel Care,Skin Care,Face Wah $ Scrub,Garnier skin naturals apricot pure active exfoliating face scrub ,100 gm,,,,270,,,,Garnier,,549,0
+559,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Skin Naturals | Pure Active Neem Purifying Face Wash,100 ml,50 ml,,,240,130,,,Garnier,,550,0
+560,Personel Care,Skin Care,Face Wah $ Scrub,Golden Pearl New Daily Face Wash Herbal,75 ml,,,,75,,,,Golden Pearl,,551,0
+561,Personel Care,Skin Care,Face Wah $ Scrub,Garnier Men Power Light Sweat + Oil Control Fairness Mosturiser ,45 gm,,,,330,,,,Garnier,,552,0
+562,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Essentials Oil Control Toner,50 ml,,,,130,,,,Clean & Clear,,553,0
+563,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Essentials Moisturizer,50 ml,100 ml,,,130,230,,,Clean & Clear,,554,0
+564,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Deep Action Cleanser,100 ml,,,,275,,,,Clean & Clear,,555,0
+565,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Essentials Foaming Facial Wash,50 ml,,,,130,,,,Clean & Clear,,556,0
+566,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Face Wash Brightening Berry,50 ml,,,,130,,,,Clean & Clear,,557,0
+567,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Face Wash Energizing Lemon,50 ml,,,,130,,,,Clean & Clear,,558,0
+568,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Face Wash Purifying Apple,50 ml,,,,130,,,,Clean & Clear,,559,0
+569,Personel Care,Skin Care,Face Wah $ Scrub, Clean & Clear Pimple Clearing Face Wash,80 ml,,,,210,,,,Clean & Clear,,560,0
+570,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Skin Brightening Facial Wash,150 ML,,,,395,,,,Clean & Clear,,561,0
+571,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Shine Control Facial Wash,150 ML,,,,395,,,,Clean & Clear,,562,0
+572,Personel Care,Skin Care,Face Wah $ Scrub,Clean & Clear Morning Energy Skin Energizing Facial Wash,150 ml,,,,450,,,,Clean & Clear,,563,0
+573,Personel Care,Skin Care,Lotion & Mosturiser,Fair and Handsome Lotion Moisturizing,200 ml,,,,345,,,,Fair and Handsome,,564,0
+574,Personel Care,Skin Care,Lotion & Mosturiser,Fair and Handsome Lotion Xtra,200 ml,,,,345,,,,Fair and Handsome,,565,1
+575,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Body Lotion - Aloe Soothe,400 ml,,,,460,,,,Vaseline,,566,0
+576,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Body Lotion - Cocoa Glow,400 ml,100 ml,,,510,165,,,Vaseline,,567,0
+577,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Total Moisture Lotion,400 ml,,,,400,,,,Vaseline,,568,0
+578,Personel Care,Skin Care,Lotion & Mosturiser,Ponds Moisturising Lotion,200 ml,100 ml,,,190,115,,,Ponds,,569,0
+579,Personel Care,Skin Care,Lotion & Mosturiser,Nivea Nourishing Body Lotion,125 ml,250 ml,400 ml,,235,330,490,,Nivea,,570,0
+580,Personel Care,Skin Care,Lotion & Mosturiser,Nivea Body Lotion Express Hydration Lotion,250 ml,,,,295,,,,Nivea,,571,0
+581,Personel Care,Skin Care,Lotion & Mosturiser,Dove Firming Nourishing Body Lotion,250 ml,,,,250,,,,Dove,,572,0
+582,Personel Care,Skin Care,Lotion & Mosturiser,Dove Firming Nourishing Body Lotion,200 ml,,,,250,,,,Dove,,573,0
+583,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Intensive Care Aloe Soothe Lotion,100 ml,400 ml,,,150,460,,,Vaseline,,574,0
+584,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Intensive Care Cocoa Radiant Lotion ,100 ml,200 ml,,,120,290,,,Vaseline,,575,0
+585,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Intensive Care Deep Restore Lotion ,100 ml,,,,120,,,,Vaseline,,576,0
+586,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Lotion Intensive Care Deep Restore,100 ml,200 ml,400 ml,,150,265,460,,Vaseline,,577,0
+587,Personel Care,Skin Care,Lotion & Mosturiser,Vaseline Lotion Healthy White Lightening,100 ml,200 ml,400 ml,,150,265,460,,Vaseline,,578,0
+588,Personel Care,Skin Care,Lotion & Mosturiser,Dove Beauty Waschlotion Hand Wash,250 ml,,,,180,,,,Dove,,579,1
+589,Personel Care,Skin Care,Lotion & Mosturiser,Saeed Ghani Honey & Almond Lotion,100 ml,,,,100,,,,Saeed Ghani,,580,0
+590,Personel Care,Skin Care,Lotion & Mosturiser,Dove Silky Nourishment Body Lotion,250 ml,,,,250,,,,Dove,,581,0
+591,Personel Care,Skin Care,Lotion & Mosturiser,Dove Purely Pampering Body Lotion,250 ml,,,,250,,,,Dove,,582,0
+592,Personel Care,Skin Care,Lotion & Mosturiser,Dove Coconut Deep Care Body Lotion,250 ml,,,,250,,,,Dove,,583,0
+593,Personel Care,Skin Care,Lotion & Mosturiser,Dove Essential Nourishing Body Lotion,250 ml,,,,250,,,,Dove,,584,0
+594,Personel Care,Skin Care,Lotion & Mosturiser,Dove Intensive Body Lotion ,250 ml,,,,250,,,,Dove,,585,0
+595,Personel Care,Skin Care,Lotion & Mosturiser,Saeed Ghani Sandal Lotion,100 ml,,,,100,,,,Saeed Ghani,,586,0
+596,Personel Care,Skin Care,Lotion & Mosturiser,Nivea Body Lotion Intensive Moisture,200 ML,,,,260,,,,Nivea,,587,0
+597,Personel Care,Skin Care,Lotion & Mosturiser,Nivea Body Lotion Uv Whitening,200 ml,,,,260,,,,Nivea,,588,0
+598,Personel Care,Skin Care,Lotion & Mosturiser,Nivea Body Lotion Smooth Sensation Moisture Care,250 ml,,,,310,,,,Nivea,,589,0
+599,Personel Care,Skin Care,Lotion & Mosturiser,L'Oreal Paris De Revitalift Laser X3 Lotion Night,125 ml,,,,3000,,,,L'Oreal,,590,0
+600,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Dettol Liquid Hand Wash - Skin Care,150 ml,,,,100,,,,Dettol,,591,0
+601,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Safeguard Liquid Hand Wash Pure White,250 ml,,,,160,,,,Safeguard,,592,0
+602,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Safeguard Liquid Hand Wash Lemon Fresh,250 ml,,,,160,,,,Safeguard,,593,0
+603,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Mild Care Hand Wash,140 ml,,,,100,,,,Lifebuoy,,594,0
+604,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Dettol Liquid Hand Wash - Original,150 ml,,,,100,,,,Dettol,,595,0
+605,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Hand Wash Kitchen Fresh,140 ml,220 ml,,,100,175,,,Lifebuoy,,596,0
+606,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Capri Hand wash Strawberry Softeners,250 ml,,,,175,,,,Capri,,597,1
+607,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Capri Hand Wash Aloe Nurture Extracts,250 ml,,,,210,,,,Capri,,598,1
+608,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Total Liquid Hand Wash,1000 ml,,,,600,,,,Lifebuoy,,599,0
+609,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Dove Fine Silk Hand Wash,250 ml,,,,180,,,,Dove,,600,0
+610,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Dove Beauty Waschlotion Hand Wash,250 ml,,,,180,,,,Dove,,601,0
+611,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Total Hand Wash Bottle,140 ml,220 ml,,,100,175,,,Lifebuoy,,602,0
+612,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Hand Wash Active Fresh,140 ml,220 ml,,,100,175,,,Lifebuoy,,603,0
+613,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Dettol Hand Sanitizer,50 ml,,,,205,,,,Dettol,,604,0
+614,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Immunity Boosting Hand Sanitizer Total 10,50 ml,,,,150,,,,Lifebuoy,,605,0
+615,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Immunity Boosting Hand Sanitizer Care,50 ml,,,,150,,,,Lifebuoy,,606,0
+616,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Lifebuoy Immunity Boosting Hand Sanitizer Lemon Fresh,50 ml,,,,150,,,,Lifebuoy,,607,1
+617,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Cool & Cool Hand Sanitizer Lemon,60 ml,,,,200,,,,Cool & Cool,,608,1
+618,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Cool & Cool Hand Sanitizer Ocean,60 ml,,,,200,,,,Cool & Cool,,609,1
+619,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Cool & Cool Hand Sanitizer Fresh Spiril,60 ml,,,,200,,,,Cool & Cool,,610,1
+620,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Cool & Cool Hand Sanitizer Aqua Fresh,60 ml,,,,200,,,,Cool & Cool,,611,1
+621,Personel Care,Hand Wash & Sanitizers,Lotion & Mosturiser,Cool & Cool Hand Sanitizer Flora Fresh,60 ml,,,,200,,,,Cool & Cool,,612,1
+622,Personel Care,Bathing Needs,Soap,Dettol Soap Skin Care,65 gm,145 gm,100 gm,,35,70,50,,Dettol,,613,0
+623,Personel Care,Bathing Needs,Soap,Lux Velvet Touch Soap,150 gm,110 gm,,,55,45,,,LUX,,614,0
+625,Personel Care,Bathing Needs,Soap,Palmolive Naturals Moisture Care,75 gm,115 gm,155 gm,,30,45,55,,Palmolive,,615,0
+626,Personel Care,Bathing Needs,Soap,Safeguard Lemon Fresh,70 gm,115 gm,150 gm,,35,50,60,,Safeguard,,616,0
+627,Personel Care,Bathing Needs,Soap,Dettol Anti Bacterial Original Soap,65 gm,100 gm,145 gm,,35,50,70,,Dettol,,617,0
+628,Personel Care,Bathing Needs,Soap,Lux Skin Cleansing Bar Purple Lotus,150 gm,115 gm,75 gm,,60,45,35,,LUX,,618,0
+629,Personel Care,Bathing Needs,Soap,Lifebuoy Skin Cleansing Bar Nature,115 gm,75 gm,,,35,25,,,Lifebuoy,,619,0
+630,Personel Care,Bathing Needs,Soap,Lux Skin Cleansing Bar Strawberry & Cream,150 gm,115 gm,75 gm,,60,45,35,,LUX,,620,0
+631,Personel Care,Bathing Needs,Soap,Tibet Deluxe Soap,75 gm,,,,25,,,,Tibet,,621,0
+632,Personel Care,Bathing Needs,Soap,Safeguard Pure White Soap,115 gm,150 gm,,,50,60,,,Safeguard,,622,0
+633,Personel Care,Bathing Needs,Soap,Imperial Leather Classic Soap,125 gm,175 gm,115 gm,,50,80,40,,Imperial,,623,0
+634,Personel Care,Bathing Needs,Soap,Dove Original Bar White ,135 gm,75 gm,,,95,65,,,Dove,,624,0
+635,Personel Care,Bathing Needs,Soap,Dettol Soap Re-Energize,100 gm,65 gm,145 gm,,50,35,70,,Dettol,,625,0
+636,Personel Care,Bathing Needs,Soap,Dettol Soap Cool,145 gm,65 gm,,,70,35,,,Dettol,,626,0
+637,Personel Care,Bathing Needs,Soap,Lifebuoy Skin Cleansing Bar Total,115 gm,75 gm,,,35,25,,,Lifebuoy,,627,0
+638,Personel Care,Bathing Needs,Soap,Dove Bar Pink,135 gm,,,,95,,,,Dove,,628,0
+639,Personel Care,Bathing Needs,Soap,Lifebuoy Lemon Fresh Bar,115 gm,150 gm,,,35,45,,,Lifebuoy,,629,0
+641,Personel Care,Bathing Needs,Soap,Lifebuoy Skin Cleansing Bar Care,115 gm,150 gm,75 gm,,35,45,25,,Lifebuoy,,630,0
+642,Personel Care,Bathing Needs,Soap,Capri Purifying Green Tea Soap,115 gm,,,,45,,,,Capri,,631,1
+644,Personel Care,Bathing Needs,Soap,Palmolive Naturals Luxurious Softness,155 gm,115 gm,,,55,45,,,Palmolive,,632,0
+645,Personel Care,Bathing Needs,Soap,Lifebuoy Skin Cleansing Bar Cool Fresh,115 gm,,,,35,,,,Lifebuoy,,633,0
+647,Personel Care,Bathing Needs,Soap,Lux Skin Cleansing Bar Fresh Splash,75 gm,115 gm,,,35,45,,,LUX,,634,0
+648,Personel Care,Bathing Needs,Soap,Pears With Mint,125 gm,,,,100,,,,Pears,,635,0
+649,Personel Care,Bathing Needs,Soap,Pears Gentle Care,125 gm,,,,100,,,,Pears,,636,0
+650,Personel Care,Bathing Needs,Soap,Palmolive Naturals Balanced & MildÊ,115 gm,155 gm,75 gm,,45,55,30,,Palmolive,,637,0
+651,Personel Care,Bathing Needs,Soap,Dove Bar Fresh,135 gm,,,,95,,,,Dove,,638,0
+652,Personel Care,Bathing Needs,Soap,Lux Skin Cleansing Bar Nature Pure,115 gm,,,,35,,,,LUX,,639,1
+653,Personel Care,Bathing Needs,Soap,Pears Oil Clear,125 gm,,,,100,,,,Pears,,640,0
+654,Personel Care,Bathing Needs,Soap,Palmolive Naturals Refreshing Moisture,115 gm,155 gm,,,45,55,,,Palmolive,,641,0
+655,Personel Care,Bathing Needs,Soap,Dettol Gold Daily CleanÊ,97 gm,140 gm,,,60,85,,,Dettol,,642,0
+656,Personel Care,Bathing Needs,Soap,Palmolive Naturals Nourishing Sensation ,115 gm,155 gm,,,45,55,,,Palmolive,,643,0
+660,Personel Care,Bathing Needs,Soap,Dettol Anti Bacterial Lasting Fresh Soap,100 gm,145 gm,65 gm,,50,70,35,,Dettol,,644,0
+661,Personel Care,Bathing Needs,Soap,Dettol Anti Bacterial Cool Soap,100gm,,,,50,,,,Dettol,,645,0
+662,Personel Care,Bathing Needs,Soap,Capri Nourishing Peach SoapÊ,115 gm,,,,45,,,,Capri,,646,0
+664,Personel Care,Bathing Needs,Soap,Dettol Gold Classic Clean,140 gm,97 gm,,,85,60,,,Dettol,,647,0
+665,Personel Care,Bathing Needs,Soap,Safeguard Ultra Aloe Vera,115 gm,,,,50,,,,Safeguard,,648,0
+666,Personel Care,Bathing Needs,Soap,Capri Vitalizing Water Lily Soap,115 gm,,,,45,,,,Capri,,649,0
+667,Personel Care,Bathing Needs,Soap,Dettol Anti Bacterial Radiance Soap,145 gm,100 gm,,,70,50,,,Dettol,,650,0
+668,Personel Care,Bathing Needs,Soap,Dettol Deep Cleanse Soap,145 gm,,,,70,,,,Dettol,,651,0
+669,Personel Care,Bathing Needs,shower gel,Dove Pure And Sensitive Shower Cream,250ml,,,,270,,,,Dove,,652,0
+670,Personel Care,Bathing Needs,shower gel,Lux Shower Gel White Impress NLP,220ml,,,,200,,,,LUX,,653,0
+671,Personel Care,Bathing Needs,shower gel,Lux Shower Gel Soft Touch NLP,220 ml,,,,200,,,,LUX,,654,0
+672,Personel Care,Bathing Needs,shower gel,Fa Active Sport Shower Gel,250ml,,,,200,,,,Fa,,655,0
+673,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Dark Temptation,250ml,,,,175,,,,AXE,,656,0
+674,Personel Care,Bathing Needs,shower gel,Palmolive Aroma Therapy Sensual Shower Gel,500ml,,,,270,,,,Palmolive,,657,0
+675,Personel Care,Bathing Needs,shower gel,Fa Shower Cream Yogurt Vanilla Honey,250ml,,,,200,,,,Fa,,658,0
+676,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Mature,250ml,,,,175,,,,AXE,,659,0
+677,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Sport Blast,250ml,,,,175,,,,AXE,,660,0
+678,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Marine,250ml,,,,175,,,,AXE,,661,0
+679,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Gold TemptationÊ,250ml,,,,175,,,,AXE,,662,0
+680,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Black NightÊ,250ml,,,,175,,,,AXE,,663,0
+681,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Deep SpaceÊ,250ml,,,,175,,,,AXE,,664,0
+682,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Deep SpaceÊ,250ml,,,,175,,,,AXE,,665,0
+683,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Anarchy,250ml,,,,175,,,,AXE,,666,0
+684,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Anti Hangover,250ml,,,,175,,,,AXE,,667,0
+685,Personel Care,Bathing Needs,shower gel,Axe Shower Gel Alaska,250ml,,,,175,,,,AXE,,668,0
+686,Personel Care,Bathing Needs,shower gel,Axe Peace Refreshing Shower Gel,250ml,,,,225,,,,AXE,,669,0
+687,Personel Care,Bathing Needs,shower gel,Axe Peace Refreshing Shower Gel,250ml,,,,225,,,,AXE,,670,0
+688,Personel Care,Bathing Needs,shower gel,Axe Apollo Refreshing Shower Gel,250ml,,,,175,,,,AXE,,671,0
+689,Personel Care,Bathing Needs,shower gel,Axe Africa Refreshing Shower Gel,250ml,,,,175,,,,AXE,,672,0
+690,Personel Care,Bathing Needs,shower gel,Adidas Victory League Shower Gel,250ml,,,,215,,,,Adidas,,673,0
+691,Personel Care,Bathing Needs,shower gel,Adidas Team Force Shower GelÊ,250ml,,,,175,,,,Adidas,,674,0
+692,Personel Care,Bathing Needs,shower gel,Adidas Star Edition Hair & Body Shower Gel,250ml,,,,175,,,,Adidas,,675,0
+693,Personel Care,Bathing Needs,shower gel,Adidas Special Edition Shower GelÊ,250ml,,,,175,,,,Adidas,,676,0
+694,Personel Care,Bathing Needs,shower gel,Adidas Hydra Sport 3 Shower GelÊ,250ml,,,,215,,,,Adidas,,677,0
+695,Personel Care,Bathing Needs,shower gel,Adidas For Women Shower Gel,250ml,,,,215,,,,Adidas,,678,0
+696,Personel Care,Bathing Needs,shower gel,Adidas Dynamic Pulse Shower Gel,250ml,,,,215,,,,Adidas,,679,0
+697,Personel Care,Bathing Needs,shower gel,Adidas Ice Dive Hair & Body Shower Gel,250ml,,,,175,,,,Adidas,,680,0
+698,Personel Care,Bathing Needs,shower gel,Adidas Happy Hair & Body Shower Gel,250ml,,,,215,,,,Adidas,,681,0
+699,Personel Care,Bathing Needs,shower gel,Adidas Hair Face Shower GelÊ,250ml,,,,175,,,,Adidas,,682,0
+700,Personel Care,Bathing Needs,shower gel,Adidas Extreme Power Hair & Body Shower Gel,250ml,,,,175,,,,Adidas,,683,0
+701,Personel Care,Bathing Needs,shower gel,Adidas Deep Energy Hair & Body Shower Gel,250ml,,,,175,,,,Adidas,,684,0
+702,Personel Care,Bathing Needs,Body Wash,Lux Body Wash White Impress For Visibly Fair Skin Imported,220ml,,,,200,,,,LUX,,685,0
+703,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Magical Spell With Free Lofa,220ml,,,,200,,,,LUX,,686,0
+704,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Soft Touch With Free Lofa,220 ml,,,,200,,,,LUX,,687,0
+705,Personel Care,Bathing Needs,Body Wash,Lux Body Wash White Impress With Free Lofa,220ml,,,,200,,,,LUX,,688,0
+706,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Magical Spell For a Long Lasting Imported,250ml,500ml,,,200,395,,,LUX,,689,1
+707,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Velvet Touch For Noticeably Smooth Skin Imported,250ml,500 ml,,,200,395,,,LUX,,690,0
+708,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Soft Touch For Noticeably Smooth Skin Imported,250ml,500ml,,,200,395,,,LUX,,691,0
+709,Personel Care,Bathing Needs,Body Wash,Lux Body Wash Aqua Sparkle For Invigorated Refreshed Skin Imported,250ml,,,,200,,,,LUX,,692,0
+710,Personel Care,Women Care,Sanitary Pads,Always Night,6 pads,,,,140,,,,Always,,693,0
+711,Personel Care,Women Care,Sanitary Pads,Always Ultra Thin Long,16 pads,,,,235,,,,Always,,694,0
+712,Personel Care,Women Care,Sanitary Pads,Always Maxi Thick Value Pack,16 pads,,,,235,,,,Always,,695,0
+713,Personel Care,Women Care,Sanitary Pads,Always Diamond Extra Long ,14 pads,,,,285,,,,Always,,696,0
+714,Personel Care,Women Care,Sanitary Pads,Always Diamond Thin,8 pads,,,,155,,,,Always,,697,1
+715,Personel Care,Women Care,Sanitary Pads,Always Extra Long Diamond Thin,7 pads,,,,155,,,,Always,,698,0
+716,Personel Care,Women Care,Sanitary Pads,Always Panty Liner Scented,20 pc,,,,350,,,,Always,,699,0
+717,Personel Care,Women Care,Sanitary Pads,Always Liner Normal,40 pc,,,,380,,,,Always,,700,0
+718,Personel Care,Women Care,Sanitary Pads,Always Panty Liner Normal,20 pc,,,,200,,,,Always,,701,0
+719,Personel Care,Women Care,Sanitary Pads,Always Normal Scented Liner,40 pc,,,,380,,,,Always,,702,0
+720,Personel Care,Women Care,Sanitary Pads,Always Long Maxi Thick,9 pads,18 pads,,,125,230,,,Always,,703,0
+721,Personel Care,Women Care,Sanitary Pads,Always Long ,8 pads,,,,125,,,,Always,,704,0
+722,Personel Care,Women Care,Sanitary Pads,Always Long Diamond Thin,16 pads,,,,270,,,,Always,,705,0
+723,Personel Care,Women Care,Sanitary Pads,Always Long Diamond Thin box,1 pc,,,,285,,,,Always,,706,0
+724,Personel Care,Women Care,Sanitary Pads,Always Extra Long ,7 pads,,,,125,,,,Always,,707,0
+725,Personel Care,Women Care,Sanitary Pads,Always Panty Liners Everyday,16 pads,,,,170,,,,Always,,708,0
+726,Personel Care,Women Care,Hair Removal,Veet Wax Strips For Normal Skin ,12 pc,,,,260,,,,Veet,,709,0
+727,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Normal Skin,50 gm,25 gm,100 gm,,170,85,300,,Veet,,710,0
+728,Personel Care,Women Care,Hair Removal,Veet Wax Strips For Sensitive Skin,12 pc,,,,260,,,,Veet,,711,0
+729,Personel Care,Women Care,Hair Removal,Veet Dry Skin Hair Removal Lotion,40 gm,80 gm,,,95,180,,,Veet,,712,1
+730,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Sensitive Skin,50 gm,100 gm,25 gm,,170,300,85,,Veet,,713,0
+731,Personel Care,Women Care,Hair Removal,Veet Wax Strips For Dry Skin ,12 pc,,,,260,,,,Veet,,714,0
+732,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Dry Skin,50 gm,25 gm,100 gm,,170,85,300,,Veet,,715,0
+733,Personel Care,Women Care,Hair Removal,EU Hair Remover Cream,100 ml,75 ml,,,150,120,,,EU,,716,0
+734,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Brightening Normal,50 gm,25 gm,100 gm,,175,85,350,,Veet,,717,0
+735,Personel Care,Women Care,Hair Removal,EU Hair Removing Lotion,100 ml,50 ml,,,120,70,,,EU,,718,0
+736,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Brightening Sensitive,50 gm,25 gm,100 gm,,175,85,350,,Veet,,719,0
+737,Personel Care,Women Care,Hair Removal,EU Wax Strips Cucumber,10 pc,,,,190,,,,EU,,720,1
+738,Personel Care,Women Care,Hair Removal,EU Wax Strips Lily,10 pc,,,,190,,,,EU,,721,0
+739,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Naturals (Normal to Dry),100 gm,,,,330,,,,Veet,,722,0
+740,Personel Care,Women Care,Hair Removal,Veet Normal Skin Hair Removal Lotion,40 gm,80 gm,,,95,180,,,Veet,,723,1
+741,Personel Care,Women Care,Hair Removal, EU Wax Strips Chocolate ,10 pc,,,,190,,,,EU,,724,1
+742,Personel Care,Women Care,Hair Removal,Veet Hair Removal Cream Naturals (Sensitive),100 gm,,,,330,,,,Veet,,725,0
+743,Personel Care,Women Care,Hair Removal,Care Hair Remover Lotion ,40 ml,100 ml,,,50,70,,,Care,,726,0
+744,Personel Care,Women Care,Hair Removal,Care Hair Remover Cream,100 gm,,,,150,,,,Care,,727,0
+745,Personel Care,Shaving Needs,Razor & Blades,Gillette Blue 3 Disposable Razor,1 pc,,,,205,,,,Gillete,,728,0
+746,Personel Care,Shaving Needs,Razor & Blades,Gillette Blue 3,1 pc,,,,85,,,,Gillete,,729,0
+747,Personel Care,Shaving Needs,Razor & Blades,Gillette Blue 2 Disposable Razor,1 pc,,,,40,,,,Gillete,,730,0
+748,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Proglide Manual Razor,1 PC,,,,625,,,,Gillete,,731,0
+749,Personel Care,Shaving Needs,Razor & Blades,Gillette Vector Razor,1 PC,,,,175,,,,Gillete,,732,0
+750,Personel Care,Shaving Needs,Razor & Blades,Gillette Blue 2 Plus,1 pc,,,,50,,,,Gillete,,733,0
+751,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Proglide Power Razor,1 pc,,,,1200,,,,Gillete,,734,0
+752,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Red Razor,1 pc,,,,230,,,,Gillete,,735,0
+753,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Power Razor,1 pc,,,,1050,,,,Gillete,,736,0
+754,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Razor ,1 pc,,,,285,,,,Gillete,,737,0
+755,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Power Razor ,1 pc,,,,550,,,,Gillete,,738,0
+756,Personel Care,Shaving Needs,Razor & Blades,Bic Body Razor,1 pc,,,,25,,,,BIC,,739,0
+757,Personel Care,Shaving Needs,Razor & Blades,Gillette 7 O'Clock Sharp Edge Blades,1 pack,,,,30,,,,Gillete,,740,0
+758,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Proglide Manual,4 blades,,,,1560,,,,Gillete,,741,0
+759,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Sensitive Blades,4 blades,,,,900,,,,Gillete,,742,0
+760,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Sensitive blades,2 blades,,,,540,,,,Gillete,,743,0
+761,Personel Care,Shaving Needs,Razor & Blades,Gillette 7 O'Clock Super Stainless,1 pack,,,,35,,,,Gillete,,744,0
+762,Personel Care,Shaving Needs,Razor & Blades,Gillette Fusion Proglide Manual Blades,2 blades,,,,860,,,,Gillete,,745,0
+763,Personel Care,Shaving Needs,Razor & Blades,Gillette Sensor Excel Cartridges,5's,,,,605,,,,Gillete,,746,0
+764,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Cart,2's,,,,450,,,,Gillete,,747,0
+765,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Cart,4's,,,,775,,,,Gillete,,748,0
+766,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Turbo Cart ,4's,,,,900,,,,Gillete,,749,0
+767,Personel Care,Shaving Needs,Razor & Blades,Gillette Mach 3 Turbo Cart,2's,,,,540,,,,Gillete,,750,0
+768,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Foam Menthol,200 ml,,,,180,,,,Gillete,,751,0
+769,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Foam Lemon & Lime ,200 ml,,,,200,,,,Gillete,,752,0
+770,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Fusion Proglide Sensitive Gel,200 ml,,,,330,,,,Gillete,,753,0
+771,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Series Sensitive Skin Gel ,200 ml,,,,250,,,,Gillete,,754,0
+772,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Foamy Regular Original,300 ml,,,,210,,,,Gillete,,755,0
+773,Personel Care,Shaving Needs,Shaving Cream & Gel,Touchme Shaving Cream,75 gm,,,,70,,,,Touchme,,756,0
+774,Personel Care,Shaving Needs,Shaving Cream & Gel,Medicam Shaving Cream ,85 gm,,,,70,,,,Medicam,,757,0
+775,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Foamy Sensitive Skin ,200 ml,,,,250,,,,Gillete,,758,0
+776,Personel Care,Shaving Needs,Shaving Cream & Gel,Gillette Series Gel Sensitive,75 ml,,,,160,,,,Gillete,,759,0
+777,Personel Care,Shaving Needs,After Shave,Gillette Series After Shave Splash Cool Wave,100 ml,,,,275,,,,Gillete,,760,0
+778,Personel Care,Shaving Needs,After Shave,Adidas After Shave Revitalizing Fresh Impact ,100 ml,,,,385,,,,Adidas,,761,0
+779,Personel Care,Shaving Needs,After Shave,Adidas After Shave Revitalising Ice Dive,100 ml,,,,385,,,,Adidas,,762,0
+780,Personel Care,Shaving Needs,After Shave,Adidas After Shave Revitalising Sport Field,100 ml,,,,385,,,,Adidas,,763,0
+781,Personel Care,Shaving Needs,After Shave,Adidas After Shave Revitalising Team Force,100 ml,,,,385,,,,Adidas,,764,0
+782,Personel Care,Shaving Needs,After Shave,Axe After Shave Marine,100 ml,,,,285,,,,AXE,,765,0
+783,Personel Care,Shaving Needs,After Shave,Axe After Shave Peace ,100 ml,,,,285,,,,AXE,,766,0
+784,Personel Care,Shaving Needs,After Shave,Axe After Shave Excite,100 ml,,,,285,,,,AXE,,767,0
+785,Personel Care,Shaving Needs,After Shave,Axe After Shave Dark Temptation,100 ml,,,,285,,,,AXE,,768,0
+786,Personel Care,Shaving Needs,After Shave,Axe After Shave Black,100 ml,,,,285,,,,AXE,,769,0
+787,Personel Care,Shaving Needs,After Shave,Axe After Shave Apollo ,100 ml,,,,285,,,,AXE,,770,0
+788,Personel Care,Shaving Needs,After Shave,Axe After Shave Alaska ,100 ml,,,,285,,,,AXE,,771,0
+789,Personel Care,Fragrances,Men Deodorant,Adidas Pure Game Deodorant Body Spray,150 ml,,,,215,,,,Adidas,,772,0
+790,Personel Care,Fragrances,Men Deodorant,Adidas Ice Dive Deodorant Body Spray,150 ml,,,,340,,,,Adidas,,773,0
+791,Personel Care,Fragrances,Men Deodorant,Adidas Deep Energy Body Spray,150 ml,,,,165,,,,Adidas,,774,0
+792,Personel Care,Fragrances,Men Deodorant,Adidas Dynamic Pulse Deodorant Body Spray,150 ml,,,,165,,,,Adidas,,775,0
+793,Personel Care,Fragrances,Men Deodorant,Adidas Team Force Body Spray ,150 ml,,,,165,,,,Adidas,,776,0
+794,Personel Care,Fragrances,Men Deodorant,Adidas Cool & Dry Sport Energy Body Spray.,150 ml,,,,165,,,,Adidas,,777,0
+795,Personel Care,Fragrances,Men Deodorant,Adidas Dynamin Pulse Body Spray,150 ml,,,,165,,,,Adidas,,778,0
+796,Personel Care,Fragrances,Men Deodorant,Adidas Ice Dive Body Spray,150 ml,,,,170,,,,Adidas,,779,0
+797,Personel Care,Fragrances,Men Deodorant,Adidas Extreme Power Body Spray,150 ml,,,,275,,,,Adidas,,780,0
+798,Personel Care,Fragrances,Men Deodorant,Adidas Fresh Cool & Dry Body Spray,150 ml,,,,340,,,,Adidas,,781,0
+799,Personel Care,Fragrances,Men Deodorant,Adidas New Deep Energy Body Spray,150 ml,,,,340,,,,Adidas,,782,0
+800,Personel Care,Fragrances,Men Deodorant,Adidas New Ice Dive Body Spray ,150 ml,,,,340,,,,Adidas,,783,0
+801,Personel Care,Fragrances,Men Deodorant,Adidas Victory league Body Spray,150 ml,,,,340,,,,Adidas,,784,0
+802,Personel Care,Fragrances,Men Deodorant,Adidas Get Ready for Him Body Spray,150 ml,,,,215,,,,Adidas,,785,0
+803,Personel Care,Fragrances,Men Deodorant,Adidas Champions League Body Spray,150 ml,,,,165,,,,Adidas,,786,0
+804,Personel Care,Fragrances,Men Deodorant,Fogg Marco Black Body Spray,120 ml,,,,325,,,,Fogg,,787,0
+805,Personel Care,Fragrances,Men Deodorant,Fogg Royal Blue Body Spray ,120 ml,,,,325,,,,Fogg,,788,0
+806,Personel Care,Fragrances,Men Deodorant,Fogg Napoleon Red Body Spray,120 ml,,,,325,,,,Fogg,,789,0
+807,Personel Care,Fragrances,Men Deodorant,Axe Alaska Body Spray,150 ml,,,,175,,,,AXE,,790,0
+808,Personel Care,Fragrances,Men Deodorant,Axe Sport Blast Body Spray,150 ml,,,,175,,,,AXE,,791,0
+809,Personel Care,Fragrances,Men Deodorant,Axe Marine Body Spray ,150 ml,,,,175,,,,AXE,,792,0
+810,Personel Care,Fragrances,Men Deodorant,Axe Twist It Peace Body Spray,150 ml,,,,175,,,,AXE,,793,0
+811,Personel Care,Fragrances,Men Deodorant,Axe Excite Dry Body Spray,150 ml,,,,175,,,,AXE,,794,0
+812,Personel Care,Fragrances,Men Deodorant,Axe New Apollo Dry Body Spray,150 ml,,,,175,,,,AXE,,795,0
+813,Personel Care,Fragrances,Men Deodorant,Axe Dry Dark Temptation Body Spray,150 ml,,,,210,,,,AXE,,796,0
+814,Personel Care,Fragrances,Men Deodorant,Axe Musk Body Spray,150 ml,,,,175,,,,AXE,,797,0
+815,Personel Care,Fragrances,Men Deodorant,Axe Anti-Hangover Body Spray,150 ml,,,,175,,,,AXE,,798,0
+816,Personel Care,Fragrances,Men Deodorant,Axe Anarchy Body Spray,150 ml,,,,175,,,,AXE,,799,0
+817,Personel Care,Fragrances,Women Deodorant,She Is Sexy Women Body Spray ,150 ml,,,,165,,,,She,,800,0
+818,Personel Care,Fragrances,Women Deodorant,She Is Fun Women Body Spray,150 ml,,,,165,,,,She,,801,0
+819,Personel Care,Fragrances,Women Deodorant,She Is a Clubber Women Body Spray,150 ml,,,,165,,,,She,,802,0
+820,Personel Care,Fragrances,Women Deodorant,She Is Sweet Women Body Spray ,150 ml,,,,165,,,,She,,803,0
+821,Personel Care,Fragrances,Women Deodorant,Dove Original Roll On,50 ml,,,,150,,,,Dove,,804,0
+822,Personel Care,Fragrances,Women Deodorant,Dove Invisible Dry Roll On,50 ml,,,,150,,,,Dove,,805,0
+823,Personel Care,Fragrances,Women Deodorant,Dove Go Fresh Roll On,50 ml,,,,150,,,,Dove,,806,0
+824,Personel Care,Fragrances,Women Deodorant,Adidas Fruity Rhythm Body Spray,150 ml,,,,215,,,,Adidas,,807,0
+825,Personel Care,Fragrances,Women Deodorant,Adidas Floral Dream Deodorant,150 ml,,,,250,,,,Adidas,,808,0
+826,Personel Care,Fragrances,Women Deodorant,Adidas Natural Vitality Deodorant,150 ml,,,,215,,,,Adidas,,809,0
+827,Personel Care,Fragrances,Women Deodorant,She Is Cool Women Body Spray,150 ml,,,,165,,,,She,,810,0
+828,Household Care,Cleaning,Dish washing,Lemon Max Dish Wash Bar,190 gm,95 gm,345 gm,285 gm x 2,22,12,40,60,Lemon Max,,811,0
+829,Household Care,Cleaning,Dish washing,Lemon Max Dish washing Paste Green,200 gm,400 gm,,,50,90,,,Lemon Max,,812,0
+830,Household Care,Cleaning,Dish washing,Lemon Max Dish wash Liquid Anti Bacterial Pouch,540 ml,,,,100,,,,Lemon Max,,813,0
+831,Household Care,Cleaning,Dish washing,Lemon Max Dish washing Paste Lime,200 gm,,,,50,,,,Lemon Max,,814,0
+832,Household Care,Cleaning,Dish washing,Vim Soap Anti-Germ Dish Wash BarÊ,90 gm,285 gm,,,13,37,,,Vim,,815,0
+835,Household Care,Cleaning,Dish washing,Lemon Max Dishwash LiquidÊ,750ml,475ml,275 ml,,170,120,85,,Lemon Max,,816,0
+836,Household Care,Cleaning,Dish washing,Vim Dish Wash Gel Lemon PouchÊ,140ml,,,,65,,,,Vim,,817,0
+837,Household Care,Cleaning,Dish washing,Vim Dishwash Lemon ScourerÊ,900 gm,450 gm,,,70,55,,,Vim,,818,0
+838,Household Care,Cleaning,Dish washing,Lemon Max Ultra Dishwash Liquid Green,250ml,,,,135,,,,Lemon Max,,819,0
+839,Household Care,Cleaning,Dish washing,Lemon Max Ultra Dish Wash Liquid Yellow),250ml,,,,135,,,,Lemon Max,,820,0
+841,Household Care,Cleaning,Dish washing,Vim Dishwash Liquid Lime,500ml,250 ml,,,220,140,,,Vim,,821,0
+842,Household Care,Cleaning,Dish washing,Lemon Max Dishwashing Powder,450gm,900 gm,,,55,75,,,Lemon Max,,822,0
+845,Household Care,Cleaning,Dish washing,Scotch Brite Sponge _ Small,1 pc,,,,40,,,,Scotch Brite,,823,0
+846,Household Care,Cleaning,Dish washing,Scotch Brite Sponge Wipes _ 3 Pieces,3 pc,,,,185,,,,Scotch Brite,,824,1
+847,Household Care,Cleaning,Dish washing,Vim Lemon Bar,95 gm,285 gm,185 gm,,12,40,22,,Vim,,825,0
+848,Household Care,Cleaning,Dish washing,Scotch Brite Scrub Sponge _ 5 IN 1,1 pc,,,,290,,,,Scotch Brite,,826,0
+849,Household Care,Cleaning,Dish washing,Scotch Brite Nail Saver Scrub Sponge,1 pc,,,,55,,,,Scotch Brite,,827,0
+850,Household Care,Cleaning,Dish washing,Scotch Brite Stainless Steel Spiral Jumbo,1 pc,,,,75,,,,Scotch Brite,,828,0
+851,Household Care,Cleaning,Dish washing,Scotch Brite Stainless Steel Spiral ,1 pc,,,,40,,,,Scotch Brite,,829,0
+852,Household Care,Cleaning,Dish washing,Scotch Brite Fresh Wrap Cling Film,100 sq. ft.,,,,145,,,,Scotch Brite,,830,1
+853,Household Care,Cleaning,Dish washing,Vim Gel Lemon,500ml,250ml,,,240,140,,,Vim,,831,0
+854,Household Care,Cleaning,Dish washing,Scotch Brite Scourer Pad,1 pc,,,,40,,,,Scotch Brite,,832,0
+855,Household Care,Cleaning,Dish washing,Scotch Brite Local Wiper 43 Cm,1 pc,,,,220,,,,Scotch Brite,,833,0
+856,Household Care,Cleaning,Dish washing,Scotch Brite Butterfly Mop,1 pc,,,,1150,,,,Scotch Brite,,834,0
+858,Household Care,Cleaning,Dish washing,Scotch Brite Regular Small Scouring Pad,1 pc,,,,20,,,,Scotch Brite,,835,0
+859,Household Care,Cleaning,Dish washing,Scotch Brite Non Scratch Scouring Pad Large,1 pc,,,,50,,,,Scotch Brite,,836,0
+860,Household Care,Cleaning,Dish washing,Scotch Brite Non Scratch Scrub Sponge 2 IN 1,1 pc,,,,80,,,,Scotch Brite,,837,0
+861,Household Care,Cleaning,laundry,Surf Excel Matic- Front Load,1 kg,500 gm,,,290,145,,,Surf Excel,,838,0
+862,Household Care,Cleaning,laundry,Surf Excel Matic Top Load,1 kg,500 gm,,,290,145,,,Surf Excel,,839,0
+863,Household Care,Cleaning,laundry,Surf Excel Washing Powder,1 kg,500 gm,2 kg,4.5 kg,255,130,470,1010,Surf Excel,,840,0
+864,Household Care,Cleaning,laundry,Brite Detergent ,1 kg,2 kg,500 gm,225 gm,225,470,115,50,Brite,,841,0
+865,Household Care,Cleaning,laundry,Ariel Detergent ,1 kg,500 gm,2 kg,3 kg,255,130,470,670,Ariel,,842,0
+866,Household Care,Cleaning,laundry,Ariel Concentrated Automate,1.5 kg,3 kg,4.5 kg,,540,999,1499,,Ariel,,843,0
+867,Household Care,Cleaning,laundry,Bonus TriStar,1 kg,500 gm,2 kg,215 gm,90,50,175,20,Bonus,,844,0
+868,Household Care,Cleaning,laundry,Bonus Active,1 kg,400 gm,,,125,55,,,Bonus,,845,0
+869,Household Care,Cleaning,laundry,Express Power,1.5 kg,1 kg,400 gm,,255,155,65,,Express,,846,0
+870,Household Care,Cleaning,laundry,Sunlight Washing Powder Lemon & Thousand Flowers,1 kg,,,,110,,,,Sunlight,,847,0
+871,Household Care,Cleaning,laundry,Sunlight Washing Powder Lemon & Orange,1 kg,,,,110,,,,Sunlight,,848,0
+872,Household Care,Cleaning,laundry,RIN Washing Powder,1 kg,2 kg,500 gm,,160,300,80,,RIN,,849,0
+873,Household Care,Cleaning,laundry,Brite Detergent AntiBacterial ,1 kg,500 gm,,,255,130,,,Brite,,850,0
+874,Household Care,Cleaning,laundry,Brite Detergent Machine Wash,1 kg,500 gm,,,295,140,,,Brite,,851,0
+875,Household Care,Cleaning,laundry,SUFI Soap Vermicelli ,1 kg,,,,170,,,,SUFI,,852,0
+876,Household Care,Cleaning,laundry,Robin Liquid Bleach,500 ml,1 ltr,,,170,290,,,Robin,,853,0
+877,Household Care,Cleaning,laundry,Comfort Fabric Conditioner Morning Fresh,200 ml,400 ml,,,125,230,,,Comfort,,854,0
+878,Household Care,Cleaning,laundry,Comfort Fabric Conditioner Touch of Love,2 ltr,,,,435,,,,Comfort,,855,0
+879,Household Care,Cleaning,laundry,Robin Blue Liquid,75 ml,150 ml,300 ml,,55,80,160,,Robin,,856,0
+880,Household Care,Cleaning,laundry,Comfort Fabric Conditioner Kiss of Flowers,2 ltr,,,,455,,,,Comfort,,857,0
+881,Household Care,Cleaning,laundry,Comfort Fabric Conditioner Pure,2 ltr,,,,435,,,,Comfort,,858,0
+882,Household Care,Cleaning,laundry,Robin Standard Blue Liquid Combi Can,225 gm,,,,190,,,,Robin,,859,0
+883,Household Care,Cleaning,Toilet Cleaners,Harpic Original Power Plus,500 ml,250 ml,750 ml,1 ltr,155,65,230,280,Harpic,,860,0
+884,Household Care,Cleaning,Toilet Cleaners,Harpic Rose Power Plus Toilet Cleaner,500 ml,750 ml,,,150,220,,,Harpic,,861,0
+885,Household Care,Cleaning,Toilet Cleaners,Harpic Lime Power Plus Toilet Cleaner,500 ml,1 ltr,750 ml,,155,280,210,,Harpic,,862,0
+886,Household Care,Cleaning,Toilet Cleaners,Harpic Power Plus Orange Toilet Cleaner,750 ml,1 ltr,,,210,280,,,Harpic,,863,0
+887,Household Care,Cleaning,Toilet Cleaners,Scotch Brite Toilet Bowl Brush,1 pc,,,,315,,,,Scotch Brite,,864,0
+888,Household Care,Cleaning,Surface Cleaners,Dettol Multi Surface Cleaner Lemon,500 ml,1 ltr,,,210,385,,,Dettol,,865,0
+889,Household Care,Cleaning,Surface Cleaners,Dettol Multi Surface Cleaner Floral Red,200 ml,1 ltr,500 ml,,60,385,225,,Dettol,,866,0
+890,Household Care,Cleaning,Surface Cleaners,Dettol Multi Surface Cleaner Pine,500 ml,1 ltr,,,210,385,,,Dettol,,867,0
+891,Household Care,Cleaning,Surface Cleaners,Dettol Multi Surface Cleaner Lavender,500 ml,1 ltr,,,225,385,,,Dettol,,868,0
+892,Household Care,Cleaning,Surface Cleaners,Scotch Brite Local Wiper,43 cm,33 cm,,,220,205,,,Scotch Brite,,869,0
+893,Household Care,Cleaning,Surface Cleaners,Scotch Brite Butterfly Mop,1 pc,,,,1150,,,,Scotch Brite,,870,0
+894,Household Care,Cleaning,Surface Cleaners,Finis Daily Mop Phenyl White Diluted,2.75 ltr,1 ltr,,,165,85,,,Finis,,871,0
+895,Household Care,Cleaning,Surface Cleaners,Finis Daily Mop Phenyl White Concentrated,425 ml,225 ml,,,235,135,,,Finis,,872,0
+896,Household Care,Cleaning,Surface Cleaners,Scotch Brite Dust Pan With Brush,1 pc,,,,300,,,,Scotch Brite,,873,0
+897,Household Care,Cleaning,Surface Cleaners,Scotch Brite Heavy Duty Gloves,Medium,large,,,165,165,,,Scotch Brite,,874,0
+898,Household Care,Cleaning,Surface Cleaners,Scotch Brite Multi-Purpose Gloves Yello,Medium,large,,,155,155,,,Scotch Brite,,875,0
+899,Household Care,Cleaning,Surface Cleaners,Scotch Brite Light Duty Gloves,Medium,large,,,115,145,,,Scotch Brite,,876,0
+900,Household Care,Cleaning,Surface Cleaners,Scotch Brite Strip Mop,1 PC,,,,525,,,,Scotch Brite,,877,0
+901,Household Care,Cleaning,Surface Cleaners,Scotch Brite Floor Brush With Squeegee,1 pc,,,,575,,,,Scotch Brite,,878,0
+902,Household Care,Cleaning,Surface Cleaners,Spontex Cotton Mop Refill,1 pc,,,,620,,,,Spontex,,879,0
+903,Household Care,Home Utilities,Foil & Coves,Scotch Brite Aluminum Foil,1 pc,,,,270,,,,Scotch Brite,,880,0
+904,Household Care,Home Utilities,Insect Killers,Mortein Mosquito Killer Powergard Liquid ,450 ml,,,,210,,,,Mortein,,881,0
+905,Household Care,Home Utilities,Insect Killers,Mortein Peaceful Nights LED _ (Complete Set),1 pc,,,,300,,,,Mortein,,882,0
+906,Household Care,Home Utilities,Insect Killers,Mortein Coopex Powder,100 gm,,,,125,,,,Mortein,,883,0
+907,Household Care,Home Utilities,Insect Killers,Mortein Ultra Fast Aerosol AIK ,400 ml,600 ml,,,375,570,,,Mortein,,884,0
+908,Household Care,Home Utilities,Insect Killers,Mortein PowerGard Mosquito Deep Reach Coil ,10 coils,,,,60,,,,Mortein,,885,0
+909,Household Care,Home Utilities,Insect Killers,Mortein Peaceful Nights Odourless Refill ,1 PC,,,,210,,,,Mortein,,886,0
+910,Household Care,Home Utilities,Insect Killers,Abbott Mospel Mosquito Repellent Lotion,45 ml,,,,130,,,,Abbot,,887,0
+911,Household Care,Home Utilities,Insect Killers,Mortein Peaceful Nights Fragrant Refill ,1 pc,,,,205,,,,Mortein,,888,0
+912,Household Care,Home Utilities,Insect Killers,Mortein NaturGard Refill _ Neem Extracts,1 pc,,,,195,,,,Mortein,,889,0
+913,Household Care,Home Utilities,Insect Killers,Mortein Ultra Fast Aerosol FIK,400 ml,,,,365,,,,Mortein,,890,0
+914,Household Care,Home Utilities,Insect Killers,Mortein Ultra Fast Aerosol CIK,400 ml,,,,385,,,,Mortein,,891,0
+915,Household Care,Home Utilities,Insect Killers,Mortein PowerGard Xtra Power Coil ,10 coils,,,,70,,,,Mortein,,892,0
+916,Household Care,Home Utilities,Insect Killers,Mortein PowerGard Xtra Power Mat,30 pc,,,,150,,,,Mortein,,893,1
+917,Household Care,Home Utilities,Insect Killers,Mortein Aerosol Peaceful Nights FIK,400 ml,600 ml,,,415,580,,,Mortein,,894,0
+918,Household Care,Home Utilities,Insect Killers,Mortein NaturGard Mosquito Repellent Lotion ,50 ml,,,,135,,,,Mortein,,895,1
+919,Household Care,Home Utilities,Insect Killers,Mortein PowerGard Deep Reach Mat,30 pc,,,,150,,,,Mortein,,896,0
+920,Household Care,Home Utilities,Insect Killers,Mortein PowerGard Rat Kill,30 gm,,,,140,,,,Mortein,,897,0
+921,Household Care,Home Utilities,Insect Killers,Mortein Avalon Insta Card,1 pc,,,,30,,,,Mortein,,898,0
+922,Household Care,Home Utilities,Insect Killers,Cobra Insect Killer,600 ml,,,,315,,,,Cobra,,899,0
+923,Household Care,Home Utilities,Insect Killers,Finis All Purpose Liquid Insect Killer,400 ml,800 ml,,,170,360,,,Finis,,900,0
+924,Household Care,Home Utilities,Insect Killers,Finis All Purpose Liquid Insect Killer (Amber),425 ml,,,,230,,,,Finis,,901,0
+925,Household Care,Home Utilities,Insect Killers,Finis Xtra Coil Lavender,10 coils,,,,70,,,,Finis,,902,0
+926,Household Care,Home Utilities,Batteries,Toshiba AAA Super Heavy Duty Cell,Pack of 2,,,,50,,,,Toshiba,,903,0
+927,Household Care,Home Utilities,Batteries,Toshiba AA Cell,Pack of 4,,,,160,,,,Toshiba,,904,0
+928,Household Care,Home Utilities,Batteries,Energizer Max Cell AA,Pack of 2,,,,130,,,,Energizer,,905,0
+929,Household Care,Home Utilities,Batteries,Duracell Turbo AAA4,pack of 4,,,,285,,,,Duracell,,906,0
+930,Household Care,Home Utilities,Batteries,Energizer Advance Alkaline Cell AA,Pack of 2,,,,145,,,,Energizer,,907,0
+931,Household Care,Home Utilities,Match Box,Super Hockey Match Box / Maachis,Pack of 10,,,,30,,,,Hockey,,908,0
+932,Household Care,Home Utilities,Tissues,Tulip Toliet Tissue Roll Pink,1 pc,,,,15,,,,Tulip,,909,0
+933,Household Care,Home Utilities,Tissues,Tulip Toliet Tissue Roll White,1 pc,,,,15,,,,Tulip,,910,0
+934,Household Care,Home Utilities,Tissues,Tulip Regular Tissue Box,80 pulls,,,,60,,,,Tulip,,911,0
+935,Household Care,Home Utilities,Tissues,Rose Petal Toilet Tissue Roll Maxob Twin Pack,24 Meters,,,,80,,,,Rose Petal,,912,0
+936,Household Care,Home Utilities,Tissues,Rose Petal Zzoop Tissue Paper Towel Twin Pack,2 ply,,,,210,,,,Rose Petal,,913,0
+937,Household Care,Home Utilities,Tissues,Rose Petal Deluxe Tissue Box ,200 pulls,,,,170,,,,Rose Petal,,914,0
+938,Household Care,Home Utilities,Tissues,Rose Petal Pop_-Up Facial Tissues,100 pulls,,,,90,,,,Rose Petal,,915,0
+939,Household Care,Home Utilities,Tissues,Rose Petal Party Pack Tissue Napkins,400 Sheets,,,,100,,,,Rose Petal,,916,0
+940,Household Care,Home Utilities,Tissues,Rose Petal Hijeen Tissue Roll ,Jumvo,,,,285,,,,Rose Petal,,917,0
+941,Sauces & Jams,Jams & Spreads,National,National Jelly Pineapple Fantasy,440 gm,,,,140,,,,National,,918,0
+942,Sauces & Jams,Jams & Spreads,National,National Jelly Apple Delight,440 gm,,,,125,,,,National,,919,0
+943,Sauces & Jams,Jams & Spreads,National,National Apple Jam,440 gm,,,,120,,,,National,,920,0
+944,Sauces & Jams,Jams & Spreads,National,National Mango Jam,440 gm,,,,120,,,,National,,921,0
+945,Sauces & Jams,Jams & Spreads,National,National Mix Fruit Jam,440 gm,,,,120,,,,National,,922,0
+946,Sauces & Jams,Jams & Spreads,National,National Strawberry Jam,440 gm,,,,120,,,,National,,923,0
+947,Sauces & Jams,Jams & Spreads,National,National Lemon Marmalade ,440 gm,,,,120,,,,National,,924,0
+948,Sauces & Jams,Jams & Spreads,National,National Orange Marmalade ,440 gm,,,,120,,,,National,,925,0
+949,Sauces & Jams,Jams & Spreads,Young's,Young's Chicken Spread Pouch,500 ml,200 ml,1 kg,,250,115,460,,Young's,,926,0
+950,Sauces & Jams,Jams & Spreads,Young's,Young's BBQ Chicken Spread Pouch,500 ml,120 ml,,,260,120,,,Young's,,927,0
+951,Sauces & Jams,Jams & Spreads,Young's,Young's Mayo Garlic Pouch,200 ml,500 ml,,,90,200,,,Young's,,928,0
+952,Sauces & Jams,Jams & Spreads,Young's,Young's Chicken Spread Glass Jar,300 ml,,,,175,,,,Young's,,929,0
+953,Sauces & Jams,Jams & Spreads,Young's,Young's Sandwich Spread Pouch,200 ml,,,,85,,,,Young's,,930,0
+954,Sauces & Jams,Jams & Spreads,Young's,Young's Natural Honey Bottle,500 gm,125 gm,,,440,145,,,Young's,,931,0
+955,Sauces & Jams,Jams & Spreads,Young's,Young's Beehives Honey Pouch,400 gm,200 gm,,,320,170,,,Young's,,932,0
+956,Sauces & Jams,Jams & Spreads,Young's,Young's Olive Spread Pouch ,200 ml,,,,160,,,,Young's,,933,0
+957,Sauces & Jams,Jams & Spreads,Young's,Young's Chocolate Spread,360 gm,,,,240,,,,Young's,,934,0
+958,Sauces & Jams,Jams & Spreads,Young's,Young's Natural Honey Jar,1 kg,,,,700,,,,Young's,,935,0
+959,Sauces & Jams,Jams & Spreads,Young's,Young's Choco Bliss Milk Chocolate Spread,150 gm,300 gm,,,125,210,,,Young's,,936,0
+960,Sauces & Jams,Jams & Spreads,Young's,Young's Chicken Spread Glass Jar,925 ml,480 ml,,,480,260,,,Young's,,937,0
+961,Sauces & Jams,Jams & Spreads,Young's,Young's Beehives Honey Squeeze Bottle,450 gm,250 gm,,,440,275,,,Young's,,938,0
+962,Sauces & Jams,Jams & Spreads,Young's,Young's Beehives SIDR Honey Squeeze Bottle,450 gm,170 gm,,,1150,490,,,Young's,,939,0
+963,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Strawberry Jam,340 gm,,,,140,,,,Mitchell's,,940,0
+964,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Apple Jelly,450 gm,,,,140,,,,Mitchell's,,941,0
+965,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Strawberry Jelly,450 gm,,,,140,,,,Mitchell's,,942,0
+966,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Mixed Fruit Jam,450 gm,,,,140,,,,Mitchell's,,943,0
+967,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Golden Mist Marmalade,450 gm,1050 gm,,,140,300,,,Mitchell's,,944,0
+968,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Diet Strawberry Jam (Sugar Free),325 gm,,,,140,,,,Mitchell's,,945,0
+969,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Old English Marmalade,450 gm,,,,150,,,,Mitchell's,,946,0
+970,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Mango Jam,450 gm,200 gm,,,140,80,,,Mitchell's,,947,0
+971,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Blackcurrant Jam,450 gm,,,,140,,,,Mitchell's,,948,0
+972,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Diet Mix Fruit Jam (Sugar Free),325 gm,,,,140,,,,Mitchell's,,949,0
+973,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Golden Apple Jam ,200 gm,450 gm,,,80,130,,,Mitchell's,,950,0
+974,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Diet Golden Apple Jam (Sugar Free),325 gm,,,,140,,,,Mitchell's,,951,0
+975,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Pineapple Jam ,340 gm,,,,140,,,,Mitchell's,,952,1
+976,Sauces & Jams,Jams & Spreads,Mitchell's,Mitchell's Mixed Fruit Jam,1050 gm,,,,300,,,,Mitchell's,,953,0
+977,Sauces & Jams,Jams & Spreads,Marhaba,Marhaba Honey ,300 gm,400 gm,,,230,300,,,Marhaba,,954,0
+978,Sauces & Jams,Jams & Spreads,Shezan,Shezan Strawberry Jam,200 gm,440 gm,,,80,130,,,Shezan,,955,0
+979,Sauces & Jams,Jams & Spreads,Shezan,Shezan Sweet Orange Marmalade,440 gm,200 gm,,,130,80,,,Shezan,,956,0
+980,Sauces & Jams,Jams & Spreads,Shezan,Shezan Mixed Fruit Jam,440 gm,200 gm,,,130,80,,,Shezan,,957,0
+981,Sauces & Jams,Jams & Spreads,Shezan,Shezan Apple Diet Jam (Sugar Free),440 gm,,,,140,,,,Shezan,,958,0
+982,Sauces & Jams,Jams & Spreads,Shezan,Shezan Apple Jam,200 gm,440 gm,,,80,130,,,Shezan,,959,0
+983,Sauces & Jams,Jams & Spreads,Shezan,Shezan Pineapple Jam,200 gm,440 gm,,,80,130,,,Shezan,,960,0
+984,Sauces & Jams,Jams & Spreads,Shezan,Shezan Mango Jam,440 gm,200 gm,,,130,80,,,Shezan,,961,0
+985,Sauces & Jams,Jams & Spreads,Shezan,Shezan Mix Fruit Diet Jam (Sugar Free),440 gm,,,,140,,,,Shezan,,962,0
+986,Sauces & Jams,Jams & Spreads,Shezan,Shezan Ginger Orange Marmalade,440 gm,,,,130,,,,Shezan,,963,0
+987,Sauces & Jams,Jams & Spreads,Nutella,Nutella Ferrero Hazelnut Spread With Cocoa,350 gm,,,,270,,,,Nutella,,964,0
+988,Sauces & Jams,Sauces & Ketchup,National,National Tomato Ketchup Pouch,1 kg,500 gm,,,200,120,,,National,,965,0
+989,Sauces & Jams,Sauces & Ketchup,National,National Chilli Garlic Sauce Pouch,1 kg,,,,185,,,,National,,966,0
+990,Sauces & Jams,Sauces & Ketchup,National,National Synthetic Vinegar White,725 ml,,,,75,,,,National,,967,0
+991,Sauces & Jams,Sauces & Ketchup,National,National Chili Garlic Sauce Pouch,250 gm,,,,70,,,,National,,968,0
+992,Sauces & Jams,Sauces & Ketchup,National,National Chili Garlic Sauce Bottle,300 gm,,,,95,,,,National,,969,0
+993,Sauces & Jams,Sauces & Ketchup,National,National Chili Garlic Sauce Bottle,800 gm,,,,195,,,,National,,970,0
+994,Sauces & Jams,Sauces & Ketchup,Young's,Young's Mayonnaise Pouch,1 ltr,500 ml,200 ml,,250,140,70,,Young's,,971,0
+995,Sauces & Jams,Sauces & Ketchup,Young's,Young's Mayonnaise Glass Jar,300 ml,946 ml,,,120,300,,,Young's,,972,0
+996,Sauces & Jams,Sauces & Ketchup,Young's,Young's Mayonnaise Catering Pack,2 ltr,,,,480,,,,Young's,,973,0
+997,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Tomato Ketchup,1 kg,500 gm,750 gm,250 gm,205,110,170,70,Shangrila,,974,0
+998,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Sauces Trio Pack,300 ml,120 ml,800 ml,,185,110,315,,Shangrila,,975,0
+999,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Soy Sauce,300 ml,800 ml,120 ml,,75,135,40,,Shangrila,,976,0
+1000,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Green Chilli Sauce Pouch,500 gm,,,,125,,,,Shangrila,,977,0
+1001,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Garlic Chilli Sauce ,500 gm,1 kg,250 gm,750 gm,115,205,70,170,Shangrila,,978,0
+1002,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Imli Ginger Sauce,500 gm,,,,120,,,,Shangrila,,979,0
+1003,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Hot Chili Sauce,300 ml,800 ml,120 ml,,85,150,40,,Shangrila,,980,0
+1004,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Worcestershire Sauce,300 ml,,,,80,,,,Shangrila,,981,0
+1005,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Bar.B.Q Sauce Pouch,500 ml,,,,135,,,,Shangrila,,982,0
+1006,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Hot & Spicy Ketchup,500 gm,,,,120,,,,Shangrila,,983,0
+1007,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Bar.B.Q Sauce,350 ml,,,,95,,,,Shangrila,,984,0
+1008,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Tomato Ketchup Bottle,350 gm,,,,85,,,,Shangrila,,985,0
+1009,Sauces & Jams,Sauces & Ketchup,Shangrila,Shangrila Garlic Chili Sauce Bottle,350 gm,,,,85,,,,Shangrila,,986,0
+1010,Sauces & Jams,Sauces & Ketchup,Knorr,Knorr Chilli Garlic Sauce Pouch,800 gm,300 gm,,,195,85,,,Knorr,,987,1
+1011,Sauces & Jams,Sauces & Ketchup,Knorr,Knorr Tomato Ketchup Pouch,800 gm,300 gm,,,185,80,,,Knorr,,988,0
+1012,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Tomato Ketchup ,1 kg,500 gm,250 gm,,190,110,70,,Bake Parlor,,989,0
+1013,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Chili Garlic Sauce,500 gm,,,,115,,,,Bake Parlor,,990,0
+1014,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor White Vinegar,750 ml,,,,85,,,,Bake Parlor,,991,0
+1015,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Soy Sauce,750 ml,300 ml,,,125,75,,,Bake Parlor,,992,0
+1016,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Synthetic White Vinegar ,300 ml,,,,50,,,,Bake Parlor,,993,1
+1017,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Green Chili Chutney,300 gm,,,,95,,,,Bake Parlor,,994,0
+1018,Sauces & Jams,Sauces & Ketchup,Bake Parlor,Bake Parlor Chili Sauce,750 ml,300 ml,,,140,85,,,Bake Parlor,,995,0
+1019,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chatt Patta,66 gm,,,,30,,,,Knorr,,996,0
+1020,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chicken ,66 gm,,,,30,,,,Knorr,,997,0
+1021,Instant Food & Confectionery,Noodles & Pasta,Noodles,MAGGI Chatpata Instant Noodles ,65 gm,,,,25,,,,MAGGI,,998,0
+1022,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Lemon Twist ,66 gm,,,,25,,,,Knorr,,999,0
+1023,Instant Food & Confectionery,Noodles & Pasta,Noodles,MAGGI Imli Chatkhara Instant Noodles,65 gm,,,,30,,,,MAGGI,,1000,0
+1024,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Cheese Pathakha,66 gm,,,,25,,,,Knorr,,1001,0
+1025,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Lahori Chicken,66 gm,,,,25,,,,Knorr,,1002,0
+1026,Instant Food & Confectionery,Noodles & Pasta,Noodles,Shan Shoop Instant Noodles Masala,60 gm,,,,20,,,,Shan,,1003,0
+1027,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chicken Tikka Bite ,75 gm,,,,35,,,,Knorr,,1004,0
+1028,Instant Food & Confectionery,Noodles & Pasta,Noodles,MAGGI Chicken Instant Noodles ,65 gm,,,,30,,,,MAGGI,,1005,0
+1029,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chilli Chicken Bite ,75 gm,,,,35,,,,Knorr,,1006,0
+1030,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Achari Masti ,66 gm,,,,30,,,,Knorr,,1007,0
+1031,Instant Food & Confectionery,Noodles & Pasta,Noodles,Kolson Chinese Egg Noodles ,227 gm,,,,60,,,,Kolson,,1008,0
+1032,Instant Food & Confectionery,Noodles & Pasta,Noodles,Shan Shoop Instant Noodles Ketchup,60 gm,,,,20,,,,Shan,,1009,0
+1033,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Hot & Spicy,66 gm,,,,25,,,,Knorr,,1010,0
+1034,Instant Food & Confectionery,Noodles & Pasta,Noodles,Bake Parlor Chinese Egg Noodles,227 gm,,,,60,,,,Bake Parlor,,1011,0
+1035,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Mast Masala ,66 gm,,,,30,,,,Knorr,,1012,0
+1036,Instant Food & Confectionery,Noodles & Pasta,Noodles,Shan Shoop Instant Noodles Chicken,60 gm,,,,20,,,,Shan,,1013,0
+1037,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chin Chow,66 gm,,,,25,,,,Knorr,,1014,0
+1038,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chicken Delite,66 gm,,,,30,,,,Knorr,,1015,0
+1039,Instant Food & Confectionery,Noodles & Pasta,Noodles,Bake Parlor Hot n Sour Noodles,1 pc,,,,55,,,,Bake Parlor,,1016,0
+1040,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Sour Cream & Onion ,66 gm,,,,25,,,,Knorr,,1017,0
+1041,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Pepper Chicken,66 gm,,,,25,,,,Knorr,,1018,0
+1042,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chatt Patta Multipack ,396 gm,,,,140,,,,Knorr,,1019,0
+1043,Instant Food & Confectionery,Noodles & Pasta,Noodles,Knorr Noodles Chicken Multipack,396 gm,,,,140,,,,Knorr,,1020,0
+1044,Instant Food & Confectionery,Noodles & Pasta,Noodles,Bake Parlor Chinese Real Egg Noodles,227 gm,,,,65,,,,Bake Parlor,,1021,0
+1045,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Kolson Spaghetti,450 gm,,,,80,,,,Kolson,,1022,0
+1046,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Fancy Spaghetti ,500 gm,,,,95,,,,Bake Parlor,,1023,0
+1047,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Chicken Chowmein Spaghetti,1 pc,,,,55,,,,Bake Parlor,,1024,0
+1048,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Kolson Fancy Spaghetti,500 gm,,,,95,,,,Kolson,,1025,0
+1049,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Fajita Spaghetti ,250 gm,,,,55,,,,Bake Parlor,,1026,0
+1050,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Spaghetti ,450 gm,,,,80,,,,Bake Parlor,,1027,0
+1051,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Meat Ball Spaghetti ,250 gm,,,,55,,,,Bake Parlor,,1028,0
+1052,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Chicken Chili Spaghetti ,250 gm,,,,55,,,,Bake Parlor,,1029,0
+1053,Instant Food & Confectionery,Noodles & Pasta,Spaghetti ,Bake Parlor Cajun Spaghetti ,250 gm,,,,55,,,,Bake Parlor,,1030,0
+1054,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Kolson Elbow Macaroni Large,400 gm,,,,75,,,,Kolson,,1031,0
+1055,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Elbow Macaroni ,400 gm,,,,75,,,,Bake Parlor,,1032,0
+1056,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Tikka Macaroni,250 gm,,,,55,,,,Bake Parlor,,1033,0
+1057,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Bar B Que Macaroni ,250 gm,,,,55,,,,Bake Parlor,,1034,0
+1058,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Chicken Manchurian Macaroni,250 gm,,,,55,,,,Bake Parlor,,1035,0
+1059,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Chicken Jalfrezi Macaroni,250 gm,,,,55,,,,Bake Parlor,,1036,0
+1060,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Shashlik Macaroni ,250 gm,,,,55,,,,Bake Parlor,,1037,0
+1061,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Seven Spice Macaroni,250 gm,,,,55,,,,Bake Parlor,,1038,0
+1062,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Kolson Fancy Macaroni ,400 gm,,,,75,,,,Kolson,,1039,0
+1063,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Kolson Long Macaroni ,450 gm,,,,95,,,,Kolson,,1040,0
+1064,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Kolson Cock Shell Macaroni ,400 gm,,,,70,,,,Kolson,,1041,0
+1065,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Biryani Macaroni ,250 gm,,,,55,,,,Bake Parlor,,1042,0
+1066,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Samosa Macaroni ,250 gm,,,,55,,,,Bake Parlor,,1043,0
+1067,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Pasta Kabab Macaroni,250 gm,,,,55,,,,Bake Parlor,,1044,0
+1068,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Achari Macaroni ,250 gm,,,,55,,,,Bake Parlor,,1045,0
+1069,Instant Food & Confectionery,Noodles & Pasta,Macaroni,Bake Parlor Balti Macaroni,250 gm,,,,55,,,,Bake Parlor,,1046,0
+1070,Instant Food & Confectionery,Noodles & Pasta,Pasta,Kolson Shell Pasta,400 gm,,,,75,,,,Kolson,,1047,0
+1071,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Vegetable Pasta ,400 gm,,,,80,,,,Bake Parlor,,1048,0
+1072,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Pasta Kabab Macaroni,250 gm,,,,55,,,,Bake Parlor,,1049,0
+1073,Instant Food & Confectionery,Noodles & Pasta,Pasta,Kolson Pasta Cut Vermicelli,265 gm,,,,30,,,,Kolson,,1050,0
+1074,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Cut Vermicelli Plane Pasta,450 gm,,,,50,,,,Bake Parlor,,1051,0
+1075,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Pasta Kabab,250 gm,,,,55,,,,Bake Parlor,,1052,0
+1076,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Pasta Kabab 2 In 1 ,250 gm,,,,55,,,,Bake Parlor,,1053,0
+1077,Instant Food & Confectionery,Noodles & Pasta,Pasta,Bake Parlor Chicken Manchurian Pasta,250 gm,,,,55,,,,Bake Parlor,,1054,0
+1078,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Boneless Handi,500 gm,,,,290,,,,K&N's,,1055,0
+1079,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Breast Fillet,500 gm,,,,290,,,,K&N's,,1056,0
+1080,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Karahi Cut,1 kg,,,,325,,,,K&N's,,1057,0
+1081,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Boti Cut,1 kg,,,,360,,,,K&N's,,1058,1
+1082,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Drumsticks,1 kg,,,,290,,,,K&N's,,1059,1
+1083,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Qeema (Mince),500 gm,,,,290,,,,K&N's,,1060,0
+1084,Instant Food & Confectionery,Frozen Food,Raw Chicken,K&N's Thunder Fillet Breast ,550 gm,,,,475,,,,K&N's,,1061,0
+1085,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Nuggets,Standard Pack,Economy Pack,,,215,580,,,K&N's,,1062,0
+1086,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Tikka Chunks ,Economy Pack,,,,565,,,,K&N's,,1063,0
+1087,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Tender Pops ,Standard Pack,Economy Pack,,,200,530,,,K&N's,,1064,0
+1088,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Burger Patties,6 pc,16 pc,,,220,555,,,K&N's,,1065,0
+1089,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Fun Nuggets ,Economy Pack,Standard Pack,,,510,215,,,K&N's,,1066,0
+1090,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Shami Kabab ,Standard Pack,Economy Pack,,,180,445,,,K&N's,,1067,0
+1091,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Frankfurter Sausage,Economy Pack,,,,415,,,,K&N's,,1068,0
+1092,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Bologna Slices,448 gm,,,,395,,,,K&N's,,1069,0
+1093,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Croquettes,Standard Pack,,,,215,,,,K&N's,,1070,0
+1094,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Breakfast Sausage,Economy Pack,,,,415,,,,K&N's,,1071,0
+1095,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Mughlai Tikka,Economy Pack,,,,515,,,,K&N's,,1072,0
+1096,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Hot Tenders ,Economy Pack,,,,560,,,,K&N's,,1073,0
+1097,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Haray Bharay Nuggets ,Economy Pack,,,,580,,,,K&N's,,1074,0
+1098,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Tempura,Economy Pack,,,,580,,,,K&N's,,1075,0
+1099,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Samosa,Economy Pack,,,,310,,,,K&N's,,1076,0
+1100,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Croquettes,Economy Pack,,,,580,,,,K&N's,,1077,0
+1101,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Combo Wings,Economy Pack,,,,550,,,,K&N's,,1078,0
+1102,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Chapli Kabab ,4  pc,12 pc,,,215,555,,,K&N's,,1079,0
+1103,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Chicken Kofta,Standard Pack,Economy Pack,,,245,560,,,K&N's,,1080,0
+1104,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Tornadoz,Economy Pack,Standard Pack,,,430,220,,,K&N's,,1081,0
+1105,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Bakistry Patteze ,Economy Pack,,,,265,,,,K&N's,,1082,0
+1106,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Bakistry Puff Patteze ,Economy Pack,,,,265,,,,K&N's,,1083,0
+1107,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Jumbo Frank Sausage ,Economy Pack,,,,455,,,,K&N's,,1084,0
+1108,Instant Food & Confectionery,Frozen Food,Ready To Cook,K&N's Jumbo Frank Sausage (Jalapeno & Cheese),Economy Pack,,,,455,,,,K&N's,,1085,0
+1109,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Paratha,330 gm,,,,120,,,,Dawn,,1086,1
+1110,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Aloo Paratha ,3 pc,,,,90,,,,Dawn,,1087,0
+1111,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Seekh Kabab,6 pc,18 pc,,,190,500,,,Dawn,,1088,0
+1112,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Nuggets ,270 gm,1 kg,,,215,580,,,Dawn,,1089,0
+1113,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Burger Patties ,16 pc,6 pc,,,615,235,,,Dawn,,1090,0
+1114,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Chapli Kabab ,4 pc,12 pc,,,215,555,,,Dawn,,1091,0
+1115,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Kofta ,8 pc,21 pc,,,190,450,,,Dawn,,1092,0
+1116,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Shami Kabab,6 pc,16 pc,,,170,425,,,Dawn,,1093,0
+1117,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Malai Boti ,480 gm,200 gm,,,480,235,,,Dawn,,1094,0
+1118,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Chicken Shots ,260 gm,780 gm,,,215,560,,,Dawn,,1095,0
+1119,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Zoo Woo Chicken Nuggets ,9 pc,24 pc,,,215,510,,,Dawn,,1096,0
+1120,Instant Food & Confectionery,Frozen Food,Ready To Cook,Dawn Fish Finger (Raw),1 kg,,,,510,,,,Dawn,,1097,0
+1121,Dairy Products,Milk & Cream,Milk,Olper's Milk,250 ml,1 ltr,1.5 ltr,,35,130,180,,Olper's,,1098,0
+1122,Dairy Products,Milk & Cream,Milk,NESTLE MILKPAK Milk,250 ml,1 ltr,,,35,130,,,Nestle,,1099,0
+1123,Dairy Products,Milk & Cream,Milk,NESTLE NESVITA,200 ml,1 ltr,,,35,150,,,Nestle,,1100,0
+1124,Dairy Products,Milk & Cream,Cream,NESTLE MILKPAK Cream,200 ml,,,,95,,,,Nestle,,1101,0
+1125,Dairy Products,Milk & Cream,Cream,Olper's Cream,200 ml,,,,90,,,,Olper's,,1102,0
+1126,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE Yogurt Sweet N Tasty ,400 gm,200 gm,,,114,55,,,Nestle,,1103,0
+1127,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE MILKPAK Yogurt,500 gm,,,,70,,,,Nestle,,1104,0
+1128,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE Zeera Raita , 250 gm,,,,75,,,,Nestle,,1105,0
+1129,Dairy Products,Yogurt & Cheese,Yogurt,Olper's Lassi Sweet,250 ml,,,,35,,,,Olper's,,1106,0
+1130,Dairy Products,Yogurt & Cheese,Yogurt,Olper's Lassi Salty,250 ml,,,,35,,,,Olper's,,1107,0
+1131,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE NESVITA Yogurt,400 gm,,,,110,,,,Nestle,,1108,0
+1132,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE Podina Raita,250 gm,,,,75,,,,Nestle,,1109,0
+1133,Dairy Products,Yogurt & Cheese,Yogurt,NESTLE Yogurt Unsweetened Riwayati Maza,400 gm,,,,100,,,,Nestle,,1110,0
+1134,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Natural Yogurt ,200 gm,400 gm,1 kg,,50,90,170,,Adam's,,1111,0
+1135,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Namkeen Lassi,225 ml,,,,30,,,,Adam's,,1112,0
+1136,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Meethi Lassi,225 ml,,,,30,,,,Adam's,,1113,0
+1137,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Natural Low Fat Yogurt ,400 gm,,,,95,,,,Adam's,,1114,0
+1138,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Zeera Raita ,200 gm,,,,50,,,,Adam's,,1115,0
+1139,Dairy Products,Yogurt & Cheese,Yogurt,Adam's Mint Raita,200 gm,,,,50,,,,Adam's,,1116,0
+1140,Dairy Products,Yogurt & Cheese,Cheese,Adam's Mozzarella Cheese,200 gm,400 gm,,,300,575,,,Adam's,,1117,0
+1141,Dairy Products,Yogurt & Cheese,Cheese,Adam's Cheddar Cheese,200 gm,400 gm,,,265,525,,,Adam's,,1118,0
+1142,Dairy Products,Yogurt & Cheese,Cheese,Adam's Cottage Cheese,200 gm,,,,250,,,,Adam's,,1119,0
+1143,Dairy Products,Yogurt & Cheese,Cheese,Adam's Pizza Cheese ,200 gm,400 gm,,,365,715,,,Adam's,,1120,0
+1144,Dairy Products,Yogurt & Cheese,Cheese,Adam's Chili Cheese,200 gm,,,,285,,,,Adam's,,1121,0
+1145,Dairy Products,Yogurt & Cheese,Cheese,Adam's Low Fat Cheese Slices,200 gm,,,,305,,,,Adam's,,1122,0
+1146,Dairy Products,Yogurt & Cheese,Cheese,Adam's Singles Cheddar Cheese Slices,200 gm,,,,220,,,,Adam's,,1123,0
+1147,Dairy Products,Yogurt & Cheese,Cheese,Adam's Burger Cheese Slice ,200 gm,,,,305,,,,Adam's,,1124,0
+1148,Dairy Products,Powder Milk & Tea Whiteners,Powder Milk,NESTLE EVERYDAY Pouch Pack,1 kg,400 gm,,,725,340,,,Nestle,,1125,0
+1149,Dairy Products,Powder Milk & Tea Whiteners,Powder Milk,NESTLE NIDO 3+,400 gm,,,,405,,,,Nestle,,1126,0
+1150,Dairy Products,Powder Milk & Tea Whiteners,Powder Milk,NESTLE NIDO Fortified Milk Powder Tin,1800 gm,2500 gm,,,2150,2695,,,Nestle,,1127,0
+1151,Dairy Products,Powder Milk & Tea Whiteners,Powder Milk,NESTLE NIDO Fortigrow,390 gm,,,,360,,,,Nestle,,1128,0
+1152,Dairy Products,Powder Milk & Tea Whiteners,Tea Whiteners,Tarang Tea Whitener,250 ml,500 ml,,,20,40,,,Tarang,,1129,0
+1153,Dairy Products,Powder Milk & Tea Whiteners,Tea Whiteners,NESTLE EVERYDAY UHT Tea Whitener,225 ml,,,,20,,,,Nestle,,1130,0
+1154,Baby & Kids,Baby Food,,NESTLƒ CERELAC 3 Fruits,175 gm,350 gm,,,165,310,,,Nestle,,1131,0
+1155,Baby & Kids,Baby Food,,NESTLƒ CERELAC Wheat,175 gm,350 gm,,,150,275,,,Nestle,,1132,0
+1156,Baby & Kids,Baby Food,,NESTLƒ CERELAC Rice,175 gm,,,,150,,,,Nestle,,1133,0
+1157,Baby & Kids,Baby Food,,Cerelac Pieces & Texture Red Fruits Junior,175 gm,,,,195,,,,Nestle,,1134,0
+1158,Baby & Kids,Baby Food,,Cerelac Rice & Maize With Milk Tin,400 gm,,,,515,,,,Nestle,,1135,0
+1159,Baby & Kids,Baby Food,,Cerelac Rice Probio ,175 gm,,,,145,,,,Nestle,,1136,0
+1160,Baby & Kids,Baby Food,,Cerelac Banana Probio ,175 gm,,,,170,,,,Nestle,,1137,0
+1161,Baby & Kids,Baby Food,,Cerelac Mixed Fruits Wheat With Milk Tin,400 gm,,,,515,,,,Nestle,,1138,0
+1162,Baby & Kids,Baby Food,,Cerelac Apple & Wheat With Milk Tin,400 gm,,,,485,,,,Nestle,,1139,0
+1163,Baby & Kids,Baby Food,,Cerelac Banana & Wheat With Milk Tin,400 gm,,,,515,,,,Nestle,,1140,0
+1164,Baby & Kids,Baby Food,,Cerelac 3 Cereals Mix Vegetable Milk Tin,400 gm,,,,515,,,,Nestle,,1141,0
+1165,Baby & Kids,Baby Food,,Cerelac 3 Cereals With Milk Tin,400 gm,,,,485,,,,Nestle,,1142,0
+1166,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Lotion,200 ml,50 ml,300 ml,100 ml,180,85,265,130,Johnson's,,1143,0
+1167,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Powder Blossoms,500 gm,200 gm,100 gm,50 gm,230,145,95,55,Johnson's,,1144,0
+1168,Baby & Kids,Baby Lotions &Creams,,Johnson's Baby Cologne Morning Dew ,125 gm,,,,215,,,,Johnson's,,1145,0
+1169,Baby & Kids,Baby Lotions &Creams,,Johnson's Baby Cologne Forever Mine,125 gm,,,,215,,,,Johnson's,,1146,0
+1170,Baby & Kids,Baby Lotions &Creams,,Johnson's Baby Powder Nourishing Milk,100 gm,50 gm,,,85,50,,,Johnson's,,1147,0
+1171,Baby & Kids,Baby Lotions &Creams,,Johnson's Baby Jelly Fragrance Free,1 pc,,,,260,,,,Johnson's,,1148,0
+1172,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Powder,500 gm,200 gm,100 gm,50 gm,250,125,80,50,Johnson's,,1149,0
+1173,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Cooling Powder  ,200 gm,100 gm,,,135,85,,,Johnson's,,1150,0
+1174,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby 24 Hours Moisture Soft Cream,200 ml,,,,265,,,,Johnson's,,1151,0
+1175,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Bedtime Powder,50 gm,200 gm,100 gm,500 gm,55,135,95,230,Johnson's,,1152,0
+1176,Baby & Kids,Baby Lotions &Creams,,Johnson Baby Cologne Regular,125 ml,,,,195,,,,Johnson's,,1153,0
+1177,Baby & Kids,Baby Lotions &Creams,,ForhanÕs Baby Lotion,200 ml,100 ml,,,130,80,,,Forhan's,,1154,1
+1178,Baby & Kids,Baby Lotions &Creams,,Johnson Baby Cologne Powder Mist ,125 ml,,,,215,,,,Johnson's,,1155,0
+1179,Baby & Kids,Baby Lotions &Creams,,JohnsonÕs Baby Nappy Rash Cream ,100 ml,,,,185,,,,Johnson's,,1156,0
+1180,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Milk Soap,100 gm,,,,60,,,,Johnson's,,1157,0
+1181,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Soap Blossoms,100 gm,,,,70,,,,Johnson's,,1158,0
+1182,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Soap,125 gm,,,,85,,,,Johnson's,,1159,0
+1183,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Shampoo,500 ml,200 ml,100 ml,,290,190,100,,Johnson's,,1160,0
+1184,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Bath Milk,500 ml,200 ml,,,250,180,,,Johnson's,,1161,0
+1185,Baby & Kids,Baby Shampoo & Soap,,Johnson's Baby Shampoo No More Tangles,200 ml,,,,185,,,,Johnson's,,1162,0
+1186,Baby & Kids,Baby Shampoo & Soap,,Johnson's Baby Bath Peach,200 ml,,,,185,,,,Johnson's,,1163,0
+1187,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Top To Toe Bath,500 ml,100 ml,300 ml,,410,125,245,,Johnson's,,1164,0
+1188,Baby & Kids,Baby Shampoo & Soap,,Johnson's Baby Jelly Fragrance Free,1 pc,,,,260,,,,Johnson's,,1165,0
+1189,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Imported Oil Bedtime,125 ml,,,,180,,,,Johnson's,,1166,0
+1190,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Imported Oil ,50 m,300 ml,125 ml,200 ml,110,310,180,250,Johnson's,,1167,0
+1191,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Bath Regular ,200 ml,100 ml,500 ml,,185,100,305,,Johnson's,,1168,0
+1192,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Softwash,400 ml,,,,165,,,,Johnson's,,1169,0
+1193,Baby & Kids,Baby Shampoo & Soap,,JohnsonÕs Baby Oil Gel Regular,200 ml,,,,215,,,,Johnson's,,1170,0
+1194,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Extra Large Pack (16+ kg),32 pc,24 pc,,,1100,850,,,Canbebe,,1171,0
+1195,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Maxi  Pack (7 - 18 kg),56 pc,32 pc,10 pc,,1450,850,300,,Canbebe,,1172,0
+1196,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Pack Maxi Plus (9 - 20 kg),50 pc,,,,1450,,,,Canbebe,,1173,0
+1197,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Junior (11 - 25 kg),40 pc,26 pc,8 pc,,1215,850,300,,Canbebe,,1174,0
+1198,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Midi Pack (4 - 9 kg),62 pc,36 pc,13 pc,,1450,850,300,,Canbebe,,1175,0
+1199,Baby & Kids,Diapers,,Canbebe Diapers Jumbo Mini Pack (3 - 6 kg),72 pc,40 pc,,,1450,850,,,Canbebe,,1176,0
+1200,Baby & Kids,Diapers,,Canbebe Standard New Born (2 - 5 kg),10 pc,,,,220,,,,Canbebe,,1177,0
+1201,Baby & Kids,Diapers,,Canbebe Extra Large Trial Pack,5 pc,,,,220,,,,Canbebe,,1178,0
+1202,Baby & Kids,Diapers,,Canbebe Junior Trial Pack,6 pc,,,,220,,,,Canbebe,,1179,0
+1203,Baby & Kids,Diapers,,Canbebe Maxi Trial Pack,7 pc,,,,220,,,,Canbebe,,1180,0
+1204,Baby & Kids,Diapers,,Canbebe Mini Trial Pack ,9 pc,,,,220,,,,Canbebe,,1181,0
+1205,Baby & Kids,Diapers,,Pampers Baby Dry Diapers Maxi 07 _ 18 Kg,64 pc,32 pc,,,1540,810,,,Pampers,,1182,0
+1206,Baby & Kids,Diapers,,Pampers Active Boy Value Pants ,34 pc,,,,1270,,,,Pampers,,1183,0
+1207,Baby & Kids,Diapers,,Pampers Diapers Junior 11-25 Kg,64 pc,16 pc,32 pc,,1640,440,825,,Pampers,,1184,0
+1208,Baby & Kids,Diapers,,Pampers Active Girl Value Pants ,34 pc,,,,1270,,,,Pampers,,1185,0
+1209,Baby & Kids,Diapers,,Pampers Baby Dry Diapers Midi 4-9 Kg,72 pc,36 pc,18 pc,,1600,790,450,,Pampers,,1186,0
+1210,Baby & Kids,Diapers,,Canbebe Diapers Super Eco New Born (2 = 5 kg),48 pc,,,,850,,,,Canbebe,,1187,0
+1211,Baby & Kids,Diapers,,Pampers Baby Dry Diapers Mini 3-6 Kg,80 pc,40 pc,,,1600,740,,,Pampers,,1188,0
+1212,Baby & Kids,Diapers,,Pampers Diapers Premium Care 11-25 kg,64 pc,32 pc,,,2100,1080,,,Pampers,,1189,0
+1213,Baby & Kids,Diapers,,Pampers Diapers Premium Care Mini 3-6 Kg,40 pc,80 pc,,,1080,2100,,,Pampers,,1190,0
+1214,Baby & Kids,Diapers,,Pampers Diapers Premium Care 7-18 kg,32 pc,64 pc,,,1050,3400,,,Pampers,,1191,0
+1215,Baby & Kids,Diapers,,Pampers Active Girl Value Pants Size,33 pc,,,,1270,,,,Pampers,,1192,0
+1216,Baby & Kids,Diapers,,Pampers Baby Diapers Mini Size 2,20 pc,,,,450,,,,Pampers,,1193,0
+1217,Baby & Kids,Diapers,,Pampers Premium Care New Born Baby Diapers 2 - 5 kg,22 pc,,,,400,,,,Pampers,,1194,0
+1218,Baby & Kids,Diapers,,Pampers Diapers Premium Care 04 _ 09 kg,72 pc,36 pc,,,2100,1080,,,Pampers,,1195,0
+1219,Baby & Kids,Diapers,,Pampers Active Boy Value Pants Size 6,33 pc,,,,1270,,,,Pampers,,1196,0
+1220,Baby & Kids,Diapers,,Baby Master Diapers _ Easy Pack 4,7 pc,,,,150,,,,Baby Master,,1197,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers _ Easy Pack 5,6 PC,,,,150,,,,Baby Master,,1198,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers _ Easy Pack 3,8 PC,,,,150,,,,Baby Master,,1199,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers New Baby,72 pc,36 pc,,,1175,645,,,Baby Master,,1200,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Small,72 pc,36 pc,,,1175,670,,,Baby Master,,1201,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Large,56 pc,28 pc,,,1175,670,,,Baby Master,,1202,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Medium,64 pc,32 pc,,,1175,645,,,Baby Master,,1203,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers X-Large,48 pc,24 pc,,,1175,670,,,Baby Master,,1204,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Small Double Pack,18 pc,,,,330,,,,Baby Master,,1205,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers New Baby Double Pack,18 pc,,,,330,,,,Baby Master,,1206,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers X-Large Double Pack,12 pc,,,,330,,,,Baby Master,,1207,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Large Double Pack,14 pc,,,,330,,,,Baby Master,,1208,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers Medium Double Pack,16 pc,,,,330,,,,Baby Master,,1209,1
+1220,Baby & Kids,Diapers,,Baby Master Diapers _ 1,9 pc,,,,150,,,,Baby Master,,1210,1
+1234,Baby & Kids,Wipes,,Canbebe Wipes Max,88 Wipes,,,,210,,,,Canbebe,,1211,0
+1235,Baby & Kids,Wipes,,Canbebe Wipes Extra Soft,64 Wipes,,,,170,,,,Canbebe,,1212,0
+1236,Baby & Kids,Wipes,,Pampers Sensitive Baby Wipes,56 Wipes,,,,210,,,,Pampers,,1213,0
+1237,Baby & Kids,Wipes,,JohnsonÕs Baby Skincare Wipes Fragrance Free,20 Wipes,80 Wipes,56 Wipes,,120,300,170,,Johnson's,,1214,0
+1238,Baby & Kids,Wipes,,Canbebe Wipes Refill,72 pc,,,,160,,,,Canbebe,,1215,0
+1239,Baby & Kids,Wipes,,Canbebe Wipes Sensitive,64 Wipes,,,,210,,,,Canbebe,,1216,0
+1240,Grocery & Staples,Staples,Pulses,Daal Mash Chilka,500 gm,1 kg,,,80,160,,,Local,,1217,
+1241,Grocery & Staples,Staples,Pulses,Daal Moong Chilka,500 gm,1 kg,,,90,180,,,Local,,1218,
+1242,Grocery & Staples,Staples,Pulses,Daal Masoor Barik,500 gm,1 kg,,,90,175,,,Local,,1219,
+1243,Grocery & Staples,Staples,Rice,Kaina Sahal Rice Steam Basmati,5 kg,2 kg,,,700,300,,,Local,,1220,
+1244,Grocery & Staples,Staples,Rice,Sella Rice,1 kg,3 kg,5 kg,,130,390,650,,Local,,1221,
+1245,Grocery & Staples,Staples,Rice,Ocean Pearl Lazzat Kernal Basmati Rice,1 kg,,,,160,,,,Ocean Pearl,,1222,
+1246,Grocery & Staples,Staples,Rice,Ocean Pearl Rewayat Super Kernal Rice,1 kg,5 kg,,,150,910,,,Ocean Pearl,,1223,
+1247,Grocery & Staples,Staples,Rice,Ocean Pearl Aroma Super Basmati Rice,1 kg,,,,150,,,,Ocean Pearl,,1224,
+1248,Grocery & Staples,Staples,Rice,Ocean Pearl Tareef Basmati Rice,1 kg,,,,135,,,,Ocean Pearl,,1225,
+1249,Grocery & Staples,Staples,Rice,Guard Easy Cook Sella Rice,1 kg,,,,180,,,,Guard,,1226,
+1250,Grocery & Staples,Staples,Rice,Ocean Pearl Golden Sella Basmati Rice,1 kg,4.5 kg,,,175,860,,,Ocean Pearl,,1227,
+1251,Grocery & Staples,Staples,Rice,Ocean Pearl Jhalak Rice,1 kg,5 kg,,,115,575,,,Ocean Pearl,,1228,
+1252,Grocery & Staples,Staples,Rice,Ocean Pearl Classic Basmati Rice,5 kg,,,,1000,,,,Ocean Pearl,,1229,
+1253,Grocery & Staples,Staples,Rice,Guard Super Kernal Rice,1 kg,,,,160,,,,Guard,,1230,
+1254,Grocery & Staples,Staples,Rice,Guard Super Kernal Basmati Rice,2 kg,5 kg,,,260,745,,,Guard,,1231,
+1255,Grocery & Staples,Staples,Rice,Guard Ultimate Basmati Rice,1 kg,,,,200,,,,Guard,,1232,
+1256,Grocery & Staples,Staples,Rice,National Basmati Rice,1 kg,5 kg,,,190,850,,,National,,1233,
+1257,Grocery & Staples,Staples,Rice,National Long Grain Basmati Rice,1 kg,5 kg,,,150,650,,,National,,1234,
+1258,Grocery & Staples,Staples,Rice,Guard Awami Basmati Rice,1 kg,5 kg,,,110,545,,,Guard,,1235,
+1259,Grocery & Staples,Staples,Rice,Guard Super Kernal Sella Basmati Rice,1 kg,5 kg,,,140,620,,,Guard,,1236,
+1260,Grocery & Staples,Staples,Rice,Guard Super Kernal Sella Rice,1 kg,,,,140,,,,Guard,,1237,
+1261,Grocery & Staples,Staples,Rice,Guard Brown Basmati Rice,1.5 kg,,,,330,,,,Guard,,1238,
+1262,Grocery & Staples,Staples,Rice,Falak Premium Rice,1 kg,5 kg,,,175,770,,,Falak,,1239,
+1263,Grocery & Staples,Staples,Rice,Falak Bachat Long Grain Rice,1 kg,,,,62,,,,Falak,,1240,
+1264,Grocery & Staples,Staples,Rice,Falak Super Kernal Basmati Rice,1 kg,,,,125,,,,Falak,,1241,
+1265,Grocery & Staples,Staples,Rice,Falak Select Rice,5 kg,2 kg,,,600,225,,,Falak,,1242,
+1266,Grocery & Staples,Staples,Rice,Falak Special Rice ,1 kg,5 kg,2 kg,,85,435,160,,Falak,,1243,
+1267,Grocery & Staples,Staples,Rice,Falak Brown Basmati Rice,1.5 kg,,,,285,,,,Falak,,1244,
+1268,Grocery & Staples,Staples,Rice,Falak Extreme Rice,5 kg,900 gm,,,985,200,,,Falak,,1245,
+1269,Grocery & Staples,Staples,Rice,Falak Peshawari Sella Rice,5 kg,,,,620,,,,Falak,,1246,
+1270,Grocery & Staples,Staples,Rice,Falak Zarda Rice,1 kg,,,,180,,,,Falak,,1247,
+1271,Grocery & Staples,Staples,Rice,Onaj Budget Rice,1 kg,5 kg,,,65,325,,,Onaj,,1248,
+1272,Grocery & Staples,Staples,Rice,Onaj Bharosa Rice,1 kg,5 kg,,,130,600,,,Onaj,,1249,
+1273,Grocery & Staples,Staples,Rice,Onaj Rozana Rice,1 kg,5 kg,,,115,495,,,Onaj,,1250,
+1274,Grocery & Staples,Staples,Rice,Onaj Gold Rice,1 kg,5 kg,,,195,950,,,Onaj,,1251,
+1275,Grocery & Staples,Staples,Rice,Onaj Khaas Rice,1 kg,5 kg,,,145,700,,,Onaj,,1252,
+1276,Grocery & Staples,Staples,Rice,Naubahar Kainaat Inteha Rice,1 kg,5 kg,,,190,940,,,Naubahar,,1253,
+1277,Grocery & Staples,Staples,Rice,Naubahar Super Basmati Rice,1 kg,5 kg,,,160,790,,,Naubahar,,1254,
+1278,Grocery & Staples,Staples,Rice,Naubahar Super Biryani Rice,1 kg,5 kg,,,130,640,,,Naubahar,,1255,
+1279,Grocery & Staples,Staples,Rice,Naubahar Tahzeeb Rice,1 kg,5 kg,,,100,475,,,Naubahar,,1256,
+1280,Grocery & Staples,Staples,Rice,Reem Basmati Rice,1 kg,2 kg,5 kg,,140,280,695,,Reem,,1257,
+1281,Grocery & Staples,Staples,Rice,Reem Super Basmati Rice,1 kg,2 kg,5 kg,,150,280,700,,Reem,,1258,
+1282,Grocery & Staples,Staples,Rice,Reem Awami Rice,1 kg,2 kg,5 kg,,120,240,600,,Reem,,1259,
+1283,Grocery & Staples,Staples,Rice,Reem Ka Steam Rice,1 kg,5 kg,,,175,875,,,Reem,,1260,
+1284,Grocery & Staples,Staples,Flour & Grains ,Pure Grain Desi Atta,10 kg,,,,360,,,,Local,,1261,
+1285,Grocery & Staples,Staples,Flour & Grains ,Atta Channi,Small ,Large,,,70,100,,,Local,,1262,
+1286,Grocery & Staples,Staples,Flour & Grains ,Yaddgar Atta,10 kg,20 kg,,,380,750,,,Local,,1263,
+0,Grocery & Staples,Staples,Flour & Grains ,Al Fareed Diet Atta,1 kg,500 gm,,,75,45,,,Local,,1264,
+1288,Grocery & Staples,Staples,Flour & Grains ,National Corn Flour ,300 gm,,,,55,,,,National,,1265,
+1289,Grocery & Staples,Staples,Flour & Grains ,American Garden Corn Flour,400 gm,,,,120,,,,American Garden,,1266,
+1290,Grocery & Staples,Staples,Flour & Grains ,Rafhan Corn Flour,300 gm,,,,70,,,,Rafhan,,1267,
+1291,Grocery & Staples,Staples,Flour & Grains ,Fauji Rice Flour,300 gm,,,,70,,,,Fauji,,1268,
+1292,Grocery & Staples,Staples,Flour & Grains ,Self Raising Flour,400 gm,,,,105,,,,Local,,1269,
+1293,Grocery & Staples,Staples,Flour & Grains ,Fauji Barley Porridge,1 kg,100 gm,250 gm,175 gm,380,70,130,95,Fauji,,1270,
+1294,Grocery & Staples,Staples,Flour & Grains , Heinz Sunrise Banana Porridge,125 gm,,,,340,,,,Heinz,,1271,
+1295,Grocery & Staples,Staples,Flour & Grains ,Heinz Peachy Porridge Break Fast,120 gm,,,,415,,,,Heinz,,1272,
+1296,Grocery & Staples,Staples,Flour & Grains ,Cow & Gate Creamy Porridge ,125 gm,,,,365,,,,Cow & Gate,,1273,
+1297,Grocery & Staples,Staples,Flour & Grains ,Cow & Gate Banana Porridge,125 gm,,,,365,,,,Cow & Gate,,1274,
+1298,Grocery & Staples,Staples,Flour & Grains ,Cow & Gate Baby Fruity Porridge,125 gm,,,,365,,,,Cow & Gate,,1275,
+1299,Grocery & Staples,Staples,Flour & Grains ,Fauji Wheat Porridge,1 kg,250 gm,175 gm,100 gm,270,105,80,45,Fauji,,1276,
+0,Grocery & Staples,Staples,Flour & Grains ,Al Fareed Rice Atta,500 gm,1 kg,,,60,120,,,Local,,1277,
+1301,Grocery & Staples,Cooking Needs,Baking & Frying,Knorr Chicken Powder,1 kg,,,,735,,,,Knorr,,1278,
+1302,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmorr Super Fine Mustard,165 gm,,,,90,,,,Rossmorr,,1279,
+1303,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Baking Powder,100 gm,50 gm,,,60,35,,,Rossmorr,,1280,
+1304,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Mustard Powder ,100 gm,,,,60,,,,Rossmorr,,1281,
+1305,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Dried Parsley,8 gm,,,,80,,,,Rossmorr,,1282,
+1306,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Instant Yeast ,11 gm,33 gm,,,25,70,,,Rossmorr,,1283,
+1307,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Cocoa Powder,100 gm,200 gm,,,100,190,,,Rossmorr,,1284,
+1308,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Paprika,25 gm,,,,55,,,,Rossmorr,,1285,
+1309,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Thyme Leaves,10 gm,,,,80,,,,Rossmorr,,1286,
+1310,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Ground White Pepper,25 gm,,,,100,,,,Rossmorr,,1287,
+1311,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Oregano Leaves,10 gm,,,,80,,,,Rossmorr,,1288,
+1312,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Basil Leaves,10 gm,,,,80,,,,Rossmorr,,1289,
+1313,Grocery & Staples,Cooking Needs,Baking & Frying,Rossmoor Mixed Herbs,10 gm,,,,80,,,,Rossmorr,,1290,
+1314,Grocery & Staples,Cooking Needs,Baking & Frying,Santan Cocos Instant Coconut Milk Powder,50 gm,,,,70,,,,Santan,,1291,
+1315,Grocery & Staples,Cooking Needs,Baking & Frying,Santan Original Coconut Cream Powder,50 gm,,,,75,,,,Santan,,1292,
+1316,Grocery & Staples,Cooking Needs,Baking & Frying,Mother Choice Icing Sugar,300 gm,,,,85,,,,Mother Choice,,1293,
+1317,Grocery & Staples,Cooking Needs,Baking & Frying,Mother Choice Caster Sugar,300 gm,,,,80,,,,Mother Choice,,1294,
+1318,Grocery & Staples,Cooking Needs,Baking & Frying,Sugarie Pure Cane Caster Sugar,300 gm,,,,80,,,,Sugarie,,1295,
+1319,Grocery & Staples,Cooking Needs,Baking & Frying,Rosepair Baking Powder,100 gm,50 gm,300 gm,,85,50,140,,Rosepair,,1296,
+1320,Grocery & Staples,Cooking Needs,Baking & Frying,Rosepair Cocoa Powder,40 gm,80 gm,160 gm,,55,100,135,,Rosepair,,1297,
+1321,Grocery & Staples,Cooking Needs,Baking & Frying,Rosepair Super Fine Mustard Powder ,80 gm,,,,60,,,,Rosepair,,1298,
+1322,Grocery & Staples,Cooking Needs,Baking & Frying,Rosepair Gelatine Powder,25 gm,50 gm,,,50,80,,,Rosepair,,1299,
+1323,Grocery & Staples,Cooking Needs,Baking & Frying,Betty Crocker Brownie Mix Fudge Choc,563 gm,,,,340,,,,Betty Crocker,,1300,
+1324,Grocery & Staples,Cooking Needs,Baking & Frying,Betty Crocker Cookie Mix,496 gm,,,,330,,,,Betty Crocker,,1301,
+1325,Grocery & Staples,Cooking Needs,Baking & Frying,Betty Crocker Pizza Crust Mix,1 pc,,,,210,,,,Betty Crocker,,1302,
+1326,Grocery & Staples,Cooking Needs,Baking & Frying,American Garden Chocolate Syrup,524 gm,,,,465,,,,American Gaeden,,1303,
+1327,Grocery & Staples,Cooking Needs,Baking & Frying,Cadbury Cocoa Powder,125 gm,250 gm,,,275,360,,,Cadbury,,1304,
+1328,Grocery & Staples,Cooking Needs,Baking & Frying,American Garden Roasted Garlic Bread Crumbs,1 pc,,,,290,,,,American Gaeden,,1305,
+1329,Grocery & Staples,Cooking Needs,Baking & Frying,American Garden Bread Crumbs Plain,425 gm,,,,290,,,,American Gaeden,,1306,
+1330,Grocery & Staples,Cooking Needs,Baking & Frying,American Garden Romano Cheese Bread Crumbs,1 pc,,,,290,,,,American Gaeden,,1307,
+1331,Grocery & Staples,Oil & Ghee,Dalda,Dalda Pomace Olive Oil,500 ml,1 ltr,,,330,660,,,Dalda,,1308,
+1332,Grocery & Staples,Oil & Ghee,Dalda,Dalda Pomace Olive Oil,3 ltr,4 ltr,,,1700,2220,,,Dalda,,1309,
+1333,Grocery & Staples,Oil & Ghee,Dalda,Dalda Sunflower Oil,1 ltr,1 kg x 5 Pct,,,170,840,,,Dalda,,1310,
+1334,Grocery & Staples,Oil & Ghee,Dalda,Dalda Sunflower Oil Bottle,3 ltr,4.5 ltr,,,565,840,,,Dalda,,1311,
+1335,Grocery & Staples,Oil & Ghee,Habib,Habib Super Soya Been  Oil Botle,3 ltr,,,,570,,,,Habib,,1312,
+1336,Grocery & Staples,Oil & Ghee,Habib,Habib Sunflower Oil,1 ltr,,,,215,,,,Habib,,1313,
+1337,Grocery & Staples,Oil & Ghee,Tullo,Tullo Canola Oil,1 ltr,,,,165,,,,Tullo,,1314,
+1338,Grocery & Staples,Oil & Ghee,Kisan,Kisan Desi Ghee,500 gm,1 kg,5 kg,2.5 kg,360,700,3400,1660,Kisan,,1315,
+1339,Grocery & Staples,Oil & Ghee,Kisan,Kisan Sunflower Cooking Oil  Tin,5 ltr,,,,1010,,,,Kisan,,1316,
+1340,Grocery & Staples,Oil & Ghee,Kisan,Kisan Sunflower Oil,1 ltr,,,,165,,,,Kisan,,1317,
+1341,Grocery & Staples,Oil & Ghee,Kisan,Kisan Cooking Oil Bottle,3 ltr,,,,660,,,,Kisan,,1318,
+1342,Grocery & Staples,Oil & Ghee,Kisan,Kisan Pure Vegetable Ghee,1 kg,,,,165,,,,Kisan,,1319,
+1343,Grocery & Staples,Oil & Ghee,Eva,Eva Canola Oil Bottle,3 ltr,5 ltr,,,570,940,,,Eva,,1320,
+1344,Grocery & Staples,Oil & Ghee,Eva,Eva Sunflower Oil,1 ltr,,,,180,,,,Eva,,1321,
+1345,Beverages,Drinks,Enegry Drinks,Nestle Milo Breakfast Cereal,330 gm,170 gm,,,390,290,,,Nestle,,1322,
+1346,Beverages,Drinks,Enegry Drinks,Nestle Milo Whole Grain Cereal,500 gm,,,,570,,,,Nestle,,1323,
+1347,Beverages,Drinks,Enegry Drinks,Nestle Milo Sachet,22 gm,,,,30,,,,Nestle,,1324,
+1348,Beverages,Drinks,Enegry Drinks,Nestle Milo Protomalt,200 ml,,,,35,,,,Nestle,,1325,
+1349,Beverages,Drinks,Enegry Drinks,Nestle Milo Hi-Cal,240 ml,,,,85,,,,Nestle,,1326,
+1350,Beverages,Drinks,Enegry Drinks,Nestle Milo Mocha,240 ml,,,,85,,,,Nestle,,1327,
+1351,Beverages,Drinks,Enegry Drinks,Nestle Milo Energy Food Drink,235 ml,,,,95,,,,Nestle,,1328,
+1352,Beverages,Drinks,Enegry Drinks,Red Bull Blue Edition,250 ml,,,,160,,,,Red Bull,,1329,
+1353,Beverages,Drinks,Enegry Drinks,Red Bull Sugar Free,250 ml,,,,185,,,,Red Bull,,1330,
+1354,Beverages,Drinks,Enegry Drinks,Red Bull Extra ,180 ml,,,,120,,,,Red Bull,,1331,
+1355,Beverages,Drinks,Enegry Drinks,Red Bull Yellow Tropical,250 ml,,,,170,,,,Red Bull,,1332,
+1356,Beverages,Drinks,Enegry Drinks,Evervess Club Soda,300 ml,,,,90,,,,Evervess,,1333,
+1357,Beverages,Drinks,Enegry Drinks,Evervess Ginger Ale Soda,300 ml,,,,80,,,,Evervess,,1334,
+1358,Beverages,Drinks,Enegry Drinks,Evervess Tonic,300 ml,,,,80,,,,Evervess,,1335,
+1359,Beverages,Drinks,Enegry Drinks,Ovaltine All in One,260 gm,,,,230,,,,Ovaltine,,1336,
+1360,Beverages,Drinks,Enegry Drinks,Ovaltine Active Powdered Choco Malt Drink,840 gm,,,,720,,,,Ovaltine,,1337,
+1361,Beverages,Drinks,Enegry Drinks,Ovaltine Rich Chocolate,340 gm,,,,625,,,,Ovaltine,,1338,
+1362,Beverages,Drinks,Enegry Drinks,Ovaltine Complete Nutrition,200 gm,400 GM,,,230,425,,,Ovaltine,,1339,
+1363,Beverages,Drinks,Enegry Drinks,Ovaltine Malted Milk,200 gm,400 gm,,,245,360,,,Ovaltine,,1340,
+1364,Beverages,Drinks,Enegry Drinks,Ovaltine Original Add Milk,300 gm,100 gm,,,490,180,,,Ovaltine,,1341,
+1365,Beverages,Drinks,Enegry Drinks,Ovaltine Drinking Chocolate,300 gm,,,,350,,,,Ovaltine,,1342,
+1366,Beverages,Drinks,Enegry Drinks,Ovaltine Complete Nutrition Jar,100 gm,400 gm,,,185,385,,,Ovaltine,,1343,
+1367,Beverages,Drinks,Enegry Drinks,Ovaltine Value Pack,340 GM,,,,350,,,,Ovaltine,,1344,
+1368,Beverages,Drinks,Enegry Drinks,Gatorade Win Big Energy Drink,500 ml,,,,150,,,,Gatorade,,1345,
+1369,Beverages,Drinks,Enegry Drinks,Gatorade Tropical Fruit Drink,500 ml,,,,130,,,,Gatorade,,1346,
+1370,Beverages,Drinks,Enegry Drinks,GATORADE GRAPE DRINK,500 ml,,,,130,,,,Gatorade,,1347,
+1371,Beverages,Drinks,Enegry Drinks,Gatorade Orange Chill,500 ml,,,,130,,,,Gatorade,,1348,
+1372,Beverages,Drinks,Enegry Drinks,Gatorade Lemon Lime Drink,500 ml,,,,130,,,,Gatorade,,1349,
+1373,Beverages,Drinks,Enegry Drinks,Gatorade Blue Bolt,500 ml,,,,130,,,,Gatorade,,1350,
+1374,Beverages,Drinks,Enegry Drinks,Gatorade Pink Lemonade,500 ml,,,,130,,,,Gatorade,,1351,
+1375,Beverages,Drinks,Enegry Drinks,Gatorade White Lightning,500 ml,,,,130,,,,Gatorade,,1352,
+1376,Beverages,Drinks,Enegry Drinks,Gatorade Cool Blue,900 ml,,,,265,,,,Gatorade,,1353,
+1377,Beverages,Drinks,Enegry Drinks,Monster Energy Drink Ultra Sunrise,500 ml,,,,185,,,,Monster,,1354,
+1378,Beverages,Drinks,Enegry Drinks,Monster Coffee Energy Drink,285 ml,,,,120,,,,Monster,,1355,
+1379,Beverages,Drinks,Enegry Drinks,Monster Khaos Energy Juice,500 ml,,,,220,,,,Monster,,1356,
+1380,Beverages,Drinks,Enegry Drinks,Monster Energy Drink Absolutely Zero Sugar,500 ml,,,,185,,,,Monster,,1357,
+1381,Beverages,Drinks,Enegry Drinks,Monster Ripper Energy Juice,500 ml,,,,220,,,,Monster,,1358,
+1382,Beverages,Drinks,Enegry Drinks,Monster Assault Energy Drink,500 ml,,,,185,,,,Monster,,1359,
+1383,Beverages,Drinks,Enegry Drinks,Monster Doctor Energy Drink,500 ml,,,,220,,,,Monster,,1360,
+1384,Beverages,Drinks,Enegry Drinks,Monster Zero Calories,500 ml,,,,185,,,,Monster,,1361,
+1385,Beverages,Drinks,Enegry Drinks,Monster Ultra Red ,500 ml,,,,185,,,,Monster,,1362,
+1386,Beverages,Drinks,Enegry Drinks,Little Big shot Energy Mix Berry,250 ml,,,,70,,,,Little Big Shoy,,1363,
+1387,Beverages,Drinks,Enegry Drinks,Little Big Shot Energy Apple,250 ml,,,,70,,,,Little Big Shoy,,1364,
+1388,Beverages,Drinks,Enegry Drinks,Lucozade Energy Drink Orange,330 ml,1 ltr,,,85,245,,,Lucozade,,1365,
+1389,Beverages,Drinks,Enegry Drinks,Lucozade Energy Original Drink,750 ml,1 ltr,330 ml,,195,245,85,,Lucozade,,1366,
+1390,Beverages,Drinks,Enegry Drinks,Boost Energy Drink,250 ml,,,,110,,,,Boost,,1367,
+1391,Beverages,Drinks,Enegry Drinks,Boost Original,250 ml,,,,110,,,,Boost,,1368,
+1392,Beverages,Drinks,Enegry Drinks,Boost Energy Drink Sugar Free,250 ml,,,,110,,,,Boost,,1369,
+1393,Beverages,Drinks,Enegry Drinks,Mad Croc Energy Drink,500 ml,,,,195,,,,Mad Croc,,1370,
+1394,Beverages,Drinks,Enegry Drinks,Mad Croc Energy Drink Coffeine,250 ml,,,,95,,,,Mad Croc,,1371,
+1395,Beverages,Drinks,Enegry Drinks,Mad Croc Green Apple,250 ml,,,,95,,,,Mad Croc,,1372,
+1396,Beverages,Drinks,Enegry Drinks,Mad Croc Orange,250 ml,,,,95,,,,Mad Croc,,1373,
+1397,Beverages,Drinks,Enegry Drinks,Mad Croc Peach,250 ml,,,,95,,,,Mad Croc,,1374,
+1398,Beverages,Drinks,Juices,Rubicon Mango Juice,1 ltr,500 ml,,,215,185,,,Rubicon,,1375,
+1399,Beverages,Drinks,Juices,Rubicon Guava Juice,1 ltr,500 ml,,,215,185,,,Rubicon,,1376,
+1400,Beverages,Drinks,Juices,Rubicon Pomegranate Juice,1 ltr,,,,215,,,,Rubicon,,1377,
+1401,Beverages,Drinks,Juices,Pure Heaven Red Grape Juice,750 ml,,,,295,,,,Pure Heaven,,1378,
+1402,Beverages,Drinks,Juices,Pure Heaven White Grape Juice,750 ml,,,,345,,,,Pure Heaven,,1379,
+1403,Beverages,Drinks,Juices,Pure Heaven White Grape with Peach Juice,750 ml,,,,345,,,,Pure Heaven,,1380,
+1404,Beverages,Drinks,Juices,Pure Heaven White Grape with Mango Juice,750 ml,,,,345,,,,Pure Heaven,,1381,
+1405,Beverages,Drinks,Juices,Pure Heaven Sparkling Apple,750 ml,,,,345,,,,Pure Heaven,,1382,
+1406,Beverages,Drinks,Juices,Pure Heaven White Grape with Strawberry Juice,750 ml,,,,345,,,,Pure Heaven,,1383,
+1407,Beverages,Drinks,Juices,Chamdor Sparkling Grape Juice,750 ml,,,,475,,,,Chamdor,,1384,
+1408,Beverages,Drinks,Juices,Chamdor Sparkling Grape Peach Juice,750 ml,,,,475,,,,Chamdor,,1385,
+1409,Beverages,Drinks,Juices,Rani Orange Tin Juice,240 ml,,,,50,,,,Rani,,1386,
+1410,Beverages,Drinks,Juices,Rani Mango Fruit Juice,200 ml,,,,70,,,,Rani,,1387,
+1411,Beverages,Drinks,Juices,Rani Banana Fruit Juice,200 ml,,,,70,,,,Rani,,1388,
+1412,Beverages,Drinks,Juices,Rani Apple Fruit Juice,200 ml,,,,70,,,,Rani,,1389,
+1413,Beverages,Drinks,Juices,Rani Peach Tin Juice,240 ml,,,,50,,,,Rani,,1390,
+1414,Beverages,Drinks,Juices,Rani Pineaple Juice,240 ml,,,,50,,,,Rani,,1391,
+1415,Beverages,Drinks,Juices,Rani Cocktail Juice,240 ml,,,,60,,,,Rani,,1392,
+1416,Beverages,Drinks,Juices,Rani Banana Fruit Juice,240 ml,,,,60,,,,Rani,,1393,
+1417,Beverages,Drinks,Juices,Rani Cocktail Fruit Juice,200 ml,,,,70,,,,Rani,,1394,
+1418,Beverages,Drinks,Juices,Rani Guava Fruit Juice,200 ml,,,,70,,,,Rani,,1395,
+1419,Beverages,Drinks,Juices,Rani Grape Fruit Juice,240 ml,,,,50,,,,Rani,,1396,
+1420,Beverages,Drinks,Juices,Masafi Mango Juice,1 ltr,,,,250,,,,Masafi,,1397,
+1421,Beverages,Drinks,Juices,Masafi Apple Juice,1 ltr,,,,230,,,,Masafi,,1398,
+1422,Beverages,Drinks,Juices,Masafi Tropical Juice,1 ltr,,,,230,,,,Masafi,,1399,
+1423,Beverages,Drinks,Juices,Masafi Citrus Juice,1 ltr,,,,230,,,,Masafi,,1400,
+1424,Beverages,Drinks,Juices,Masafi Melon Juice,1 ltr,,,,230,,,,Masafi,,1401,
+1425,Beverages,Drinks,Juices,Masafi Pomegranate Nectar Juice,1 ltr,,,,260,,,,Masafi,,1402,
+1426,Beverages,Drinks,Juices,Lacnor Orange Juice,1 ltr,180 ml,,,225,55,,,Lacnor,,1403,
+1427,Beverages,Drinks,Juices,Lacnor Fruit Cocktail Necter Juice,1 ltr,,,,225,,,,Lacnor,,1404,
+1428,Beverages,Drinks,Juices,Lacnor Pineaple Juice,1 ltr,,,,225,,,,Lacnor,,1405,
+1429,Beverages,Drinks,Juices,Lacnor Tomato Juice,1 ltr,,,,165,,,,Lacnor,,1406,
+1430,Beverages,Drinks,Juices,Lacnor Apple Juice,1 ltr,180 ml,,,225,55,,,Lacnor,,1407,
+1431,Beverages,Drinks,Juices,Lacnor Mango Juice,1 ltr,,,,225,,,,Lacnor,,1408,
+1432,Beverages,Drinks,Juices,Lacnor Guava Nectar Juice,1 ltr,,,,225,,,,Lacnor,,1409,
+1433,Beverages,Drinks,Juices,Lacnor Peach Nectar Juice,1 ltr,,,,165,,,,Lacnor,,1410,
+1434,Beverages,Drinks,Juices,Lacnor Mixed Berries Juice,1 ltr,,,,225,,,,Lacnor,,1411,
+1435,Beverages,Drinks,Juices,Lacnor Orange Carrot Nectar Juice,1 ltr,,,,225,,,,Lacnor,,1412,
+1436,Beverages,Drinks,Juices,Lacnor Apple Beetroot Juice,1 ltr,,,,325,,,,Lacnor,,1413,
+1437,Beverages,Drinks,Juices,Friss Mango Juice ,500 ml,250 ml,1 ltr,,60,30,100,,Friss,,1414,
+1438,Beverages,Drinks,Juices,American Garden Lemon Juice,32 oz,,,,390,,,,American Garden,,1415,
+1439,Beverages,Drinks,Juices,American Garden Coconut Juice With Pulp,300 ml,,,,100,,,,American Garden,,1416,
+1440,Beverages,Drinks,Juices,Nestle Fruita Vital Orange Fruit Nectar  Juice,1 ltr,,,,220,,,,Nestle,,1417,
+1441,Beverages,Drinks,Juices,Shezan Twist Mango Strawberry  Juice,250 ml,,,,25,,,,Shezan,,1418,
+1442,Beverages,Drinks,Juices,Shezan Twist Rasberry  Juice,250 ml,,,,25,,,,Shezan,,1419,
+1443,Beverages,Drinks,Juices,Shezan Pinaple Juice,250 ml,,,,25,,,,Shezan,,1420,
+1444,Beverages,Drinks,Juices,Shezan Twist Mango Juice,250 ml,,,,25,,,,Shezan,,1421,
+1445,Beverages,Drinks,Juices,Shezan Twist Punch Fruit Juice,250 ml,,,,25,,,,Shezan,,1422,
+1446,Beverages,Drinks,Juices,Shezan All Pure Apple Juice,1 ltr,250 ml,,,120,30,,,Shezan,,1423,
+1447,Beverages,Drinks,Juices,Shezan All Pure Orange Juice,1 ltr,250 ml,,,120,30,,,Shezan,,1424,
+1448,Beverages,Drinks,Juices,Shezan All Pure Pineaple Juice,1 ltr,,,,135,,,,Shezan,,1425,
+1449,Beverages,Drinks,Juices,Slice Orange Juice,200 ml,,,,20,,,,Slice,,1426,
+0,Beverages,Drinks,Juices,Fresher Mango Orange Strawberry Juice,500 ml,,,,60,,,,Fresher,,1427,
+1451,Beverages,Drinks,Juices,Fresher Mango Nectar Juice,1 ltr,,,,100,,,,Fresher,,1428,
+1452,Beverages,Drinks,Juices,Fresher Guava Nectar Juice,1 ltr,500 ml,,,100,60,,,Fresher,,1429,
+0,Beverages,Drinks,Juices,Fresher Red Grape Nectar Juice,500 ml,,,,60,,,,Fresher,,1430,
+0,Beverages,Drinks,Juices,Fresher Apple Nectar Juice,500 ml,,,,60,,,,Fresher,,1431,
+1455,Beverages,Drinks,Juices,Fresher Strawberry Juice,500 ml,,,,60,,,,Fresher,,1432,
+1456,Beverages,Drinks,Juices,Fresher Falsa Juice,500 ml,1 ltr,,,60,100,,,Fresher,,1433,
+0,Beverages,Drinks,Juices,Fresher Orange Juice,500 ml,1 ltr,,,60,100,,,Fresher,,1434,
+0,Beverages,Drinks,Juices,Fresher Peach Juice,500 ml,,,,60,,,,Fresher,,1435,
+1452,Beverages,Drinks,Juices,Fresher Guava Juice,1 ltr,,,,100,,,,Fresher,,1436,
+0,Beverages,Drinks,Juices,Fresher Peach Nectar Juice,1 ltr,,,,100,,,,Fresher,,1437,
+0,Beverages,Drinks,Juices,Fresher Pomegranate Nectar Juice,500 ml,,,,80,,,,Fresher,,1438,
+1462,Beverages,Drinks,Juices,Shezan Twist Mango Banana Juice,250 ml,,,,25,,,,Shezan,,1439,
+1463,Beverages,Drinks,Juices,Shezan All Pure Mango Nectar Juice,250 ml,,,,30,,,,Shezan,,1440,
+1464,Beverages,Drinks,Juices,Shezan All Pure Peach Juice,250 ml,,,,30,,,,Shezan,,1441,
+1465,Beverages,Drinks,Juices,Shezan All Pure Strawberry Nectar Juice,250 ml,,,,30,,,,Shezan,,1442,
+1466,Beverages,Drinks,Juices,Shezan All Pure Strawberry Juice,1 ltr,,,,120,,,,Shezan,,1443,
+1467,Beverages,Drinks,Juices,Shezan All Pure Guava Juice,1 ltr,250 ml,,,135,30,,,Shezan,,1444,
+1468,Beverages,Drinks,Juices,Shezan All Pure Pomegranate Nectar Juice,1 ltr,250 ml,,,135,30,,,Shezan,,1445,
+1469,Beverages,Drinks,Juices,Friss Orrange Juice ,250 ml,500 ml ,1 ltr,2 ltr,30,60,100,190,Friss,,1446,
+1470,Beverages,Drinks,Juices,Friss Lychee Juice ,250 ml,500 ml,,,30,60,,,Friss,,1447,
+1471,Beverages,Drinks,Juices,Friss Guava Juice ,250 ml,1 ltr,,,30,100,,,Friss,,1448,
+1472,Beverages,Drinks,Juices,Friss Apple Juice,250 ml,500 ml,1 ltr,2 ltr,30,60,100,190,Friss,,1449,
+1473,Beverages,Drinks,Juices,Friss Lychee Juice,1 ltr,250 ml,500 ml,,100,30,60,,Friss,,1450,
+1474,Beverages,Drinks,Juices,Friss Peach Juice,500 ml,1 ltr,,,60,100,,,Friss,,1451,
+1475,Beverages,Drinks,Juices,Friss Mango Juice,500 ml,250 ml,1 ltr,2 ltr,60,30,100,190,Friss,,1452,
+1476,Beverages,Drinks,Juices,Nestle Fruita Vital Pineaple Fruit Nectar,200 ml,1 ltr,,,30,150,,,Nestle,,1453,
+1477,Beverages,Drinks,Juices,Nestle Nesfruta Mango Fruit Drink,1 ltr,200 ml,,,100,20,,,Nestle,,1454,
+1478,Beverages,Drinks,Juices,Nestle Pomegranate Nectar Juice,1 ltr,,,,220,,,,Nestle,,1455,
+1479,Beverages,Drinks,Soft Drink,7up Lemonade,500 ml,1.5 ltr,,,45,85,,,Pepsi,,1456,
+1480,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Apple,300 ml,500 ml,1.5 ltr,,30,45,85,,Murree Brewery,,1457,
+1481,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Peach,300 ml,500 ml,,,30,45,,,Murree Brewery,,1458,
+1482,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Lychee,300 ml,1.5 ltr,,,30,85,,,Murree Brewery,,1459,
+1483,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Ice Soda,300 ml,1.5 ltr,,,30,85,,,Murree Brewery,,1460,
+1484,Beverages,Drinks,Soft Drink,Murree Brewery Lemon Malt,500 ml,250 ml,,,60,30,,,Murree Brewery,,1461,
+1485,Beverages,Drinks,Soft Drink,Murree Brewery Lychee Malt,250 ml,,,,30,,,,Murree Brewery,,1462,
+1486,Beverages,Drinks,Soft Drink,Murree BreweryPeach Malt,330 ml,,,,40,,,,Murree Brewery,,1463,
+1487,Beverages,Drinks,Soft Drink,Murree Brewery Pineapple Malt,250 ml,,,,30,,,,Murree Brewery,,1464,
+1488,Beverages,Drinks,Soft Drink,Murree Brewery Malt 79 Non Alcoholic,250 ml,500 ml,,,30,60,,,Murree Brewery,,1465,
+1489,Beverages,Drinks,Soft Drink,Murree Brewery Strawberry Malt,250 ml,,,,30,,,,Murree Brewery,,1466,
+1490,Beverages,Drinks,Soft Drink,Murree Brewery Malt 79 Can,330 ml,,,,50,,,,Murree Brewery,,1467,
+0,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Annar,1.5 ltr,,,,85,,,,Murree Brewery,,1468,
+1492,Beverages,Drinks,Soft Drink,Murree Brewery Bigg Apple Can,330 ml,,,,50,,,,Murree Brewery,,1469,
+1493,Beverages,Drinks,Soft Drink,Murree Brewery Lemon Malt Can,330 ml,,,,50,,,,Murree Brewery,,1470,
+1494,Beverages,Drinks,Soft Drink,Vimto Fizzy Tin,330 ml,,,,80,,,,Vimto,,1471,
+1495,Beverages,Drinks,Soft Drink,Vimto Fizzy Zero Tin,330 ml,,,,80,,,,Vimto,,1472,
+1496,Beverages,Drinks,Soft Drink,Vimto Fizzy,330 ml,500 ml,,,60,,,,Vimto,,1473,
+1497,Beverages,Drinks,Soft Drink,Burg Classic Drink,330 ml,,,,100,,,,Burg,,1474,
+1498,Beverages,Drinks,Soft Drink,Burg Apple Drink,330 ml,,,,100,,,,Burg,,1475,
+1499,Beverages,Drinks,Soft Drink,Bur Strawberry Drink,330 ml,,,,100,,,,Burg,,1476,
+1500,Beverages,Drinks,Soft Drink,Burg Lemon Mint Drink,330 ml,,,,100,,,,Burg,,1477,
+1501,Beverages,Drinks,Soft Drink,Mood Regular Drink,330 ml,,,,95,,,,Mood,,1478,
+1502,Beverages,Drinks,Soft Drink,Mood Strawberry Drink,330 ml,,,,95,,,,Mood,,1479,
+1503,Beverages,Drinks,Soft Drink,Mood Apple Drink,330 ml,,,,95,,,,Mood,,1480,
+1504,Beverages,Drinks,Soft Drink,Mood Lemon Drik,330 ml,,,,95,,,,Mood,,1481,
+1505,Beverages,Drinks,Soft Drink,Mood PineDrinkapple ,330 ml,,,,95,,,,Mood,,1482,
+1506,Beverages,Drinks,Soft Drink,Barbican Malt ,330 ml,,,,95,,,,Barbican,,1483,
+1507,Beverages,Drinks,Soft Drink,Barbican Lemon ,330 ml,,,,95,,,,Barbican,,1484,
+1508,Beverages,Drinks,Soft Drink,Barbican Rasberry,330 ml,,,,95,,,,Barbican,,1485,
+1509,Beverages,Drinks,Soft Drink,Barbican Aplle,330 ml,,,,95,,,,Barbican,,1486,
+1510,Beverages,Drinks,Soft Drink,Barbican Pineapple,330 ml,,,,95,,,,Barbican,,1487,
+1511,Beverages,Drinks,Soft Drink,FREEZ LEMON SOFT DRINKS,330 ml,,,,135,,,,Freez,,1488,
+1512,Beverages,Drinks,Soft Drink,Freez Miami Blue,330 ml,,,,135,,,,Freez,,1489,
+1513,Beverages,Drinks,Soft Drink,Freez Mango,330 ml,,,,135,,,,Freez,,1490,
+1514,Beverages,Drinks,Soft Drink,Freez Strawberry,330 ml,,,,135,,,,Freez,,1491,
+1515,Beverages,Drinks,Soft Drink,Bavaria Regular Malt Drink,500 ml,330 ml,,,110,80,,,Bavaria,,1492,
+1516,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Honey,300 ml,,,,100,,,,Jus Cool,,1493,
+1517,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Orange,300 ml,,,,100,,,,Jus Cool,,1494,
+1518,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Apple,300 ml,,,,100,,,,Jus Cool,,1495,
+1519,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Lychee,300 ml,,,,100,,,,Jus Cool,,1496,
+1520,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Mango,300 ml,,,,100,,,,Jus Cool,,1497,
+1521,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Peach,300 ml,,,,100,,,,Jus Cool,,1498,
+1522,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Pomegranate,300 ml,,,,100,,,,Jus Cool,,1499,
+1523,Beverages,Drinks,Soft Drink,Jus Cool Basil Seed Drink with Strawberry,300 ml,,,,100,,,,Jus Cool,,1500,
+0,Beverages,Drinks, Nutritional Drinks,Nurpur Badam Zafrani Milk,200 ml,,,,25,,,,Nurpur,,1501,
+1525,Beverages,Drinks, Nutritional Drinks,Horlicks Original,200 gm,500 gm,,,210,450,,,Horlicks,,1502,
+1526,Beverages,Drinks, Nutritional Drinks,Horlicks Junior,500 gm,,,,620,,,,Horlicks,,1503,
+1527,Beverages,Drinks, Nutritional Drinks,Horlicks Women,400 gm,,,,490,,,,Horlicks,,1504,
+1528,Beverages,Drinks, Nutritional Drinks,Horlicks Women Caramel Flavour,400 gm,,,,490,,,,Horlicks,,1505,
+1529,Beverages,Drinks, Nutritional Drinks,Horlicks Junior Nutrition,150 gm,,,,215,,,,Horlicks,,1506,
+1530,Beverages,Drinks, Nutritional Drinks,Horlicks Junior Vanilla,300 gm,,,,430,,,,Horlicks,,1507,
+1531,Beverages,Drinks, Nutritional Drinks,Horlicks Light Chocolate,200 gm,,,,310,,,,Horlicks,,1508,
+1532,Beverages,Drinks, Nutritional Drinks,Horlicks Traditional,200 gm,,,,250,,,,Horlicks,,1509,
+1533,Beverages,Drinks, Nutritional Drinks,Horlicks Chocolate Proven,500 gm,,,,450,,,,Horlicks,,1510,
+1534,Beverages,Drinks, Nutritional Drinks,Complan Badam Milk,200 gm,,,,250,,,,Complan,,1511,
+1535,Beverages,Drinks, Nutritional Drinks,Complan D Plus Original,400 gm,325 gm,,,175,125,,,Complan,,1512,
+1536,Beverages,Drinks, Nutritional Drinks,Complan D Plus Taza Limu,300 gm,,,,125,,,,Complan,,1513,
+1537,Beverages,Drinks, Nutritional Drinks,Heinz Complan Vanilla,200 gm,400 gm,,,225,450,,,Complan,,1514,
+1538,Beverages,Drinks, Nutritional Drinks,Complan Pista Badam,200 gm,,,,300,,,,Complan,,1515,
+1539,Beverages,Drinks, Nutritional Drinks,Complan Natural,400 gm,,,,995,,,,Complan,,1516,
+1540,Beverages,Drinks, Nutritional Drinks,Complan Nutrigro Chocolate,400 gm,,,,850,,,,Complan,,1517,
+1541,Beverages,Drinks, Nutritional Drinks,Complan Nutrigro Badam Kheer,400 gm,,,,850,,,,Complan,,1518,
+1542,Beverages,Drinks, Nutritional Drinks,Complan Memory Real Badam,200 gm,,,,330,,,,Complan,,1519,
+1543,Beverages,Drinks, Nutritional Drinks,Complan Kesar Badam,200 gm,,,,300,,,,Complan,,1520,
+1544,Beverages,Drinks, Nutritional Drinks,Cadbury Bournvita 5 Star Magic,500 gm,,,,580,,,,Cadbury,,1521,
+1545,Beverages,Drinks, Nutritional Drinks,Cadbury Bournvita Lil Champs,200 gm,,,,350,,,,Cadbury,,1522,
+1546,Beverages,Drinks, Nutritional Drinks,Ovaltine All in One,260 gm,,,,230,,,,Ovaltine,,1523,
+1547,Beverages,Drinks, Nutritional Drinks,Ovaltine Active Powdered Choco Malt Drink,840 gm,,,,720,,,,Ovaltine,,1524,
+1548,Beverages,Drinks, Nutritional Drinks,Ovaltine Rich Chocholate,340 gm,,,,625,,,,Ovaltine,,1525,
+1549,Beverages,Drinks, Nutritional Drinks,Ovaltine Complete Nutrition,200 gm,400 gm,,,230,425,,,Ovaltine,,1526,
+1550,Beverages,Drinks, Nutritional Drinks,Ovaltine Malted Milk,200 gm,400 gm,,,245,360,,,Ovaltine,,1527,
+1551,Beverages,Drinks, Nutritional Drinks,Ovaltine Drinking Chocolate,300 gm,,,,350,,,,Ovaltine,,1528,
+1552,Beverages,Drinks, Nutritional Drinks,Ovaltine Complete Nutrition Jar,100 gm,400 gm,,,185,385,,,Ovaltine,,1529,
+1553,Beverages,Drinks, Nutritional Drinks,Ovaltine Energy Complete,385 gm,,,,400,,,,Ovaltine,,1530,
+1554,Beverages,Coffee,Nescafe,Nescafe Coffee Cream,200 ml,,,,70,,,,Nescafe,,1531,
+1555,Beverages,Coffee,Landessa,Landessa Ice Coffee Caffe Latte,230 ml,,,,185,,,,Landessa,,1532,
+1556,Beverages,Coffee,Landessa,Landessa Ice Coffee Cappuccino,230 ml,,,,185,,,,Landessa,,1533,
+1557,Beverages,Coffee,Landessa,Landessa Ice Coffee Vanilla,230 ml,,,,185,,,,Landessa,,1534,
+1558,Beverages,Coffee,Nescafe,Nescafe Mocha Coffee Drink,240 ml,,,,100,,,,Nescafe,,1535,
+1559,Beverages,Coffee,Nestle,Nestle Coffee Mate Original,170 gm,100 gm,,,310,150,,,Nestle,,1536,
+1560,Beverages,Coffee,Davidoff,Davidoff Coffee,100 gm,,,,545,,,,Davidoff,,1537,
+1561,Beverages,Coffee,Davidoff,Davidoff Caf_,100 gm,,,,595,,,,Davidoff,,1538,
+1562,Beverages,Coffee,Davidoff,Davidoff Coffee Gold,100 gm,,,,545,,,,Davidoff,,1539,
+1563,Beverages,Coffee,Davidoff,Davidoff Caf_ Fine Aroma,100 gm,,,,575,,,,Davidoff,,1540,
+1564,Beverages,Coffee,Hintz,Hintz Cappuccino Classico Coffee,12.5 gm,,,,30,,,,Hintz,,1541,
+1565,Beverages,Coffee,Hintz,Hintz Cappuccino Italiano,12.5 gm,,,,30,,,,Hintz,,1542,
+1566,Beverages,Coffee,kraft,kraft Maxwell House Coffee,200 gm,,,,575,,,,kraft,,1543,
+1567,Beverages,Coffee,Red Mountain,Red Mountain Medium Roast Coffee,95 gm,,,,320,,,,Red Mountain,,1544,
+1568,Beverages,Coffee,Bon Aroma,Bon Aroma Classic Instant Coffee,200 gm,,,,550,,,,Bon Aroma,,1545,
+1569,Beverages,Coffee,Bon Aroma,Bon Aroma Classic ,100 gm,50  gm,,,325,175,,,Bon Aroma,,1546,
+1570,Beverages,Coffee,Bon Aroma,Bon Aroma Gold Coffee,100 gm,50 gm,,,550,280,,,Bon Aroma,,1547,
+1571,Beverages,Coffee,Nescafe,Nescafe Gold Soluable Coffee,100 gm,,,,550,,,,Nescafe,,1548,
+1572,Beverages,Coffee,Nescafe,Nescafe Gold Natural Coffee,200 gm,,,,1150,,,,Nescafe,,1549,
+1573,Beverages,Coffee,Nescafe,Nescafe Classic Natural,50 gm,,,,260,,,,Nescafe,,1550,
+1574,Beverages,Coffee,Nestle,Nestle Coffee Mate Coffee Creamer,400 gm,,,,365,,,,Nestle,,1551,
+1575,Beverages,Coffee,Nescafe,Nescafe Red Cup Coffee Imp,100 gm,,,,400,,,,Nescafe,,1552,
+1576,Beverages,Coffee,Nescafe,Nescafe Latte Tin,180 ml,,,,80,,,,Nescafe,,1553,
+1577,Beverages,Coffee,Nestle,Nestle Coffee Mate Low Fat,180 gm,,,,210,,,,Nestle,,1554,
+1578,Beverages,Coffee,Moccona,Moccona Classic Blend Select Coffee,50 gm,,,,300,,,,Moccona,,1555,
+1579,Beverages,Coffee,Moccona,Moccona Select Coffee,100 gm,,,,525,,,,Moccona,,1556,
+1580,Beverages,Coffee,Moccona,Moccona Classic Blend ,100 gm,,,,690,,,,Moccona,,1557,
+1581,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Farm House Chocolate Chip,Half Pack,Family Pack,,,45,75,,,Peek Freans,,1558,
+1582,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Farm House Coconut Crunch,Half Pack,Family Pack,,,45,75,,,Peek Freans,,1559,
+1583,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Farm House Short Bread,Half Pack,Family Pack,,,50,80,,,Peek Freans,,1560,
+1584,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Sooper Elaichi Cookies,Ticky Pack ,Half Roll,Family Pack,,120,15,35,,Peek Freans,,1561,
+1585,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Marie Biscuits,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,1562,
+1586,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Saltish Pouch,75 gm,,,,15,,,,Peek Freans,,1563,
+1587,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Whole Wheat Slices Biscuits,Family Pack,,,,35,,,,Peek Freans,,1564,
+1588,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Lemon Sandwich,Ticky Pack ,Half Roll,,,120,15,,,Peek Freans,,1565,
+1589,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Chocolate Sandwich,Ticky Pack ,Half Roll,,,120,15,,,Peek Freans,,1566,
+1590,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Click Zeera,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,Peek Freans,,1567,
+1591,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Chocolicious,Ticky Pack ,Half Roll,Family Pack,,120,15,35,,Peek Freans,,1568,
+1592,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Double Chocolicious,Ticky Pack ,Half Roll,Family Pack,,120,15,35,,Peek Freans,,1569,
+1593,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Nan Khatai,Ticky Pack ,Half Roll,,,120,10,,,Peek Freans,,1570,
+1594,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Nan Khatai Classic,Half Roll,Family Pack,,,15,35,,,Peek Freans,,1571,
+1595,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Nan Khatai Almond,Half Roll,Family Pack,,,20,40,,,Peek Freans,,1572,
+1596,Snacks & Biscuits ,Biscuits & Cookies,Peek Freans,Peek Freans Jam Delight Strawberry,Ticky Pack ,Half Roll,Family Pack,,120,17,40,,Peek Freans,,1573,
+1597,Snacks & Biscuits ,Biscuits & Cookies,LU,Lu 50 50,Family Pack,,,,30,,,,LU,,1574,
+1598,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Bakeri Classic Cookies,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,1575,
+1599,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Bakeri Coconut Cookies,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,1576,
+1600,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Bakeri Nankhatai Cookies,Ticky Pack ,Half Roll,Family Pack,,120,15,40,,LU,,1577,
+1601,Snacks & Biscuits ,Biscuits & Cookies,LU,Lu Wheatable High Fibre Digestives,Family Pack,Half Roll,,,50,20,,,LU,,1578,
+1602,Snacks & Biscuits ,Biscuits & Cookies,LU,Lu Wheatable Sugar Free,Family Pack,Half Roll,,,60,25,,,LU,,1579,
+1603,Snacks & Biscuits ,Biscuits & Cookies,LU,LU Nankhatai Zafrani,Family Pack,Half Roll,Ticky Pack,,40,17,120,,LU,,1580,
+1604,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Rite,Ticky Pack ,Familt Pack,,,120,30,,,Bisconni,,1581,
+1605,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Chocolate Chip Biscuits,Familt Pack,Half Roll,,,30,15,,,Bisconni,,1582,
+1606,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Chocolatto,Ticky Pack ,Half Roll,Family Pack,,10,20,35,,Bisconni,,1583,
+1607,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Just Peanut,Half Roll ,,,,10,,,,Bisconni,,1584,
+1608,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Cocomo Orange,Ticky Pack ,,,,120,,,,Bisconni,,1585,
+1609,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Treat Gold,Ticky Pack ,Half Roll,,,120,15,,,Bisconni,,1586,
+1610,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Coconut Cookies,Half Roll,,,,15,,,,Bisconni,,1587,
+1611,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Just Zeera,Half Roll,,,,10,,,,Bisconni,,1588,
+1612,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Rite Strawberry,Half Roll,,,,15,,,,Bisconni,,1589,
+1613,Snacks & Biscuits ,Biscuits & Cookies,Bisconni,Bisconni Rite Lemon,Ticky Pack ,Half Roll,,,120,15,,,Bisconni,,1590,
+1614,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Special Milk Egg Cookies,Half Roll,,,,15,,,,Mayfair,,1591,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Special Elaichi Cookies,Family Pack,Ticky Pack,,,30,120,,,Mayfair,,1592,
+1616,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Cremo Strawberry,Family Pack,,,,30,,,,Mayfair,,1593,
+1616,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Cremo Chocolate,Family Pack,,,,30,,,,Mayfair,,1594,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Nan Khatai,Ticky Pack ,Half Roll ,,,120,15,,,Mayfair,,1595,
+1619,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Nice Coconut Bicuits,Bar Pack,,,,10,,,,Mayfair,,1596,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Zeera Kalonji Bicuits,Ticky Pack ,Half Roll ,,,120,15,,,Mayfair,,1597,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Chip Express Double Chocolate,Half Roll,Ticky Pack,,,10,120,,,Mayfair,,1598,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Cremo Choco Kheer,Ticky Pack ,Half Roll ,,,120,10,,,Mayfair,,1599,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Special Classic,Family Pack,Bar Pack,Half Roll ,,30,10,15,,Mayfair,,1600,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Special Chocolate,Ticky Pack ,Half Roll ,,,120,15,,,Mayfair,,1601,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Nan Khatai Kheer,Half Roll,,,,15,,,,Mayfair,,1602,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Club,Ticky Pack ,Half Roll ,Family Pack,,120,15,30,,Mayfair,,1603,
+0,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Cake Rusk,Bar Pack,Half Roll ,,,10,15,,,Mayfair,,1604,
+1628,Snacks & Biscuits ,Biscuits & Cookies,Mayfair,Mayfair Cremo Lemon,Ticky Pack ,Bar Pack,,,120,10,,,Mayfair,,1605,
+1629,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Cookie Mix Chocolate Chip,496 gm,,,,330,,,,Betty Crocker,,1606,0
+1630,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Cookie Mix Peanut Butter,496 gm,,,,330,,,,Betty Crocker,,1607,
+1631,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Cookie Mix Sugar Cookie,496 gm,,,,330,,,,Betty Crocker,,1608,
+1632,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Double Chocolate Chip Cookie Mix,496 gm,,,,330,,,,Betty Crocker,,1609,
+1633,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Oatmeal Chocolate Chip Cookie Mix,496 gm,,,,330,,,,Betty Crocker,,1610,
+1634,Snacks & Biscuits ,Biscuits & Cookies,Betty Crocker,Betty Crocker Rich and Creamy Hershey Cookies and Cream ,453 gm,,,,425,,,,Betty Crocker,,1611,
+1635,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Vanilla Milk Wafer,Half Roll,,,,20,,,,Biskitop,,1612,0
+1636,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Chocolate Wafer Cream,30 gm,,,,25,,,,Biskitop,,1613,
+1637,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Strawberry Wafer,Half Roll,,,,20,,,,Biskitop,,1614,
+1638,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Cheese Wafer Cream,30 gm,,,,25,,,,Biskitop,,1615,
+1639,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Strawberry Wafer Cream,30 gm,,,,25,,,,Biskitop,,1616,
+1640,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Blue Berry Wafer Cream,30 gm,,,,25,,,,Biskitop,,1617,
+1641,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Lemon Orange,30 gm,,,,25,,,,Biskitop,,1618,
+1642,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Assorted Yam Biscuits,400 gm,,,,525,,,,Biskitop,,1619,
+1643,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Cheese Cream Sandwich Biscuits,400 gm,,,,525,,,,Biskitop,,1620,
+1644,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Orange Cream Sandwich Biscuits,400 gm,,,,525,,,,Biskitop,,1621,
+1645,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Black Cookies,400 gm,,,,525,,,,Biskitop,,1622,
+1646,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Butter Cookies,60 gm,,,,65,,,,Biskitop,,1623,
+1647,Snacks & Biscuits ,Biscuits & Cookies,Biskitop,Biskitop Chocolate Cookies,165 gm,,,,130,,,,Biskitop,,1624,
+1648,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Butter Cookies,200 gm,,,,240,,,,Britannia ,,1625,0
+1649,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Pride Butter Cookies,400 gm,,,,475,,,,Britannia ,,1626,
+1650,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Danish Cookies,200 gm,,,,240,,,,Britannia ,,1627,
+1651,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Good Day Butter Cookies,90 gm,,,,85,,,,Britannia ,,1628,
+1652,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Good Day Pistachio Almond Cookies,90 gm,,,,85,,,,Britannia ,,1629,
+1653,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Good Day Cashew Cookies,90 gm,,,,85,,,,Britannia ,,1630,
+1654,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Milk Bikis Cookies,100 gm,,,,85,,,,Britannia ,,1631,
+1655,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Marie Gold Biscuits,188 gm,,,,120,,,,Britannia ,,1632,
+1656,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Vita Marie Gold Tea Biscuits,75 gm,140 gm,,,85,110,,,Britannia ,,1633,
+1657,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia 50 50 Mask Chaska Biscuits,71 gm,,,,80,,,,Britannia ,,1634,
+1658,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Nice Time Biscuits,100 gm,,,,85,,,,Britannia ,,1635,
+1659,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Sugar Free Digestive  Biscuits,200 gm,350 gm,,,195,295,,,Britannia ,,1636,
+1660,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Diet Cracker,200 gm,,,,145,,,,Britannia ,,1637,
+1661,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Good Day Choco Chip Cookies,75 gm,,,,80,,,,Britannia ,,1638,
+1662,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Little Heart Cookies,75 gm,23 gm,50 gm,,50,20,40,,Britannia ,,1639,
+1663,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Bourbon Chocolate Biscuits,100 gm,,,,85,,,,Britannia ,,1640,
+1664,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Nutri Choice 5 Grain Cookies,300 gm,,,,270,,,,Britannia ,,1641,
+1665,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Good Day Choco Nut Cookies,90 gm,,,,95,,,,Britannia ,,1642,
+1666,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Digestive Biscuits,225 gm,400 gm,,,195,290,,,Britannia ,,1643,
+1667,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Date Rolls,90 gm,,,,80,,,,Britannia ,,1644,
+1668,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Fig Rolls,90 gm,,,,90,,,,Britannia ,,1645,
+1669,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Suji Toast,170 gm,,,,100,,,,Britannia ,,1646,
+1670,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Choco Chunkies Biscuits,100 gm,,,,165,,,,Britannia ,,1647,
+1671,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Nutri Choice Biscuits,100 gm,,,,175,,,,Britannia ,,1648,
+1672,Snacks & Biscuits ,Biscuits & Cookies,Britannia ,Britannia Pure Magic Chocolush,75 gm,,,,125,,,,Britannia ,,1649,
+1673,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Cocodelite Coconut Cookies,Half Roll,Ticky  Pack,,,15,120,,,Cookania,,1650,0
+1674,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Gold,Half Roll,Bar Pack,,,15,10,,,Cookania,,1651,0
+1675,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Chocorama Chocolate,Ticky Pack,Family Pack,,,120,30,,,Cookania,,1652,
+1676,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Chocorama,Half Roll,,,,15,,,,Cookania,,1653,
+1677,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Nutsy,Ticky Pack,Half Roll,,,120,15,,,Cookania,,1654,
+1678,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Cocodelite,Ticky Pack,Family Pack,Bar Pack,,120,30,10,,Cookania,,1655,
+1679,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Tea Time,Ticky Pack,Half Roll,Family Pack,Bar Pack,120,15,30,10,Cookania,,1656,
+1680,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Pak A Nut,Ticky Pack,,,,120,,,,Cookania,,1657,
+1681,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Pic A Nut,Half Roll,Family Pack,,,15,30,,,Cookania,,1658,
+1682,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Zeeraray,Ticky Pack,Half Roll,Family Pack,,120,15,30,,Cookania,,1659,
+1683,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Hero,Bar Pack,,,,10,,,,Cookania,,1660,
+1684,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Khaas,Half Roll,,,,15,,,,Cookania,,1661,
+1685,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Milkabisk Milk,Half Roll,,,,15,,,,Cookania,,1662,
+1686,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Cake Rusk,Half Roll,,,,20,,,,Cookania,,1663,
+1687,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Nuts Biscuit,Bar Pack,,,,10,,,,Cookania,,1664,
+1688,Snacks & Biscuits ,Biscuits & Cookies,Cookania,Cookania Dream Cream Strawberry Vanilla,Half Roll,,,,,,,,Cookania,,1665,
+1689,Snacks & Biscuits ,Biscuits & Cookies,Hollanda,Hollanda Butter Cookies,454 gm,,,,550,,,,Hollanda,,1666,0
+1690,Snacks & Biscuits ,Biscuits & Cookies,Montego,Montego Choco Banana Cookies,225 gm,,,,470,,,,Montego,,1667,0
+1691,Snacks & Biscuits ,Biscuits & Cookies,Montego,Montego Kokola Double Choco Cookies,225 gm,,,,470,,,,Montego,,1668,
+1692,Snacks & Biscuits ,Biscuits & Cookies,Montego,Montego Gold Choco Matcha Cookies,225 gm,,,,470,,,,Montego,,1669,
+1693,Snacks & Biscuits ,Biscuits & Cookies,Royal British,Royal British Homemade Butter Cookies,400 gm,681 gm,,,495,950,,,Royal British,,1670,0
+1694,Snacks & Biscuits ,Biscuits & Cookies,Royal British,Royal British Original Butter Cookies,400 gm,,,,490,,,,Royal British,,1671,
+1695,Snacks & Biscuits ,Biscuits & Cookies,Royal British,Royal British Assorted Butter Cookies,400 gm,,,,490,,,,Royal British,,1672,
+1696,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy Barbecue,80 gm,,,,50,,,,Lays,,1673,
+1697,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Tetchup Tengo ,14 gm,50 gm,,,10,30,,,Lays,,1674,
+1698,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Chaat Sreet Mint Chutney,27 gm,,,,20,,,,Lays,,1675,
+1699,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Chaat Sreet Dahi Baray,27 gm,,,,20,,,,Lays,,1676,
+1700,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Sensations Thai Sweet Chili,24 gm,,,,20,,,,Lays,,1677,
+1701,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Wavy Fried Green Tomato Potato Chips,23 gm,,,,20,,,,Lays,,1678,
+1702,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Australian BBQ,1 pc,24 gm,,,10,20,,,Lays,,1679,
+1703,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Chinese Szechuan,24 gm,,,,20,,,,Lays,,1680,
+1704,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Italian Pizza,24 gm,,,,20,,,,Lays,,1681,
+1705,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Dahi Papri Chaat,32 gm,,,,20,,,,Lays,,1682,
+1706,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Greek Tzatziki Chips,24 gm,,,,20,,,,Lays,,1683,
+1707,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Classic ,184 gm,28 gm,,,350,60,,,Lays,,1684,
+1708,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Salt & Vinegar Potato Chips,184 gm,,,,370,,,,Lays,,1685,
+1709,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Barbecue Chips,184 gm,,,,400,,,,Lays,,1686,
+1710,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Stax Original,163 gm,,,,225,,,,Lays,,1687,
+1711,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Stax Barbecue,155.9 gm,,,,205,,,,Lays,,1688,
+1712,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Stax Cheddar,155.9 gm,,,,225,,,,Lays,,1689,
+1713,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Stax Salt Vinegar,155.9 gm,,,,230,,,,Lays,,1690,
+1714,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Stax Sour Cream Onion,155.9 gm,,,,225,,,,Lays,,1691,
+1715,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays French Onion Dip,425.2 gm,,,,390,,,,Lays,,1692,
+1716,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Smooth Ranch Dip,425.2 gm,,,,390,,,,Lays,,1693,
+1717,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Cheddar and Sour Cream,184.2 gm,,,,405,,,,Lays,,1694,
+1718,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Honey Barbecue,1 pc,,,,405,,,,Lays,,1695,
+1719,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Tomato Ketchup,170 gm,,,,275,,,,Lays,,1696,
+1720,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Salt and Vinegar,170 gm,,,,275,,,,Lays,,1697,
+1721,Snacks & Biscuits ,Snacks & Nimko,Lays,Lays Frono Authentic Cheese,170 GM,,,,275,,,,Lays,,1698,
+1722,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Slanty Cheese,18 gm,,,,10,,,,Kolson,,1699,
+1723,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Original Cheese Balls,20 gm,,,,10,,,,Kolson,,1700,
+1724,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Snackers Salt n Pepper,18 gm,,,,10,,,,Kolson,,1701,
+1725,Snacks & Biscuits ,Snacks & Nimko,Kolson Chips,Kolson Snackers Hot Masala,18  gm,,,,10,,,,Kolson,,1702,
+1726,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Bites Chicken Vegetable,20 gm,,,,10,,,,Cheetos,,1703,
+1727,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Crunchy Imp,60 gm,226.8 gm,35.4 gm,,110,350,75,,Cheetos,,1704,
+1728,Snacks & Biscuits ,Snacks & Nimko,Cheetos,Cheetos Cheddar Jalapeno Crunchy,8 oz,,,,350,,,,Cheetos,,1705,
+1729,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Cool Ranch,3.25 oz,11 oz,,,180,495,,,Doritos,,1706,
+1730,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Spicier Nacho,1 oz,,,,55,,,,Doritos,,1707,
+1731,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Spicy Nacho,7 oz,312 gm,,,375,495,,,Doritos,,1708,
+1732,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Cooler Ranch,7 oz,,,,360,,,,Doritos,,1709,
+1733,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Salsa Hot Dip,300 gm,,,,450,,,,Doritos,,1710,
+1734,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Mild Salsa Dip,300 gm,,,,450,,,,Doritos,,1711,
+1735,Snacks & Biscuits ,Snacks & Nimko,Doritos,Doritos Cool Sour Cream & Chive Dip,300 gm,,,,370,,,,Doritos,,1712,
+1736,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure Red Chilli Jhatka ,30 gm,110 gm,75 gm,,15,50,30,,Kurkure,,1713,
+1737,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure Chutney Chaska,41 gm,110 gm,75 gm,,15,50,30,,Kurkure,,1714,
+1738,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure Cheese n Garlic,33 gm,,,,20,,,,Kurkure,,1715,
+1739,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure Cream Onion,33 gm,,,,20,,,,Kurkure,,1716,
+1740,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure Nuts Masala Peanuts,30 gm,,,,20,,,,Kurkure,,1717,
+1741,Snacks & Biscuits ,Snacks & Nimko,Kurkure,Lays Kurkure BBQ,32 gm,,,,20,,,,Kurkure,,1718,
+1742,Snacks & Biscuits ,Snacks & Nimko,Super Crisp,Super Crisp BBQ,25 gm,52 gm,70 gm,,10,25,50,,Super Crisp,,1719,1
+1743,Snacks & Biscuits ,Snacks & Nimko,Super Crisp,Super Crisp Catty Chins,23 gm,1 pc,37 gm,,10,40,20,,Super Crisp,,1720,0
+1744,Snacks & Biscuits ,Snacks & Nimko,Super Crisp,Super Crisp Potato Sticks,20 gm,,,,10,,,,Super Crisp,,1721,0
+1745,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Sour Cream & Onion,50 gm,165 gm,21 gm,40 gm,75,220,65,90,Pringles,,1722,0
+1746,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Original,165 gm,21 gm,40 gm,,220,65,80,,Pringles,,1723,
+1747,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles BBQ,165 gm,,,,220,,,,Pringles,,1724,
+1748,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Salt & Vinegar,165 gm,40 gm,,,230,80,,,Pringles,,1725,
+1749,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Jalapeno,169 gm,,,,220,,,,Pringles,,1726,
+1750,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Pizza,169 gm,,,,200,,,,Pringles,,1727,
+1751,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Honey Mustard,169 gm,,,,230,,,,Pringles,,1728,
+1752,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Loaded Baked Potato,169 gm,,,,200,,,,Pringles,,1729,
+1753,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Ranch Potato Crisps,169 gm,,,,225,,,,Pringles,,1730,
+1754,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Lightly Salted,169 gm,,,,295,,,,Pringles,,1731,
+1755,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Super Stack Cheddar Cheese,71 gm,40 gm,21 gm,,150,80,65,,Pringles,,1732,
+1756,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Xtra Kickin Sour Cream & Onion,150 gm,,,,230,,,,Pringles,,1733,
+1757,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Texas BBQ Sauce,165 gm,40 gm,,,230,80,,,Pringles,,1734,
+1758,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Cheesy Cheese,165 gm,,,,220,,,,Pringles,,1735,
+1759,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Hot & Spicy,165 gm,40 gm,,,220,80,,,Pringles,,1736,
+1760,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Ketchup,165 gm,,,,220,,,,Pringles,,1737,
+1761,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Paprika,165 gm,40 gm,,,220,95,,,Pringles,,1738,
+1762,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Cheese & Onion,40 gm,,,,80,,,,Pringles,,1739,
+1763,Snacks & Biscuits ,Biscuits & Cookies,Pringles,Pringles Prawn Cocktail,190 gm,,,,250,,,,Pringles,,1740,
+1764,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Lahori Nimko,1 pc,1 pc,,,30,50,,,Lahori,,1741,
+1765,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Muncherz Shahi Nmko,200 gm,100 gm,,,300,160,,,Muncherz,,1742,
+1766,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Muncherz Nmko Mix,200 gm,100 gm,50 gm,,180,100,50,,Muncherz,,1743,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Muncherz Lahore Nmko,200 gm,100 gm,,,180,100,,,Muncherz,,1744,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Nimko Mix,300 gm,,,,100,,,,Super Munch,,1745,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Dal Moth Nimko,300 gm,,,,100,,,,Super Munch,,1746,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Nimko Papri,250 gm,,,,100,,,,Super Munch,,1747,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Lahori Nimko,300 gm,,,,100,,,,Super Munch,,1748,
+1772,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Shahi Nimko,150,,,,150,,,,Shahi,,1749,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Large Sevo Nimko,280 gm,,,,70,,,,Super Munch,,1750,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Nimko Mix,60,,,,60,,,,Abu Dawood,,1751,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Dal Moth,60,,,,60,,,,Abu Dawood,,1752,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Bareek Sevo Nimko,300 gm,,,,100,,,,Super Munch,,1753,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Gathia Nimko,280 gm,,,,100,,,,Super Munch,,1754,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Masoori Nimko,280 gm,,,,100,,,,Super Munch,,1755,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Nimko Mewa Mix,60,,,,60,,,,Abu Dawood,,1756,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Zaika Nimko,280 gm,,,,100,,,,Super Munch,,1757,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Darbari Nimko,300 gm,,,,100,,,,Super Munch,,1758,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Munch Nimko Mewa Mix,300 gm,,,,100,,,,Super Munch,,1759,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Dahi Boondi,150 gm,,,,50,,,,Abu Dawood,,1760,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Bombay Nimko,60,,,,60,,,,Abu Dawood,,1761,
+0,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Abu Dawood Super Mexer Nimko,60,,,,60,,,,Abu Dawood,,1762,
+1786,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Crisp Nimko Mix,100 gm,,,,25,,,,Super Crisp,,1763,
+1787,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Kurkure Nimko Mix,33 gm,85 gm,,,20,50,,,Kurkure,,1764,
+1788,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Bhel Puri,180 gm,,,,75,,,,Nimco,,1765,
+1789,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Bombay Peanuts,200 gm,,,,90,,,,Nimco,,1766,
+1790,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Spicy Peanuts,200 gm,,,,90,,,,Nimco,,1767,
+1791,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Masala Papri,180 gm,,,,65,,,,Nimco,,1768,
+1792,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Roasted Peanuts,200 gm,,,,90,,,,Nimco,,1769,
+1793,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Chaat Papri,180 gm,,,,75,,,,Nimco,,1770,
+1794,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Dahi Boondi,180 gm,,,,75,,,,Nimco,,1771,
+1795,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Namak Paray,200 gm,,,,75,,,,Nimco,,1772,
+1796,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Nimco Chana Chilli,200 gm,,,,75,,,,Nimco,,1773,
+1797,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Crisp Dal Moong,16 gm,,,,10,,,,Super Crisp,,1774,
+1798,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Crisp Peanuts,45 gm,,,,25,,,,Super Crisp,,1775,
+1799,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Crisp Nimko Mix Spicy,Small,,,,10,,,,Super Crisp,,1776,
+1798,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Super Crisp Fried Peanuts Salted,Small,,,,10,,,,Super Crisp,,1777,
+1801,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Planters Cocktail Peanuts,16 oz,,,,580,,,,Planters,,1778,
+1802,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Planters Mixed Nuts,292 gm,,,,825,,,,Planters,,1779,
+1803,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Lays Peanuts,20,,,,20,,,,Lays,,1780,
+1804,Snacks & Biscuits ,Biscuits & Cookies,Nimko & Peanuts,Kurkure Nuts Masala Peanust,30 gm,,,,20,,,,Kurkure,,1781,
+21,Grocery & Staples,Value Added,Salt & Sugar,Sugar,1 kg,3 kg,5 kg,,55,165,275,,Local,local.png,1782,0

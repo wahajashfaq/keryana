@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'keryana@localhost',
+	'hostname' => 'keryana.com',
 	'username' => 'keryana_wahaj',
 	'password' => 'Wahaj125',
 	'database' => 'keryana_temp',

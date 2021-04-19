@@ -1,25 +1,26 @@
 .header-img{
     border-style: solid;
-    border-color: #96C658;
-    background-color: #96C658;
+    border-color: #A1DB09;
+    background-color: #A1DB09;
     border-radius: 12px;
     color: #fff !important;
     border-width: 2px;
     padding: 2px 2px 2px 2px;
     text-decoration: none !important;
+    text-transform: uppercase;
 }
 
 .dropdown-toggle{
     text-decoration-line: none !important;
 }
 .dropdown-menu{
-    color: #28a7db !important;
+    color:#A1DB09 !important;
 }
 
 .dropdown-menu a{
-    color: #96C658 !important;
+    color: #333 !important;
     border-left: none !important;
 }
 .dropdown-menu a i{
-    color: #28a7db !important;
+    color: #A1DB09 !important;
 }

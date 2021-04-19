@@ -6,7 +6,7 @@
 }
 
 .dropleft:hover .droplbtn {
-   background: #92c83f;
+   background: #A1DB09;
     color: #fff;
 }
 
@@ -30,6 +30,7 @@
     line-height: 25px;
     z-index: 5;
     height: 330px;
+    overflow-y:auto;
 }
 .dropleft-content a{
     text-decoration: none;
@@ -40,10 +41,10 @@
     color:#313131;
 }
 .dropleft-content .head:hover{
-    color:#96C658;
+    color:#A1DB09;
 }
 .dropleft-content .item:hover{
-    color:#96C658;
+    color:#A1DB09;
 }
 
 .dropleft-content .item{
@@ -56,7 +57,7 @@
 }
 
 .dropleft:hover  {
-    background: #92c83f;
+    background: #A1DB09;
     color: #fff;
 }
 

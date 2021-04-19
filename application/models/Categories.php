@@ -349,17 +349,12 @@ class Categories extends CI_Model {
 	//________________________________________________
 
 	public function setFirstCategoryImage($category_id,$image){
-
 		$this->db->where('EncryptedId',$category_id);
 		$this->db->set('Image',$image);
 		$this->db->update('first_category');
-
-
 	}
 	public function setSecondCategoryImage($category_id,$image){
 
-
-		
 		$this->db->where('EncryptedId',$category_id);
 		$this->db->set('Image',$image);
 		$this->db->update('second_category');
@@ -367,12 +362,45 @@ class Categories extends CI_Model {
 	}
 	public function setThirdCategoryImage($category_id,$image){
 
-		
 		$this->db->where('EncryptedId',$category_id);
 		$this->db->set('Image',$image);
 		$this->db->update('third_category');
+	}
+
+	//_____________________Update images as parent________________________
+
+	public function setSecondCategoryImageAsParent(){
+
+		$firstCategories = $this->db->get('first_category')->result_array();
+		if($firstCategories){
+
+			foreach ($firstCategories as $row) {
+
+				$this->db->set('Image',$row['Image']);
+				$this->db->where('FirstCategoryID',$row['ID']);
+				$this->db->update('second_category');
+
+				}
+		}
 
 	}
+
+	public function setThirdCategoryImageAsParent(){
+
+		$secondCategories = $this->db->get('second_category')->result_array();
+		if($secondCategories){
+
+			foreach ($secondCategories as $row) {
+
+				$this->db->set('Image',$row['Image']);
+				$this->db->where('SecondCategoryID',$row['ID']);
+				$this->db->update('third_category');
+
+				}
+		}
+	}
+
+
 }
 
 /* End of file Categories.php */

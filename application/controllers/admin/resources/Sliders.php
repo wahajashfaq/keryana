@@ -20,19 +20,35 @@ class Sliders extends CI_Controller {
 
 		$this->load->view('admin/add_side_banners.php');
 	}
+	
+	public function bottombanner (){
+
+		$this->load->view('admin/add_bottom_banners.php');
+	}
+	
+	public function threebanner (){
+
+		$this->load->view('admin/add_three_banners.php');
+	}
 
 	public function banner_one(){
 
 		$config['upload_path']          = './uploads/banners/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000; // 1 MB
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
 
 		$config['file_name'] = "banner_one"; // , banner_one
-
+    
 		$this->load->library('upload', $config);
 		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Banner One");
+		}
 
 
 		if ( ! $this->upload->do_upload('image_file'))
@@ -42,7 +58,170 @@ class Sliders extends CI_Controller {
 		} else
 		{
 			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Banner One");
 			return redirect('admin/resources/Sliders/sidebanner');
+		}
+	}
+	
+	
+	public function bottombanner_one(){
+
+		$config['upload_path']          = './uploads/banners/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
+
+		$config['file_name'] = "bottombanner_one"; // , banner_one
+    
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Bottom Banner One");
+		}
+
+
+		if ( ! $this->upload->do_upload('image_file'))
+		{
+			$error = array('error' => $this->upload->display_errors());
+			$this->load->view('admin/add_bottom_banners', $error);
+		} else
+		{
+			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Bottom Banner One");
+			return redirect('admin/resources/Sliders/bottombanner');
+		}
+	}
+	
+	public function bottombanner_two(){
+
+		$config['upload_path']          = './uploads/banners/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
+
+		$config['file_name'] = "bottombanner_two"; // , banner_one
+    
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Bottom Banner Two");
+		}
+
+
+		if ( ! $this->upload->do_upload('image_file'))
+		{
+			$error = array('error' => $this->upload->display_errors());
+			$this->load->view('admin/add_bottom_banners', $error);
+		} else
+		{
+			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Bottom Banner Two");
+			return redirect('admin/resources/Sliders/bottombanner');
+		}
+	}
+	
+	public function threebanner_one(){
+
+		$config['upload_path']          = './uploads/banners/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
+
+		$config['file_name'] = "threebanner_one"; // , banner_one
+    
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner One");
+		}
+
+
+		if ( ! $this->upload->do_upload('image_file'))
+		{
+			$error = array('error' => $this->upload->display_errors());
+			$this->load->view('admin/add_three_banners', $error);
+		} else
+		{
+			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner One");
+			return redirect('admin/resources/Sliders/threebanner');
+		}
+	}
+	
+	
+	public function threebanner_two(){
+
+		$config['upload_path']          = './uploads/banners/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
+
+		$config['file_name'] = "threebanner_two"; // , banner_one
+    
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner Two");
+		}
+
+
+		if ( ! $this->upload->do_upload('image_file'))
+		{
+			$error = array('error' => $this->upload->display_errors());
+			$this->load->view('admin/add_three_banners', $error);
+		} else
+		{
+			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner Two");
+			return redirect('admin/resources/Sliders/threebanner');
+		}
+	}
+	
+	public function threebanner_three(){
+
+		$config['upload_path']          = './uploads/banners/';
+		$config['allowed_types']        = 'gif|jpg|png';
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
+
+		$config['file_name'] = "threebanner_three"; // , banner_one
+    
+		$this->load->library('upload', $config);
+		$this->upload->overwrite = true; // To overwrite the file
+
+        $this->load->model('Banner');
+		    
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner Three");
+		}
+
+
+		if ( ! $this->upload->do_upload('image_file'))
+		{
+			$error = array('error' => $this->upload->display_errors());
+			$this->load->view('admin/add_three_banners', $error);
+		} else
+		{
+			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Three Banner Three");
+			return redirect('admin/resources/Sliders/threebanner');
 		}
 	}
 
@@ -50,14 +229,22 @@ class Sliders extends CI_Controller {
 
 		$config['upload_path']          = './uploads/banners/';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 1000; // 1 MB
-		$config['max_width']            = 1024;
-		$config['max_height']           = 768;
+		$config['max_size']             = 15000; // 1 MB
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
 
 		$config['file_name'] = "banner_two"; // , banner_one
 
 		$this->load->library('upload', $config);
 		$this->upload->overwrite = true; // To overwrite the file
+		
+		$this->load->model('Banner');
+		
+		if ($this->input->post('url')) {
+			$this->Banner->setBannerURL($this->input->post('url'),"Banner Two");
+		}
+
+
 
 
 		if ( ! $this->upload->do_upload('image_file'))
@@ -67,6 +254,7 @@ class Sliders extends CI_Controller {
 		} else
 		{
 			$this->session->set_flashdata('message', "Image has been updated");
+			$this->Banner->setBannerURL($this->input->post('url'),"Banner Two");
 			return redirect('admin/resources/Sliders/sidebanner');
 		}
 	}
@@ -83,9 +271,9 @@ class Sliders extends CI_Controller {
 
 		$config['upload_path']          = './uploads/sliding_banner';
 		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 6000;
-		$config['max_width']            = 1920;
-		$config['max_height']           = 1280;
+		$config['max_size']             = 15000;
+		$config['max_width']            = 100000;
+		$config['max_height']           = 100000;
 
 
 		$config['file_name'] = "Slider"; 

@@ -11,11 +11,14 @@
         color: #848484;
         font-size: 80%;
     }
-    .price {
+    .price{
         font-size: 24px;
-        font-weight: 500;
-        color: #212121!important;
+        color: #A3D930 !important;
         font-family: Roboto,Arial,sans-serif;
+    }
+    #product_price{
+        font-weight: bold;
+        color:#6B953E !important;
     }
     .compare-price {
         font-weight: 400;
@@ -176,76 +179,55 @@
 </style>
 
 
-<div class="container">
+<div class="container xs-login">
     <div id="tabs"> <a href=""> Home </a> <i class="fa fa-caret-right" aria-hidden="true"></i>  <?php echo $PRODUCT[0]["PNAME"] ?></div>
 </div>
 
 <div class = "container">
     <div class = "container-fluid">
-        <div class = "row">
+        <div class = "row" style="margin-bottom: 40px;margin-top: 20px;">
             <div class="col-sm-3" id = "product-img">
-                <img  style="height: 260px;width: 260px;" src="<?php echo base_url('uploads/product_images/'.$PRODUCT[0]["Image"]); ?>">
+                <img  style="height: 260px;width: 260px;" id="ProductImage" src="<?php echo base_url('uploads/product_images/'.$PRODUCT[0]["Image"]); ?>">
             </div>
             <div class ="col-sm-6 product_delivery">
                 <h4><strong><?php echo $PRODUCT[0]["PNAME"] ?></strong></h4>
                 <p class="sample-vendor"><span>Brand: <?php if(isset($PRODUCT[0]["BNAME"]))echo $PRODUCT[0]["BNAME"]; ?></span></p>
                 <div class="prices">
-                    <span class="price on-sale">Rs. <span id="product_price">281.00</span></span>
-                    <span class="compare-price">Rs. 330.00</span>
-                    <span class="prdsave">14% off</span>
+                    <span class="price on-sale">Rs. <span  data-percentage="<?php echo $UNITS[0]['ID'] ?>" id="product_price">
+                        
+                    </span></span>
+                    <span id="compare-price" class="compare-price"> </span>
+
+                    <?php if(isset($PRODUCT[0]["OfferType"])) {
+
+                  if($PRODUCT[0]["OfferType"]=="Amount"){
+
+                    echo "<span class='prdsave'>Rs ".$PRODUCT[0]['OfferAmount']." off</span>";
+
+                  }else if($PRODUCT[0]["OfferType"]=="Percent"){
+
+                    echo "<span class='prdsave'>".$PRODUCT[0]['OfferAmount']."% off</span>";
+
+                  }
+                }
+
+                ?>
+
                 </div>
+
                 <p class="codoption"><strong>Cash on Delivery</strong> available.</p>
                 <div class="header">Weight</div>
                 <select id="price_select">
                     <?php 
                     foreach ($UNITS as $row) { ?>
-                    <option data-percentage="" value="<?php echo $row["Price"]; ?>"><?php echo $row["Unit"]; ?></option>
+                    <option data-percentage="<?php echo $row['ID'] ?>" 
+                    data-discount="<?php echo $row['Discount'] ?>" 
+                    value="<?php echo $row["Price"]; ?>"><?php echo $row["Unit"]; ?></option>
                     <?php
                 }
                 ?>
             </select> <br>
-            <input type="text" placeholder="Enter Coupon" id="dpincode">
-            <button class="btn chk-btn" type="button" onclick="checkDelivery()">Check</button> <br>
-            <button type="button" class="btn add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 5px;"></i>ADD TO CART</button><br>
-            <div class="share_toolbox">
-                <p><strong>Share</strong> with your friends.</p>
-                <ul>
-                    <li><a href="" title="Email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                    <li><a href="" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="" title="Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-sm-3 coupons">
-            <h5>Coupons Available</h5>
-            <div class = "product_offers">
-                <p class="couponcode">USE CODE : SUGAR1499</p>
-                <p class="desc">USE CODE : SUGAR1499, Get Free 1Kg Uttam Sugar on Order On Rs 1499</p>
-                <button class="btn">Copy Code</button>
-            </div>
-            <div class = "product_offers">
-                <p class="couponcode">USE CODE : SUGAR1499</p>
-                <p class="desc">USE CODE : SUGAR1499, Get Free 1Kg Uttam Sugar on Order On Rs 1499</p>
-                <button class="btn">Copy Code</button>
-            </div>
-            <div class = "product_offers">
-                <p class="couponcode">USE CODE : SUGAR1499</p>
-                <p class="desc">USE CODE : SUGAR1499, Get Free 1Kg Uttam Sugar on Order On Rs 1499</p>
-                <button class="btn">Copy Code</button>
-            </div>
-            <p class="tnc">*Terms &amp; Conditions Apply</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class ="col-md-12 prod-des">
-            <div class = "prod-des-title">
-                <p>Description</p>
-            </div>
-            <div class = "prod-des-content">
-                <p>
-                    <?php echo $PRODUCT[0]["Details"] ?>
-                </p>
-            </div>
+            <button type="button" onclick="add_prod_data(this)" class="btn add-to-cart-btn"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right: 5px;"></i><span>ADD TO CART</span></button><br>
         </div>
     </div>
 </div>
@@ -257,16 +239,98 @@
 </div>
 
 <script type="text/javascript">
+
+    function add_prod_data(event){
+
+
+      $(document).ready(function(){
+
+        $price = $('#price_select').val();
+        $percentage = $('#price_select').find('option:selected').attr('data-percentage');
+        $discount = $('#price_select').find('option:selected').attr('data-discount');
+       //alert(optionSelected);
+        $quantity = 1;
+        //$percentage = $('#product_price').attr('data-percentage');
+
+
+            console.log("Price =>"+$price+"  AND  ID =>"+$percentage);
+            //  alert($quantity);
+
+            jQuery.ajax({
+
+              type: "POST",
+              url: "<?php echo base_url(); ?>" + "/customer/Cart/AddToCart",
+              dataType: 'text',
+              data: {
+                priceOfProduct : $price, 
+                UnitID : $percentage,
+                quantityOfProduct : $quantity,
+                discount : $discount
+              },
+              success: function(res) {
+
+                if (res)
+                {
+                    // Show Entered Value
+                    /*
+                    jQuery("div#result").show();
+                    jQuery("div#value").html(res.username);
+                    jQuery("div#value_pwd").html(res.pwd);
+                    */
+
+                    //alert(res);
+                    $('#ProductImage').attr('src',"<?php echo base_url('uploads/product_images/'.$PRODUCT[0]["Image"]); ?>");
+                    $('.dropdown-content').html(res);
+                    $(event).children("span").text("Added");
+                    $(event).attr('disable',"true");
+                  }
+
+                },
+                beforeSend : function()
+                {
+                  $('#ProductImage').attr('src',"<?php echo base_url('assets/images/adding.gif');?>");
+                  $(event).attr('disable',"true");
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  
+                }
+              });
+
+
+          });
+    }
+
+
     $(document).ready(function(){
 
                $price = $('#price_select').val();
-               $('#product_price').html($price);
+               $discount = $('#price_select').find('option:selected').attr('data-discount');
+               if ($discount>0) {
+                    $('#product_price').html($price-$discount);
+                    $('#compare-price').html($price);
+
+               }else{
+                    $('#product_price').html($price);
+                    $('#compare-price').html('');
+               }
 
         $('#price_select').change(function(){
 
                $price = $('#price_select').val();
-               $('#product_price').html($price);
+               $discount = $('#price_select').find('option:selected').attr('data-discount');
+               if ($discount>0) {
+                    $('#product_price').html($price-$discount);
+                    $('#compare-price').html($price);
+
+               }else{
+                    $('#product_price').html($price);
+                    $('#compare-price').html('');
+               }
+
         });
     });
+
+
+
 </script>
 <?php include('about_footer.php') ?>

@@ -45,6 +45,7 @@ class Cart_Model extends CI_Model {
 				$this->db->set('ProductID', $key);  // Actually Unit ID
 				$this->db->set('Quantity', $value["Quantity"]); 
 				$this->db->set('Price', $value["Price"]); 
+				$this->db->set('Discount', $value['Discount']); 
 				$this->db->set('Visibility', 1); 
 
 
@@ -82,7 +83,7 @@ class Cart_Model extends CI_Model {
 		$cart_ID =  $this->getCartID($customer_ID);
 
 		if($cart_ID){ 
-			echo "$cart_ID";
+			//echo "$cart_ID";
 			$this->db->select('ProductID');
 			$this->db->where('CartID', $cart_ID);
 			$query2 = $this->db->get('cart_products');
@@ -104,6 +105,11 @@ class Cart_Model extends CI_Model {
 							$this->db->set('ModifiedDate', mdate($datestring, $time));
 							$this->db->set('Quantity', $value["Quantity"]); 
 							$this->db->set('Price', $value['Price']); 
+							if(isset($value['Discount'])) {
+							$this->db->set('Discount', $value['Discount']); 
+							}else{
+							$this->db->set('Discount', 0); 
+							}
 							$this->db->update('cart_products');
 							$product_exists = TRUE;
 						}
@@ -114,13 +120,14 @@ class Cart_Model extends CI_Model {
 
 					if ($value["Quantity"]) {
 							# code...
-						echo "Adding Data";
+						//echo "Adding Data";
 						$this->db->set('CartID', $cart_ID); 
 						$this->db->set('CreationDate', mdate($datestring, $time));
 						$this->db->set('ModifiedDate', mdate($datestring, $time));
 						$this->db->set('ProductID', $key);  // Actually Unit ID
 						$this->db->set('Quantity', $value["Quantity"]); 
 						$this->db->set('Price', $value['Price']); 
+						$this->db->set('Discount', $value['Discount']); 
 						$this->db->set('Visibility', 1); 
 
 
@@ -183,8 +190,9 @@ class Cart_Model extends CI_Model {
 				$PRICE = $row['Price'];
 				$UNIT_ID = $row['ProductID'];
 				$QUANTITY = $row['Quantity'];
+				$DISCOUNT = $row['Discount'];
 
-				$CartItems[$UNIT_ID] = ["Price"=>$PRICE,"Quantity"=>$QUANTITY];
+				$CartItems[$UNIT_ID] = ["Price"=>$PRICE,"Quantity"=>$QUANTITY,"Discount",$DISCOUNT];
 			}
 /*
 			echo "<pre>";
@@ -224,26 +232,33 @@ class Cart_Model extends CI_Model {
 
 
 		$cart_ID =  $this->getCartID($customer_ID);
+		$this->db->where('ID', $cart_ID);
+		$this->db->where('Status',0);
+		$query = $this->db->get('cart');
+		
+		if ($query->num_rows()) {
+			# code...
 
-		if($cart_ID){
-			$queryString ="SELECT products.Image , cart_products.ProductID , products.Name ,products.OfferType ,products.OfferAmount,  product_unit.Unit ,cart_products.Quantity , cart_products.Price FROM cart_products inner join product_unit on cart_products.ProductID = product_unit.ID Inner Join products on product_unit.ProductID = products.ID where cart_products.CartID = $cart_ID";
+			if($cart_ID){
+				$queryString ="SELECT products.Image , cart_products.ProductID , cart_products.Discount , products.Name ,products.OfferType ,products.OfferAmount,  product_unit.Unit ,cart_products.Quantity , cart_products.Price FROM cart_products inner join product_unit on cart_products.ProductID = product_unit.ID Inner Join products on product_unit.ProductID = products.ID where cart_products.CartID = $cart_ID ";
 
-			$query = $this->db->query($queryString);
+				$query = $this->db->query($queryString);
 
 		/*echo "<pre>";
 		print_r ($query->result());
 		echo "</pre>";*/
 
-		return $query->result_array();
-	}else{
+			return $query->result_array();
+		}else{
 
-		return FALSE;
+			return FALSE;
+		}
 	}
 }
 
 public function getCartsByOrders($cart_ID){
 
-	$queryString ="SELECT products.Image , cart_products.ProductID ,  products.Name ,products.OfferType ,products.OfferAmount,  product_unit.Unit ,cart_products.Quantity , cart_products.Price FROM cart_products inner join product_unit on cart_products.ProductID = product_unit.ID Inner Join products on product_unit.ProductID = products.ID where cart_products.CartID = $cart_ID";
+	$queryString ="SELECT products.Image , cart_products.ProductID ,  products.Name ,products.OfferType ,products.OfferAmount,  product_unit.Unit ,cart_products.Quantity , cart_products.Discount , cart_products.Price FROM cart_products inner join product_unit on cart_products.ProductID = product_unit.ID Inner Join products on product_unit.ProductID = products.ID where cart_products.CartID = $cart_ID";
 
 	$query = $this->db->query($queryString);
 
@@ -257,9 +272,9 @@ public function getCartsByOrders($cart_ID){
 
 	public function getCartsBySession($key){
 
-	$queryString ="SELECT products.Image ,  products.Name ,products.OfferType ,products.OfferAmount, product_unit.Unit  FROM products inner join product_unit on product_unit.ProductID = products.ID  where product_unit.ID = $key";
+		$queryString ="SELECT products.Image ,  products.Name ,products.OfferType ,products.OfferAmount, product_unit.Unit  FROM products inner join product_unit on product_unit.ProductID = products.ID  where product_unit.ID = $key";
 
-	$query = $this->db->query($queryString);
+		$query = $this->db->query($queryString);
 
 		return $query->result_array();
 	}

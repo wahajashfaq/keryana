@@ -41,30 +41,30 @@
                   </div>
                   <div class="modal-body">
 
-                     <form method="POST" id="myForm" action="">
-                        <input type="hidden" id="categoryID" name="categoryID" value="">
-                        <input type="hidden" id="categoryType" name="categoryType" value="">
+                   <form method="POST" id="myForm" action="">
+                    <input type="hidden" id="categoryID" name="categoryID" value="">
+                    <input type="hidden" id="categoryType" name="categoryType" value="">
 
-                        <div class="optional">
+                    <div class="optional">
 
-                            <input type="text" placeholder="Add New Value" class="form-control" name="updateValue"><br><input type="submit"  class="btn btn-primary" value="Update" id="btn_update">
+                        <input type="text" placeholder="Add New Value" class="form-control" name="updateValue"><br><input type="submit"  class="btn btn-primary" value="Update" id="btn_update">
 
-                        </div>
-                    </form>   
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+                    </div>
+                </form>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           </div>
-
       </div>
+
   </div>
+</div>
 
 
-  <br/>
-  <br/>
-  <!-- /.row -->
-  <div class="row">
+<br/>
+<br/>
+<!-- /.row -->
+<div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -92,13 +92,38 @@
 
                                 <!-- /.panel-heading -->
                                 <b><em>Total Records : <?php $count=1; if($AllOrders) echo count($AllOrders);else echo 0; ?></em></b>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="input-group custom-search-form">
+                                            <input type="text" class="form-control" onkeyup="onOrderNo()" id="order_ID" placeholder="Order No..." >
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"   type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group custom-search-form">
+                                            <input type="text" class="form-control" onkeyup="onContactNo()" id="contact_ID" placeholder="Contact No..." >
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"  type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="panel-body">
                                     <div class="table-responsive">
-                                        <table class="table table-hover">
+                                        <table class="table table-hover" id="all_table">
                                             <thead>
                                                 <tr>
                                                     <th>Sr #</th>
                                                     <th>Order ID</th>
+                                                    <th>Customer ID</th>
                                                     <th>Date & Time</th>
                                                     <th>Contact No</th>
                                                     <th>Status</th>
@@ -110,13 +135,14 @@
                                                 <?php if ($AllOrders): ?>
 
                                                     <?php foreach ($AllOrders as $row): ?>
-                                                     <tr <?php if($row["Status"]==0) echo "class='danger'";?> >
+                                                       <tr <?php if($row["Status"]==0) echo "class='danger'";else if($row["Status"]==2) echo "class='info'";else if($row["Status"]==1) echo "class='success'";else if($row["Status"]==3) echo "class='warning'";else if($row["Status"]==4) echo "class='primary'"; ?> >
                                                         <td><?php echo $count++; ?></td>
-                                                        <td><?php echo $row["EncryptedId"] ?></td>
+                                                        <td><?php echo ($row["ID"]+124) ?></td>
+                                                        <td><?php echo ($row["CustomerID"]+124) ?></td>
                                                         <td><?php echo $row["ReceiveTime"] ?></td>
                                                         <td><?php echo $row["MobileNumber"] ?></td>
-                                                        <td><?php if($row["Status"]==0) echo "Pending"; else if ($row["Status"]==1) echo "Deliverd"; ?></td> 
-                                                        <td><a href="" >view details</a></td>  
+                                                        <td><?php if($row["Status"]==0) echo "Pending"; else if ($row["Status"]==1) echo "Deliverd"; else if ($row["Status"]==2) echo "Dispatched";else if ($row["Status"]==3) echo "Canceled";else if($row["Status"]==4) echo "Refunded" ?></td> 
+                                                        <td><a href="<?php echo base_url('welcome/order/'.$row['EncryptedId']) ?>" target="_blank" >view details</a></td>  
                                                     </tr>
                                                 <?php endforeach ?>
                                             <?php endif ?>
@@ -160,11 +186,11 @@
                                                     <?php if ($row["Status"]==1): ?>
                                                         <tr>   
                                                             <td><?php echo $count++; ?></td>
-                                                            <td><?php echo $row["EncryptedId"] ?></td>
+                                                            <td><?php echo ($row["ID"]+124) ?></td>
                                                             <td><?php echo $row["ReceiveTime"] ?></td>
                                                             <td><?php echo $row["MobileNumber"] ?></td>
                                                             <td><?php if($row["Status"]==0) echo "Pending"; else if ($row["Status"]==1) echo "Deliverd"; ?></td> 
-                                                            <td><a href="" >view details</a></td>  
+                                                            <td><a href="<?php echo base_url('welcome/order/'.$row['EncryptedId']) ?>" >view details</a></td>  
                                                         </tr>
                                                     <?php endif ?>
                                                 <?php endforeach ?>
@@ -189,7 +215,7 @@
                             <!-- /.panel-heading -->
                             <div class="panel-body">
                                 <div class="table-responsive">
-                                   <table class="table table-hover">
+                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
                                             <th>Sr #</th>
@@ -205,14 +231,14 @@
                                         <?php if ($AllOrders): $count=1; ?>
 
                                             <?php foreach ($AllOrders as $row): ?>
-                                             <?php if ($row["Status"]==0): ?>
+                                               <?php if ($row["Status"]==0): ?>
                                                 <tr>   
                                                     <td><?php echo $count++; ?></td>
-                                                    <td><?php echo $row["EncryptedId"] ?></td>
+                                                    <td><?php echo ($row["ID"]+124) ?></td>
                                                     <td><?php echo $row["ReceiveTime"] ?></td>
                                                     <td><?php echo $row["MobileNumber"] ?></td>
                                                     <td><?php if($row["Status"]==0) echo "Pending"; else if ($row["Status"]==1) echo "Deliverd"; ?></td> 
-                                                    <td><a href="" >view details</a></td>  
+                                                    <td><a href="<?php echo base_url('welcome/order/'.$row['EncryptedId']) ?>" >view details</a></td>  
                                                 </tr>
                                             <?php endif ?>
                                         <?php endforeach ?>
@@ -254,7 +280,67 @@
 <script type="text/javascript">
 
 
-    $(document).ready(function(){
+    function onOrderNo(){
+
+        var oid = $('#order_ID').val();
+
+        var table = document.getElementById("all_table");
+        var tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) 
+            {
+                  if (td.innerHTML == oid) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            } 
+        }
+
+        if(oid.length==0){
+
+            console.log('ok');
+            for (i = 0; i < tr.length; i++) 
+            {
+                tr[i].style.display = "";
+            }
+        }
+
+
+}
+
+function onContactNo(){
+
+    var oid = $('#contact_ID').val();
+
+      var table = document.getElementById("all_table");
+        var tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[3];
+            if (td) 
+            {
+                  if (td.innerHTML == oid) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            } 
+        }
+
+        if(oid.length==0){
+
+            console.log('ok');
+            for (i = 0; i < tr.length; i++) 
+            {
+                tr[i].style.display = "";
+            }
+        }
+}
+
+$(document).ready(function(){
 
 
     //-------------Update
@@ -350,10 +436,10 @@
 
     });
 
-    function editcat(){
+function editcat(){
 
-        $thisid = $(this).attr('id');
-        alert($thisid);
+    $thisid = $(this).attr('id');
+    alert($thisid);
 
             //event.preventDefault();
             $('#categoryID').val();

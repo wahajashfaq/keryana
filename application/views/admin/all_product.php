@@ -73,38 +73,52 @@
             </div>
             <!-- /.panel-heading -->
             <div class="panel-body">
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#profile" data-toggle="tab">First Category</a>
-                    </li>
-                </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane fade in active" id="profile">
-
-
+                    <div >
                         <div class="col-lg-12">
                             <div class="panel">
 
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
-                                    <div class="table-responsive">
-                                    <a href ="#" onclick="load_home()"> HOME </a>
-                                        <div id="TestingLoad">
-                                            <object type="text/html" data="<?php echo base_url('customer/profile/orderDetails/khawar') ?>" ></object>
+                                    <div class="row">
+                                        
+                                    <div class="col-md-4">
+                                        <div class="input-group custom-search-form">
+                                            <input type="text" class="form-control" onkeyup="onProductName()" id="order_ID" placeholder="Product Name" >
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default"   type="button">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
                                         </div>
-                                        <table class="table table-hover">
+                                    </div>
+                                    <div class="col-md-8">
+                                        
+                                    </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="all_table">
                                             <thead>
                                                 <tr>
                                                     <th>#</th>
-                                                    <th>Category Name</th>
-                                                    <th>Edit</th>
-                                                    <th>Delete</th>
+                                                    <th></th>
+                                                    <th>Name</th>
+                                                    <th>Active</th>
+                                                    <th>Deactive</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                
+                                                <?php $count=1; foreach ($All_Products as $row): ?>
+                                                    <tr>
+                                                        <td><?php echo $count++; ?></td>
+                                                        <td><img widtd="50" height="50" src="<?php echo base_url("uploads/product_images/".$row['Image']) ?>"></td>
+                                                        <td><?php echo $row['Name'] ?></td>
+                                                        <td><input  name="<?php echo $count; ?>" onclick="update(this)" type="radio" id="<?php echo $row['EncryptedId'] ?>" value="1" <?php if($row['visibility']) echo "checked" ?> ></td>
+                                                        <td><input  name="<?php echo $count; ?>" onclick="update(this)" type="radio" id="<?php echo $row['EncryptedId'] ?>" value="0" <?php if(!$row['visibility']) echo "checked" ?>></td>
+                                                    </tr>
+                                                <?php endforeach ?>
     
 
                                             </tbody>
@@ -142,9 +156,68 @@
 
 <script type="text/javascript">
 
-    
-    function load_home() {
-     document.getElementById("TestingLoad").innerHTML='<object type="text/html" data="<?php echo base_url('admin/login') ?>" ></object>';
-    }
+     function update(e){
+
+      $slide =  e.id;
+      $data  =  e.value;
+
+      //console.log($(e).parent().parent().children('img').attr('src'));
+
+
+      jQuery.ajax({
+              type: "POST",
+              url: "<?php echo base_url(); ?>" + "admin/product/updateStatus",
+              dataType: 'text',
+              data: {productID : $slide , status:$data},
+              success: function(res) {
+                if (res)
+                {
+                    location.reload();
+                }
+              },
+              beforeSend : function()
+              {
+                $(e).parent().parent().children('img').attr('src','<?php echo base_url('assets/images/update.gif') ?>');
+              },
+              error: function(XMLHttpRequest, textStatus, errorThrown) {
+                  alert("some error");
+              }
+            });
+
+      }
+
+
+
+    function onProductName(){
+
+        var pname = $('#order_ID').val();
+
+        var table = document.getElementById("all_table");
+        var tr = table.getElementsByTagName("tr");
+
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) 
+            {
+                  if (td.innerHTML.toLowerCase().indexOf(pname.toLowerCase())>=0) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            } 
+        }
+
+        if(pname.length==0){
+
+            console.log('ok');
+            for (i = 0; i < tr.length; i++) 
+            {
+                tr[i].style.display = "";
+            }
+        }
+
+
+}
+
 </script>
         <?php include('admin_footer.php'); ?>

@@ -47,7 +47,7 @@ class Login extends CI_Controller {
 				$this->session->set_userdata('admin_id',$login_id);
 
 
-				echo ('Logged In with '.$login_id);
+				//echo ('Logged In with '.$login_id);
 				//exit;
 				return redirect('admin/dashboard');
 

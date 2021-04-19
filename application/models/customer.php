@@ -4,7 +4,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Customer extends CI_Model {
 
 
+	public function getOrderNumber($customer_ID){
 
+	  	$this->db->where('CustomerID', $this->getCustomerID($customer_ID));
+	  	$query = $this->db->get('order');
+
+	  	if ($query->num_rows()) {
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+
+	public function getAllCustomers()
+	{
+		$this->db->where('Visibility', 1);
+		return $this->db->get('customers')->result_array();
+	}
 
 	public function getProfileInfo($customer_ID){
 
@@ -59,6 +76,30 @@ class Customer extends CI_Model {
 
 	}
 
+
+	public function verifyCustomer($userID , $confirmationCode){
+
+		$this->db->where('EncryptedId', $userID);
+		$this->db->where('ConfirmCode', $confirmationCode);
+		$this->db->where('Visibility', 0);
+		$this->db->where('ConfirmStatus', 0);
+		$query = $this->db->get('customers');
+
+		if ($query->num_rows()) {
+
+
+			$this->db->set('ConfirmStatus', 1);
+			$this->db->set('Visibility', 1); 
+			$this->db->where('EncryptedId', $userID);
+			$this->db->update('customers');
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+
+
+	}
+
 	public function signup($post_data){
 
 		$this->load->helper('date');
@@ -84,13 +125,29 @@ class Customer extends CI_Model {
 
 		$this->db->insert('customers'); 
 		echo $this->db->insert_id();
-		
+
+		return md5($post_data["email"]);
+		/*
 		print_r($post_data);
 		exit;
-		echo "Sign up Model";
+		echo "Sign up Model";*/
 
 	}
 
+
+	public function getNameLetters($customer_ID){
+
+		$this->db->where('EncryptedId', $customer_ID);
+		$query = $this->db->get('customers');
+
+		if ($query->num_rows()) {
+			# code...
+			//return $query->row()->FirstName[0].$query->row()->LastName[0];
+
+			return ($query->row()->ID)+124;
+		}
+
+	}
 
 
 	public function login($post_data){
@@ -103,14 +160,13 @@ class Customer extends CI_Model {
 
 		
 		if($query->num_rows()){ // Successfully Logged in
-			print_r($query->row());
+			//print_r($query->row());
 			return $query->row()->EncryptedId;
 		}	
 		else {
 			return FALSE;
 		}	
 	}
-
 
 	
 
@@ -133,7 +189,7 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 		$this->db->set('FirstName', $firstname); 
 		$this->db->set('LastName', $lastname); 
 		$this->db->set('Email', $email); 
-		$this->db->set('EncryptedId', md5($post_data["email"])); 
+		$this->db->set('EncryptedId', md5($email)); 
 		$this->db->set('FacebookId', $fb_id); 
 		$this->db->set('Password', '');
 		$this->db->set('City', '');
@@ -150,9 +206,10 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 
 		echo "Account Created";
 
-	} else {
+		return md5($email);
 
-		echo "Logged the user in";
+	} else {
+		return $query->row()->EncryptedId;
 	}
 
 }
@@ -163,6 +220,12 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 
 
 
+		$this->db->set('Town',$post_data["town"]);
+		$this->db->set('HouseNo',$post_data["house_no"]);
+		$this->db->set('NearbyLocation',$post_data["nearby_location"]);
+		$this->db->set('Block',$post_data["block"]);
+
+
 		if($post_data["city"]!=''){
 			$this->db->set('City', $post_data["city"]);
 		}
@@ -170,16 +233,11 @@ public function fb_signup($email,$firstname,$lastname,$fb_id){
 		if($post_data["contact_number"]!=''){
 			$this->db->set('Mobile', $post_data['contact_number']);
 		}
-		if($post_data["address1"]!=''){
-			$this->db->set('Address', $post_data['address1']." ".$post_data['address2']);
-		} 
-		if($post_data["city"]=='' && $post_data["address1"]=='' && $post_data["contact_number"]==''){ 
 
-		}else {
+		
 			
 			$this->db->where('EncryptedId', $customer_ID);
 			$this->db->update('customers');
-		}
 
 	}
 

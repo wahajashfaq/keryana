@@ -89,7 +89,6 @@
 						<fieldset>
 				<legend>Second Category Image</legend>
 
-
 				<select class="form-control" name="Scategory_ID"  >
 
 					<?php 
@@ -137,6 +136,11 @@
 				</div>
 			</div>
 		</form>
+
+				<form action="<?php echo base_url('admin/resources/add/SecondCategoryImageAsParent'); ?>" method="post">
+				<input type="checkbox" name="same_as_first"> <h4>Same as First</h4>
+				<input type="submit" class="btn btn-primary" value="Update">
+				</form>
 
 	
 		<form enctype="multipart/form-data" action="<?php echo base_url('admin/resources/add/ThirdCategoryImage'); ?>" method="post">
@@ -197,6 +201,12 @@
 			</div>
 
 		</form>
+
+				<form action="<?php echo base_url('admin/resources/add/ThirdCategoryImageAsParent'); ?>" method="post">
+				<input type="checkbox" name="same_as_second"> <h4>Same as Second</h4>
+				<input type="submit" class="btn btn-primary" value="Update">
+				</form>
+				<hr>
 
 </div>
 <!-- /#page-wrapper -->
